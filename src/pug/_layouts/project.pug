@@ -1,0 +1,43 @@
+include ../_mixins/metadata
+include ../_mixins/project-thumbnail
+include ../_mixins/responsive-images
+include ../_mixins/slideshow
+include ../_mixins/slide
+include ../_mixins/image-grid
+include ../_mixins/section-divider
+
+block variables
+
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		title= title
+		meta(name='description', content='Portfolio of Knut M. Synstad')
+		meta(name='author', content='Knut M. Synstad')
+		//- meta(name='keywords', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='icon' href='/favicon.ico' type='image/x-icon')
+	body(data-pagetype="project")
+		include ../../svg/symbols.svg
+		header
+			a(href="../")#back ‹ 
+			h1= title
+			block description
+			ul.metadata
+				block metadata
+
+		section.exhibits
+			block content
+
+		section.related
+			h2 Related projects.
+			.project-grid
+				block related-projects
+	script.
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-43450355-1');ga('send','pageview');

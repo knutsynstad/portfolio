@@ -1,0 +1,33 @@
+extends ../_layouts/project.pug
+
+block variables
+	- var title = 'Gardeners always get their hands in the dirt.'
+
+block description
+	.description
+		h3 Description
+		p The French Paper Company has been environmentally conscious since the very beginning. The hydro-generators, that power every aspect of their daily processes, were installed in 1922, long before it was PC or made for good PR. French Paper is also a pioneer when it comes to recycled paper and offers many environmental paper choices.
+		p Tasked with assisting a brand enter a new, viable market segment where they are not yet established provided a means for which French Paper could hypothetically transition into products that care for the environment as much as they do. With a deep-seeded commitment to the environment at its core, it's feasible that French Paper could launching their own line of gardening tools. Such a product line could leverage the company's position and expertise in environmentally friendly and sustainable manufacturing in order to provide a line of well-designed and high-quality tools and accessories.
+
+
+
+block metadata
+	+metadata("University", "Academy of Art University")
+	+metadata("Class", "GR.370 Package Design 3")
+	+metadata("Professor", "Tom McNulty")
+	+metadata("Categories", "Packaging", "Brand", "Prototyping")
+
+block content
+	.img-row
+		img.img-half(src="/images/French_Paper_01.jpg" alt=title)
+		img.img-half(src="/images/French_Paper_02.jpg" alt=title)
+	img.img-wide(src="/images/French_Paper_03.jpg" alt=title)
+	.img-row
+		img.img-half(src="/images/French_Paper_04.jpg" alt=title)
+		img.img-half(src="/images/French_Paper_05.jpg" alt=title)
+	img.img-wide(src="/images/French_Paper_06.jpg" alt=title)
+
+block related-projects
+	+project('Mr. Potato Head is for the birds.', '../images/Birdhouse_00.jpg', '../mr_potato_head_is_for_the_birds/')
+	+project('Raise your glass to Dorian Gray.', '../images/Magnolia_00.jpg', '../raise_your_glass_to_dorian_gray/')
+	+project('Looking beyond the walls.', '../images/sweet_tooth_thumbnail.jpg', '../looking_beyond_the_walls/')

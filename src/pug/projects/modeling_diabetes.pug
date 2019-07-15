@@ -1,0 +1,49 @@
+extends ../_layouts/project.pug
+
+block variables
+	- var title = 'Modeling diabetes.';
+
+block description
+	.description
+		h3 Description
+		p Our body continuously strives to achieve homeostasis. It does so through a number of interlocked biological feedback loops, such as the endocrine system—a collection of glands that produce hormones that regulate metabolism, growth and development, tissue function, sexual function, reproduction, sleep, and mood, among other things.
+		p The pancreas, an organ of the endocrine system is integral to our control of blood glucose. Diabetes limits its ability to do so. Our various means of blood glucose control can be modeled as a first order control system or feedback loop.
+		p The following is a compendium of models on diabetes.
+
+block metadata
+	+metadata("Agency", "Dubberly Design Office")
+	+metadata("Direction", "Hugh Dubberly")
+	+metadata("Categories", "Cybernetics", "Control Systems", "Feedback", "Modeling")
+
+block content
+	h2 Open loop process
+	img.img-wide(src="/images/Diabetes_Open_Loop_Process.svg", alt=title)
+
+	h2 Closed loop process (control system)
+	img.img-wide(src="/images/Diabetes_Closed_Loop_Process.svg", alt=title)
+
+	h2 An example:<br />A mechanical thermostat
+	img.img-wide(src="/images/Diabetes_Mechanical_Thermostat.svg", alt=title)
+
+	h2 Healthy person
+	img.img-wide(src="/images/Diabetes_Healthy_Person.svg", alt=title)
+
+	h2 Person with diabetes making manual injections
+	img.img-wide(src="/images/Diabetes_Manual_Injections.svg", alt=title)
+
+	h2 Person with diabetes and an artificial pancreas
+	img.img-wide(src="/images/Diabetes_Artificial_Pancreas.svg", alt=title)
+
+	h2 Physiological feedback loop (with artificial control system)
+	img.img-wide(src="/images/Diabetes_Physiological_Feedback_Loop.svg", alt=title)
+
+	h2 Physiological feedback loop augmented by behavioral and environmental data
+	img.img-wide(src="/images/Diabetes_Augmented_Data.svg", alt=title)
+
+	h2 Feedback loops are not isolated and naturally interact; emerging systems promise to address this complexity.
+	img.img-wide(src="/images/Diabetes_Interacting_Feedback_Loops.svg", alt=title)
+
+block related-projects
+	+project('Mapping family caregiving.', '../images/Caremaps_0.png', '../mapping_family_caregiving/')
+	+project('From sensors to action.', '../images/Sensors_Thumbnail.svg', '../from_sensors_to_action/')
+	+project('Using A.I. to accelerate life science.', '../images/Bioz_0.png', '../using_ai_to_accelerate_life_science/')

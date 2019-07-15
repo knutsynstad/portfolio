@@ -1,0 +1,6 @@
+mixin metadata(label, ...values)
+	li
+		h3= label
+		ul.metadata-list
+			each value in values
+				li= value

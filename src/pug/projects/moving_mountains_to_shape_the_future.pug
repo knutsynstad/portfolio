@@ -1,0 +1,29 @@
+extends ../_layouts/project.pug
+
+block variables
+	- var title = 'Moving mountains to shape the future.'
+
+block description
+	.description
+		h3 Description
+		p When tasked to redesign a book of my choosing, I found it was going to be necessary to select a book with strong subject matter, yet suffered from a lack of typographical sophistication. This endeavor proved to be more challenging than initially thought, as there was no shortage of books needing assistance and I was faced with a multitude of possibilities as vast as the San Francisco library's card catalog.
+		p Ultimately, I selected a book by Life magazine, which showcased 100 people who changed the world through bold and experimental means. It was in this same manner that I wanted to convey the powerful history behind these remarkable figures and their extraordinary contributions, while still honoring the journalistic appeal of the publication's past.
+
+block metadata
+	+metadata("University", "Academy of Art University")
+	+metadata("Class", "GR.619 Type Composition")
+	+metadata("Professor", "Lian Ng")
+	+metadata("Categories", "Typography", "Editorial", "Bookbinding", "Screenprinting")
+
+block content
+	img.img-wide(src="/images/100_People_01.jpg" alt=title)
+	img.img-wide(src="/images/100_People_02.jpg" alt=title)
+	img.img-wide(src="/images/100_People_03.jpg" alt=title)
+	img.img-wide(src="/images/100_People_04.jpg" alt=title)
+	img.img-wide(src="/images/100_People_05.jpg" alt=title)
+	img.img-wide(src="/images/100_People_06.jpg" alt=title)
+
+block related-projects
+	+project('The truth is not always black & white.', '../images/Margin_of_Error_00.jpg', '../the_truth_is_not_always_black_and_white/')
+	+project('Winding down gets a little help.', '../images/Seagrams_00.jpg', '../winding_down_gets_a_little_help/')
+	+project('Winning is the only way to play the game.', '../images/Elite_Raiders_00.jpg', '../winning_is_the_only_way_to_play_the_game/')

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1170px"
+	 height="330px" viewBox="0 0 1170 330" enable-background="new 0 0 1170 330" xml:space="preserve">
+<symbol  id="Anchor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="40" d="
+		M4.333,13c0-2.394-1.94-4.334-4.333-4.334S-4.333,10.606-4.333,13s1.94,4.334,4.333,4.334S4.333,15.394,4.333,13z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="40" d="
+		M13,0v-4.334c0-7.18-5.82-13-13-13s-13,5.82-13,13V0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="40" x1="0" y1="-17.334" x2="0" y2="8.666"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="40" points="
+		17.333,-4.334 13,0 8.5,-4.334 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="40" points="
+		-8.583,-4.334 -12.917,0 -17.417,-4.334 	"/>
+</symbol>
+<symbol  id="Bus" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<polygon opacity="0.5" fill="#231F20" points="8.666,-13 13,-13 13,-17.334 8.666,-17.334 	"/>
+	<polygon opacity="0.5" fill="#231F20" points="-13,-13 -8.666,-13 -8.666,-17.334 -13,-17.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="13" x2="17.334" y2="13"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="-4.334" x2="-17.334" y2="-4.334"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13-4.334C13-1.939,11.06,0,8.666,0S4.332-1.939,4.332-4.334"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.666,-17.334 13,-17.334 13,-13 8.666,-13 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-13,-17.334 -8.666,-17.334 -8.666,-13 -13,-13 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-17.334,15.166c0,1.197,0.971,2.168,2.167,2.168h30.334c1.197,0,2.167-0.971,2.167-2.168V-13h-34.668V15.166z"/>
+</symbol>
+<symbol  id="Car" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<polygon opacity="0.5" fill="#231F20" points="-13,-9.749 -8.667,-9.749 -8.667,-14.083 -13,-14.083 	"/>
+	<polygon opacity="0.5" fill="#231F20" points="8.616,-9.749 12.949,-9.749 12.949,-14.083 8.616,-14.083 	"/>
+	<g>
+		
+			<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			17.334,3.25 -17.333,3.25 -17.333,-9.75 17.334,-9.75 		"/>
+		<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M-8.667-3.25c0-1.196-0.97-2.167-2.167-2.167C-12.03-5.417-13-4.446-13-3.25s0.97,2.167,2.167,2.167
+			C-9.637-1.083-8.667-2.054-8.667-3.25z"/>
+		<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M13-3.25c0-1.196-0.97-2.167-2.166-2.167c-1.197,0-2.167,0.971-2.167,2.167s0.97,2.167,2.167,2.167C12.03-1.083,13-2.054,13-3.25z
+			"/>
+		<g>
+			<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M-13,3.25l3.591,8.977c0.408,1.021,1.643,1.856,2.743,1.856H6.667c1.1,0,2.334-0.836,2.743-1.856L13,3.25"/>
+		</g>
+		
+			<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			-8.667,-14.083 -13,-14.083 -13,-9.749 -8.667,-9.749 		"/>
+		
+			<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			8.666,-14.083 13,-14.083 13,-9.75 8.666,-9.75 		"/>
+		
+			<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.333" y1="-1.083" x2="-4.333" y2="-5.416"/>
+		
+			<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="-1.083" x2="0" y2="-5.416"/>
+		
+			<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.334" y1="-1.083" x2="4.334" y2="-5.416"/>
+	</g>
+</symbol>
+<symbol  id="Car_2" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<polygon opacity="0.5" fill="#231F20" points="-13,-15.167 -8.667,-15.167 -8.667,-10.833 -13,-10.833 	"/>
+	<polygon opacity="0.5" fill="#231F20" points="8.667,-15.167 13,-15.167 13,-10.833 8.667,-10.833 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		17.334,2.167 -17.333,2.167 -17.333,-10.833 17.334,-10.833 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-8.667-4.333c0-1.197-0.97-2.167-2.167-2.167C-12.03-6.5-13-5.53-13-4.333c0,1.196,0.97,2.166,2.167,2.166
+		C-9.637-2.167-8.667-3.137-8.667-4.333z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13-4.333C13-5.53,12.03-6.5,10.834-6.5c-1.197,0-2.167,0.97-2.167,2.167c0,1.196,0.97,2.166,2.167,2.166
+		C12.03-2.167,13-3.137,13-4.333z"/>
+	<g>
+		<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M-13,2.167v8.667c0,2.383,1.95,4.333,4.333,4.333H8.667c2.383,0,4.333-1.95,4.333-4.333V2.167"/>
+	</g>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-8.667,-15.167 -13,-15.167 -13,-10.833 -8.667,-10.833 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.666,-15.167 13,-15.167 13,-10.833 8.666,-10.833 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.333" y1="-4.333" x2="4.333" y2="-4.333"/>
+</symbol>
+<symbol  id="Compass" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<polygon opacity="0.5" fill="#231F20" points="6.128,6.129 3.064,-3.064 -3.064,3.064 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,0c0,9.573-7.761,17.334-17.334,17.334c-9.573,0-17.334-7.761-17.334-17.334c0-9.572,7.761-17.334,17.334-17.334
+		C9.573-17.334,17.334-9.572,17.334,0z"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		6.128,6.129 -3.064,3.064 -6.128,-6.128 3.064,-3.064 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-3.064" y1="3.064" x2="3.064" y2="-3.064"/>
+	<path fill="#231F20" d="M1,13c0,0.553-0.448,1-1,1s-1-0.447-1-1s0.448-1,1-1S1,12.447,1,13z"/>
+	<path fill="#231F20" d="M1-13c0,0.553-0.448,1-1,1s-1-0.447-1-1s0.448-1,1-1S1-13.553,1-13z"/>
+	<path fill="#231F20" d="M14,0c0,0.553-0.447,1-1,1s-1-0.447-1-1s0.447-1,1-1S14-0.553,14,0z"/>
+	<path fill="#231F20" d="M-12,0c0,0.553-0.447,1-1,1s-1-0.447-1-1s0.447-1,1-1S-12-0.553-12,0z"/>
+</symbol>
+<symbol  id="Delivery_1_" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		17.334,0 10.834,0 10.834,8.104 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M7.584-9.229c0,1.795,1.455,3.249,3.25,3.249s3.25-1.454,3.25-3.249s-1.455-3.249-3.25-3.249S7.584-11.024,7.584-9.229z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-14.082-9.229c0,1.795,1.455,3.249,3.249,3.249s3.249-1.454,3.249-3.249s-1.455-3.249-3.249-3.249S-14.082-11.024-14.082-9.229z"
+		/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		14.084,-9.229 17.334,-9.229 17.334,5.938 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		15.167,8.104 4.334,8.104 4.334,-9.229 7.585,-9.229 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,10.27 4.334,-9.229 -7.584,-9.229 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-14.082,-9.229 -17.334,-9.229 -17.334,12.437 2.167,12.437 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,5.938c0,1.196-0.971,2.167-2.167,2.167"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M4.334,10.27c0,1.196-0.971,2.167-2.167,2.167"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15.167" y1="-4.334" x2="17.334" y2="-4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.458" y1="8.666" x2="0" y2="8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="4.334" x2="0" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-13" y1="0" x2="0" y2="0"/>
+</symbol>
+<symbol  id="Divider" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M2.167,10.906c0-1.197-0.97-2.167-2.167-2.167c-1.196,0-2.167,0.97-2.167,2.167c0,1.196,0.97,2.166,2.167,2.166
+		C1.197,13.072,2.167,12.103,2.167,10.906z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.333" y1="-17.334" x2="-1.202" y2="9.104"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.333" y1="-17.334" x2="1.202" y2="9.104"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M9.193,1.713c-5.077-5.076-13.308-5.076-18.385,0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="13.072" x2="0" y2="17.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="0" x2="0" y2="-4.334"/>
+</symbol>
+<symbol  id="Life_Ring" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path opacity="0.5" fill="#231F20" d="M17.334,0c0,4.787-1.94,9.12-5.077,12.257L6.129,6.128C7.697,4.56,8.667,2.393,8.667,0
+		s-0.97-4.56-2.538-6.128l6.128-6.129C15.394-9.12,17.334-4.787,17.334,0z"/>
+	<path opacity="0.5" fill="#231F20" d="M-8.666,0c0,2.394,0.97,4.561,2.539,6.129l-6.129,6.129C-15.393,9.121-17.333,4.787-17.333,0
+		s1.94-9.119,5.077-12.256l6.128,6.129C-7.696-4.559-8.666-2.393-8.666,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,0c0,9.573-7.761,17.334-17.334,17.334S-17.333,9.573-17.333,0S-9.573-17.334,0-17.334S17.334-9.573,17.334,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667,0c0,4.786-3.88,8.666-8.667,8.666c-4.786,0-8.666-3.88-8.666-8.666S-4.786-8.666,0-8.666C4.787-8.666,8.667-4.786,8.667,0z"
+		/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-6.127" y1="-6.128" x2="-12.256" y2="-12.258"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.257" y1="12.257" x2="6.129" y2="6.129"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.13" y1="-6.13" x2="12.256" y2="-12.256"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-12.257" y1="12.257" x2="-6.13" y2="6.13"/>
+</symbol>
+<symbol  id="Luggage" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M15.167,8.666h-30.333c-1.196,0-2.167-0.971-2.167-2.168v-17.331c0-1.196,0.97-2.167,2.167-2.167l30.333,0.001
+		c1.196,0,2.167,0.971,2.167,2.167V6.5C17.333,7.696,16.363,8.666,15.167,8.666z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-4.333,8.666v2.168c0,1.195,0.97,2.166,2.167,2.166h4.334c1.196,0,2.167-0.971,2.167-2.166V8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="8.666" x2="-8.666" y2="-13"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.627" y1="8.666" x2="8.627" y2="-12.999"/>
+</symbol>
+<symbol  id="Rocket" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-4.333,8.666c0,4.787,4.333,8.668,4.333,8.668s4.333-3.881,4.333-8.668V-8.667h-8.667V8.666z"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.333,0 8.667,-8.667 4.333,-8.667 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-4.333,0 -8.667,-8.667 -4.333,-8.667 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="0" x2="0" y2="-8.667"/>
+	
+		<line opacity="0.5" fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.333" y1="-13" x2="-4.333" y2="-15.167"/>
+	
+		<line opacity="0.5" fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="-13" x2="0" y2="-17.334"/>
+	
+		<line opacity="0.5" fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.333" y1="-13" x2="4.333" y2="-15.167"/>
+	<path fill="#231F20" d="M1,8.666c0,0.553-0.448,1-1,1s-1-0.447-1-1c0-0.552,0.448-1,1-1S1,8.114,1,8.666z"/>
+</symbol>
+<symbol  id="Sign" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.333-17.333c0,0-7.76,4.333-17.333,4.333s-17.333-4.333-17.333-4.333"/>
+	<path opacity="0.5" fill="#231F20" d="M-2.167,8.667v6.5c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167v-6.5H-2.167z"/>
+	<polygon opacity="0.5" fill="#231F20" points="2.167,-13 -2.167,-13 -2.167,0 2.167,0 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		13,0 -17.333,0 -17.333,8.667 13,8.667 17.333,4.334 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-2.167,8.667v6.5c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167v-6.5H-2.167z"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		2.167,-13 -2.167,-13 -2.167,0 2.167,0 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-13" y1="4.334" x2="0" y2="4.334"/>
+	<path fill="#231F20" d="M9.667,4.334c0,0.552-0.448,1-1,1s-1-0.448-1-1c0-0.553,0.448-1,1-1S9.667,3.781,9.667,4.334z"/>
+</symbol>
+<symbol  id="Steering_Wheel" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13,0c0,7.18-5.82,13-13,13S-13,7.18-13,0s5.82-13,13-13S13-7.18,13,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M4.334,0c0,2.394-1.94,4.334-4.334,4.334S-4.334,2.394-4.334,0S-2.394-4.334,0-4.334S4.334-2.394,4.334,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.334" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-4.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="3.064" y1="3.064" x2="12.257" y2="12.257"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-12.257" y1="-12.257" x2="-3.064" y2="-3.064"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="4.334" x2="0" y2="17.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="-17.334" x2="0" y2="-4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-3.064" y1="3.064" x2="-12.257" y2="12.257"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.257" y1="-12.257" x2="3.064" y2="-3.064"/>
+</symbol>
+<symbol  id="Truck" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		17.334,0 10.834,0 10.834,8.104 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M7.584-9.229c0,1.795,1.455,3.249,3.25,3.249s3.25-1.454,3.25-3.249s-1.455-3.249-3.25-3.249S7.584-11.024,7.584-9.229z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-14.082-9.229c0,1.795,1.455,3.249,3.249,3.249s3.249-1.454,3.249-3.249s-1.455-3.249-3.249-3.249S-14.082-11.024-14.082-9.229z"
+		/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		14.084,-9.229 17.334,-9.229 17.334,5.938 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		15.167,8.104 4.334,8.104 4.334,-9.229 7.585,-9.229 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,10.27 4.334,-9.229 -7.584,-9.229 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-14.082,-9.229 -17.334,-9.229 -17.334,-2.729 4.334,-2.729 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,5.938c0,1.196-0.971,2.167-2.167,2.167"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M4.334,10.27c0,1.196-0.971,2.167-2.167,2.167"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15.167" y1="-4.334" x2="17.334" y2="-4.334"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-8.667,5.938 -0.001,5.938 -0.001,-2.729 -8.667,-2.729 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-13,1.604 -8.667,1.604 -8.667,-2.729 -13,-2.729 	"/>
+</symbol>
+<symbol  id="Truck_2" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		17.334,0 10.834,0 10.834,8.104 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M7.584-9.229c0,1.795,1.455,3.249,3.25,3.249s3.25-1.454,3.25-3.249s-1.455-3.249-3.25-3.249S7.584-11.024,7.584-9.229z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-14.083-9.229c0,1.795,1.455,3.249,3.25,3.249s3.25-1.454,3.25-3.249s-1.455-3.249-3.25-3.249S-14.083-11.024-14.083-9.229z"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		14.084,-9.229 17.334,-9.229 17.334,5.938 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		15.167,8.104 4.334,8.104 4.334,-9.229 7.585,-9.229 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,10.27 4.334,-9.229 -7.583,-9.229 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-14.082,-9.229 -17.334,-9.229 -17.334,12.437 2.167,12.437 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,5.938c0,1.196-0.971,2.167-2.167,2.167"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667,13c1.196,0,2.167-0.971,2.167-2.167V8.104"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M4.334,10.27c0,1.196-0.971,2.167-2.167,2.167"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15.167" y1="-4.334" x2="17.334" y2="-4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="-4.334" x2="-15.167" y2="-4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.334" y1="-4.334" x2="-6.5" y2="-4.334"/>
+</symbol>
+<symbol  id="Truck_3" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		17.334,0 10.834,0 10.834,8.104 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M7.584-9.229c0,1.795,1.455,3.249,3.25,3.249s3.25-1.454,3.25-3.249s-1.455-3.249-3.25-3.249S7.584-11.024,7.584-9.229z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-14.083-9.229c0,1.795,1.455,3.249,3.25,3.249s3.25-1.454,3.25-3.249s-1.455-3.249-3.25-3.249S-14.083-11.024-14.083-9.229z"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		14.084,-9.229 17.334,-9.229 17.334,5.938 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		15.167,8.104 4.334,8.104 4.334,-9.229 7.585,-9.229 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,10.27 4.334,-9.229 -7.583,-9.229 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-14.082,-9.229 -17.334,-9.229 -17.334,12.437 2.167,12.437 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,5.938c0,1.196-0.97,2.167-2.167,2.167"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667,13c1.197,0,2.167-0.971,2.167-2.167V8.104"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M4.334,10.27c0,1.196-0.97,2.167-2.167,2.167"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15.167" y1="-4.334" x2="17.334" y2="-4.334"/>
+</symbol>
+<symbol  id="Truck_4" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		17.334,0 10.834,0 10.834,8.104 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M7.584-9.229c0,1.795,1.455,3.249,3.25,3.249s3.25-1.454,3.25-3.249s-1.455-3.249-3.25-3.249S7.584-11.024,7.584-9.229z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-14.083-9.229c0,1.795,1.455,3.249,3.25,3.249s3.25-1.454,3.25-3.249s-1.455-3.249-3.25-3.249S-14.083-11.024-14.083-9.229z"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		14.084,-9.229 17.334,-9.229 17.334,5.938 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		15.167,8.104 4.334,8.104 4.334,-9.229 7.585,-9.229 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,10.27 4.334,-9.229 -7.583,-9.229 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-14.082,-9.229 -17.334,-9.229 -17.334,12.437 2.167,12.437 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,5.938c0,1.196-0.97,2.167-2.167,2.167"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M4.334,10.27c0,1.196-0.97,2.167-2.167,2.167"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="15.167" y1="-4.334" x2="17.334" y2="-4.334"/>
+</symbol>
+<g id="Background">
+</g>
+<g id="Layer_1">
+</g>
+<g id="Model">
+	<g id="Woman">
+	</g>
+	<g id="Threshold">
+	</g>
+	<g id="Man_with_Tie">
+	</g>
+	<g id="Building_5">
+	</g>
+</g>
+<g id="Icons">
+	<g>
+		
+			<use xlink:href="#Life_Ring"  width="48" height="48" id="XMLID_261_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 1075.001 95)" overflow="visible"/>
+		
+			<use xlink:href="#Anchor"  width="48" height="48" id="XMLID_260_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 655 95)" overflow="visible"/>
+		
+			<use xlink:href="#Car_2"  width="48" height="48" id="XMLID_161_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 515 95)" overflow="visible"/>
+		
+			<use xlink:href="#Car"  width="48" height="48" id="XMLID_122_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 375 95)" overflow="visible"/>
+		
+			<use xlink:href="#Steering_Wheel"  width="48" height="48" id="XMLID_110_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 795 95)" overflow="visible"/>
+		
+			<use xlink:href="#Rocket"  width="48" height="48" id="XMLID_93_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 235 95)" overflow="visible"/>
+		
+			<use xlink:href="#Bus"  width="48" height="48" id="XMLID_83_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 94.999 95)" overflow="visible"/>
+		
+			<use xlink:href="#Divider"  width="48" height="48" id="XMLID_77_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 935 95)" overflow="visible"/>
+		
+			<use xlink:href="#Sign"  width="48" height="48" id="XMLID_72_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 1075 235)" overflow="visible"/>
+		
+			<use xlink:href="#Delivery_1_"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 655 235)" overflow="visible"/>
+		
+			<use xlink:href="#Compass"  width="48" height="48" id="XMLID_28_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 235 235)" overflow="visible"/>
+		
+			<use xlink:href="#Luggage"  width="48" height="48" id="XMLID_27_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 94.999 235)" overflow="visible"/>
+		
+			<use xlink:href="#Truck_4"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 935 235)" overflow="visible"/>
+		
+			<use xlink:href="#Truck_3"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 515 235)" overflow="visible"/>
+		
+			<use xlink:href="#Truck_2"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 795 235)" overflow="visible"/>
+		
+			<use xlink:href="#Truck"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 375 235)" overflow="visible"/>
+	</g>
+	<g id="Random_Forest">
+	</g>
+	<g id="Database">
+	</g>
+	<g id="Random_Forest_1_">
+	</g>
+	<g id="University">
+	</g>
+	<g id="Group">
+	</g>
+	<g id="Group_1_">
+	</g>
+	<g id="Scatterplott">
+	</g>
+	<g id="Long_Paper_2_">
+	</g>
+	<g id="Spread">
+	</g>
+	<g id="Isometric_Box">
+	</g>
+	<g id="Magnifying_Glass">
+	</g>
+	<g id="Code_2">
+	</g>
+</g>
+<g id="Figures">
+	<g id="Models">
+	</g>
+	<g id="Justice">
+	</g>
+	<g id="Sensor">
+	</g>
+	<g id="Widget">
+	</g>
+	<g id="Drop_1_">
+	</g>
+	<g id="Algorithm_1_">
+	</g>
+	<g id="On-body_sensor_1_">
+	</g>
+	<g id="Insulin_Pump_1_">
+	</g>
+	<g id="Drop">
+	</g>
+	<g id="Algorithm">
+	</g>
+	<g id="On-body_sensor">
+	</g>
+	<g id="Insulin_Pump">
+	</g>
+</g>
+<g id="Meta__x2B__Title">
+</g>
+<g id="Isolation_Mode">
+</g>
+<g id="Long_Paper">
+	<g id="Long_Paper_1_">
+	</g>
+	<g id="IV">
+	</g>
+	<g id="Air_Purifier">
+	</g>
+	<g id="Alarm">
+	</g>
+	<g id="Chat">
+	</g>
+	<g id="Presentation">
+	</g>
+	<g id="Dog_2">
+	</g>
+	<g id="Delivery">
+	</g>
+	<g id="Meat_2">
+	</g>
+</g>
+</svg>

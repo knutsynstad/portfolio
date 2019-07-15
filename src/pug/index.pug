@@ -1,0 +1,83 @@
+include _mixins/project-thumbnail
+
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		title Knut M. Synstad
+		meta(name='description', content='Portfolio of Knut M. Synstad')
+		meta(name='author', content='Knut M. Synstad')
+		meta(name='keywords', content='graphic design, interaction design, experience design, software design, systems design, ui/ux, interface design, service design')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='icon' href='favicon.ico' type='image/x-icon')
+	body(data-pagetype="index" data-filter="all")
+		include ../svg/symbols.svg
+		header
+			h1 Hello.
+			p I'm Knut M. Synstad, a San Francisco-based designer and developer.
+			p <a id="getintouch" href="#contact">Get in touch</a> with me.
+		section.projects
+			nav
+				h2 Projects.
+				ul.filter
+					li.active: span All
+					li: span Print
+					li: span Packaging
+					li: span UI/UX
+					li: span Information
+					li: span Coding
+			main.project-grid
+				+project('Visualizing the Space of Logos of the Fortune 500.', 'images/Fortune_500_Thumbnail.png', '/visualizing_the_fortune_500/')(class="uiux information coding")
+				+project('Using A.I. to accelerate life science.', 'images/Bioz_0.png', '/using_ai_to_accelerate_life_science/')(class="uiux coding")
+				+project('The construction of Apple Park.', 'images/Apple_Thumbnail.png', '/the_construction_of_apple_park/')(class="information coding")
+				+project('Mapping family caregiving.', 'images/Caremaps_0.png', 'mapping_family_caregiving/')(class="information")
+				+project('From sensors to action.', 'images/Sensors_Thumbnail.svg', '/from_sensors_to_action/')(class="information")
+				+project('Modeling diabetes.', 'images/Diabetes_Thumbnail.png', '/modeling_diabetes/')(class="uiux information")
+				+project('A pictogram is worth a thousand words.', 'images/Iconography_00.gif', 'a_pictogram_is_worth_a_thousand_words/')(class="information")
+				+project('Mapping social shopping.', 'images/Sello_thumbnail.png', '/mapping_social_shopping/')(class="uiux")
+				+project('Smarter testing for better health.', 'images/AST_Thumbnail.svg', '/smarter_testing_for_better_health/')(class="print coding")
+				+project('Measuring corn production, in every county, every day.', 'images/Corn_Thumbnail.gif', '/measuring_corn_production_in_every_county_every_day/')(class="print information")
+				+project('Moving mountains to shape the future.', 'images/100_People_00.jpg', 'moving_mountains_to_shape_the_future/')(class="print")
+				+project('Mr. Potato Head is for the birds.', 'images/Birdhouse_00.jpg', '/mr_potato_head_is_for_the_birds/')(class="packaging")
+				+project('The truth is not always black & white.', 'images/Margin_of_Error_00.jpg', '/the_truth_is_not_always_black_and_white/')(class="print packaging")
+				+project('Remedies come in all shapes and flavors.', 'images/Earthnuts_00.jpg', '/remedies_come_in_all_shapes_and_flavors/')(class="packaging")
+				+project('Winding down gets a little help.', 'images/Seagrams_00.jpg', '/winding_down_gets_a_little_help/')(class="print")
+				+project('Gardeners always get their hands in the dirt.', 'images/French_Paper_00.jpg', '/gardeners_always_get_their_hands_in_the_dirt/')(class="packaging")
+				+project('Without the past, there is no future.', 'images/Befor_00.jpg', '/without_the_past_there_is_no_future/')(class="print uiux")
+				+project('Raise your glass to Dorian Gray.', 'images/Magnolia_00.jpg', '/raise_your_glass_to_dorian_gray/')(class="packaging")
+				+project('Looking beyond the walls.', 'images/sweet_tooth_thumbnail.jpg', '/looking_beyond_the_walls/')(class="print")
+				+project('Winning is the only way to play the game.', 'images/Elite_Raiders_00.jpg', '/winning_is_the_only_way_to_play_the_game/')(class="print")
+
+		section.contact#contact
+			h2 Get in touch.
+			form(action="https://formspree.io/knut@synstad.net" method="POST").form-contact
+				.input-group
+					label(for="name") Name
+					input#name(type="text" placeholder="Required" name="name")
+				.input-group
+					label(for="email") Email
+					input#email(type="email" placeholder="Required" name="_replyto")
+				.input-group
+					label(for="message") Message
+					textarea#message(placeholder="Required" name="message")
+				input(type="hidden" name="_next" value="thanks.html")
+				input(type="hidden" name="_subject" value="New message from portfolio")
+				input(type="hidden" name="_format" value="plain")
+				input(type="text" name="_gotcha" style="display:none")
+				input(type="submit" value="Send")
+
+		footer
+			ul.social-media
+				li: a(href="https://twitter.com/knutsynstad" target="_blank")
+					svg.icon: use(xlink:href='#icon-twitter')
+				li: a(href="https://www.linkedin.com/in/knutsynstad" target="_blank")
+					svg.icon: use(xlink:href='#icon-linkedin')
+				li: a(href="https://github.com/knutsynstad/" target="_blank")
+					svg.icon: use(xlink:href='#icon-github')
+		script.
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-43450355-1');ga('send','pageview');

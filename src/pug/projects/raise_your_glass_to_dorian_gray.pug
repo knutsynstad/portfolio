@@ -1,0 +1,29 @@
+extends ../_layouts/project.pug
+
+block variables
+	- var title = 'Raise your glass to Dorian Gray.'
+
+block description
+	.description
+		h3 Description
+		p Magnolia, the 15-year-old craft brewery and gastropub in the Haight-Ashbury district, is well established in the Bay Area, known for their excellent handcrafted ales and gourmet food. Their menu offers upscale takes on British pub fare, although the fish and chips are solid and straightforward, other pub grub has definitely been fancified.
+		p Assuming Magnolia were to enter the retail marketplace, it would be necessary to develop a bottle and labeling system; leveraging their market position and brand soul to launch a product line as unique as the brewery itself. This would include introducing a new lighter beer to appeal to a larger audience group. Conceptually, the new product line I've developed plays on themes from Oscar Wilde's The Picture of Dorian Gray, an homage to their traditional interior, which is adorned with gilding, rich textures and an abundance of mirrored surfaces, ideal for the “handsoming” of patrons. This new line of ales would reflect all the characteristics of “the Magnolia man”: complex, refined and undeniably smooth.
+
+block metadata
+	+metadata("University", "Academy of Art University")
+	+metadata("Class", "GR.370 Package Design 3")
+	+metadata("Professor", "Tom McNulty")
+	+metadata("Category", "Packaging")
+
+block content
+	img.img-wide(src="/images/Magnolia_01.jpg" alt=title)
+	img.img-wide(src="/images/Magnolia_02.jpg" alt=title)
+	.img-row
+		img.img-half(src="/images/Magnolia_03.jpg" alt=title)
+		img.img-half(src="/images/Magnolia_04.jpg" alt=title)
+	img.img-wide(src="/images/Magnolia_05.jpg" alt=title)
+
+block related-projects
+	+project('Mr. Potato Head is for the birds.', '../images/Birdhouse_00.jpg', '../mr_potato_head_is_for_the_birds/')
+	+project('Remedies come in all shapes and flavors.', '../images/Earthnuts_00.jpg', '../remedies_come_in_all_shapes_and_flavors/')
+	+project('Looking beyond the walls.', '../images/sweet_tooth_thumbnail.jpg', '../looking_beyond_the_walls/')

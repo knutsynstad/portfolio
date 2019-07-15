@@ -1,0 +1,30 @@
+extends ../_layouts/project.pug
+
+block variables
+	- var title = 'Mr. Potato Head is for the birds.'
+
+block description
+	.description
+		h3 Description
+		p In 1943, Ingvar Kamprad started a company specializing in mail order delivery that boasted a catalog which included matches, fish, decorations, seeds, ballpoint pens and pencils. Within five year, he began to incorporate furniture into his product portfolio. Business soon flourished and in 1953, the first IKEA furniture store opened its doors in Älmhult, Småland, Sweden. The rest is history. The company that popularized modern Scandinavian design with low-cost, ready-to-assemble furniture continues to grow steadily and now operates 338 stores in 40 countries.
+		p One of IKEA's greatest successes comes out its children's line, which encourages play, learning, imagination and discovery. That’s because IKEA has worked with the world’s leading child experts (and children themselves) to design smart products that are both fun and contribute to overall development.
+		p With this philosophy in mind, I set out to create a toy that would be a natural extensions of their current children's offerings. The result was a line of birdhouses (that are literally birds!) with interchangeable parts, allowing children to mix-and-match facial expressions and accessories to create their very own companion.
+
+block metadata
+	+metadata("University", "Academy of Art University")
+	+metadata("Class", "GR.322 Package Design 2")
+	+metadata("Professor", "Tom McNulty")
+	+metadata("Categories", "Packaging", "Woodworking")
+
+block content
+	img.img-wide(src="/images/Birdhouse_01.jpg" alt=title)
+	img.img-wide(src="/images/Birdhouse_02.jpg" alt=title)
+	img.img-wide(src="/images/Birdhouse_03.jpg" alt=title)
+	img.img-wide(src="/images/Birdhouse_Closeup_1170w.png" alt=title)
+	img.img-wide(src="/images/Birdhouse_04.jpg" alt=title)
+	img.img-wide(src="/images/Birdhouse_05.jpg" alt=title)
+
+block related-projects
+	+project('Remedies come in all shapes and flavors.', '../images/Earthnuts_00.jpg', '../remedies_come_in_all_shapes_and_flavors/')
+	+project('Gardeners always get their hands in the dirt.', '../images/French_Paper_00.jpg', '../gardeners_always_get_their_hands_in_the_dirt/')
+	+project('Raise your glass to Dorian Gray.', '../images/Magnolia_00.jpg', '../raise_your_glass_to_dorian_gray/')

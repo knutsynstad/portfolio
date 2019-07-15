@@ -1,0 +1,59 @@
+extends ../_layouts/project.pug
+
+block variables
+	- var title = 'Using A.I. to accelerate life science.';
+
+block description
+	.description
+		h3 Description
+		p Through cutting-edge natural language processing, life science startup Bioz digests millions of public and commercial scientific articles to better understand labware, reagent, and antibody usage, efficacy, and protocols. The continuously updated knowledge graph is manifested in a proprietary multi-parameter score assigned to all products. Advised by Nobel laureates, Bioz strives to remove bias and catalyst life science research forward.
+		p Their platform augments the researcher’s workflow by dramatically reducing the time spent finding articles, planning experiments, and evaluating and purchasing products so that researchers can spend more time doing what they do best. The Bioz score enables researchers to quickly find products used and trusted by their peers.
+		p In addition to their search tool, shown below, Bioz syndicates their score through vendor catalogs, and publishing journals alike.
+
+
+block metadata
+	+metadata("Agency", "Dubberly Design Office")
+	+metadata("Client", "Bioz")
+	+metadata("Project", "Biological Search Tool")
+	+metadata("Categories", "Interaction","Usability","Visual", "Animation")
+
+block content
+	+image-wide("Bioz_Home")
+
+	img.img-wide.floating(src="/images/Bioz_Model.svg", alt=title)
+
+	+slideshow
+		+slide("Bioz_Search_Results_Products")
+		+slide("Bioz_Search_Results_Products_Bulk_Actions")
+		+slide("Bioz_Search_Results_Figures")
+		+slide("Bioz_Search_Results_Figures_Bulk_Actions")
+		+slide("Bioz_Search_Results_Articles")
+		+slide("Bioz_Search_Results_Articles_Bulk_Actions")
+	+image-wide("Bioz_Product_Tiles")(class="shadow")
+	+image-wide("Bioz_Product_Comparison")
+
+	img.img-wide.floating(src="/images/Bioz_Journal_Creation.svg", alt=title)
+
+	+image-wide("Bioz_Filter_Dropdowns")
+	+image-wide("Bioz_Save_Product_to_Folder")
+	+image-wide("Bioz_Product_Details")
+	+image-wide("Bioz_Protocol_Conditions_Modal")
+	+image-wide("Bioz_Figure_Viewer")(class="shadow")
+	+image-wide("Bioz_Figure_Viewer_Full_Screen")(class="shadow")
+
+	img.img-wide.floating(src="/images/Bioz_Information_Overlap.svg", alt=title)
+
+	+image-wide("Bioz_Article_Full_Text")
+	+slideshow
+		+slide("Bioz_Bookmarks_1")
+		+slide("Bioz_Bookmarks_2")
+		+slide("Bioz_Bookmarks_3")
+		+slide("Bioz_Bookmarks_4")
+		+slide("Bioz_Bookmarks_5")
+		+slide("Bioz_Bookmarks_6")
+		+slide("Bioz_Bookmarks_7")
+
+block related-projects
+	+project('Visualizing the Space of Logos of the Fortune 500.', '../images/Fortune_500_Thumbnail.png', '../visualizing_the_fortune_500/')
+	+project('Smarter testing for better health.', '../images/AST_Thumbnail.svg', '../smarter_testing_for_better_health/')
+	+project('Mapping family caregiving.', '../images/Caremaps_0.png', '../mapping_family_caregiving/')

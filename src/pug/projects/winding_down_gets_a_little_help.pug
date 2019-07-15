@@ -1,0 +1,34 @@
+extends ../_layouts/project.pug
+
+block variables
+	- var title = 'Winding down gets a little help.'
+
+block description
+	.description
+		h3 Description
+		p In today's marketplace, a brand is no longer simply a logo, but instead an highly considered and orchestrated set of elements meant to reach an audience—not on a visual level—but on an emotional one. My given objective was to choose a dead, dying or defunct brand and move beyond simply creating an identity system but to reinforce the nuances that constitute a holistic branding effort.
+		p Few whiskey companies can compare to the history of The Seagram Company. Founded in 1857, Seagram's rose to become the largest distiller of whiskey in the world by 1989. It was only after a shift in priority of company holdings and a series of management missteps that the brand was sent into a downward spiral from which they could no longer recover.
+		p Born a whiskey distiller and fell an investment company, Seagram's lost sight of what made them great. Contrary to popular belief, Seagram's wasn't selling whiskey, but a state of relaxation. By expanding the context of relaxation, this project aims to show how Seagram's can interject itself into new and previously overlooked segments to reacquire market appeal.
+
+block metadata
+	+metadata("University", "Academy of Art University")
+	+metadata("Class", "GR.604 Nature of Identity")
+	+metadata("Professor", "Hunter Wimmer")
+	+metadata("Categories", "Branding","Book Design")
+
+block content
+	img.img-wide(src="/images/Seagrams_01.jpg" alt=title)
+	img.img-wide(src="/images/Seagrams_02.jpg" alt=title)
+	img.img-wide(src="/images/Seagrams_03.jpg" alt=title)
+	img.img-wide(src="/images/Seagrams_04.jpg" alt=title)
+	img.img-wide(src="/images/Seagrams_05.jpg" alt=title)
+	.img-row
+		img.img-half(src="/images/Seagrams_06.jpg" alt=title)
+		img.img-half(src="/images/Seagrams_07.jpg" alt=title)
+	img.img-wide(src="/images/Seagrams_08.jpg" alt=title)
+	img.img-wide(src="/images/Seagrams_09.jpg" alt=title)
+
+block related-projects
+	+project('Mr. Potato Head is for the birds.', '../images/Birdhouse_00.jpg', '../mr_potato_head_is_for_the_birds/')
+	+project('Gardeners always get their hands in the dirt.', '../images/French_Paper_00.jpg', '../gardeners_always_get_their_hands_in_the_dirt/')
+	+project('Raise your glass to Dorian Gray.', '../images/Magnolia_00.jpg', '../raise_your_glass_to_dorian_gray/')

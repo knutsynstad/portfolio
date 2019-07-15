@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		title Knut M. Synstad
+		meta(name='description', content='Portfolio of Knut M. Synstad')
+		meta(name='author', content='Knut M. Synstad')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='icon' href='favicon.ico' type='image/x-icon')
+	body(data-pagetype="meta")
+		include ../svg/symbols.svg
+		header
+			a(href="index.html")#back ‹ 
+			h1 Thank you!
+			p Your message has been recieved.
+
+		footer
+			ul.social-media
+				li: a(href="https://twitter.com/knutsynstad" target="_blank")
+					svg.icon: use(xlink:href='#icon-twitter')
+				li: a(href="https://www.linkedin.com/in/knutsynstad" target="_blank")
+					svg.icon: use(xlink:href='#icon-linkedin')
+				li: a(href="https://github.com/knutsynstad/" target="_blank")
+					svg.icon: use(xlink:href='#icon-github')
+		script.
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-43450355-1');ga('send','pageview');

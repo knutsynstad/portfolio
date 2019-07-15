@@ -1,0 +1,247 @@
+extends ../_layouts/project.pug
+
+block variables
+	- var title = 'The construction of Apple Park.'
+
+block description
+	.description
+		h3 Description
+		p Using platforms like Descartes Labs, everyone from hobbyists to scientists can monitor the planet in near real-time for changes that matter to them. Here I use public domain satellite and aerial imagery to observe the construction of a new California landmark; Apple’s $5 billion headquarters, Apple Park. Located in Cupertino, CA, where HP’s old campus one stood before they moved to Palo Alto in 2010. Construction began in late 2013 and opened to employees in April of 2017 despite ongoing construction.
+		p The imagery comes from NASA’s Landsat 8 satellite, the European Space Agency’s (ESA) Copernicus Sentinel-2 satellites, and aerial imagery from the United States Department of Agriculture’s (USDA) National Agriculture Imagery Program (NAIP), with spatial resolutions of 30 m, 10 m, and 50 cm per pixel resolution respectively. Images with severe cloud cover have been excluded.
+		p Exhibits were created using the Descartes Labs python API.
+
+
+block metadata
+	+metadata("Categories", "Remote sensing", "Change detection", "Satellites")
+
+block content
+
+	video(width="600", height="600", autoPlay, loop, muted)
+		source(src="/videos/apple_park.mp4", type="video/mp4")
+		|Your browser does not support the video tag.
+
+	+section-divider
+		h2 2012
+		h2.subtitle Location of former HP Campus
+
+	img.img-wide(src="/images/Apple_NAIP_2012.png", alt=title)
+	h3 May 20, 2012
+	p National Agriculture Imagery Program (NAIP)
+
+	+section-divider
+		h2 2013
+		h2.subtitle Earthwork and demolition
+
+	+image-grid
+		+image-tile("/images/LANDSAT_8_2013-04-16.png", "April 16, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-06-03.png", "June 3, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-06-19.png", "June 19, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-07-05.png", "July 5, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-07-21.png", "July 21, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-08-06.png", "August 6, 2013", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2013-08-22.png", "August 22, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-09-07.png", "September 7, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-09-23.png", "September 23, 2013", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2013-10-09.png", "October 9, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-10-25.png", "October 25, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-11-10.png", "November 10, 2013", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2013-11-26.png", "November 26, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-12-12.png", "December 12, 2013", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2013-12-28.png", "December 28, 2013", "Landsat 8")
+
+	+section-divider
+		h2 2014
+		h2.subtitle Foundations
+
+	+image-grid
+		+image-tile("/images/LANDSAT_8_2014-01-13.png", "January 13, 2014", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2014-01-29.png", "January 29, 2014", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2014-02-14.png", "February 14, 2014", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2014-03-02.png", "March 2, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-03-18.png", "March 18, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-04-03.png", "April 8, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-04-19.png", "April 19, 2014", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2014-05-05.png", "May 5, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-05-21.png", "May 21, 2014", "Landsat 8")
+	img.img-wide(src="/images/Apple_NAIP_2014.png", alt=title)
+	h3 June 6, 2014
+	p National Agriculture Imagery Program (NAIP)
+	+image-grid
+		+image-tile("/images/LANDSAT_8_2014-06-06.png", "June 6, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-06-22.png", "June 22, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-07-08.png", "July 8, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-07-24.png", "July 24, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-08-09.png", "August 9, 2014", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2014-08-25.png", "August 25, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-09-10.png", "September 10, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-09-26.png", "September 26, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-10-12.png", "October 12, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-10-28.png", "October 28, 2014", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2014-11-13.png", "November 13, 2014", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2014-11-29.png", "November 29, 2014", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2014-12-15.png", "December 15, 2014", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2014-12-31.png", "December 31, 2014", "Landsat 8")
+
+	+section-divider
+		h2 2015
+		h2.subtitle Framing
+
+	+image-grid
+		//- +image-tile("/images/LANDSAT_8_2015-01-16.png", "January 16, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-02-01.png", "February 1, 2015", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2015-02-17.png", "February 17, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-03-05.png", "March 5, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-03-21.png", "March 21, 2015", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2015-04-06.png", "April 6, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-04-22.png", "April 22, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-05-08.png", "May 8, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-05-24.png", "May 24, 2015", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2015-06-09.png", "June 9, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-06-25.png", "June 25, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-07-11.png", "July 11, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-07-27.png", "July 27, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-08-12.png", "August 12, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-08-28.png", "August 28, 2015", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2015-09-13.png", "September 13, 2015", "Landsat 8")
+		+image-tile("/images/sentinel-2_2015-09-18.png", "September 18, 2015", "Sentinel 2")
+		//- +image-tile("/images/LANDSAT_8_2015-09-29.png", "September 29, 2015", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2015-10-15.png", "October 15, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-10-31.png", "October 31, 2015", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2015-11-16.png", "November 16, 2015", "Landsat 8")
+		//- +image-tile("/images/LANDSAT_8_2015-12-02.png", "December 2, 2015", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2015-12-07.png", "December 7, 2015", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2015-12-17.png", "December 17, 2015", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2015-12-18.png", "December 18, 2015", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2015-12-27.png", "December 27, 2015", "Sentinel 2")
+
+	+section-divider
+		h2 2016
+		h2.subtitle Cladding
+
+	+image-grid
+		//- +image-tile("/images/LANDSAT_8_2016-01-03.png", "January 3, 2016", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2016-01-06.png", "January 6, 2016", "Sentinel 2")
+		//- +image-tile("/images/sentinel-2_2016-01-16.png", "January 16, 2016", "Sentinel 2")
+		//- +image-tile("/images/LANDSAT_8_2016-01-19.png", "January 19, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-01-26.png", "January 26, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-02-04.png", "February 4, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-02-05.png", "February 5, 2016", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2016-02-15.png", "February 15, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-02-20.png", "February 20, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-03-06.png", "March 6, 2016", "Sentinel 2")
+		//- +image-tile("/images/LANDSAT_8_2016-03-07.png", "March 7, 2016", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2016-03-23.png", "March 23, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-03-26.png", "March 26, 2016", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2016-04-05.png", "April 5, 2016", "Sentinel 2")
+		//- +image-tile("/images/LANDSAT_8_2016-04-08.png", "April 8, 2016", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2016-04-24.png", "April 24, 2016", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2016-05-05.png", "May 5, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-05-10.png", "May 10, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-05-15.png", "May 15, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-05-26.png", "May 26, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-05-25.png", "May 25, 2016", "Sentinel 2")
+	img.img-wide(src="/images/Apple_NAIP_2016.png", alt=title)
+	h3 May 29, 2016
+	p National Agriculture Imagery Program (NAIP)
+	+image-grid
+		//- +image-tile("/images/sentinel-2_2016-06-04.png", "June 4, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-06-11.png", "June 11, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-06-14.png", "June 14, 2016", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2016-06-24.png", "June 24, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-06-27.png", "June 27, 2016", "Landsat 8")
+		+image-tile("/images/LANDSAT_8_2016-07-13.png", "July 13, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-07-14.png", "July 14, 2016", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2016-07-24.png", "July 24, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-07-29.png", "July 29, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-08-03.png", "August 3, 2016", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2016-08-13.png", "August 13, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-08-14.png", "August 14, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-08-23.png", "August 23, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-08-30.png", "August 30, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-09-02.png", "September 2, 2016", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2016-09-12.png", "September 12, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-09-15.png", "September 15, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-09-22.png", "September 22, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-10-01.png", "October 1, 2016", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2016-10-02.png", "October 2, 2016", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2016-10-12.png", "October 12, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-10-17.png", "October 17, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-10-22.png", "October 22, 2016", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2016-11-01.png", "November 1, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-11-02.png", "November 2, 2016", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2016-11-11.png", "November 11, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-11-18.png", "November 18, 2016", "Landsat 8")
+		+image-tile("/images/sentinel-2_2016-11-21.png", "November 21, 2016", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2016-12-01.png", "December 1, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-12-04.png", "December 4, 2016", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2016-12-11.png", "December 11, 2016", "Sentinel 2")
+		+image-tile("/images/LANDSAT_8_2016-12-20.png", "December 20, 2016", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2016-12-21.png", "December 21, 2016", "Sentinel 2")
+
+	+section-divider
+		h2 2017
+		h2.subtitle Interiors and landscaping
+
+	+image-grid
+		+image-tile("/images/LANDSAT_8_2017-01-05.png", "January 5, 2017", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2017-01-10.png", "January 10, 2017", "Sentinel 2")
+		//- +image-tile("/images/LANDSAT_8_2017-01-21.png", "January 21, 2017", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2017-01-30.png", "January 30, 2017", "Sentinel 2")
+		//- +image-tile("/images/LANDSAT_8_2017-02-06.png", "February 6, 2017", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2017-02-09.png", "February 9, 2017", "Sentinel 2")
+		//- +image-tile("/images/sentinel-2_2017-02-19.png", "February 19, 2017", "Sentinel 2")
+		//- +image-tile("/images/LANDSAT_8_2017-02-22.png", "February 22, 2017", "Landsat 8")
+		+image-tile("/images/sentinel-2_2017-03-01.png", "March 1, 2017", "Sentinel 2")
+		//- +image-tile("/images/LANDSAT_8_2017-03-10.png", "March 10, 2017", "Landsat 8")
+		//- +image-tile("/images/sentinel-2_2017-03-11.png", "March 11, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-03-21.png", "March 21, 2017", "Sentinel 2")
+		//- +image-tile("/images/LANDSAT_8_2017-03-26.png", "March 26, 2017", "Landsat 8")
+		+image-tile("/images/sentinel-2_2017-03-31.png", "March 31, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-04-10.png", "April 10, 2017", "Sentinel 2")
+		//- +image-tile("/images/LANDSAT_8_2017-04-11.png", "April 11, 2017", "Landsat 8")
+		+image-tile("/images/sentinel-2_2017-04-20.png", "April 20, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-04-30.png", "April 30, 2017", "Sentinel 2")
+		//- +image-tile("/images/sentinel-2_2017-05-10.png", "May 10, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-05-20.png", "May 20, 2017", "Sentinel 2")
+		//- +image-tile("/images/sentinel-2_2017-05-30.png", "May 30, 2017", "Sentinel 2")
+		//- +image-tile("/images/sentinel-2_2017-06-09.png", "June 9, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-06-19.png", "June 19, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-06-29.png", "June 29, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-07-04.png", "July 4, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-07-09.png", "July 9, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-07-19.png", "July 19, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-07-24.png", "July 24, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-07-29.png", "July 29, 2017", "Sentinel 2")
+		//- +image-tile("/images/sentinel-2_2017-08-03.png", "August 3, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-08-08.png", "August 8, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-08-13.png", "August 13, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-08-18.png", "August 18, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-08-23.png", "August 23, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-09-02.png", "September 2, 2017", "Sentinel 2")
+		//- +image-tile("/images/sentinel-2_2017-09-07.png", "September 7, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-09-12.png", "September 12, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-09-17.png", "September 17, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-09-22.png", "September 22, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-09-27.png", "September 27, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-10-02.png", "October 2, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-10-07.png", "October 7, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-10-12.png", "October 12, 2017", "Sentinel 2")
+		//- +image-tile("/images/sentinel-2_2017-10-17.png", "October 17, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-10-22.png", "October 22, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-10-27.png", "October 27, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-11-01.png", "November 1, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-11-06.png", "November 6, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-11-11.png", "November 11, 2017", "Sentinel 2")
+		//- +image-tile("/images/sentinel-2_2017-11-16.png", "November 16, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-11-21.png", "November 21, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-12-01.png", "December 1, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-12-06.png", "December 6, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-12-11.png", "December 11, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-12-16.png", "December 16, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-12-21.png", "December 21, 2017", "Sentinel 2")
+		+image-tile("/images/sentinel-2_2017-12-26.png", "December 26, 2017", "Sentinel 2")
+
+block related-projects
+	+project('Visualizing the Space of Logos of the Fortune 500.', '../images/Fortune_500_Thumbnail.png', '../visualizing_the_fortune_500/')
+	+project('Measuring corn production, in every county, every day.', '../images/Corn_Thumbnail.gif', '../measuring_corn_production_in_every_county_every_day/')
+	+project('From sensors to action.', '../images/Sensors_Thumbnail.svg', '../from_sensors_to_action/')

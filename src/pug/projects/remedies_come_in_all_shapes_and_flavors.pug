@@ -1,0 +1,33 @@
+extends ../_layouts/project.pug
+
+block variables
+	- var title = 'Remedies come in all shapes and flavors.'
+
+block description
+	.description
+		h3 Description
+		p Delicatessens in San Francisco are a dime a dozen. Unfortunately, most don't have the budget to obtain design services that would help separate them from the crowd and speak to the quality of their establishment. My objective was to select an existing local company that could benefit from stronger design, in an effort to strengthen their brand equity and create a niche market.
+		p After a fair amount of research, I learned of a neighborhood deli in the Lower Haight with an amazing story. Staples of their community for over 22 years, Jack and Margaret Chang have had numerous articles published about their discovery of a miraculous concoction rooted in peanut milk. Nutritious, yet easy on the body many have claimed it has helped them deal with, and overcome, a wide array of diseases. The wall in their little deli, full of customer testimonials, is proof to how well it has been received. It was this rich history and commitment to their customers that made for a great starting point for brand development. In a city where the bar is set high for food standards and healthful ingredients, it made sense that the Earthnuts' brand would revolve around their specialty product that has received so much attention.
+
+block metadata
+	+metadata("University", "Academy of Art University")
+	+metadata("Class", "GR.322 Package Design 2")
+	+metadata("Professor", "Tom McNulty")
+	+metadata("Category", "Packaging")
+
+block content
+	+image-wide("Earthnuts_1")
+	.img-row
+		+image-half("Earthnuts_2a")
+		+image-half("Earthnuts_2b")
+	.img-row
+		+image-half("Earthnuts_3a")
+		+image-half("Earthnuts_3b")
+	+image-wide("Earthnuts_4")
+	+image-wide("Earthnuts_5")
+	+image-wide("Earthnuts_6")
+
+block related-projects
+	+project('Mr. Potato Head is for the birds.', '../images/Birdhouse_00.jpg', '../mr_potato_head_is_for_the_birds/')
+	+project('Gardeners always get their hands in the dirt.', '../images/French_Paper_00.jpg', '../gardeners_always_get_their_hands_in_the_dirt/')
+	+project('Raise your glass to Dorian Gray.', '../images/Magnolia_00.jpg', '../raise_your_glass_to_dorian_gray/')
