@@ -1,0 +1,65 @@
+extends ../_layouts/project.pug
+
+block variables
+	- var title = "The tic-tac-toe solution space."
+	- var description = "In this visualization, we examine what Herbert Simon might call the 'solution space' for tic-tac-toe, a compound visualization of all its solutions—in a single artifact."
+	- var image = "http://knutsynstad.com/images/The_Tic_Tac_Toe_Social.png"
+	- var url = "http://knutsynstad.com/the_tic_tac_toe_solution_space"
+
+block header
+	+social(title, description, image, url)
+
+block description
+	.description
+		h3 Description
+		p In this visualization, we examine what Herbert Simon might call the &#8220;solution space&#8221; for tic-tac-toe, a compound visualization of all its solutions&mdash;every legal game move and the connections between them&mdash;in a single artifact.
+
+		p Most of us have played tic-tac-toe. It's a deceptively simple game. Two players claim unique symbols (<code>X</code> or <code>O</code>) before alternating turns in placing their symbol in an empty cell within a 3-by-3 grid. The first player to place 3 of their symbols in a row, either cardinally or diagonally, wins.
+
+		p End conditions are clear; either a player wins, or the game is a draw. The myriad ways of getting there are what makes the game fun. But what does the solution to tic-tac-toe look like? Drawing a single winning combination does not do justice to the complexity of the game.
+
+		p Instead, imagine a map of all possible paths from blank board to finished game. We might call this the &#8220;solution space&#8221; for tic-tac-toe, where each path is but one way to navigate through the space.
+
+		p How large is the solution space? Well, for the first move, there are 9 cells available. For the second, there are 8, and so on. Follow to completion, and we get <code>9&times;8&times;7&times;6&times;5&times;4&times;3&times;2&times;1</code> or <code>9!</code> boards for the final level. For each level <code>n</code> of gameplay, there are <code>9!/(9-n)!</code> boards in total. By adding the level totals together, we get an &#8220;upper bound&#8221; of 986,410 boards&mdash;far too many to represent meaningfully.
+
+		p For the visualization to be meaningful, the number of boards must be reduced. We do this by introducing 3 rules; (1) removing duplicate boards reduces the count to 6,046, (2) removing illegal moves (play after a win) reduces the count to 5,478, and (3) by removing symmetric duplicates (rotational and reflectional) we are left with 765 unique boards. This poster displays them all in a matrix.
+
+
+block metadata
+	+metadata("Agency", "Dubberly Design Office")
+	+metadata("Direction", "Hugh Dubberly")
+	+metadata("Design intern", "Marina Menendez-Pidal")
+	+metadata("Categories", "Information Design", "Computational Design", "Solution Space")
+	+metadata("Year", "2019")
+
+block content
+	h2 27 &times; 38 inch poster
+	+image-wide("Tic_Tac_Toe_Poster_Full")(class="shadow")
+	+image-wide("Tic_Tac_Toe_Detail")(class="shadow")
+	+image-wide("Tic_Tac_Toe_Multiple")(class="shadow")
+	+image-wide("Tic_Tac_Toe_Legend")(class="shadow")
+
+	h2 The interactive website places emphasis on the connections between boards.
+	+slideshow(class="shadow")
+		li.slide
+			img.img-wide(src="/images/Tic_Tac_Toe_Website.svg", alt=title)
+		li.slide
+			img.img-wide(src="/images/Tic_Tac_Toe_Website_About.svg", alt=title)
+	+slideshow(class="shadow")
+		li.slide
+			img.img-wide(src="/images/Tic_Tac_Toe_Graph_1.svg", alt=title)
+		li.slide
+			img.img-wide(src="/images/Tic_Tac_Toe_Graph_2.svg", alt=title)
+		li.slide
+			img.img-wide(src="/images/Tic_Tac_Toe_Graph_3.svg", alt=title)
+
+	h2 Links.
+	+buttons
+		+button("Download poster (PDF)", "/files/Tic-Tac-Toe_1901016.pdf")
+		+button("Launch interactive", "http://tictactoe.dubberly.com")
+		+button("Source code", "https://github.com/knutsynstad/tic-tac-toe")
+
+block related-projects
+	+project('Mapping family caregiving.', '../images/Caremaps_0.png', '../mapping_family_caregiving/')
+	+project('Visualizing the Space of Logos of the Fortune 500.', '../images/Fortune_500_Thumbnail.png', '../visualizing_the_fortune_500/')
+	+project('From sensors to action.', '../images/Sensors_Thumbnail.svg', '../from_sensors_to_action/')

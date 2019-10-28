@@ -5,6 +5,8 @@ include ../_mixins/slideshow
 include ../_mixins/slide
 include ../_mixins/image-grid
 include ../_mixins/section-divider
+include ../_mixins/meta-social
+include ../_mixins/buttons
 
 block variables
 
@@ -13,11 +15,13 @@ html
 	head
 		meta(charset='utf-8')
 		title= title
-		meta(name='description', content='Portfolio of Knut M. Synstad')
+		if !description
+			meta(name='description', content='Portfolio of Knut M. Synstad')
 		meta(name='author', content='Knut M. Synstad')
 		//- meta(name='keywords', content='')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(rel='icon' href='/favicon.ico' type='image/x-icon')
+		block header
 	body(data-pagetype="project")
 		include ../../svg/symbols.svg
 		header

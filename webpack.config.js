@@ -135,6 +135,10 @@ module.exports = {
             template: "./src/pug/projects/modeling_diabetes.pug",
             filename: "modeling_diabetes/index.html"
         }),
+        new HtmlWebPackPlugin({
+            template: "./src/pug/projects/the_tic_tac_toe_solution_space.pug",
+            filename: "the_tic_tac_toe_solution_space/index.html"
+        }),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
