@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+      @apply text-9xl leading-none font-bold tracking-tighter;
+    }
+    h2 {
+      @apply text-4xl leading-none font-bold tracking-tighter;
+    }
+    h3 {
+        @apply text-lg font-bold;
+      }
+    p {
+        @apply text-lg;
+    }
+    a {
+      @apply text-lg underline decoration-dotted hover:decoration-solid;
+  }
+  }

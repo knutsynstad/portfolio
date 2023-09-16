@@ -1,7 +1,0 @@
-mixin project(name, image, href)
-	a(href=href, class=attributes.class).project
-		img.project-thumbnail(src=image, alt=name)
-		p
-			- if (attributes.locked)
-				svg.icon.locked: use(xlink:href='#icon-lock')
-			| #{name}
