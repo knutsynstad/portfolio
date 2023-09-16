@@ -13,69 +13,85 @@ import RedditMaps6 from "./assets/reddit-maps-6.png";
 import RedditMaps7 from "./assets/reddit-maps-7.png";
 
 const data = {
-    id: "reddit_maps",
-    metadata: [
+  id: "reddit_maps",
+  metadata: [
+    {
+      title: "Company",
+      values: [
         {
-            title: "Company",
-            values: [
-                {
-                    name: "Reddit",
-                    url: "https://www.redditinc.com/",
-                },
-            ],
+          name: "Reddit",
+          url: "https://www.redditinc.com/",
         },
+      ],
+    },
+    {
+      title: "Role",
+      values: [{ name: "Design Lead" }, { name: "Developer" }],
+    },
+    {
+      title: "Categories",
+      values: [
+        { name: "Snoosweek" },
+        { name: "Solution Space" },
+        { name: "Prototype" },
+      ],
+    },
+    {
+      title: "Year",
+      values: [
         {
-            title: "Role",
-            values: [
-                {name: "Design Lead"},
-                {name: "Developer"},
-            ],
+          name: "2022",
         },
-        {
-            title: "Categories",
-            values: [
-                { name: "Snoosweek" },
-                { name: "Solution Space" },
-                { name: "Prototype" },
-            ],
-        },
-        {
-            title: "Year",
-            values: [
-                {
-                    name: "2022",
-                },
-            ],
-        },
-    ],
-    title: "Reddit Maps.",
-    description: (
-        <>
-            <p>
-                Finding the right community on Reddit can be magical. It can be
-                a place to find support, share a passion, or just have a laugh.
-                But with thousands of active communities, finding the right ones for you can be
-                difficult. During a weeklong hackathon (Snoosweek) in the spring of 2022, I partnered with colleges from the Machine Learning and Curation teams to explore a new way of interacting with Reddit&apos;s Space of Communities.
-            </p>
-            <p>
-                Reddit Maps is an navigational tool for the Space of Communities. Communities are organized by content similarity, creating thematic clusters. Additional embeddings are available to create additional lenses and timeslices. From content and audience similarity to temporal trends, Reddit Maps enable a new way to explore communities on Reddit.
-            </p>
-            <p>
-                The prototype was built using <a href="https://vitejs.dev/" target="_blank">Vite</a>, <a href="https://www.sigmajs.org/" target="_blank">Sigma.js</a>, and <a href="https://graphology.github.io/" target="_blank">Graphology.js</a>.
-            </p>
-        </>
-    ),
+      ],
+    },
+  ],
+  title: "Reddit Maps.",
+  description: (
+    <>
+      <p>
+        Finding the right community on Reddit can be magical. It can be a place
+        to find support, share a passion, or just have a laugh. But with
+        thousands of active communities, finding the right ones for you can be
+        difficult. During a weeklong hackathon (Snoosweek) in the spring of
+        2022, I partnered with colleges from the Machine Learning and Curation
+        teams to explore a new way of interacting with Reddit&apos;s Space of
+        Communities.
+      </p>
+      <p>
+        Reddit Maps is an navigational tool for the Space of Communities.
+        Communities are organized by content similarity, creating thematic
+        clusters. Additional embeddings are available to create additional
+        lenses and timeslices. From content and audience similarity to temporal
+        trends, Reddit Maps enable a new way to explore communities on Reddit.
+      </p>
+      <p>
+        The prototype was built using{" "}
+        <a href="https://vitejs.dev/" target="_blank">
+          Vite
+        </a>
+        ,{" "}
+        <a href="https://www.sigmajs.org/" target="_blank">
+          Sigma.js
+        </a>
+        , and{" "}
+        <a href="https://graphology.github.io/" target="_blank">
+          Graphology.js
+        </a>
+        .
+      </p>
+    </>
+  ),
 };
 
 const Project = () => (
-    <ProjectDetailsPage data={data}>
-        <div className="flex flex-col gap-8">
-            <Image src={RedditMaps2} alt={data.title} rounded />
-            <Image src={RedditMaps3} alt={data.title} rounded />
-            <Image src={RedditMaps5} alt={data.title} rounded />
-            <Image src={RedditMaps7} alt={data.title} rounded />
-        </div>
-    </ProjectDetailsPage>
+  <ProjectDetailsPage data={data}>
+    <div className="flex flex-col gap-8">
+      <Image src={RedditMaps2} alt={data.title} rounded />
+      <Image src={RedditMaps3} alt={data.title} rounded />
+      <Image src={RedditMaps5} alt={data.title} rounded />
+      <Image src={RedditMaps7} alt={data.title} rounded />
+    </div>
+  </ProjectDetailsPage>
 );
 
 export default Project;

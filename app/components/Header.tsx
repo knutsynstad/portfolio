@@ -1,20 +1,9 @@
-"use client";
-import styled from "styled-components";
-
-const Heading = styled.h2`
-    padding: 8px 16px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-`;
-
 interface H2Props {
-    label: string;
+  label: string;
 }
 
-const H2 = (props: H2Props) => {
-    return <Heading>{props.label}</Heading>;
+const H2 = ({ label }: H2Props) => {
+  return <h2 className="p-2 bg-black text-white text-center">{label}</h2>;
 };
 
 export default H2;
