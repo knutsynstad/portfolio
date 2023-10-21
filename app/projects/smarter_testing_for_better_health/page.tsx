@@ -1,6 +1,5 @@
 import Image from "@/components/Image";
 import Slideshow from "@/components/Slideshow";
-import Slide from "@/components/Slide";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
@@ -10,7 +9,6 @@ import AST_Identity_Black from "../../../public/images/AST_Identity_Black.svg";
 import AST_Stationery from "../../../public/images/AST_Stationery.svg";
 
 const title = "Smarter testing for better health.";
-
 const description = (
   <>
     <p>
@@ -33,7 +31,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "Agency",
@@ -81,17 +78,14 @@ const Project = () => (
       metadata={metadata}
     />
     <main>
-      <Slideshow shadow>
-        <Slide>
-          <Image src={AST_Identity_Color} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={AST_Identity_Blue} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={AST_Identity_Black} alt={title} />
-        </Slide>
-      </Slideshow>
+      <Slideshow
+        slides={[
+          { image: AST_Identity_Color },
+          { image: AST_Identity_Blue },
+          { image: AST_Identity_Black },
+        ]}
+        shadow
+      />
 
       <Image src={AST_Stationery} alt={title} rounded />
     </main>

@@ -2,6 +2,7 @@
 
 module.exports = {
   reactStrictMode: true,
+  cssModules: true,
   async redirects() {
     return [
       {

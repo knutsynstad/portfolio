@@ -1,7 +1,5 @@
-import Slideshow from "@/components/Slideshow";
-import Slide from "@/components/Slide";
-import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
+import Image from "next/image";
 
 // Assets
 import Life1 from "../../../public/images/100_People_01.jpg";
@@ -12,7 +10,6 @@ import Life5 from "../../../public/images/100_People_05.jpg";
 import Life6 from "../../../public/images/100_People_06.jpg";
 
 const title = "Moving mountains to shape the future.";
-
 const description = (
   <>
     <p>
@@ -32,7 +29,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "University",

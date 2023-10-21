@@ -1,9 +1,6 @@
+import ProjectHeader from "@/components/ProjectHeader";
 import Image from "@/components/Image";
 import Slideshow from "@/components/Slideshow";
-import Slide from "@/components/Slide";
-import ButtonGroup from "@/components/ButtonGroup";
-import Button from "@/components/Button";
-import ProjectHeader from "@/components/ProjectHeader";
 
 import Viz from "../../../public/images/logos_lap_end.png";
 
@@ -111,59 +108,39 @@ const Project = () => (
       </figure>
 
       <h2>The introduction outlines the process, step by step.</h2>
-      <Slideshow shadow>
-        <Slide>
-          <Image src={Introduction} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={IntroductionAccordion} alt={title} />
-        </Slide>
-      </Slideshow>
+      <Slideshow
+        slides={[{ image: Introduction }, { image: IntroductionAccordion }]}
+        shadow
+      />
 
       <h2>Visualization</h2>
-      <Slideshow shadow>
-        <Slide>
-          <Image src={Visualization} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={Instruction} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={VisualizationLoading} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={VisualizationHoverstates} alt={title} />
-        </Slide>
-      </Slideshow>
+      <Slideshow
+        slides={[
+          { image: Visualization },
+          { image: Instruction },
+          { image: VisualizationLoading },
+          { image: VisualizationHoverstates },
+        ]}
+        shadow
+      />
 
       <h2>Controls and more</h2>
-      <Slideshow shadow>
-        <Slide>
-          <Image src={FortuneConfiguration} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={VisualizationMoreMenu} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={VisualizationShareMenu} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={About} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={AboutHover} alt={title} />
-        </Slide>
-      </Slideshow>
+      <Slideshow
+        slides={[
+          { image: FortuneConfiguration },
+          { image: VisualizationMoreMenu },
+          { image: VisualizationShareMenu },
+          { image: About },
+          { image: AboutHover },
+        ]}
+        shadow
+      />
 
       <h2>Application map</h2>
-      <Slideshow shadow>
-        <Slide>
-          <Image src={ApplicationMapLeft} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={ApplicationMapRight} alt={title} />
-        </Slide>
-      </Slideshow>
+      <Slideshow
+        slides={[{ image: ApplicationMapLeft }, { image: ApplicationMapRight }]}
+        shadow
+      />
     </main>
   </>
 );

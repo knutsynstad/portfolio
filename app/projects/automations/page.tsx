@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import Slideshow from "@/components/Slideshow";
-import Slide from "@/components/Slide";
 import StickyNote from "@/components/StickyNote";
 
 import Exhibit1 from "../../../public/images/automation_timeline_1.png";
@@ -43,7 +42,6 @@ import AutomationsStepControlsDynamic from "./assets/automations-step-controls-d
 import AutomationsPropertyControls from "./assets/automations-property-controls.png";
 
 const title = "Automating your Reddit workflows.";
-
 const description = (
   <>
     <p>
@@ -74,7 +72,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "Company",
@@ -119,7 +116,6 @@ const metadata = [
     ],
   },
 ];
-
 const color = "#DAE0E3";
 
 const Project = () => (
@@ -173,39 +169,28 @@ const Project = () => (
 
       <h1>User journey</h1>
       <h2>Creating an automation</h2>
-      <Slideshow>
-        <Slide>
-          <Image src={AutomationsEmptyState} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={AutomationsChangingTheName} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={AutomationsSelectTrigger} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={AutomationsTimelineWithTrigger} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={AutomationsAddAStep} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={AutomationsEmptyMessage} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={AutomationsPopulatedMessage} alt={title} />
-        </Slide>
-      </Slideshow>
+      <Slideshow
+        slides={[
+          { label: "Empty state", image: AutomationsEmptyState },
+          { label: "Changing the name", image: AutomationsChangingTheName },
+          { label: "Selecting a trigger", image: AutomationsSelectTrigger },
+          {
+            label: "Timeline with trigger",
+            image: AutomationsTimelineWithTrigger,
+          },
+          { label: "Adding a step", image: AutomationsAddAStep },
+          { label: "Empty message", image: AutomationsEmptyMessage },
+          { label: "Populated message", image: AutomationsPopulatedMessage },
+        ]}
+      />
 
       <h2 className="mt-16">Make as many Automations as you want</h2>
-      <Slideshow>
-        <Slide>
-          <Image src={AutomationsListPopulated} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={AutomationsListEmpty} alt={title} />
-        </Slide>
-      </Slideshow>
+      <Slideshow
+        slides={[
+          { label: "Empty state", image: AutomationsListEmpty },
+          { label: "Populated list", image: AutomationsListPopulated },
+        ]}
+      />
 
       <h1 className="mt-32 mb-32">Design rationale.</h1>
 

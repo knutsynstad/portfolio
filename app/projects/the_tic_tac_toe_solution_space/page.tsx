@@ -3,7 +3,6 @@ import Image from "@/components/Image";
 import ButtonGroup from "@/components/ButtonGroup";
 import Button from "@/components/Button";
 import Slideshow from "@/components/Slideshow";
-import Slide from "@/components/Slide";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
@@ -18,7 +17,6 @@ import Exhibit8 from "../../../public/images/Tic_Tac_Toe_Graph_2.svg";
 import Exhibit9 from "../../../public/images/Tic_Tac_Toe_Graph_3.svg";
 
 const title = "The tic-tac-toe solution space.";
-
 const description = (
   <>
     <p>
@@ -50,7 +48,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "Agency",
@@ -129,26 +126,22 @@ const Project = () => (
         boards.
       </h2>
 
-      <Slideshow shadow>
-        <Slide>
-          <Image src={Exhibit5} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={Exhibit6} alt={title} />
-        </Slide>
-      </Slideshow>
+      <Slideshow
+        slides={[
+          { label: "Default", image: Exhibit5 },
+          { label: "About Menu", image: Exhibit6 },
+        ]}
+        shadow
+      />
 
-      <Slideshow shadow>
-        <Slide>
-          <Image src={Exhibit7} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={Exhibit8} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={Exhibit9} alt={title} />
-        </Slide>
-      </Slideshow>
+      <Slideshow
+        slides={[
+          { label: "Default", image: Exhibit7 },
+          { label: "About Menu", image: Exhibit8 },
+          { label: "About Menu", image: Exhibit9 },
+        ]}
+        shadow
+      />
 
       <h2>Links.</h2>
       <ButtonGroup>

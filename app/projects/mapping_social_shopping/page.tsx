@@ -1,7 +1,6 @@
+import ProjectHeader from "@/components/ProjectHeader";
 import Image from "@/components/Image";
 import Slideshow from "@/components/Slideshow";
-import Slide from "@/components/Slide";
-import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
 import Sello_Social_Selling from "../../../public/images/Sello_Social_Selling.svg";
@@ -79,17 +78,14 @@ const Project = () => (
       <Image src={Sello_Social_Selling} alt={title} rounded />
 
       <h2>Merchant mobile application (iOS)</h2>
-      <Slideshow shadow>
-        <Slide>
-          <Image src={Sello_Merchant_Map_1} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={Sello_Merchant_Map_2} alt={title} />
-        </Slide>
-        <Slide>
-          <Image src={Sello_Merchant_Map_3} alt={title} />
-        </Slide>
-      </Slideshow>
+      <Slideshow
+        slides={[
+          { label: "Merchant mobile application", image: Sello_Merchant_Map_1 },
+          { label: "Merchant mobile application", image: Sello_Merchant_Map_2 },
+          { label: "Merchant mobile application", image: Sello_Merchant_Map_3 },
+        ]}
+        shadow
+      />
 
       <h2>Customer facing web store</h2>
       <Image src={Sello_Customer_Map} alt={title} rounded />

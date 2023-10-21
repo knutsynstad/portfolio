@@ -1,23 +1,41 @@
 "use client";
 import { useState } from "react";
 import Icon from "@/components/Icon";
+import Image, { StaticImageData } from "next/image";
 
-interface SlideshowProps {
-  children: React.ReactNode[];
+export type Slide = {
+  label?: string;
+  image: string | StaticImageData;
+};
+
+export interface SlideshowProps {
+  slides: Slide[];
   shadow?: boolean;
 }
 
-const Slideshow = ({ children, shadow }: SlideshowProps) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const slideCount = children.length;
+export const Slideshow = ({ slides, shadow }: SlideshowProps) => {
+  const [currentSlide, setSlide] = useState(0);
+  const caption = slides[currentSlide].label || "";
+  const slideCount = slides.length;
 
-  function nextSlide() {
-    setCurrentSlide((current) => (current + 1) % slideCount);
+  function next() {
+    setSlide((current) => (current + 1) % slideCount);
   }
 
-  function prevSlide() {
-    setCurrentSlide((current) => (current - 1 + slideCount) % slideCount);
+  function previous() {
+    setSlide((current) => (current - 1 + slideCount) % slideCount);
   }
+
+  const slideContent = slides.map((slide, index) => {
+    return (
+      <div
+        className="relative w-full flex-shrink-0 transition-all ease-out duration-300"
+        key={index}
+      >
+        <Image src={slide.image} alt={slide.label || ""} />
+      </div>
+    );
+  });
 
   return (
     <div className="w-full relative mb-8">
@@ -34,19 +52,16 @@ const Slideshow = ({ children, shadow }: SlideshowProps) => {
           className="flex flex-nowrap gap-0 transition-transform ease-out duration-200"
           style={{ transform: `translateX(${currentSlide * -100}%)` }}
         >
-          {children}
+          {slideContent}
         </div>
       </div>
 
       <div className="grid grid-cols-12 gap-8">
-        <p className="col-start-1 col-end-7">
-          In this example, were creating a new object slideProps that contains
-          only the slides attribute from the components props.
-        </p>
+        <p className="col-start-1 col-end-7">{caption}</p>
         <div className="mt-[-8px] select-none h-min items-center flex gap-2 justify-end col-start-7 col-end-13">
           <button
             className="p-2 border-none rounded-full cursor-pointer bg-transparent hover:bg-gray-200"
-            onClick={prevSlide}
+            onClick={previous}
           >
             <Icon type="arrow-back" />
           </button>
@@ -55,7 +70,7 @@ const Slideshow = ({ children, shadow }: SlideshowProps) => {
           } / ${slideCount}`}</span>
           <button
             className="p-2 border-none rounded-full cursor-pointer bg-transparent hover:bg-gray-200"
-            onClick={nextSlide}
+            onClick={next}
           >
             <Icon type="arrow-forward" />
           </button>
