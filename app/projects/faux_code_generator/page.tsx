@@ -1,5 +1,5 @@
-import ProjectDetailsPage from "@/layouts/ProjectDetailsPage";
 import Image from "@/components/Image";
+import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
 import Sensors1 from "../../../public/images/Sensors_1.svg";
@@ -9,56 +9,55 @@ import Sensors4 from "../../../public/images/Sensors_4.svg";
 import Sensors5 from "../../../public/images/Sensors_5.svg";
 import Sensors6 from "../../../public/images/Sensors_6.svg";
 
-const data = {
-  id: "from_sensors_to_action",
-  metadata: [
-    {
-      title: "Category",
-      values: [{ name: "Tool" }],
-    },
-    {
-      title: "Featured in",
-      values: [
-        {
-          name: "Product Hunt",
-          url: "https://www.producthunt.com/posts/faux-code-generator",
-        },
-        {
-          name: "CSS-Tricks",
-          url: "https://css-tricks.com/fake-code/",
-        },
-      ],
-    },
-    {
-      title: "Links",
-      values: [
-        {
-          name: "Faux Code Generator",
-          url: "http://knutsynstad.com/fauxcode/",
-        },
-        {
-          name: "Repository",
-          url: "https://github.com/knutsynstad/faux-code-generator",
-        },
-      ],
-    },
-    {
-      title: "Year",
-      values: [{ name: "2020" }],
-    },
-  ],
-  title: "A faux code generator.",
-  description: (
-    <>
-      <p>
-        Designers and illustrators sometimes create abstracted imitations of
-        code for their technical illustrations and designs. This tool enables
-        easy creation of editable SVGs from real code and syntax highlights.
-      </p>
-      <p>Use a random, or provide your own, Github Gist.</p>
-    </>
-  ),
-};
+const title = "A faux code generator.";
+
+const description = (
+  <>
+    <p>
+      Designers and illustrators sometimes create abstracted imitations of code
+      for their technical illustrations and designs. This tool enables easy
+      creation of editable SVGs from real code and syntax highlights.
+    </p>
+    <p>Use a random, or provide your own, Github Gist.</p>
+  </>
+);
+
+const metadata = [
+  {
+    title: "Category",
+    values: [{ name: "Tool" }],
+  },
+  {
+    title: "Featured in",
+    values: [
+      {
+        name: "Product Hunt",
+        url: "https://www.producthunt.com/posts/faux-code-generator",
+      },
+      {
+        name: "CSS-Tricks",
+        url: "https://css-tricks.com/fake-code/",
+      },
+    ],
+  },
+  {
+    title: "Links",
+    values: [
+      {
+        name: "Faux Code Generator",
+        url: "http://knutsynstad.com/fauxcode/",
+      },
+      {
+        name: "Repository",
+        url: "https://github.com/knutsynstad/faux-code-generator",
+      },
+    ],
+  },
+  {
+    title: "Year",
+    values: [{ name: "2020" }],
+  },
+];
 
 const slides = [
   [Sensors1, "Sensors make point-in-time observations."],
@@ -76,16 +75,23 @@ const slides = [
 ];
 
 const Project = () => (
-  <ProjectDetailsPage data={data}>
-    <div className="flex flex-col gap-32">
-      {slides.map(([src, alt]) => (
-        <div key={alt}>
-          <h2 className="mb-8">{alt}</h2>
-          <Image src={src} alt={alt} rounded />
-        </div>
-      ))}
-    </div>
-  </ProjectDetailsPage>
+  <>
+    <ProjectHeader
+      title={title}
+      description={description}
+      metadata={metadata}
+    />
+    <main>
+      <div className="flex flex-col gap-32">
+        {slides.map(([src, alt]) => (
+          <div key={alt}>
+            <h2 className="mb-8">{alt}</h2>
+            <Image src={src} alt={alt} rounded />
+          </div>
+        ))}
+      </div>
+    </main>
+  </>
 );
 
 export default Project;

@@ -43,87 +43,91 @@ import AutomationsStepControlsDynamic from "./assets/automations-step-controls-d
 import AutomationsPropertyControls from "./assets/automations-property-controls.png";
 
 const title = "Automating your Reddit workflows.";
+
+const description = (
+  <>
+    <p>
+      {/* Context */}
+      AutoModerator is a site-wide moderation tool that you can set up and
+      customize in any subreddit to assist you in moderating that community. It
+      can handle many of the sometimes repetitive tasks you do as a mod.
+      Essentially it&apos;s a bot that you can program with rules or
+      instructions, to automate some of your moderating tasks.
+    </p>
+    <p>
+      {/* Problem */}
+      Unfortunately the barrier to entry for moderators has been too high.
+      Relatively few are comfortable writing the error-prone YAML configuration,
+      often thousands of lines line. Even fewer are comfortable writing
+      complicated regular expressions (regex).
+    </p>
+    <p>
+      {/* Opportunity */}
+      AutoMod is ancient and was built on our R2 infrastructure that powers old
+      reddit. We wanted to migrate automod to our new and shiny dev platform and
+      saw took the opportunity to reframe and rebuild it from the ground up.
+      Orders of magnitude more powerful than its predecesor and dead simple to
+      use.
+    </p>
+    <p>
+      Introducing Automations, a general purpose workflow Builder and Engine.
+    </p>
+  </>
+);
+
+const metadata = [
+  {
+    title: "Company",
+    values: [
+      {
+        name: "Reddit",
+        url: "https://www.reddit.com",
+      },
+    ],
+  },
+  {
+    title: "Team",
+    values: [
+      {
+        name: "Developer Platform",
+      },
+    ],
+  },
+  {
+    title: "Role",
+    values: [
+      {
+        name: "Design Lead",
+      },
+    ],
+  },
+  {
+    title: "Categories",
+    values: [
+      { name: "Strategy" },
+      { name: "UX Design" },
+      { name: "UI Design" },
+      { name: "Prototyping" },
+    ],
+  },
+  {
+    title: "Year",
+    values: [
+      {
+        name: "2022",
+      },
+    ],
+  },
+];
+
 const color = "#DAE0E3";
 
 const Project = () => (
   <>
     <ProjectHeader
       title={title}
-      description={
-        <>
-          <p>
-            {/* Context */}
-            AutoModerator is a site-wide moderation tool that you can set up and
-            customize in any subreddit to assist you in moderating that
-            community. It can handle many of the sometimes repetitive tasks you
-            do as a mod. Essentially it&apos;s a bot that you can program with
-            rules or instructions, to automate some of your moderating tasks.
-          </p>
-          <p>
-            {/* Problem */}
-            Unfortunately the barrier to entry for moderators has been too high.
-            Relatively few are comfortable writing the error-prone YAML
-            configuration, often thousands of lines line. Even fewer are
-            comfortable writing complicated regular expressions (regex).
-          </p>
-          <p>
-            {/* Opportunity */}
-            AutoMod is ancient and was built on our R2 infrastructure that
-            powers old reddit. We wanted to migrate automod to our new and shiny
-            dev platform and saw took the opportunity to reframe and rebuild it
-            from the ground up. Orders of magnitude more powerful than its
-            predecesor and dead simple to use.
-          </p>
-          <p>
-            Introducing Automations, a general purpose workflow Builder and
-            Engine.
-          </p>
-        </>
-      }
-      metadata={[
-        {
-          title: "Company",
-          values: [
-            {
-              name: "Reddit",
-              url: "https://www.reddit.com",
-            },
-          ],
-        },
-        {
-          title: "Team",
-          values: [
-            {
-              name: "Developer Platform",
-            },
-          ],
-        },
-        {
-          title: "Role",
-          values: [
-            {
-              name: "Design Lead",
-            },
-          ],
-        },
-        {
-          title: "Categories",
-          values: [
-            { name: "Strategy" },
-            { name: "UX Design" },
-            { name: "UI Design" },
-            { name: "Prototyping" },
-          ],
-        },
-        {
-          title: "Year",
-          values: [
-            {
-              name: "2022",
-            },
-          ],
-        },
-      ]}
+      description={description}
+      metadata={metadata}
     />
     <main className="flex flex-col gap-16 mb-32">
       <div

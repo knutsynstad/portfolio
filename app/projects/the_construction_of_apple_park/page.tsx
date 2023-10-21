@@ -1,5 +1,5 @@
-import ProjectDetailsPage from "@/layouts/ProjectDetailsPage";
 import Image from "@/components/Image";
+import ProjectHeader from "@/components/ProjectHeader";
 
 // 2012
 import Apple_NAIP_2012 from "../../../public/images/Apple_NAIP_2012.png";
@@ -140,43 +140,42 @@ import sentinel2_20171216 from "../../../public/images/sentinel-2_2017-12-16.png
 import sentinel2_20171221 from "../../../public/images/sentinel-2_2017-12-21.png";
 import sentinel2_20171226 from "../../../public/images/sentinel-2_2017-12-26.png";
 
-const data = {
-  id: "the_construction_of_apple_park",
-  title: "The construction of Apple Park.",
-  description: (
-    <>
-      <p>
-        Using platforms like Descartes Labs, everyone from hobbyists to
-        scientists can monitor the planet in near real-time for changes that
-        matter to them. Here I use public domain satellite and aerial imagery to
-        observe the construction of a new California landmark; Apple&apos;s $5
-        billion headquarters, Apple Park. Located in Cupertino, CA, where
-        HP&apos;s old campus one stood before they moved to Palo Alto in 2010.
-        Construction began in late 2013 and opened to employees in April of 2017
-        despite ongoing construction.
-      </p>
-      <p>
-        The imagery comes from NASA&apos;s Landsat 8 satellite, the European
-        Space Agency&apos;s (ESA) Copernicus Sentinel-2 satellites, and aerial
-        imagery from the United States Department of Agriculture&apos;s (USDA)
-        National Agriculture Imagery Program (NAIP), with spatial resolutions of
-        30 m, 10 m, and 50 cm per pixel resolution respectively. Images with
-        severe cloud cover have been excluded.
-      </p>
-      <p>Exhibits were created using the Descartes Labs python API.</p>
-    </>
-  ),
-  metadata: [
-    {
-      title: "Categories",
-      values: [
-        { name: "Remote sensing" },
-        { name: "Change detection" },
-        { name: "Satellites" },
-      ],
-    },
-  ],
-};
+const title = "The construction of Apple Park.";
+
+const description = (
+  <>
+    <p>
+      Using platforms like Descartes Labs, everyone from hobbyists to scientists
+      can monitor the planet in near real-time for changes that matter to them.
+      Here I use public domain satellite and aerial imagery to observe the
+      construction of a new California landmark; Apple&apos;s $5 billion
+      headquarters, Apple Park. Located in Cupertino, CA, where HP&apos;s old
+      campus one stood before they moved to Palo Alto in 2010. Construction
+      began in late 2013 and opened to employees in April of 2017 despite
+      ongoing construction.
+    </p>
+    <p>
+      The imagery comes from NASA&apos;s Landsat 8 satellite, the European Space
+      Agency&apos;s (ESA) Copernicus Sentinel-2 satellites, and aerial imagery
+      from the United States Department of Agriculture&apos;s (USDA) National
+      Agriculture Imagery Program (NAIP), with spatial resolutions of 30 m, 10
+      m, and 50 cm per pixel resolution respectively. Images with severe cloud
+      cover have been excluded.
+    </p>
+    <p>Exhibits were created using the Descartes Labs python API.</p>
+  </>
+);
+
+const metadata = [
+  {
+    title: "Categories",
+    values: [
+      { name: "Remote sensing" },
+      { name: "Change detection" },
+      { name: "Satellites" },
+    ],
+  },
+];
 
 type TileProps = {
   src: any;
@@ -201,246 +200,253 @@ const Tiles = ({ children }: any) => (
 );
 
 const Project = () => (
-  <ProjectDetailsPage data={data}>
-    <video autoPlay loop muted>
-      <source src="../../../public/videos/apple_park.mp4" type="video/mp4" />
-      <p>Your browser doesn&apos;t support HTML video.</p>
-    </video>
+  <>
+    <ProjectHeader
+      title={title}
+      description={description}
+      metadata={metadata}
+    />
+    <main>
+      <video autoPlay loop muted>
+        <source src="../../../public/videos/apple_park.mp4" type="video/mp4" />
+        <p>Your browser doesn&apos;t support HTML video.</p>
+      </video>
 
-    <h2>2012</h2>
-    <h2>Location of former HP Campus</h2>
-    <Image src={Apple_NAIP_2012} alt={data.title} />
-    <h3>May 20, 2012</h3>
-    <p>National Agriculture Imagery Program (NAIP)</p>
+      <h2>2012</h2>
+      <h2>Location of former HP Campus</h2>
+      <Image src={Apple_NAIP_2012} alt={title} />
+      <h3>May 20, 2012</h3>
+      <p>National Agriculture Imagery Program (NAIP)</p>
 
-    <h2>2013</h2>
-    <h2>Earthwork and demolition</h2>
-    <Tiles>
-      {[
-        [LANDSAT_8_20130416, "April 16, 2013", "Landsat 8"],
-        [LANDSAT_8_20130603, "June 3, 2013", "Landsat 8"],
-        [LANDSAT_8_20130619, "June 19, 2013", "Landsat 8"],
-        [LANDSAT_8_20130705, "July 5, 2013", "Landsat 8"],
-        [LANDSAT_8_20130721, "July 21, 2013", "Landsat 8"],
-        [LANDSAT_8_20130806, "August 6, 2013", "Landsat 8"],
-        [LANDSAT_8_20130907, "September 7, 2013", "Landsat 8"],
-        [LANDSAT_8_20130923, "September 23, 2013", "Landsat 8"],
-        [LANDSAT_8_20131025, "October 25, 2013", "Landsat 8"],
-        [LANDSAT_8_20131110, "November 10, 2013", "Landsat 8"],
-        [LANDSAT_8_20131212, "December 12, 2013", "Landsat 8"],
-        [LANDSAT_8_20131228, "December 28, 2013", "Landsat 8"],
-      ].map(([src, date, instrument]) => (
-        <Tile
-          key={`${instrument}-${date}`}
-          src={src}
-          date={date}
-          instrument={instrument}
-        />
-      ))}
-    </Tiles>
+      <h2>2013</h2>
+      <h2>Earthwork and demolition</h2>
+      <Tiles>
+        {[
+          [LANDSAT_8_20130416, "April 16, 2013", "Landsat 8"],
+          [LANDSAT_8_20130603, "June 3, 2013", "Landsat 8"],
+          [LANDSAT_8_20130619, "June 19, 2013", "Landsat 8"],
+          [LANDSAT_8_20130705, "July 5, 2013", "Landsat 8"],
+          [LANDSAT_8_20130721, "July 21, 2013", "Landsat 8"],
+          [LANDSAT_8_20130806, "August 6, 2013", "Landsat 8"],
+          [LANDSAT_8_20130907, "September 7, 2013", "Landsat 8"],
+          [LANDSAT_8_20130923, "September 23, 2013", "Landsat 8"],
+          [LANDSAT_8_20131025, "October 25, 2013", "Landsat 8"],
+          [LANDSAT_8_20131110, "November 10, 2013", "Landsat 8"],
+          [LANDSAT_8_20131212, "December 12, 2013", "Landsat 8"],
+          [LANDSAT_8_20131228, "December 28, 2013", "Landsat 8"],
+        ].map(([src, date, instrument]) => (
+          <Tile
+            key={`${instrument}-${date}`}
+            src={src}
+            date={date}
+            instrument={instrument}
+          />
+        ))}
+      </Tiles>
 
-    <h2>2014</h2>
-    <h2>Foundations</h2>
-    <Tiles>
-      {[
-        [LANDSAT_8_20140113, "January 13, 2014", "Landsat 8"],
-        [LANDSAT_8_20140318, "March 18, 2014", "Landsat 8"],
-        [LANDSAT_8_20140403, "April 8, 2014", "Landsat 8"],
-        [LANDSAT_8_20140419, "April 19, 2014", "Landsat 8"],
-        [LANDSAT_8_20140521, "May 21, 2014", "Landsat 8"],
-      ].map(([src, date, instrument]) => (
-        <Tile
-          key={`${instrument}-${date}`}
-          src={src}
-          date={date}
-          instrument={instrument}
-        />
-      ))}
-    </Tiles>
+      <h2>2014</h2>
+      <h2>Foundations</h2>
+      <Tiles>
+        {[
+          [LANDSAT_8_20140113, "January 13, 2014", "Landsat 8"],
+          [LANDSAT_8_20140318, "March 18, 2014", "Landsat 8"],
+          [LANDSAT_8_20140403, "April 8, 2014", "Landsat 8"],
+          [LANDSAT_8_20140419, "April 19, 2014", "Landsat 8"],
+          [LANDSAT_8_20140521, "May 21, 2014", "Landsat 8"],
+        ].map(([src, date, instrument]) => (
+          <Tile
+            key={`${instrument}-${date}`}
+            src={src}
+            date={date}
+            instrument={instrument}
+          />
+        ))}
+      </Tiles>
 
-    <Image src={Apple_NAIP_2014} alt={data.title} />
-    <h3>June 6, 2014</h3>
-    <p>National Agriculture Imagery Program (NAIP)</p>
+      <Image src={Apple_NAIP_2014} alt={title} />
+      <h3>June 6, 2014</h3>
+      <p>National Agriculture Imagery Program (NAIP)</p>
 
-    <Tiles>
-      {[
-        [LANDSAT_8_20140606, "June 6, 2014", "Landsat 8"],
-        [LANDSAT_8_20140622, "June 22, 2014", "Landsat 8"],
-        [LANDSAT_8_20140708, "July 8, 2014", "Landsat 8"],
-        [LANDSAT_8_20140724, "July 24, 2014", "Landsat 8"],
-        [LANDSAT_8_20140809, "August 9, 2014", "Landsat 8"],
-        [LANDSAT_8_20140910, "September 10, 2014", "Landsat 8"],
-        [LANDSAT_8_20140926, "September 26, 2014", "Landsat 8"],
-        [LANDSAT_8_20141012, "October 12, 2014", "Landsat 8"],
-        [LANDSAT_8_20141028, "October 28, 2014", "Landsat 8"],
-        [LANDSAT_8_20141231, "December 31, 2014", "Landsat 8"],
-      ].map(([src, date, instrument]) => (
-        <Tile
-          key={`${instrument}-${date}`}
-          src={src}
-          date={date}
-          instrument={instrument}
-        />
-      ))}
-    </Tiles>
+      <Tiles>
+        {[
+          [LANDSAT_8_20140606, "June 6, 2014", "Landsat 8"],
+          [LANDSAT_8_20140622, "June 22, 2014", "Landsat 8"],
+          [LANDSAT_8_20140708, "July 8, 2014", "Landsat 8"],
+          [LANDSAT_8_20140724, "July 24, 2014", "Landsat 8"],
+          [LANDSAT_8_20140809, "August 9, 2014", "Landsat 8"],
+          [LANDSAT_8_20140910, "September 10, 2014", "Landsat 8"],
+          [LANDSAT_8_20140926, "September 26, 2014", "Landsat 8"],
+          [LANDSAT_8_20141012, "October 12, 2014", "Landsat 8"],
+          [LANDSAT_8_20141028, "October 28, 2014", "Landsat 8"],
+          [LANDSAT_8_20141231, "December 31, 2014", "Landsat 8"],
+        ].map(([src, date, instrument]) => (
+          <Tile
+            key={`${instrument}-${date}`}
+            src={src}
+            date={date}
+            instrument={instrument}
+          />
+        ))}
+      </Tiles>
 
-    <h2>2015</h2>
-    <h2>Framing</h2>
-    <Tiles>
-      {[
-        [LANDSAT_8_20150201, "February 1, 2015", "Landsat 8"],
-        [LANDSAT_8_20150305, "March 5, 2015", "Landsat 8"],
-        [LANDSAT_8_20150321, "March 21, 2015", "Landsat 8"],
-        [LANDSAT_8_20150422, "April 22, 2015", "Landsat 8"],
-        [LANDSAT_8_20150508, "May 8, 2015", "Landsat 8"],
-        [LANDSAT_8_20150524, "May 24, 2015", "Landsat 8"],
-        [LANDSAT_8_20150625, "June 25, 2015", "Landsat 8"],
-        [LANDSAT_8_20150711, "July 11, 2015", "Landsat 8"],
-        [LANDSAT_8_20150727, "July 27, 2015", "Landsat 8"],
-        [LANDSAT_8_20150812, "August 12, 2015", "Landsat 8"],
-        [LANDSAT_8_20150828, "August 28, 2015", "Landsat 8"],
-        [sentinel2_20150918, "September 18, 2015", "Sentinel 2"],
-        [LANDSAT_8_20151031, "October 31, 2015", "Landsat 8"],
-        [LANDSAT_8_20151116, "November 16, 2015", "Landsat 8"],
-        [sentinel2_20151217, "December 17, 2015", "Sentinel 2"],
-        [LANDSAT_8_20151218, "December 18, 2015", "Landsat 8"],
-      ].map(([src, date, instrument]) => (
-        <Tile
-          key={`${instrument}-${date}`}
-          src={src}
-          date={date}
-          instrument={instrument}
-        />
-      ))}
-    </Tiles>
+      <h2>2015</h2>
+      <h2>Framing</h2>
+      <Tiles>
+        {[
+          [LANDSAT_8_20150201, "February 1, 2015", "Landsat 8"],
+          [LANDSAT_8_20150305, "March 5, 2015", "Landsat 8"],
+          [LANDSAT_8_20150321, "March 21, 2015", "Landsat 8"],
+          [LANDSAT_8_20150422, "April 22, 2015", "Landsat 8"],
+          [LANDSAT_8_20150508, "May 8, 2015", "Landsat 8"],
+          [LANDSAT_8_20150524, "May 24, 2015", "Landsat 8"],
+          [LANDSAT_8_20150625, "June 25, 2015", "Landsat 8"],
+          [LANDSAT_8_20150711, "July 11, 2015", "Landsat 8"],
+          [LANDSAT_8_20150727, "July 27, 2015", "Landsat 8"],
+          [LANDSAT_8_20150812, "August 12, 2015", "Landsat 8"],
+          [LANDSAT_8_20150828, "August 28, 2015", "Landsat 8"],
+          [sentinel2_20150918, "September 18, 2015", "Sentinel 2"],
+          [LANDSAT_8_20151031, "October 31, 2015", "Landsat 8"],
+          [LANDSAT_8_20151116, "November 16, 2015", "Landsat 8"],
+          [sentinel2_20151217, "December 17, 2015", "Sentinel 2"],
+          [LANDSAT_8_20151218, "December 18, 2015", "Landsat 8"],
+        ].map(([src, date, instrument]) => (
+          <Tile
+            key={`${instrument}-${date}`}
+            src={src}
+            date={date}
+            instrument={instrument}
+          />
+        ))}
+      </Tiles>
 
-    <h2>2016</h2>
-    <h2>Cladding</h2>
+      <h2>2016</h2>
+      <h2>Cladding</h2>
 
-    <Tiles>
-      {[
-        [sentinel2_20160126, "January 26, 2016", "Sentinel 2"],
-        [LANDSAT_8_20160204, "February 4, 2016", "Landsat 8"],
-        [sentinel2_20160205, "February 5, 2016", "Sentinel 2"],
-        [sentinel2_20160215, "February 15, 2016", "Sentinel 2"],
-        [LANDSAT_8_20160220, "February 20, 2016", "Landsat 8"],
-        [sentinel2_20160306, "March 6, 2016", "Sentinel 2"],
-        [LANDSAT_8_20160323, "March 23, 2016", "Landsat 8"],
-        [sentinel2_20160326, "March 26, 2016", "Sentinel 2"],
-        [sentinel2_20160405, "April 5, 2016", "Sentinel 2"],
-        [LANDSAT_8_20160424, "April 24, 2016", "Landsat 8"],
-        [LANDSAT_8_20160510, "May 10, 2016", "Landsat 8"],
-        [sentinel2_20160515, "May 15, 2016", "Sentinel 2"],
-        [LANDSAT_8_20160526, "May 26, 2016", "Landsat 8"],
-        [sentinel2_20160525, "May 25, 2016", "Sentinel 2"],
-      ].map(([src, date, instrument]) => (
-        <Tile
-          key={`${instrument}-${date}`}
-          src={src}
-          date={date}
-          instrument={instrument}
-        />
-      ))}
-    </Tiles>
+      <Tiles>
+        {[
+          [sentinel2_20160126, "January 26, 2016", "Sentinel 2"],
+          [LANDSAT_8_20160204, "February 4, 2016", "Landsat 8"],
+          [sentinel2_20160205, "February 5, 2016", "Sentinel 2"],
+          [sentinel2_20160215, "February 15, 2016", "Sentinel 2"],
+          [LANDSAT_8_20160220, "February 20, 2016", "Landsat 8"],
+          [sentinel2_20160306, "March 6, 2016", "Sentinel 2"],
+          [LANDSAT_8_20160323, "March 23, 2016", "Landsat 8"],
+          [sentinel2_20160326, "March 26, 2016", "Sentinel 2"],
+          [sentinel2_20160405, "April 5, 2016", "Sentinel 2"],
+          [LANDSAT_8_20160424, "April 24, 2016", "Landsat 8"],
+          [LANDSAT_8_20160510, "May 10, 2016", "Landsat 8"],
+          [sentinel2_20160515, "May 15, 2016", "Sentinel 2"],
+          [LANDSAT_8_20160526, "May 26, 2016", "Landsat 8"],
+          [sentinel2_20160525, "May 25, 2016", "Sentinel 2"],
+        ].map(([src, date, instrument]) => (
+          <Tile
+            key={`${instrument}-${date}`}
+            src={src}
+            date={date}
+            instrument={instrument}
+          />
+        ))}
+      </Tiles>
 
-    <Image src={Apple_NAIP_2016} alt={data.title} />
-    <h3>May 29, 2016</h3>
-    <p>National Agriculture Imagery Program (NAIP)</p>
+      <Image src={Apple_NAIP_2016} alt={title} />
+      <h3>May 29, 2016</h3>
+      <p>National Agriculture Imagery Program (NAIP)</p>
 
-    <Tiles>
-      {[
-        [LANDSAT_8_20160611, "June 11, 2016", "Landsat 8"],
-        [sentinel2_20160614, "June 14, 2016", "Sentinel 2"],
-        [sentinel2_20160624, "June 24, 2016", "Sentinel 2"],
-        [LANDSAT_8_20160627, "June 27, 2016", "Landsat 8"],
-        [LANDSAT_8_20160713, "July 13, 2016", "Landsat 8"],
-        [sentinel2_20160714, "July 14, 2016", "Sentinel 2"],
-        [sentinel2_20160724, "July 24, 2016", "Sentinel 2"],
-        [LANDSAT_8_20160729, "July 29, 2016", "Landsat 8"],
-        [sentinel2_20160803, "August 3, 2016", "Sentinel 2"],
-        [sentinel2_20160813, "August 13, 2016", "Sentinel 2"],
-        [LANDSAT_8_20160814, "August 14, 2016", "Landsat 8"],
-        [sentinel2_20160823, "August 23, 2016", "Sentinel 2"],
-        [LANDSAT_8_20160830, "August 30, 2016", "Landsat 8"],
-        [sentinel2_20160902, "September 2, 2016", "Sentinel 2"],
-        [sentinel2_20160912, "September 12, 2016", "Sentinel 2"],
-        [LANDSAT_8_20160915, "September 15, 2016", "Landsat 8"],
-        [sentinel2_20160922, "September 22, 2016", "Sentinel 2"],
-        [LANDSAT_8_20161001, "October 1, 2016", "Landsat 8"],
-        [sentinel2_20161012, "October 12, 2016", "Sentinel 2"],
-        [LANDSAT_8_20161017, "October 17, 2016", "Landsat 8"],
-        [sentinel2_20161022, "October 22, 2016", "Sentinel 2"],
-        [sentinel2_20161101, "November 1, 2016", "Sentinel 2"],
-        [LANDSAT_8_20161102, "November 2, 2016", "Landsat 8"],
-        [LANDSAT_8_20161118, "November 18, 2016", "Landsat 8"],
-        [sentinel2_20161121, "November 21, 2016", "Sentinel 2"],
-        [sentinel2_20161201, "December 1, 2016", "Sentinel 2"],
-        [LANDSAT_8_20161204, "December 4, 2016", "Landsat 8"],
-        [LANDSAT_8_20161220, "December 20, 2016", "Landsat 8"],
-      ].map(([src, date, instrument]) => (
-        <Tile
-          key={`${instrument}-${date}`}
-          src={src}
-          date={date}
-          instrument={instrument}
-        />
-      ))}
-    </Tiles>
+      <Tiles>
+        {[
+          [LANDSAT_8_20160611, "June 11, 2016", "Landsat 8"],
+          [sentinel2_20160614, "June 14, 2016", "Sentinel 2"],
+          [sentinel2_20160624, "June 24, 2016", "Sentinel 2"],
+          [LANDSAT_8_20160627, "June 27, 2016", "Landsat 8"],
+          [LANDSAT_8_20160713, "July 13, 2016", "Landsat 8"],
+          [sentinel2_20160714, "July 14, 2016", "Sentinel 2"],
+          [sentinel2_20160724, "July 24, 2016", "Sentinel 2"],
+          [LANDSAT_8_20160729, "July 29, 2016", "Landsat 8"],
+          [sentinel2_20160803, "August 3, 2016", "Sentinel 2"],
+          [sentinel2_20160813, "August 13, 2016", "Sentinel 2"],
+          [LANDSAT_8_20160814, "August 14, 2016", "Landsat 8"],
+          [sentinel2_20160823, "August 23, 2016", "Sentinel 2"],
+          [LANDSAT_8_20160830, "August 30, 2016", "Landsat 8"],
+          [sentinel2_20160902, "September 2, 2016", "Sentinel 2"],
+          [sentinel2_20160912, "September 12, 2016", "Sentinel 2"],
+          [LANDSAT_8_20160915, "September 15, 2016", "Landsat 8"],
+          [sentinel2_20160922, "September 22, 2016", "Sentinel 2"],
+          [LANDSAT_8_20161001, "October 1, 2016", "Landsat 8"],
+          [sentinel2_20161012, "October 12, 2016", "Sentinel 2"],
+          [LANDSAT_8_20161017, "October 17, 2016", "Landsat 8"],
+          [sentinel2_20161022, "October 22, 2016", "Sentinel 2"],
+          [sentinel2_20161101, "November 1, 2016", "Sentinel 2"],
+          [LANDSAT_8_20161102, "November 2, 2016", "Landsat 8"],
+          [LANDSAT_8_20161118, "November 18, 2016", "Landsat 8"],
+          [sentinel2_20161121, "November 21, 2016", "Sentinel 2"],
+          [sentinel2_20161201, "December 1, 2016", "Sentinel 2"],
+          [LANDSAT_8_20161204, "December 4, 2016", "Landsat 8"],
+          [LANDSAT_8_20161220, "December 20, 2016", "Landsat 8"],
+        ].map(([src, date, instrument]) => (
+          <Tile
+            key={`${instrument}-${date}`}
+            src={src}
+            date={date}
+            instrument={instrument}
+          />
+        ))}
+      </Tiles>
 
-    <h2>2017</h2>
-    <h2>Interiors and landscaping</h2>
+      <h2>2017</h2>
+      <h2>Interiors and landscaping</h2>
 
-    <Tiles>
-      {[
-        [LANDSAT_8_20170105, "January 5, 2017", "Landsat 8"],
-        [sentinel2_20170301, "March 1, 2017", "Sentinel 2"],
-        [sentinel2_20170321, "March 21, 2017", "Sentinel 2"],
-        [sentinel2_20170331, "March 31, 2017", "Sentinel 2"],
-        [sentinel2_20170410, "April 10, 2017", "Sentinel 2"],
-        [sentinel2_20170420, "April 20, 2017", "Sentinel 2"],
-        [sentinel2_20170430, "April 30, 2017", "Sentinel 2"],
-        [sentinel2_20170520, "May 20, 2017", "Sentinel 2"],
-        [sentinel2_20170619, "June 19, 2017", "Sentinel 2"],
-        [sentinel2_20170629, "June 29, 2017", "Sentinel 2"],
-        [sentinel2_20170704, "July 4, 2017", "Sentinel 2"],
-        [sentinel2_20170709, "July 9, 2017", "Sentinel 2"],
-        [sentinel2_20170719, "July 19, 2017", "Sentinel 2"],
-        [sentinel2_20170724, "July 24, 2017", "Sentinel 2"],
-        [sentinel2_20170729, "July 29, 2017", "Sentinel 2"],
-        [sentinel2_20170808, "August 8, 2017", "Sentinel 2"],
-        [sentinel2_20170813, "August 13, 2017", "Sentinel 2"],
-        [sentinel2_20170818, "August 18, 2017", "Sentinel 2"],
-        [sentinel2_20170823, "August 23, 2017", "Sentinel 2"],
-        [sentinel2_20170902, "September 2, 2017", "Sentinel 2"],
-        [sentinel2_20170912, "September 12, 2017", "Sentinel 2"],
-        [sentinel2_20170917, "September 17, 2017", "Sentinel 2"],
-        [sentinel2_20170922, "September 22, 2017", "Sentinel 2"],
-        [sentinel2_20170927, "September 27, 2017", "Sentinel 2"],
-        [sentinel2_20171002, "October 2, 2017", "Sentinel 2"],
-        [sentinel2_20171007, "October 7, 2017", "Sentinel 2"],
-        [sentinel2_20171012, "October 12, 2017", "Sentinel 2"],
-        [sentinel2_20171022, "October 22, 2017", "Sentinel 2"],
-        [sentinel2_20171027, "October 27, 2017", "Sentinel 2"],
-        [sentinel2_20171101, "November 1, 2017", "Sentinel 2"],
-        [sentinel2_20171106, "November 6, 2017", "Sentinel 2"],
-        [sentinel2_20171111, "November 11, 2017", "Sentinel 2"],
-        [sentinel2_20171121, "November 21, 2017", "Sentinel 2"],
-        [sentinel2_20171201, "December 1, 2017", "Sentinel 2"],
-        [sentinel2_20171206, "December 6, 2017", "Sentinel 2"],
-        [sentinel2_20171211, "December 11, 2017", "Sentinel 2"],
-        [sentinel2_20171216, "December 16, 2017", "Sentinel 2"],
-        [sentinel2_20171221, "December 21, 2017", "Sentinel 2"],
-        [sentinel2_20171226, "December 26, 2017", "Sentinel 2"],
-      ].map(([src, date, instrument]) => (
-        <Tile
-          key={`${instrument}-${date}`}
-          src={src}
-          date={date}
-          instrument={instrument}
-        />
-      ))}
-    </Tiles>
-  </ProjectDetailsPage>
+      <Tiles>
+        {[
+          [LANDSAT_8_20170105, "January 5, 2017", "Landsat 8"],
+          [sentinel2_20170301, "March 1, 2017", "Sentinel 2"],
+          [sentinel2_20170321, "March 21, 2017", "Sentinel 2"],
+          [sentinel2_20170331, "March 31, 2017", "Sentinel 2"],
+          [sentinel2_20170410, "April 10, 2017", "Sentinel 2"],
+          [sentinel2_20170420, "April 20, 2017", "Sentinel 2"],
+          [sentinel2_20170430, "April 30, 2017", "Sentinel 2"],
+          [sentinel2_20170520, "May 20, 2017", "Sentinel 2"],
+          [sentinel2_20170619, "June 19, 2017", "Sentinel 2"],
+          [sentinel2_20170629, "June 29, 2017", "Sentinel 2"],
+          [sentinel2_20170704, "July 4, 2017", "Sentinel 2"],
+          [sentinel2_20170709, "July 9, 2017", "Sentinel 2"],
+          [sentinel2_20170719, "July 19, 2017", "Sentinel 2"],
+          [sentinel2_20170724, "July 24, 2017", "Sentinel 2"],
+          [sentinel2_20170729, "July 29, 2017", "Sentinel 2"],
+          [sentinel2_20170808, "August 8, 2017", "Sentinel 2"],
+          [sentinel2_20170813, "August 13, 2017", "Sentinel 2"],
+          [sentinel2_20170818, "August 18, 2017", "Sentinel 2"],
+          [sentinel2_20170823, "August 23, 2017", "Sentinel 2"],
+          [sentinel2_20170902, "September 2, 2017", "Sentinel 2"],
+          [sentinel2_20170912, "September 12, 2017", "Sentinel 2"],
+          [sentinel2_20170917, "September 17, 2017", "Sentinel 2"],
+          [sentinel2_20170922, "September 22, 2017", "Sentinel 2"],
+          [sentinel2_20170927, "September 27, 2017", "Sentinel 2"],
+          [sentinel2_20171002, "October 2, 2017", "Sentinel 2"],
+          [sentinel2_20171007, "October 7, 2017", "Sentinel 2"],
+          [sentinel2_20171012, "October 12, 2017", "Sentinel 2"],
+          [sentinel2_20171022, "October 22, 2017", "Sentinel 2"],
+          [sentinel2_20171027, "October 27, 2017", "Sentinel 2"],
+          [sentinel2_20171101, "November 1, 2017", "Sentinel 2"],
+          [sentinel2_20171106, "November 6, 2017", "Sentinel 2"],
+          [sentinel2_20171111, "November 11, 2017", "Sentinel 2"],
+          [sentinel2_20171121, "November 21, 2017", "Sentinel 2"],
+          [sentinel2_20171201, "December 1, 2017", "Sentinel 2"],
+          [sentinel2_20171206, "December 6, 2017", "Sentinel 2"],
+          [sentinel2_20171211, "December 11, 2017", "Sentinel 2"],
+          [sentinel2_20171216, "December 16, 2017", "Sentinel 2"],
+          [sentinel2_20171221, "December 21, 2017", "Sentinel 2"],
+          [sentinel2_20171226, "December 26, 2017", "Sentinel 2"],
+        ].map(([src, date, instrument]) => (
+          <Tile
+            key={`${instrument}-${date}`}
+            src={src}
+            date={date}
+            instrument={instrument}
+          />
+        ))}
+      </Tiles>
+    </main>
+  </>
 );
 
 export default Project;

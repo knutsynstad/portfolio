@@ -1,5 +1,5 @@
-import ProjectDetailsPage from "@/layouts/ProjectDetailsPage";
 import Image from "@/components/Image";
+import ProjectHeader from "@/components/ProjectHeader";
 
 // Caremaps
 import Caremaps_Ana from "../../../public/images/Caremaps_Ana.svg";
@@ -76,93 +76,99 @@ const maps = [
   ],
 ];
 
-const data = {
-  id: "mapping_family_caregiving",
-  metadata: [
-    {
-      title: "Agency",
-      values: [
-        {
-          name: "Dubberly Design Office",
-          url: "https://www.dubberly.com",
-        },
-      ],
-    },
-    {
-      title: "Client",
-      values: [
-        {
-          name: "Robert Wood Johnson Foundation",
-          url: "https://www.rwjf.org",
-        },
-      ],
-    },
-    {
-      title: "Project",
-      values: [
-        {
-          name: "Atlas of Caregiving",
-        },
-      ],
-    },
-    {
-      title: "Categories",
-      values: [
-        {
-          name: "Information Design",
-        },
-        { name: "Diagram" },
-        { name: "Caregiving" },
-      ],
-    },
-    {
-      title: "Year",
-      values: [
-        {
-          name: "2019",
-        },
-      ],
-    },
-  ],
-  title: "Mapping family caregiving.",
-  description: (
-    <>
-      <p>
-        We rely on healthcare professionals (HCPs) to help us maintain our
-        health—typically in hospitals and clinics. Yet many have chronic health
-        conditions, which require self-management—and the help of family
-        caregivers, working at home around the clock. Centers for Disease
-        Control and Prevention (CDC) states that &quot;As of 2012, about half of
-        all adults [in the U.S.]—117 million people—had one or more chronic
-        health conditions.&quot; Chronic conditions require ongoing support,
-        often from family. Experts differ on the number of family caregivers,
-        but a 2013 Pew Research study suggested it could be as high as 100
-        million people (39% of the population).
-      </p>
+const title = "Mapping family caregiving.";
 
-      <p>
-        In 2015, Robert Wood Johnson Foundation funded a pilot study, Atlas of
-        Caregiving, to look at new ways of measuring family caregiving. As part
-        of the study, I designed a series of diagrams describing the
-        study&apos;s participants and their care ecosystem by showing who cares
-        for whom, how often, their relation, and their relative proximity. The
-        design rationale was documented, enabling others to extend the set.
-      </p>
-    </>
-  ),
-};
+const description = (
+  <>
+    <p>
+      We rely on healthcare professionals (HCPs) to help us maintain our
+      health—typically in hospitals and clinics. Yet many have chronic health
+      conditions, which require self-management—and the help of family
+      caregivers, working at home around the clock. Centers for Disease Control
+      and Prevention (CDC) states that &quot;As of 2012, about half of all
+      adults [in the U.S.]—117 million people—had one or more chronic health
+      conditions.&quot; Chronic conditions require ongoing support, often from
+      family. Experts differ on the number of family caregivers, but a 2013 Pew
+      Research study suggested it could be as high as 100 million people (39% of
+      the population).
+    </p>
+
+    <p>
+      In 2015, Robert Wood Johnson Foundation funded a pilot study, Atlas of
+      Caregiving, to look at new ways of measuring family caregiving. As part of
+      the study, I designed a series of diagrams describing the study&apos;s
+      participants and their care ecosystem by showing who cares for whom, how
+      often, their relation, and their relative proximity. The design rationale
+      was documented, enabling others to extend the set.
+    </p>
+  </>
+);
+
+const metadata = [
+  {
+    title: "Agency",
+    values: [
+      {
+        name: "Dubberly Design Office",
+        url: "https://www.dubberly.com",
+      },
+    ],
+  },
+  {
+    title: "Client",
+    values: [
+      {
+        name: "Robert Wood Johnson Foundation",
+        url: "https://www.rwjf.org",
+      },
+    ],
+  },
+  {
+    title: "Project",
+    values: [
+      {
+        name: "Atlas of Caregiving",
+      },
+    ],
+  },
+  {
+    title: "Categories",
+    values: [
+      {
+        name: "Information Design",
+      },
+      { name: "Diagram" },
+      { name: "Caregiving" },
+    ],
+  },
+  {
+    title: "Year",
+    values: [
+      {
+        name: "2019",
+      },
+    ],
+  },
+];
 
 const Project = () => (
-  <ProjectDetailsPage data={data}>
-    <div className="flex flex-col gap-32">
-      {maps.map(([image, description]) => (
-        <div key={description}>
-          <h2 className="mb-8">{description}</h2>
-          <Image src={image} alt={description} />
-        </div>
-      ))}
-    </div>
-  </ProjectDetailsPage>
+  <>
+    <ProjectHeader
+      title={title}
+      description={description}
+      metadata={metadata}
+    />
+    <main>
+      <div className="flex flex-col gap-32">
+        {maps.map(([image, description]) => (
+          <div key={description}>
+            <h2 className="mb-8">{description}</h2>
+            <Image src={image} alt={description} />
+          </div>
+        ))}
+      </div>
+    </main>
+  </>
 );
 
 export default Project;

@@ -1,5 +1,5 @@
-import ProjectDetailsPage from "@/layouts/ProjectDetailsPage";
 import Image from "@/components/Image";
+import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
 import Diabetes_Open_Loop_Process from "../../../public/images/Diabetes_Open_Loop_Process.svg";
@@ -12,59 +12,57 @@ import Diabetes_Physiological_Feedback_Loop from "../../../public/images/Diabete
 import Diabetes_Augmented_Data from "../../../public/images/Diabetes_Augmented_Data.svg";
 import Diabetes_Interacting_Feedback_Loops from "../../../public/images/Diabetes_Interacting_Feedback_Loops.svg";
 
-const data = {
-  id: "modeling_diabetes",
-  metadata: [
-    {
-      title: "Agency",
-      values: [
-        {
-          name: "Dubberly Design Office",
-          url: "https://www.dubberly.com",
-        },
-      ],
-    },
-    {
-      title: "Direction",
-      values: [
-        {
-          name: "Hugh Dubberly",
-          url: "https://www.dubberly.com",
-        },
-      ],
-    },
-    {
-      title: "Categories",
-      values: [
-        {
-          name: "Cybernetics",
-        },
-        { name: "Control Systems" },
-        { name: "Feedback" },
-        { name: "Modeling" },
-      ],
-    },
-  ],
-  title: "Modeling diabetes.",
-  description: (
-    <>
-      <p>
-        Our body continuously strives to achieve homeostasis. It does so through
-        a number of interlocked biological feedback loops, such as the endocrine
-        system—a collection of glands that produce hormones that regulate
-        metabolism, growth and development, tissue function, sexual function,
-        reproduction, sleep, and mood, among other things.
-      </p>
-      <p>
-        The pancreas, an organ of the endocrine system is integral to our
-        control of blood glucose. Diabetes limits its ability to do so. Our
-        various means of blood glucose control can be modeled as a first order
-        control system or feedback loop. p The following is a compendium of
-        models on diabetes.
-      </p>
-    </>
-  ),
-};
+const title = "Modeling diabetes.";
+
+const description = (
+  <>
+    <p>
+      Our body continuously strives to achieve homeostasis. It does so through a
+      number of interlocked biological feedback loops, such as the endocrine
+      system—a collection of glands that produce hormones that regulate
+      metabolism, growth and development, tissue function, sexual function,
+      reproduction, sleep, and mood, among other things.
+    </p>
+    <p>
+      The pancreas, an organ of the endocrine system is integral to our control
+      of blood glucose. Diabetes limits its ability to do so. Our various means
+      of blood glucose control can be modeled as a first order control system or
+      feedback loop. p The following is a compendium of models on diabetes.
+    </p>
+  </>
+);
+
+const metadata = [
+  {
+    title: "Agency",
+    values: [
+      {
+        name: "Dubberly Design Office",
+        url: "https://www.dubberly.com",
+      },
+    ],
+  },
+  {
+    title: "Direction",
+    values: [
+      {
+        name: "Hugh Dubberly",
+        url: "https://www.dubberly.com",
+      },
+    ],
+  },
+  {
+    title: "Categories",
+    values: [
+      {
+        name: "Cybernetics",
+      },
+      { name: "Control Systems" },
+      { name: "Feedback" },
+      { name: "Modeling" },
+    ],
+  },
+];
 
 const slides = [
   [Diabetes_Open_Loop_Process, "Open loop process"],
@@ -95,16 +93,23 @@ const slides = [
 ];
 
 const Project = () => (
-  <ProjectDetailsPage data={data}>
-    <div className="flex flex-col gap-32">
-      {slides.map(([src, alt]) => (
-        <div key={alt}>
-          <h2 className="mb-8">{alt}</h2>
-          <Image src={src} alt={alt} rounded />
-        </div>
-      ))}
-    </div>
-  </ProjectDetailsPage>
+  <>
+    <ProjectHeader
+      title={title}
+      description={description}
+      metadata={metadata}
+    />
+    <main>
+      <div className="flex flex-col gap-32">
+        {slides.map(([src, alt]) => (
+          <div key={alt}>
+            <h2 className="mb-8">{alt}</h2>
+            <Image src={src} alt={alt} rounded />
+          </div>
+        ))}
+      </div>
+    </main>
+  </>
 );
 
 export default Project;
