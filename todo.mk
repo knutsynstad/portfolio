@@ -22,5 +22,10 @@
 [X] Crop and add thumbnail
 [ ] Remove un-used assets
 
+# Devvit Play
+[ ] Create case study
+
+
+
 # Faux Code
 [ ] Find and add exhibit
