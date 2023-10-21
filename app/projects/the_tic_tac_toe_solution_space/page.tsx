@@ -106,23 +106,23 @@ const Project = () => (
       description={description}
       metadata={metadata}
     />
-    <main>
+    <main className="flex flex-col gap-32">
       <h2>27 &times; 38 inch poster</h2>
 
-      <Image src={Exhibit1} alt={title} shadow priority />
+      <Image src={Exhibit1} alt={title} shadow rounded priority />
 
-      <Image src={Exhibit2} alt={title} shadow />
+      <Image src={Exhibit2} alt={title} shadow rounded />
 
       <h2>
         Each board configuration list of boards that precede and succeed it.
       </h2>
-      <Image src={Exhibit3} alt={title} shadow />
+      <Image src={Exhibit3} alt={title} shadow rounded />
 
       <h2>
         Excluding rotational and reflectional symmetries to reduce the solution
         space
       </h2>
-      <Image src={Exhibit4} alt={title} shadow />
+      <Image src={Exhibit4} alt={title} shadow rounded />
 
       <h2>
         The interactive website places emphasis on the connections between

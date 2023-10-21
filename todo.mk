@@ -8,6 +8,7 @@
 [ ] Fix the <title> property on each page
 [ ] Add favicon
 [ ] Move assets into project folders
+[ ] Apple Park video
 
 
 # New project ideas
