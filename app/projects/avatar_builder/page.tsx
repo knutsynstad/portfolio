@@ -1,5 +1,5 @@
 import ProjectHeader from "@/components/ProjectHeader";
-import Image from "@/components/Image";
+import Image from "next/image";
 import Row from "@/components/Row";
 
 // Avatar Showcase
@@ -123,8 +123,8 @@ const Project = () => (
           A platform for personal expression and delight.
         </h2>
         <div className="flex gap-8 flex-nowrap">
-          <Image src={Explore0} alt={title} rounded />
-          <Image src={Explore1} alt={title} rounded />
+          <Image src={Explore0} alt={title} className="rounded-2xl" />
+          <Image src={Explore1} alt={title} className="rounded-2xl" />
         </div>
         <div
           className={`bg-black absolute h-full top-0 left-0 w-[9000px] translate-x-[-9000px] z-[-1]`}
@@ -136,9 +136,9 @@ const Project = () => (
 
       <h2>Get inspired by seasonal drops.</h2>
       <Row color="black">
-        <Image src={Explore1} alt={title} rounded />
-        <Image src={Explore2} alt={title} rounded />
-        <Image src={Explore3} alt={title} rounded />
+        <Image src={Explore1} alt={title} className="rounded-2xl" />
+        <Image src={Explore2} alt={title} className="rounded-2xl" />
+        <Image src={Explore3} alt={title} className="rounded-2xl" />
       </Row>
 
       <h2>Enabling anyone to represent themselves</h2>
@@ -173,16 +173,16 @@ const Project = () => (
 
       <h2>Make your own Snoo.</h2>
       <Row color="black">
-        <Image src={Me1} alt={title} rounded />
-        <Image src={Me2} alt={title} rounded />
-        <Image src={Me3} alt={title} rounded />
+        <Image src={Me1} alt={title} className="rounded-2xl" />
+        <Image src={Me2} alt={title} className="rounded-2xl" />
+        <Image src={Me3} alt={title} className="rounded-2xl" />
       </Row>
 
       <h2>Find a style to match.</h2>
       <Row color="#f7d9bc">
-        <Image src={Style1} alt={title} rounded />
-        <Image src={Style2} alt={title} rounded />
-        <Image src={Style3} alt={title} rounded />
+        <Image src={Style1} alt={title} className="rounded-2xl" />
+        <Image src={Style2} alt={title} className="rounded-2xl" />
+        <Image src={Style3} alt={title} className="rounded-2xl" />
       </Row>
       <p>6 slots to configure</p>
       <p>Adjust colors</p>

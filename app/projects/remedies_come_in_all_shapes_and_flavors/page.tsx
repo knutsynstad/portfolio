@@ -1,4 +1,4 @@
-import Image from "@/components/Image";
+import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
@@ -87,18 +87,18 @@ const Project = () => (
     />
     <main>
       <div className="flex flex-col gap-8">
-        <Image src={Earthnuts5} alt={title} rounded />
+        <Image src={Earthnuts5} alt={title} className="rounded-2xl" />
 
-        <Image src={Earthnuts1} alt={title} rounded />
-        <div className="flex flex-row gap-8">
-          <Image src={Earthnuts2a} alt={title} rounded />
-          <Image src={Earthnuts2b} alt={title} rounded />
+        <Image src={Earthnuts1} alt={title} className="rounded-2xl" />
+        <div className="grid grid-cols-2 gap-8">
+          <Image src={Earthnuts2a} alt={title} className="w-full rounded-2xl" />
+          <Image src={Earthnuts2b} alt={title} className="w-full rounded-2xl" />
         </div>
-        <div className="flex flex-row gap-8">
-          <Image src={Earthnuts3a} alt={title} rounded />
-          <Image src={Earthnuts3b} alt={title} rounded />
+        <div className="grid grid-cols-2 gap-8">
+          <Image src={Earthnuts3a} alt={title} className="w-full rounded-2xl" />
+          <Image src={Earthnuts3b} alt={title} className="w-full rounded-2xl" />
         </div>
-        <Image src={Earthnuts4} alt={title} rounded />
+        <Image src={Earthnuts4} alt={title} className="rounded-2xl" />
       </div>
     </main>
   </>

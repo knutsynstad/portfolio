@@ -1,4 +1,4 @@
-import Image from "@/components/Image";
+import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
@@ -10,7 +10,6 @@ import Sensors5 from "./assets/Sensors_5.svg";
 import Sensors6 from "./assets/Sensors_6.svg";
 
 const title = "From sensors to action.";
-
 const description = (
   <>
     <p>
@@ -30,7 +29,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "Agency",
@@ -89,7 +87,7 @@ const Project = () => (
         {slides.map(([src, alt]) => (
           <div key={alt}>
             <h2 className="mb-8">{alt}</h2>
-            <Image src={src} alt={alt} rounded />
+            <Image src={src} alt={alt} className="rounded-2xl" />
           </div>
         ))}
       </div>

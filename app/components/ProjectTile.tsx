@@ -11,9 +11,9 @@ export default function ProjectTile(props: ProjectTileProps) {
   return (
     <a
       href={url}
-      className={`p-4 text-decoration-none mb-8 flex flex-col gap-4 shadow-none transform transition-transform duration-200 hover:-translate-y-2 hover:scale-105 hover:z-10 hover:shadow-lg rounded-2xl no-underline ${className}`}
+      className={`p-4 text-decoration-none mb-8 flex flex-col gap-4 shadow-none transform transition-transform duration-150 hover:-translate-y-2 hover:scale-105 hover:z-10 hover:shadow-lg rounded-2xl no-underline ${className}`}
     >
-      <img src={image} alt={title} className="w-full rounded-md" />
+      <img src={image} alt={title} className="w-full rounded-2xl" />
       <h2 className="text-2xl">{title}</h2>
       <div className="flex gap-1">
         {tags?.map((tag) => (

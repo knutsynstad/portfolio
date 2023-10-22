@@ -1,5 +1,5 @@
-import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
+import Image from "next/image";
 
 // Assets
 import Diabetes_Open_Loop_Process from "./assets/Diabetes_Open_Loop_Process.svg";
@@ -13,7 +13,6 @@ import Diabetes_Augmented_Data from "./assets/Diabetes_Augmented_Data.svg";
 import Diabetes_Interacting_Feedback_Loops from "./assets/Diabetes_Interacting_Feedback_Loops.svg";
 
 const title = "Modeling diabetes.";
-
 const description = (
   <>
     <p>
@@ -31,7 +30,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "Agency",
@@ -104,7 +102,7 @@ const Project = () => (
         {slides.map(([src, alt]) => (
           <div key={alt}>
             <h2 className="mb-8">{alt}</h2>
-            <Image src={src} alt={alt} rounded />
+            <Image src={src} alt={alt} className="rounded-2xl" />
           </div>
         ))}
       </div>

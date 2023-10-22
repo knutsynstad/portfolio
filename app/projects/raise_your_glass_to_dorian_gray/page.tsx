@@ -1,5 +1,5 @@
-import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
+import Image from "next/image";
 
 // Assets
 import Magnolia_01 from "./assets/Magnolia_01.jpg";
@@ -9,7 +9,6 @@ import Magnolia_04 from "./assets/Magnolia_04.jpg";
 import Magnolia_05 from "./assets/Magnolia_05.jpg";
 
 const title = "Raise your glass to Dorian Gray.";
-
 const description = (
   <>
     <p>
@@ -34,7 +33,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "University",
@@ -79,13 +77,21 @@ const Project = () => (
     />
     <main>
       <div className="flex flex-col gap-8">
-        <Image src={Magnolia_01} alt={title} rounded />
-        <Image src={Magnolia_02} alt={title} rounded />
-        <div className="flex flex-row gap-8">
-          <Image src={Magnolia_03} alt={title} rounded />
-          <Image src={Magnolia_04} alt={title} rounded />
+        <Image src={Magnolia_01} alt={title} className="rounded-2xl" />
+        <Image src={Magnolia_02} alt={title} className="rounded-2xl" />
+        <div className="grid grid-cols-2 gap-8">
+          <Image
+            src={Magnolia_03}
+            alt={title}
+            className=" w-full rounded-2xl"
+          />
+          <Image
+            src={Magnolia_04}
+            alt={title}
+            className=" w-full rounded-2xl"
+          />
         </div>
-        <Image src={Magnolia_05} alt={title} rounded />
+        <Image src={Magnolia_05} alt={title} className="rounded-2xl" />
       </div>
     </main>
   </>

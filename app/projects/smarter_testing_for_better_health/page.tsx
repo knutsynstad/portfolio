@@ -1,4 +1,4 @@
-import Image from "@/components/Image";
+import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
 import ProjectHeader from "@/components/ProjectHeader";
 
@@ -84,10 +84,9 @@ const Project = () => (
           { image: AST_Identity_Blue },
           { image: AST_Identity_Black },
         ]}
-        shadow
       />
 
-      <Image src={AST_Stationery} alt={title} rounded />
+      <Image src={AST_Stationery} alt={title} className="rounded-2xl" />
     </main>
   </>
 );

@@ -1,5 +1,5 @@
 import ProjectHeader from "@/components/ProjectHeader";
-import Image from "@/components/Image";
+import Image from "next/image";
 import Colorfield from "@/components/Colorfield";
 
 import Corn_Poster from "./assets/Corn_Poster.svg";
@@ -86,7 +86,7 @@ const Project = () => (
     />
     <main>
       <Colorfield color="black" wide>
-        <Image src={Corn_Poster} alt={title} className="bg-white" rounded />
+        <Image src={Corn_Poster} alt={title} className="bg-white rounded-2xl" />
       </Colorfield>
     </main>
   </>

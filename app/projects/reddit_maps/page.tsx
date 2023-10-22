@@ -1,4 +1,4 @@
-import Image from "@/components/Image";
+import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
@@ -90,10 +90,10 @@ const Project = () => (
     />
     <main>
       <div className="flex flex-col gap-8">
-        <Image src={RedditMaps2} alt={title} rounded />
-        <Image src={RedditMaps3} alt={title} rounded />
-        <Image src={RedditMaps5} alt={title} rounded />
-        <Image src={RedditMaps7} alt={title} rounded />
+        <Image src={RedditMaps2} alt={title} className="rounded-2xl" />
+        <Image src={RedditMaps3} alt={title} className="rounded-2xl" />
+        <Image src={RedditMaps5} alt={title} className="rounded-2xl" />
+        <Image src={RedditMaps7} alt={title} className="rounded-2xl" />
       </div>
     </main>
   </>

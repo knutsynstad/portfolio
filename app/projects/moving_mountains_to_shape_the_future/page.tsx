@@ -76,7 +76,7 @@ const Project = () => (
       <div className="flex flex-col gap-8">
         <Image src={Life1} alt={title} className="w-full rounded-2xl" />
         <Image src={Life2} alt={title} className="w-full rounded-2xl" />
-        <div className="relative mt-64 mb-64 flex flex-col justify-center">
+        <div className="relative mt-16 mb-16 flex flex-col justify-center">
           <Image
             src={Life4}
             alt={title}

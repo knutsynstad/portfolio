@@ -1,4 +1,4 @@
-import Image from "@/components/Image";
+import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
@@ -62,14 +62,21 @@ const Project = () => (
     />
     <main>
       <div className="flex flex-col gap-8">
-        <Image src={Elite_Raiders_01} alt={title} rounded />
-        <Image src={Elite_Raiders_02} alt={title} rounded />
+        <Image src={Elite_Raiders_01} alt={title} className="rounded-2xl" />
+
+        <div className="relative mt-16 mb-16 flex flex-col justify-center">
+          <Image
+            src={Elite_Raiders_02}
+            alt={title}
+            className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-none"
+          />
+        </div>
 
         <div className="flex flex-row gap-8">
-          <Image src={Elite_Raiders_03} alt={title} rounded />
-          <Image src={Elite_Raiders_04} alt={title} rounded />
+          <Image src={Elite_Raiders_03} alt={title} className="rounded-2xl" />
+          <Image src={Elite_Raiders_04} alt={title} className="rounded-2xl" />
         </div>
-        <Image src={Elite_Raiders_05} alt={title} rounded />
+        <Image src={Elite_Raiders_05} alt={title} className="rounded-2xl" />
       </div>
     </main>
   </>

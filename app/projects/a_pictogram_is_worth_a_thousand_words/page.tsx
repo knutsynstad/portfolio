@@ -1,5 +1,5 @@
 import ProjectHeader from "@/components/ProjectHeader";
-import Image from "@/components/Image";
+import Image from "next/image";
 
 // Assets
 import Icons_Core from "./assets/Icons_Core.svg";
@@ -88,7 +88,11 @@ const Project = () => (
         {slides.map(([src, alt], index) => (
           <div key={`${alt}+${index}`}>
             {alt && <h2 className="mb-8">{alt}</h2>}
-            <Image src={src} alt={alt} rounded shadow={alt ? true : false} />
+            <Image
+              src={src}
+              alt={alt}
+              className={`rounded-2xl ${alt ? "shadow-lg" : "false"}`}
+            />
           </div>
         ))}
       </div>

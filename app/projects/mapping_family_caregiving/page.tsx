@@ -1,4 +1,4 @@
-import Image from "@/components/Image";
+import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Caremaps
@@ -77,7 +77,6 @@ const maps = [
 ];
 
 const title = "Mapping family caregiving.";
-
 const description = (
   <>
     <p>
@@ -103,7 +102,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "Agency",

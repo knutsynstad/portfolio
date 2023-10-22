@@ -1,4 +1,4 @@
-import Image from "@/components/Image";
+import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
@@ -7,7 +7,6 @@ import PipeSchematic from "./assets/pipe_schematic.svg";
 import Pipe from "./assets/pipe_2340w.png";
 
 const title = "Looking beyond the walls.";
-
 const description = (
   <>
     <p>
@@ -31,7 +30,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "University",
@@ -72,9 +70,9 @@ const Project = () => (
     />
     <main>
       <div className="flex flex-col gap-8">
-        <Image src={SweetTooth} alt={title} rounded />
-        <Image src={PipeSchematic} alt={title} rounded />
-        <Image src={Pipe} alt={title} rounded />
+        <Image src={SweetTooth} alt={title} className="rounded-2xl" />
+        <Image src={PipeSchematic} alt={title} className="rounded-2xl" />
+        <Image src={Pipe} alt={title} className="rounded-2xl" />
       </div>
     </main>
   </>

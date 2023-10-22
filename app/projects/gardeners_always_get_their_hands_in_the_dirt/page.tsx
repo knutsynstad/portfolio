@@ -1,4 +1,4 @@
-import Image from "@/components/Image";
+import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
@@ -77,16 +77,32 @@ const Project = () => (
     />
     <main>
       <div className="flex flex-col gap-8">
-        <Image src={French_Paper_06} alt={title} rounded />
+        <Image src={French_Paper_06} alt={title} className="rounded-2xl" />
 
-        <div className="flex flex-row gap-8">
-          <Image src={French_Paper_01} alt={title} rounded />
-          <Image src={French_Paper_02} alt={title} rounded />
+        <div className="grid grid-cols-2 gap-8">
+          <Image
+            src={French_Paper_01}
+            alt={title}
+            className="w-full rounded-2xl"
+          />
+          <Image
+            src={French_Paper_02}
+            alt={title}
+            className="w-full rounded-2xl"
+          />
         </div>
-        <Image src={French_Paper_03} alt={title} rounded />
-        <div className="flex flex-row gap-8">
-          <Image src={French_Paper_04} alt={title} rounded />
-          <Image src={French_Paper_05} alt={title} rounded />
+        <Image src={French_Paper_03} alt={title} className="rounded-2xl" />
+        <div className="grid grid-cols-2 gap-8">
+          <Image
+            src={French_Paper_04}
+            alt={title}
+            className="w-full rounded-2xl"
+          />
+          <Image
+            src={French_Paper_05}
+            alt={title}
+            className="w-full rounded-2xl"
+          />
         </div>
       </div>
     </main>

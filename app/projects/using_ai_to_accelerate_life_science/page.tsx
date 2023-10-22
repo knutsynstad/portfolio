@@ -1,5 +1,5 @@
 import ProjectHeader from "@/components/ProjectHeader";
-import Image from "@/components/Image";
+import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
 
 // Assets
@@ -90,7 +90,7 @@ const Project = () => (
       description={description}
       metadata={metadata}
     />
-    <main>
+    <main className="flex flex-col gap-8">
       <Image src={BiozModel} alt={title} />
 
       <Slideshow
@@ -110,18 +110,18 @@ const Project = () => (
         shadow
       />
 
-      <Image src={JournalCreation} alt={title} />
-      <Image src={FilterDropDowns} alt={title} />
-      <Image src={SaveProductToFolder} alt={title} />
-      <Image src={ProductDetails} alt={title} />
+      <Image src={JournalCreation} alt={title} className="rounded-2xl" />
+      <Image src={FilterDropDowns} alt={title} className="rounded-2xl" />
+      <Image src={SaveProductToFolder} alt={title} className="rounded-2xl" />
+      <Image src={ProductDetails} alt={title} className="rounded-2xl" />
 
       <Slideshow
         slides={[{ image: FigureViewer }, { image: FigureViewerFullScreen }]}
         shadow
       />
 
-      <Image src={InformationOverlap} alt={title} />
-      <Image src={ArticleFullText} alt={title} />
+      <Image src={InformationOverlap} alt={title} className="rounded-2xl" />
+      <Image src={ArticleFullText} alt={title} className="rounded-2xl" />
     </main>
   </>
 );

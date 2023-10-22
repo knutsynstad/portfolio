@@ -1,5 +1,5 @@
 import Code from "@/components/Code";
-import Image from "@/components/Image";
+import Image from "next/image";
 import ButtonGroup from "@/components/ButtonGroup";
 import Button from "@/components/Button";
 import Slideshow from "@/components/Slideshow";
@@ -106,20 +106,25 @@ const Project = () => (
     <main className="flex flex-col gap-32">
       <h2>27 &times; 38 inch poster</h2>
 
-      <Image src={Exhibit1} alt={title} shadow rounded priority />
+      <Image
+        src={Exhibit1}
+        alt={title}
+        className="rounded-2xl shadow-lg"
+        priority
+      />
 
-      <Image src={Exhibit2} alt={title} shadow rounded />
+      <Image src={Exhibit2} alt={title} className="rounded-2xl shadow-lg" />
 
       <h2>
         Each board configuration list of boards that precede and succeed it.
       </h2>
-      <Image src={Exhibit3} alt={title} shadow rounded />
+      <Image src={Exhibit3} alt={title} className="rounded-2xl shadow-lg" />
 
       <h2>
         Excluding rotational and reflectional symmetries to reduce the solution
         space
       </h2>
-      <Image src={Exhibit4} alt={title} shadow rounded />
+      <Image src={Exhibit4} alt={title} className="rounded-2xl shadow-lg" />
 
       <h2>
         The interactive website places emphasis on the connections between

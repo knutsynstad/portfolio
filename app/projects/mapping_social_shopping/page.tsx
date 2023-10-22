@@ -1,5 +1,5 @@
 import ProjectHeader from "@/components/ProjectHeader";
-import Image from "@/components/Image";
+import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
 
 // Assets
@@ -10,7 +10,6 @@ import Sello_Merchant_Map_3 from "./assets/Sello_Merchant_Map_3_2340w.png";
 import Sello_Customer_Map from "./assets/Sello_Customer_Map_2340w.png";
 
 const title = "Mapping social shopping.";
-
 const description = (
   <>
     <p>
@@ -43,7 +42,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "Agency",
@@ -73,9 +71,9 @@ const Project = () => (
       description={description}
       metadata={metadata}
     />
-    <main>
+    <main className="flex flex-col gap-8">
       <h2>Modeling social shopping</h2>
-      <Image src={Sello_Social_Selling} alt={title} rounded />
+      <Image src={Sello_Social_Selling} alt={title} className="rounded-2xl" />
 
       <h2>Merchant mobile application (iOS)</h2>
       <Slideshow
@@ -88,7 +86,7 @@ const Project = () => (
       />
 
       <h2>Customer facing web store</h2>
-      <Image src={Sello_Customer_Map} alt={title} rounded />
+      <Image src={Sello_Customer_Map} alt={title} className="rounded-2xl" />
     </main>
   </>
 );
