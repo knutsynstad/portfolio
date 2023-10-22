@@ -126,10 +126,10 @@ const Project = () => (
     <ProjectHeader title={title} description={description} details={details} />
     <main className="flex flex-col gap-16 mb-32">
       <div
-        className="flex flex-col gap-32 pt-32 pb-32 mb-32 relative"
+        className="flex flex-col gap-8 pt-32 pb-32 mb-32 relative"
         style={{ backgroundColor: color }}
       >
-        <div className="flex flex-nowrap gap-32 align-middle items-center justify-between">
+        <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
           <Image
             src={Exhibit1}
             alt="Greet new user timeline"
@@ -138,7 +138,7 @@ const Project = () => (
           <h2>Welcome new users to the community</h2>
         </div>
 
-        <div className="flex flex-nowrap gap-32 align-middle items-center justify-between">
+        <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
           <h2>Create and manage event-based content</h2>
           <Image
             src={timelineGamedayPost}
@@ -147,7 +147,7 @@ const Project = () => (
           />
         </div>
 
-        <div className="flex flex-nowrap gap-32 align-middle items-center justify-between">
+        <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
           <Image
             src={timelinePostFlair}
             alt="Greet new user timeline"

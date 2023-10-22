@@ -5,11 +5,12 @@
 [X] Convert Apple Park video to webm
 [ ] AST Identity animation
 [X] Slideshow support for captions for each slide
-[ ] Fix the <title> property on each page
+[X] Fix the <title> property on each page
 [X] Add favicon
 [X] Move assets into project folders
 [X] Apple Park video
 [X] Fix the grid on Apple Park
+[ ] Update footer design
 
 
 # New project ideas
