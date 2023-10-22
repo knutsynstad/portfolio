@@ -208,7 +208,8 @@ const Project = () => (
     />
     <main>
       <video autoPlay loop muted>
-        <source src="./assets/apple_park.mp4" type="video/mp4" />
+        <source src="/videos/apple_park.webm" type="video/webm" />
+        <source src="/videos/apple_park.mp4" type="video/mp4" />
         <p>Your browser doesn&apos;t support HTML video.</p>
       </video>
 

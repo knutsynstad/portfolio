@@ -1,13 +1,13 @@
 
 # Bugs
 [X] ProjectTile bounces when hovering over bottom edge
-[ ] Refactor remaining components to Tailwind. Ditch styled components.
-[ ] Convert Apple Park video to webm
+[X] Refactor remaining components to Tailwind. Ditch styled components.
+[X] Convert Apple Park video to webm
 [ ] AST Identity animation
-[ ] Slideshow support for captions for each slide
+[X] Slideshow support for captions for each slide
 [ ] Fix the <title> property on each page
 [ ] Add favicon
-[ ] Move assets into project folders
+[X] Move assets into project folders
 [ ] Apple Park video
 
 
