@@ -2,20 +2,20 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Caremaps
-import Caremaps_Ana from "../../../public/images/Caremaps_Ana.svg";
-import Caremaps_Chantal from "../../../public/images/Caremaps_Chantal.svg";
-import Caremaps_Fay from "../../../public/images/Caremaps_Fay.svg";
-import Caremaps_Gabrielle from "../../../public/images/Caremaps_Gabrielle.svg";
-import Caremaps_Hanna from "../../../public/images/Caremaps_Hanna.svg";
-import Caremaps_Fernando from "../../../public/images/Caremaps_Fernando.svg";
-import Caremaps_Ida from "../../../public/images/Caremaps_Ida.svg";
-import Caremaps_Nadine from "../../../public/images/Caremaps_Nadine.svg";
-import Caremaps_Odette from "../../../public/images/Caremaps_Odette.svg";
-import Caremaps_Nate from "../../../public/images/Caremaps_Nate.svg";
-import Caremaps_Sally from "../../../public/images/Caremaps_Sally.svg";
-import Caremaps_Tammy from "../../../public/images/Caremaps_Tammy.svg";
-import Caremaps_Teddy from "../../../public/images/Caremaps_Teddy.svg";
-import Caremaps_Omar from "../../../public/images/Caremaps_Omar.svg";
+import Caremaps_Ana from "./assets/Caremaps_Ana.svg";
+import Caremaps_Chantal from "./assets/Caremaps_Chantal.svg";
+import Caremaps_Fay from "./assets/Caremaps_Fay.svg";
+import Caremaps_Gabrielle from "./assets/Caremaps_Gabrielle.svg";
+import Caremaps_Hanna from "./assets/Caremaps_Hanna.svg";
+import Caremaps_Fernando from "./assets/Caremaps_Fernando.svg";
+import Caremaps_Ida from "./assets/Caremaps_Ida.svg";
+import Caremaps_Nadine from "./assets/Caremaps_Nadine.svg";
+import Caremaps_Odette from "./assets/Caremaps_Odette.svg";
+import Caremaps_Nate from "./assets/Caremaps_Nate.svg";
+import Caremaps_Sally from "./assets/Caremaps_Sally.svg";
+import Caremaps_Tammy from "./assets/Caremaps_Tammy.svg";
+import Caremaps_Teddy from "./assets/Caremaps_Teddy.svg";
+import Caremaps_Omar from "./assets/Caremaps_Omar.svg";
 
 const maps = [
   [

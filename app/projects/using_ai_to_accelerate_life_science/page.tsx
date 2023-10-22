@@ -3,23 +3,23 @@ import Image from "@/components/Image";
 import Slideshow from "@/components/Slideshow";
 
 // Assets
-import BiozModel from "../../../public/images/Bioz_Model.svg";
-import SearchResultsProducts from "../../../public/images/Bioz_Search_Results_Products_2340w.png";
-import SearchResultsProductsBulkActions from "../../../public/images/Bioz_Search_Results_Products_Bulk_Actions_2340w.png";
-import SearchResultsFigures from "../../../public/images/Bioz_Search_Results_Figures_2340w.png";
-import SearchResultsFiguresBulkActions from "../../../public/images/Bioz_Search_Results_Figures_Bulk_Actions_2340w.png";
-import SearchResultsArticles from "../../../public/images/Bioz_Search_Results_Articles_2340w.png";
-import SearchResultsArticlesBulkActions from "../../../public/images/Bioz_Search_Results_Articles_Bulk_Actions_2340w.png";
-import ProductTiles from "../../../public/images/Bioz_Product_Tiles_2340w.png";
-import ProductComparison from "../../../public/images/Bioz_Product_Comparison_2340w.png";
-import JournalCreation from "../../../public/images/Bioz_Journal_Creation.svg";
-import FilterDropDowns from "../../../public/images/Bioz_Filter_Dropdowns_2340w.png";
-import SaveProductToFolder from "../../../public/images/Bioz_Save_Product_to_Folder_2340w.png";
-import ProductDetails from "../../../public/images/Bioz_Product_Details_2340w.png";
-import FigureViewer from "../../../public/images/Bioz_Figure_Viewer_2340w.png";
-import FigureViewerFullScreen from "../../../public/images/Bioz_Figure_Viewer_Full_Screen_2340w.png";
-import InformationOverlap from "../../../public/images/Bioz_Information_Overlap.svg";
-import ArticleFullText from "../../../public/images/Bioz_Article_Full_Text_2340w.png";
+import BiozModel from "./assets/Bioz_Model.svg";
+import SearchResultsProducts from "./assets/Bioz_Search_Results_Products_2340w.png";
+import SearchResultsProductsBulkActions from "./assets/Bioz_Search_Results_Products_Bulk_Actions_2340w.png";
+import SearchResultsFigures from "./assets/Bioz_Search_Results_Figures_2340w.png";
+import SearchResultsFiguresBulkActions from "./assets/Bioz_Search_Results_Figures_Bulk_Actions_2340w.png";
+import SearchResultsArticles from "./assets/Bioz_Search_Results_Articles_2340w.png";
+import SearchResultsArticlesBulkActions from "./assets/Bioz_Search_Results_Articles_Bulk_Actions_2340w.png";
+import ProductTiles from "./assets/Bioz_Product_Tiles_2340w.png";
+import ProductComparison from "./assets/Bioz_Product_Comparison_2340w.png";
+import JournalCreation from "./assets/Bioz_Journal_Creation.svg";
+import FilterDropDowns from "./assets/Bioz_Filter_Dropdowns_2340w.png";
+import SaveProductToFolder from "./assets/Bioz_Save_Product_to_Folder_2340w.png";
+import ProductDetails from "./assets/Bioz_Product_Details_2340w.png";
+import FigureViewer from "./assets/Bioz_Figure_Viewer_2340w.png";
+import FigureViewerFullScreen from "./assets/Bioz_Figure_Viewer_Full_Screen_2340w.png";
+import InformationOverlap from "./assets/Bioz_Information_Overlap.svg";
+import ArticleFullText from "./assets/Bioz_Article_Full_Text_2340w.png";
 
 const title = "Using A.I. to accelerate life science.";
 const description = (

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 
-import Birdhouse1 from "../../../public/images/Birdhouse_01.jpg";
-import Birdhouse2 from "../../../public/images/Birdhouse_02.jpg";
-import Birdhouse3 from "../../../public/images/Birdhouse_03.jpg";
-import BirdhouseCloseup from "../../../public/images/Birdhouse_Closeup_1170w.png";
-import Birdhouse4 from "../../../public/images/Birdhouse_04.jpg";
-import Birdhouse5 from "../../../public/images/Birdhouse_05.jpg";
+import Birdhouse1 from "./assets/Birdhouse_01.jpg";
+import Birdhouse2 from "./assets/Birdhouse_02.jpg";
+import Birdhouse3 from "./assets/Birdhouse_03.jpg";
+import BirdhouseCloseup from "./assets/Birdhouse_Closeup_1170w.png";
+import Birdhouse4 from "./assets/Birdhouse_04.jpg";
+import Birdhouse5 from "./assets/Birdhouse_05.jpg";
 
 const title = "Mr. Potato Head is for the birds.";
 

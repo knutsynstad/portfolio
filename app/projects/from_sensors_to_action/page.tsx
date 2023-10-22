@@ -2,12 +2,12 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import Sensors1 from "../../../public/images/Sensors_1.svg";
-import Sensors2 from "../../../public/images/Sensors_2.svg";
-import Sensors3 from "../../../public/images/Sensors_3.svg";
-import Sensors4 from "../../../public/images/Sensors_4.svg";
-import Sensors5 from "../../../public/images/Sensors_5.svg";
-import Sensors6 from "../../../public/images/Sensors_6.svg";
+import Sensors1 from "./assets/Sensors_1.svg";
+import Sensors2 from "./assets/Sensors_2.svg";
+import Sensors3 from "./assets/Sensors_3.svg";
+import Sensors4 from "./assets/Sensors_4.svg";
+import Sensors5 from "./assets/Sensors_5.svg";
+import Sensors6 from "./assets/Sensors_6.svg";
 
 const title = "From sensors to action.";
 

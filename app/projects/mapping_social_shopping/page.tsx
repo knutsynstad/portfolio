@@ -3,11 +3,11 @@ import Image from "@/components/Image";
 import Slideshow from "@/components/Slideshow";
 
 // Assets
-import Sello_Social_Selling from "../../../public/images/Sello_Social_Selling.svg";
-import Sello_Merchant_Map_1 from "../../../public/images/Sello_Merchant_Map_1_2340w.png";
-import Sello_Merchant_Map_2 from "../../../public/images/Sello_Merchant_Map_2_2340w.png";
-import Sello_Merchant_Map_3 from "../../../public/images/Sello_Merchant_Map_3_2340w.png";
-import Sello_Customer_Map from "../../../public/images/Sello_Customer_Map_2340w.png";
+import Sello_Social_Selling from "./assets/Sello_Social_Selling.svg";
+import Sello_Merchant_Map_1 from "./assets/Sello_Merchant_Map_1_2340w.png";
+import Sello_Merchant_Map_2 from "./assets/Sello_Merchant_Map_2_2340w.png";
+import Sello_Merchant_Map_3 from "./assets/Sello_Merchant_Map_3_2340w.png";
+import Sello_Customer_Map from "./assets/Sello_Customer_Map_2340w.png";
 
 const title = "Mapping social shopping.";
 

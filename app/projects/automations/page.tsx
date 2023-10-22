@@ -3,32 +3,32 @@ import ProjectHeader from "@/components/ProjectHeader";
 import Slideshow from "@/components/Slideshow";
 import StickyNote from "@/components/StickyNote";
 
-import Exhibit1 from "../../../public/images/automation_timeline_1.png";
-import Exhibit2 from "../../../public/images/automations_model_step_count.png";
-import Exhibit3 from "../../../public/images/automations_model_step_composition.png";
-import Exhibit4 from "../../../public/images/automations_model_unified_component.png";
-import Exhibit5 from "../../../public/images/automations_model_stacked_controls.png";
-import Exhibit6 from "../../../public/images/automations_model_dynamic_inputs.png";
+import Exhibit1 from "./assets/automation_timeline_1.png";
+import Exhibit2 from "./assets/automations_model_step_count.png";
+import Exhibit3 from "./assets/automations_model_step_composition.png";
+import Exhibit4 from "./assets/automations_model_unified_component.png";
+import Exhibit5 from "./assets/automations_model_stacked_controls.png";
+import Exhibit6 from "./assets/automations_model_dynamic_inputs.png";
 
 // Timelines
-import timelineGamedayPost from "../../../public/images/timeline_create_and_pin_gameday_post.png";
-import timelineGreetNewUser from "../../../public/images/timeline_greet_new_user.png";
-import timelinePostFlair from "../../../public/images/timeline_post_flair.png";
-import timelineRemovePost from "../../../public/images/timeline_remove_post.png";
-import timelineRemoveAndBan from "../../../public/images/timeline_remove_post_and_ban_user.png";
+import timelineGamedayPost from "./assets/timeline_create_and_pin_gameday_post.png";
+import timelineGreetNewUser from "./assets/timeline_greet_new_user.png";
+import timelinePostFlair from "./assets/timeline_post_flair.png";
+import timelineRemovePost from "./assets/timeline_remove_post.png";
+import timelineRemoveAndBan from "./assets/timeline_remove_post_and_ban_user.png";
 
 // Creating an Automation
-import AutomationsEmptyState from "../../../public/images/automations_empty_state.png";
-import AutomationsChangingTheName from "../../../public/images/automations_changing_the_name.png";
-import AutomationsSelectTrigger from "../../../public/images/automations_select_trigger.png";
-import AutomationsTimelineWithTrigger from "../../../public/images/automations_timeline_with_trigger.png";
-import AutomationsAddAStep from "../../../public/images/automations_add_a_step.png";
-import AutomationsEmptyMessage from "../../../public/images/automations_empty_message.png";
-import AutomationsPopulatedMessage from "../../../public/images/automations_populated_message.png";
+import AutomationsEmptyState from "./assets/automations_empty_state.png";
+import AutomationsChangingTheName from "./assets/automations_changing_the_name.png";
+import AutomationsSelectTrigger from "./assets/automations_select_trigger.png";
+import AutomationsTimelineWithTrigger from "./assets/automations_timeline_with_trigger.png";
+import AutomationsAddAStep from "./assets/automations_add_a_step.png";
+import AutomationsEmptyMessage from "./assets/automations_empty_message.png";
+import AutomationsPopulatedMessage from "./assets/automations_populated_message.png";
 
 // Automations index
-import AutomationsListEmpty from "../../../public/images/automations_list_empty.png";
-import AutomationsListPopulated from "../../../public/images/automations_list_populated.png";
+import AutomationsListEmpty from "./assets/automations_list_empty.png";
+import AutomationsListPopulated from "./assets/automations_list_populated.png";
 
 // New assets folder
 import AutomationsStepsLinear from "./assets/automations-steps-linear.png";

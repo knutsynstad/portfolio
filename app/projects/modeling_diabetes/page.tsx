@@ -2,15 +2,15 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import Diabetes_Open_Loop_Process from "../../../public/images/Diabetes_Open_Loop_Process.svg";
-import Diabetes_Closed_Loop_Process from "../../../public/images/Diabetes_Closed_Loop_Process.svg";
-import Diabetes_Mechanical_Thermostat from "../../../public/images/Diabetes_Mechanical_Thermostat.svg";
-import Diabetes_Healthy_Person from "../../../public/images/Diabetes_Healthy_Person.svg";
-import Diabetes_Manual_Injections from "../../../public/images/Diabetes_Manual_Injections.svg";
-import Diabetes_Artificial_Pancreas from "../../../public/images/Diabetes_Artificial_Pancreas.svg";
-import Diabetes_Physiological_Feedback_Loop from "../../../public/images/Diabetes_Physiological_Feedback_Loop.svg";
-import Diabetes_Augmented_Data from "../../../public/images/Diabetes_Augmented_Data.svg";
-import Diabetes_Interacting_Feedback_Loops from "../../../public/images/Diabetes_Interacting_Feedback_Loops.svg";
+import Diabetes_Open_Loop_Process from "./assets/Diabetes_Open_Loop_Process.svg";
+import Diabetes_Closed_Loop_Process from "./assets/Diabetes_Closed_Loop_Process.svg";
+import Diabetes_Mechanical_Thermostat from "./assets/Diabetes_Mechanical_Thermostat.svg";
+import Diabetes_Healthy_Person from "./assets/Diabetes_Healthy_Person.svg";
+import Diabetes_Manual_Injections from "./assets/Diabetes_Manual_Injections.svg";
+import Diabetes_Artificial_Pancreas from "./assets/Diabetes_Artificial_Pancreas.svg";
+import Diabetes_Physiological_Feedback_Loop from "./assets/Diabetes_Physiological_Feedback_Loop.svg";
+import Diabetes_Augmented_Data from "./assets/Diabetes_Augmented_Data.svg";
+import Diabetes_Interacting_Feedback_Loops from "./assets/Diabetes_Interacting_Feedback_Loops.svg";
 
 const title = "Modeling diabetes.";
 

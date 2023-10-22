@@ -2,11 +2,11 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import Magnolia_01 from "../../../public/images/Magnolia_01.jpg";
-import Magnolia_02 from "../../../public/images/Magnolia_02.jpg";
-import Magnolia_03 from "../../../public/images/Magnolia_03.jpg";
-import Magnolia_04 from "../../../public/images/Magnolia_04.jpg";
-import Magnolia_05 from "../../../public/images/Magnolia_05.jpg";
+import Magnolia_01 from "./assets/Magnolia_01.jpg";
+import Magnolia_02 from "./assets/Magnolia_02.jpg";
+import Magnolia_03 from "./assets/Magnolia_03.jpg";
+import Magnolia_04 from "./assets/Magnolia_04.jpg";
+import Magnolia_05 from "./assets/Magnolia_05.jpg";
 
 const title = "Raise your glass to Dorian Gray.";
 

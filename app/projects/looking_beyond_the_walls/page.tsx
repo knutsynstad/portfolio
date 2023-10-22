@@ -2,9 +2,9 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import SweetTooth from "../../../public/images/sweet_tooth_2340w.png";
-import PipeSchematic from "../../../public/images/pipe_schematic.svg";
-import Pipe from "../../../public/images/pipe_2340w.png";
+import SweetTooth from "./assets/sweet_tooth_2340w.png";
+import PipeSchematic from "./assets/pipe_schematic.svg";
+import Pipe from "./assets/pipe_2340w.png";
 
 const title = "Looking beyond the walls.";
 

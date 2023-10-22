@@ -2,14 +2,14 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import Earthnuts1 from "../../../public/images/Earthnuts_1_2340w.png";
-import Earthnuts2a from "../../../public/images/Earthnuts_2a_1140w.png";
-import Earthnuts2b from "../../../public/images/Earthnuts_2b_1140w.png";
-import Earthnuts3a from "../../../public/images/Earthnuts_3a_1140w.png";
-import Earthnuts3b from "../../../public/images/Earthnuts_3b_1140w.png";
-import Earthnuts4 from "../../../public/images/Earthnuts_4_2340w.png";
-import Earthnuts5 from "../../../public/images/Earthnuts_5_2340w.png";
-import Earthnuts6 from "../../../public/images/Earthnuts_6_2340w.png";
+import Earthnuts1 from "./assets/Earthnuts_1_2340w.png";
+import Earthnuts2a from "./assets/Earthnuts_2a_1140w.png";
+import Earthnuts2b from "./assets/Earthnuts_2b_1140w.png";
+import Earthnuts3a from "./assets/Earthnuts_3a_1140w.png";
+import Earthnuts3b from "./assets/Earthnuts_3b_1140w.png";
+import Earthnuts4 from "./assets/Earthnuts_4_2340w.png";
+import Earthnuts5 from "./assets/Earthnuts_5_2340w.png";
+import Earthnuts6 from "./assets/Earthnuts_6_2340w.png";
 
 const title = "Remedies come in all shapes and flavors.";
 

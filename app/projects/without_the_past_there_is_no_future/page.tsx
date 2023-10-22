@@ -2,17 +2,17 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import Befor_01 from "../../../public/images/Befor_01.jpg";
-import Befor_11 from "../../../public/images/Befor_11.jpg";
-import Befor_02 from "../../../public/images/Befor_02.jpg";
-import Befor_03 from "../../../public/images/Befor_03.jpg";
-import Befor_10 from "../../../public/images/Befor_10.jpg";
-import Befor_04 from "../../../public/images/Befor_04.jpg";
-import Befor_05 from "../../../public/images/Befor_05.jpg";
-import Befor_07 from "../../../public/images/Befor_07.jpg";
-import Befor_12 from "../../../public/images/Befor_12.jpg";
-import Befor_13 from "../../../public/images/Befor_13.jpg";
-import Befor_08 from "../../../public/images/Befor_08.jpg";
+import Befor_01 from "./assets/Befor_01.jpg";
+import Befor_11 from "./assets/Befor_11.jpg";
+import Befor_02 from "./assets/Befor_02.jpg";
+import Befor_03 from "./assets/Befor_03.jpg";
+import Befor_10 from "./assets/Befor_10.jpg";
+import Befor_04 from "./assets/Befor_04.jpg";
+import Befor_05 from "./assets/Befor_05.jpg";
+import Befor_07 from "./assets/Befor_07.jpg";
+import Befor_12 from "./assets/Befor_12.jpg";
+import Befor_13 from "./assets/Befor_13.jpg";
+import Befor_08 from "./assets/Befor_08.jpg";
 
 const title = "Without the past, there is no future.";
 const description = (

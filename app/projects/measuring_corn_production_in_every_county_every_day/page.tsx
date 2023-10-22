@@ -1,10 +1,10 @@
-import Image from "@/components/Image";
-import Corn_Poster from "../../../public/images/Corn_Poster.svg";
-import Colorfield from "@/components/Colorfield";
 import ProjectHeader from "@/components/ProjectHeader";
+import Image from "@/components/Image";
+import Colorfield from "@/components/Colorfield";
+
+import Corn_Poster from "./assets/Corn_Poster.svg";
 
 const title = "Measuring corn production, in every county, every day.";
-
 const description = (
   <>
     <p>
@@ -37,7 +37,6 @@ const description = (
     </p>
   </>
 );
-
 const metadata = [
   {
     title: "Agency",

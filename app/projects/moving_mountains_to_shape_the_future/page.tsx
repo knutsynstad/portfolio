@@ -2,12 +2,12 @@ import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 
 // Assets
-import Life1 from "../../../public/images/100_People_01.jpg";
-import Life2 from "../../../public/images/100_People_02.jpg";
-import Life3 from "../../../public/images/100_People_03.jpg";
-import Life4 from "../../../public/images/100_People_04.jpg";
-import Life5 from "../../../public/images/100_People_05.jpg";
-import Life6 from "../../../public/images/100_People_06.jpg";
+import Life1 from "./assets/100_People_01.jpg";
+import Life2 from "./assets/100_People_02.jpg";
+import Life3 from "./assets/100_People_03.jpg";
+import Life4 from "./assets/100_People_04.jpg";
+import Life5 from "./assets/100_People_05.jpg";
+import Life6 from "./assets/100_People_06.jpg";
 
 const title = "Moving mountains to shape the future.";
 const description = (

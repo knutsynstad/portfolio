@@ -6,15 +6,15 @@ import Slideshow from "@/components/Slideshow";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import Exhibit1 from "../../../public/images/Tic_Tac_Toe_Poster_Full_2340w.png";
-import Exhibit2 from "../../../public/images/Tic_Tac_Toe_Multiple_2340w.png";
-import Exhibit3 from "../../../public/images/Tic_Tac_Toe_Detail_2340w.png";
-import Exhibit4 from "../../../public/images/Tic_Tac_Toe_Legend_2340w.png";
-import Exhibit5 from "../../../public/images/Tic_Tac_Toe_Website.svg";
-import Exhibit6 from "../../../public/images/Tic_Tac_Toe_Website_About.svg";
-import Exhibit7 from "../../../public/images/Tic_Tac_Toe_Graph_1.svg";
-import Exhibit8 from "../../../public/images/Tic_Tac_Toe_Graph_2.svg";
-import Exhibit9 from "../../../public/images/Tic_Tac_Toe_Graph_3.svg";
+import Exhibit1 from "./assets/Tic_Tac_Toe_Poster_Full_2340w.png";
+import Exhibit2 from "./assets/Tic_Tac_Toe_Multiple_2340w.png";
+import Exhibit3 from "./assets/Tic_Tac_Toe_Detail_2340w.png";
+import Exhibit4 from "./assets/Tic_Tac_Toe_Legend_2340w.png";
+import Exhibit5 from "./assets/Tic_Tac_Toe_Website.svg";
+import Exhibit6 from "./assets/Tic_Tac_Toe_Website_About.svg";
+import Exhibit7 from "./assets/Tic_Tac_Toe_Graph_1.svg";
+import Exhibit8 from "./assets/Tic_Tac_Toe_Graph_2.svg";
+import Exhibit9 from "./assets/Tic_Tac_Toe_Graph_3.svg";
 
 const title = "The tic-tac-toe solution space.";
 const description = (

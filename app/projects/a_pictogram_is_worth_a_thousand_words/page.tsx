@@ -2,26 +2,26 @@ import ProjectHeader from "@/components/ProjectHeader";
 import Image from "@/components/Image";
 
 // Assets
-import Icons_Core from "../../../public/images/Icons_Core.svg";
-import Icons_Buildings from "../../../public/images/Icons_Buildings.svg";
-import Icons_Transport_Travel from "../../../public/images/Icons_Transport_Travel.svg";
-import Icons_Closed_Loop_Insulin_Delivery2 from "../../../public/images/Icons_Closed_Loop_Insulin_Delivery2.svg";
-import Icons_Tech_Science from "../../../public/images/Icons_Tech_Science.svg";
-import Icons_Data_Science from "../../../public/images/Icons_Data_Science.svg";
-import Icons_Healthcare from "../../../public/images/Icons_Healthcare.svg";
-import Icons_Article_Publishing2 from "../../../public/images/Icons_Article_Publishing2.svg";
-import Icons_Food_Drink from "../../../public/images/Icons_Food_Drink.svg";
-import Icons_Audio_Video from "../../../public/images/Icons_Audio_Video.svg";
-import Icons_Household from "../../../public/images/Icons_Household.svg";
-import Icons_Animals_Pets from "../../../public/images/Icons_Animals_Pets.svg";
-import Icons_Reseller_Venue_Relationship2 from "../../../public/images/Icons_Reseller_Venue_Relationship2.svg";
-import Icons_Office_Supplies from "../../../public/images/Icons_Office_Supplies.svg";
-import Icons_Time_Date from "../../../public/images/Icons_Time_Date.svg";
-import Icons_Feedback_Loop2 from "../../../public/images/Icons_Feedback_Loop2.svg";
-import Icons_Finance from "../../../public/images/Icons_Finance.svg";
-import Icons_Communication from "../../../public/images/Icons_Communication.svg";
-import Icons_Electronics from "../../../public/images/Icons_Electronics.svg";
-import Icons_People from "../../../public/images/Icons_People.svg";
+import Icons_Core from "./assets/Icons_Core.svg";
+import Icons_Buildings from "./assets/Icons_Buildings.svg";
+import Icons_Transport_Travel from "./assets/Icons_Transport_Travel.svg";
+import Icons_Closed_Loop_Insulin_Delivery2 from "./assets/Icons_Closed_Loop_Insulin_Delivery2.svg";
+import Icons_Tech_Science from "./assets/Icons_Tech_Science.svg";
+import Icons_Data_Science from "./assets/Icons_Data_Science.svg";
+import Icons_Healthcare from "./assets/Icons_Healthcare.svg";
+import Icons_Article_Publishing2 from "./assets/Icons_Article_Publishing2.svg";
+import Icons_Food_Drink from "./assets/Icons_Food_Drink.svg";
+import Icons_Audio_Video from "./assets/Icons_Audio_Video.svg";
+import Icons_Household from "./assets/Icons_Household.svg";
+import Icons_Animals_Pets from "./assets/Icons_Animals_Pets.svg";
+import Icons_Reseller_Venue_Relationship2 from "./assets/Icons_Reseller_Venue_Relationship2.svg";
+import Icons_Office_Supplies from "./assets/Icons_Office_Supplies.svg";
+import Icons_Time_Date from "./assets/Icons_Time_Date.svg";
+import Icons_Feedback_Loop2 from "./assets/Icons_Feedback_Loop2.svg";
+import Icons_Finance from "./assets/Icons_Finance.svg";
+import Icons_Communication from "./assets/Icons_Communication.svg";
+import Icons_Electronics from "./assets/Icons_Electronics.svg";
+import Icons_People from "./assets/Icons_People.svg";
 
 const title = "A pictogram is worth a thousand words.";
 const description = (

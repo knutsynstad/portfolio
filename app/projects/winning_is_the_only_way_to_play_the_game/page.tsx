@@ -2,11 +2,11 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import Elite_Raiders_01 from "../../../public/images/Elite_Raiders_01.jpg";
-import Elite_Raiders_02 from "../../../public/images/Elite_Raiders_02.jpg";
-import Elite_Raiders_03 from "../../../public/images/Elite_Raiders_03.jpg";
-import Elite_Raiders_04 from "../../../public/images/Elite_Raiders_04.jpg";
-import Elite_Raiders_05 from "../../../public/images/Elite_Raiders_05.jpg";
+import Elite_Raiders_01 from "./assets/Elite_Raiders_01.jpg";
+import Elite_Raiders_02 from "./assets/Elite_Raiders_02.jpg";
+import Elite_Raiders_03 from "./assets/Elite_Raiders_03.jpg";
+import Elite_Raiders_04 from "./assets/Elite_Raiders_04.jpg";
+import Elite_Raiders_05 from "./assets/Elite_Raiders_05.jpg";
 
 const title = "Winning is the only way to play the game.";
 const description = (

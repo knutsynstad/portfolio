@@ -3,10 +3,10 @@ import Slideshow from "@/components/Slideshow";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import AST_Identity_Color from "../../../public/images/AST_Identity_Color.svg";
-import AST_Identity_Blue from "../../../public/images/AST_Identity_Blue.svg";
-import AST_Identity_Black from "../../../public/images/AST_Identity_Black.svg";
-import AST_Stationery from "../../../public/images/AST_Stationery.svg";
+import AST_Identity_Color from "./assets/AST_Identity_Color.svg";
+import AST_Identity_Blue from "./assets/AST_Identity_Blue.svg";
+import AST_Identity_Black from "./assets/AST_Identity_Black.svg";
+import AST_Stationery from "./assets/AST_Stationery.svg";
 
 const title = "Smarter testing for better health.";
 const description = (

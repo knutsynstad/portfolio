@@ -1,33 +1,32 @@
 import ProjectHeader from "@/components/ProjectHeader";
-import Image from "@/components/Image";
 import Slideshow from "@/components/Slideshow";
 
-import Viz from "../../../public/images/logos_lap_end.png";
+import HeroViz from "./assets/logos_lap_end.png";
 
 // Introduction
-import Introduction from "../../../public/images/Fortune_500_Introduction_2340w.png";
-import IntroductionLoaded from "../../../public/images/Fortune_500_Introduction_Loaded_2340w.png";
-import IntroductionAccordion from "../../../public/images/Fortune_500_Introduction_Accordion_2340w.png";
-import IntroductionOpenAccordionAbove from "../../../public/images/Fortune_500_Introduction_Open_Accordion_Above_2340w.png";
-import IntroductionOpenAccordionBelow from "../../../public/images/Fortune_500_Introduction_Open_Accordion_Below_2340w.png";
-import IntroductionScrolledToBottom from "../../../public/images/Fortune_500_Introduction_Scrolled_to_Bottom_2340w.png";
+import Introduction from "./assets/Fortune_500_Introduction_2340w.png";
+import IntroductionLoaded from "./assets/Fortune_500_Introduction_Loaded_2340w.png";
+import IntroductionAccordion from "./assets/Fortune_500_Introduction_Accordion_2340w.png";
+import IntroductionOpenAccordionAbove from "./assets/Fortune_500_Introduction_Open_Accordion_Above_2340w.png";
+import IntroductionOpenAccordionBelow from "./assets/Fortune_500_Introduction_Open_Accordion_Below_2340w.png";
+import IntroductionScrolledToBottom from "./assets/Fortune_500_Introduction_Scrolled_to_Bottom_2340w.png";
 
 // Visualization
-import Visualization from "../../../public/images/Fortune_500_Visualization_2340w.png";
-import Instruction from "../../../public/images/Fortune_500_Instruction_2340w.png";
-import VisualizationLoading from "../../../public/images/Fortune_500_Visualization_Loading_2340w.png";
-import VisualizationHoverstates from "../../../public/images/Fortune_500_Visualization_Hoverstates_2340w.png";
+import Visualization from "./assets/Fortune_500_Visualization_2340w.png";
+import Instruction from "./assets/Fortune_500_Instruction_2340w.png";
+import VisualizationLoading from "./assets/Fortune_500_Visualization_Loading_2340w.png";
+import VisualizationHoverstates from "./assets/Fortune_500_Visualization_Hoverstates_2340w.png";
 
 // Controls
-import FortuneConfiguration from "../../../public/images/Fortune_500_Visualization_Configuration_2340w.png";
-import VisualizationMoreMenu from "../../../public/images/Fortune_500_Visualization_More_Menu_2340w.png";
-import VisualizationShareMenu from "../../../public/images/Fortune_500_Visualization_Share_Menu_2340w.png";
-import About from "../../../public/images/Fortune_500_About_2340w.png";
-import AboutHover from "../../../public/images/Fortune_500_About_Hover_2340w.png";
+import FortuneConfiguration from "./assets/Fortune_500_Visualization_Configuration_2340w.png";
+import VisualizationMoreMenu from "./assets/Fortune_500_Visualization_More_Menu_2340w.png";
+import VisualizationShareMenu from "./assets/Fortune_500_Visualization_Share_Menu_2340w.png";
+import About from "./assets/Fortune_500_About_2340w.png";
+import AboutHover from "./assets/Fortune_500_About_Hover_2340w.png";
 
 // Application Map
-import ApplicationMapLeft from "../../../public/images/Fortune_500_Application_Map_Left_2340w.png";
-import ApplicationMapRight from "../../../public/images/Fortune_500_Application_Map_Right_2340w.png";
+import ApplicationMapLeft from "./assets/Fortune_500_Application_Map_Left_2340w.png";
+import ApplicationMapRight from "./assets/Fortune_500_Application_Map_Right_2340w.png";
 
 const title = "Visualizing the Fortune 500.";
 const description = (
@@ -87,19 +86,18 @@ const Project = () => (
     <main>
       <figure>
         <video autoPlay loop muted>
-          <source src="/images/logos_tsne_600_steps.webm" type="video/webm" />
-          <source src="/images/logos_tsne_600_steps.mp4" type="video/mp4" />
+          <source src="/videos/logos_tsne_600_steps.webm" type="video/webm" />
+          <source src="/videos/logos_tsne_600_steps.mp4" type="video/mp4" />
           <p>Your browser doesn&apos;t support HTML video.</p>
         </video>
         <figcaption>
           The timelapse shows 600 t-SNE iterations, each improving the solution.
         </figcaption>
       </figure>
-
       <figure>
         <video autoPlay loop muted>
-          <source src="/images/logos_tsne_to_lap.webm" type="video/webm" />
-          <source src="/images/logos_tsne_to_lap.mp4" type="video/mp4" />
+          <source src="/videos/logos_tsne_to_lap.webm" type="video/webm" />
+          <source src="/videos/logos_tsne_to_lap.mp4" type="video/mp4" />
           <p>Your browser doesn&apos;t support HTML video.</p>
         </video>
         <figcaption>

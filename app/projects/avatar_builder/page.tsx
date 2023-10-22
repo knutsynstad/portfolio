@@ -1,41 +1,40 @@
+import ProjectHeader from "@/components/ProjectHeader";
 import Image from "@/components/Image";
 import Row from "@/components/Row";
-import ProjectHeader from "@/components/ProjectHeader";
 
 // Avatar Showcase
-import Box1 from "../../../public/images/Box1.png";
-import Box2 from "../../../public/images/Box2.png";
-import Box3 from "../../../public/images/Box3.png";
-import Box4 from "../../../public/images/Box4.png";
-import Box5 from "../../../public/images/Box5.png";
-import Box6 from "../../../public/images/Box6.png";
-import Box7 from "../../../public/images/Box7.png";
-import Box8 from "../../../public/images/Box8.png";
-import Box9 from "../../../public/images/Box9.png";
-import Box10 from "../../../public/images/Box10.png";
-import Box11 from "../../../public/images/Box11.png";
-import Box12 from "../../../public/images/Box12.png";
-import Box13 from "../../../public/images/Box13.png";
-import Box14 from "../../../public/images/Box14.png";
-import Box15 from "../../../public/images/Box15.png";
-import Box16 from "../../../public/images/Box16.png";
-import Box17 from "../../../public/images/Box17.png";
-import Box18 from "../../../public/images/Box18.png";
+import Box1 from "./assets/Box1.png";
+import Box2 from "./assets/Box2.png";
+import Box3 from "./assets/Box3.png";
+import Box4 from "./assets/Box4.png";
+import Box5 from "./assets/Box5.png";
+import Box6 from "./assets/Box6.png";
+import Box7 from "./assets/Box7.png";
+import Box8 from "./assets/Box8.png";
+import Box9 from "./assets/Box9.png";
+import Box10 from "./assets/Box10.png";
+import Box11 from "./assets/Box11.png";
+import Box12 from "./assets/Box12.png";
+import Box13 from "./assets/Box13.png";
+import Box14 from "./assets/Box14.png";
+import Box15 from "./assets/Box15.png";
+import Box16 from "./assets/Box16.png";
+import Box17 from "./assets/Box17.png";
+import Box18 from "./assets/Box18.png";
 
 // Screens
-import Me1 from "../../../public/images/Me1.png";
-import Me2 from "../../../public/images/Me2.png";
-import Me3 from "../../../public/images/Me3.png";
-import Style1 from "../../../public/images/Style1.png";
-import Style2 from "../../../public/images/Style2.png";
-import Style3 from "../../../public/images/Style3.png";
-import Explore0 from "../../../public/images/Explore0.png";
-import Explore1 from "../../../public/images/Explore1.png";
-import Explore2 from "../../../public/images/Explore2.png";
-import Explore3 from "../../../public/images/Explore3.png";
+import Me1 from "./assets/Me1.png";
+import Me2 from "./assets/Me2.png";
+import Me3 from "./assets/Me3.png";
+import Style1 from "./assets/Style1.png";
+import Style2 from "./assets/Style2.png";
+import Style3 from "./assets/Style3.png";
+import Explore0 from "./assets/Explore0.png";
+import Explore1 from "./assets/Explore1.png";
+import Explore2 from "./assets/Explore2.png";
+import Explore3 from "./assets/Explore3.png";
 
 const title = "The Reddit Avatar Builder.";
-
 const description = (
   <>
     <p>
@@ -60,7 +59,6 @@ const description = (
     <p>impact</p>
   </>
 );
-
 const metadata = [
   {
     title: "Company",

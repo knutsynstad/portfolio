@@ -2,16 +2,16 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import Margin_of_Error_01 from "../../../public/images/Margin_of_Error_01.jpg";
-import Margin_of_Error_02 from "../../../public/images/Margin_of_Error_02.jpg";
-import Margin_of_Error_03 from "../../../public/images/Margin_of_Error_03.jpg";
-import Margin_of_Error_04 from "../../../public/images/Margin_of_Error_04.jpg";
-import Margin_of_Error_05 from "../../../public/images/Margin_of_Error_05.jpg";
-import Margin_of_Error_06 from "../../../public/images/Margin_of_Error_06.jpg";
-import Margin_of_Error_07 from "../../../public/images/Margin_of_Error_07.jpg";
-import Margin_of_Error_08 from "../../../public/images/Margin_of_Error_08.jpg";
-import Margin_of_Error_09 from "../../../public/images/Margin_of_Error_09.jpg";
-import Margin_of_Error_10 from "../../../public/images/Margin_of_Error_10.jpg";
+import Margin_of_Error_01 from "./assets/Margin_of_Error_01.jpg";
+import Margin_of_Error_02 from "./assets/Margin_of_Error_02.jpg";
+import Margin_of_Error_03 from "./assets/Margin_of_Error_03.jpg";
+import Margin_of_Error_04 from "./assets/Margin_of_Error_04.jpg";
+import Margin_of_Error_05 from "./assets/Margin_of_Error_05.jpg";
+import Margin_of_Error_06 from "./assets/Margin_of_Error_06.jpg";
+import Margin_of_Error_07 from "./assets/Margin_of_Error_07.jpg";
+import Margin_of_Error_08 from "./assets/Margin_of_Error_08.jpg";
+import Margin_of_Error_09 from "./assets/Margin_of_Error_09.jpg";
+import Margin_of_Error_10 from "./assets/Margin_of_Error_10.jpg";
 
 const title = "The truth is rarely black and white.";
 const description = (

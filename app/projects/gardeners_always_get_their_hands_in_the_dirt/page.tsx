@@ -2,12 +2,12 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import French_Paper_01 from "../../../public/images/French_Paper_01.jpg";
-import French_Paper_02 from "../../../public/images/French_Paper_02.jpg";
-import French_Paper_03 from "../../../public/images/French_Paper_03.jpg";
-import French_Paper_04 from "../../../public/images/French_Paper_04.jpg";
-import French_Paper_05 from "../../../public/images/French_Paper_05.jpg";
-import French_Paper_06 from "../../../public/images/French_Paper_06.jpg";
+import French_Paper_01 from "./assets/French_Paper_01.jpg";
+import French_Paper_02 from "./assets/French_Paper_02.jpg";
+import French_Paper_03 from "./assets/French_Paper_03.jpg";
+import French_Paper_04 from "./assets/French_Paper_04.jpg";
+import French_Paper_05 from "./assets/French_Paper_05.jpg";
+import French_Paper_06 from "./assets/French_Paper_06.jpg";
 
 const title = "Gardeners always get their hands in the dirt.";
 const description = (

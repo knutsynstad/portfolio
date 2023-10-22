@@ -2,15 +2,15 @@ import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
 // Assets
-import Seagrams_01 from "../../../public/images/Seagrams_01.jpg";
-import Seagrams_02 from "../../../public/images/Seagrams_02.jpg";
-import Seagrams_03 from "../../../public/images/Seagrams_03.jpg";
-import Seagrams_04 from "../../../public/images/Seagrams_04.jpg";
-import Seagrams_05 from "../../../public/images/Seagrams_05.jpg";
-import Seagrams_06 from "../../../public/images/Seagrams_06.jpg";
-import Seagrams_07 from "../../../public/images/Seagrams_07.jpg";
-import Seagrams_08 from "../../../public/images/Seagrams_08.jpg";
-import Seagrams_09 from "../../../public/images/Seagrams_09.jpg";
+import Seagrams_01 from "./assets/Seagrams_01.jpg";
+import Seagrams_02 from "./assets/Seagrams_02.jpg";
+import Seagrams_03 from "./assets/Seagrams_03.jpg";
+import Seagrams_04 from "./assets/Seagrams_04.jpg";
+import Seagrams_05 from "./assets/Seagrams_05.jpg";
+import Seagrams_06 from "./assets/Seagrams_06.jpg";
+import Seagrams_07 from "./assets/Seagrams_07.jpg";
+import Seagrams_08 from "./assets/Seagrams_08.jpg";
+import Seagrams_09 from "./assets/Seagrams_09.jpg";
 
 const title = "Winding down gets a little help.";
 const description = (
