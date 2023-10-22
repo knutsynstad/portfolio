@@ -21,7 +21,7 @@ const socialLinks = socials.map((social) => (
     key={social.name}
     href={social.url}
     target="_blank"
-    className="flex items-center gap-2"
+    className="flex items-center gap-2 transition-all hover:text-pink-500"
   >
     <svg
       viewBox="0 0 24 24"
@@ -36,7 +36,7 @@ const socialLinks = socials.map((social) => (
 
 export default function Footer() {
   return (
-    <footer className="flex gap-8 justify-between mt-64 border-black">
+    <footer className="flex gap-8 justify-between mt-32">
       <p>Knut Synstad</p>
       <div className="flex gap-8">{socialLinks}</div>
     </footer>
