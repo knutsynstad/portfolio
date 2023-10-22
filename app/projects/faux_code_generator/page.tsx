@@ -1,16 +1,6 @@
-import Image from "@/components/Image";
 import ProjectHeader from "@/components/ProjectHeader";
 
-// Assets
-import Sensors1 from "../../../public/images/Sensors_1.svg";
-import Sensors2 from "../../../public/images/Sensors_2.svg";
-import Sensors3 from "../../../public/images/Sensors_3.svg";
-import Sensors4 from "../../../public/images/Sensors_4.svg";
-import Sensors5 from "../../../public/images/Sensors_5.svg";
-import Sensors6 from "../../../public/images/Sensors_6.svg";
-
 const title = "A faux code generator.";
-
 const description = (
   <>
     <p>
@@ -21,7 +11,6 @@ const description = (
     <p>Use a random, or provide your own, Github Gist.</p>
   </>
 );
-
 const metadata = [
   {
     title: "Category",
@@ -59,21 +48,6 @@ const metadata = [
   },
 ];
 
-const slides = [
-  [Sensors1, "Sensors make point-in-time observations."],
-  [
-    Sensors2,
-    "Observations may accumulate over time—preserving historical data.",
-  ],
-  [Sensors3, "Enough historical data enables modeling."],
-  [Sensors4, "Modeling predicits future states."],
-  [
-    Sensors5,
-    "More observations lead to more accurate models, and a better understanding of what is to come.",
-  ],
-  [Sensors6, "Knowing what is coming enables us to act today."],
-];
-
 const Project = () => (
   <>
     <ProjectHeader
@@ -81,16 +55,7 @@ const Project = () => (
       description={description}
       metadata={metadata}
     />
-    <main>
-      <div className="flex flex-col gap-32">
-        {slides.map(([src, alt]) => (
-          <div key={alt}>
-            <h2 className="mb-8">{alt}</h2>
-            <Image src={src} alt={alt} rounded />
-          </div>
-        ))}
-      </div>
-    </main>
+    <main></main>
   </>
 );
 

@@ -1,28 +1,17 @@
-import "@/globals.css";
-import { Inter } from "next/font/google";
-import Footer from "@/components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <div className="p-32 flex flex-col justify-center">
-          <div className="max-w-4xl">
-            {children}
+    <section>
+      {children}
 
-            <Footer />
-          </div>
-        </div>
-
+      <nav className="fixed top-[32px] left-[32px]">
         <a
+          aria-label="Back to projects"
           href="/"
-          className="fixed top-[32px] left-[32px] hover:fill-[rgba(0,0,0,0.3)] transition-all"
+          className="fill-black hover:fill-[rgba(0,0,0,0.3)] transition-all"
         >
           <svg
             viewBox="0 -960 960 960"
@@ -32,7 +21,7 @@ export default function RootLayout({
             <path d="M480-160 160-480l320-320 57 56-224 224h487v80H313l224 224-57 56Z" />
           </svg>
         </a>
-      </body>
-    </html>
+      </nav>
+    </section>
   );
 }
