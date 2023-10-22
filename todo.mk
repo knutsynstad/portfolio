@@ -6,9 +6,10 @@
 [ ] AST Identity animation
 [X] Slideshow support for captions for each slide
 [ ] Fix the <title> property on each page
-[ ] Add favicon
+[X] Add favicon
 [X] Move assets into project folders
-[ ] Apple Park video
+[X] Apple Park video
+[X] Fix the grid on Apple Park
 
 
 # New project ideas

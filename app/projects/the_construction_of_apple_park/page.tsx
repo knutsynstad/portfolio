@@ -1,5 +1,5 @@
 import ProjectHeader from "@/components/ProjectHeader";
-import Image from "@/components/Image";
+import Image from "next/image";
 
 // 2012
 import Apple_NAIP_2012 from "./assets/Apple_NAIP_2012.png";
@@ -139,20 +139,24 @@ import sentinel2_20171211 from "./assets/sentinel-2_2017-12-11.png";
 import sentinel2_20171216 from "./assets/sentinel-2_2017-12-16.png";
 import sentinel2_20171221 from "./assets/sentinel-2_2017-12-21.png";
 import sentinel2_20171226 from "./assets/sentinel-2_2017-12-26.png";
+import next from "next";
 
 const title = "The construction of Apple Park.";
 
 const description = (
   <>
     <p>
-      Using platforms like Descartes Labs, everyone from hobbyists to scientists
-      can monitor the planet in near real-time for changes that matter to them.
-      Here I use public domain satellite and aerial imagery to observe the
-      construction of a new California landmark; Apple&apos;s $5 billion
-      headquarters, Apple Park. Located in Cupertino, CA, where HP&apos;s old
-      campus one stood before they moved to Palo Alto in 2010. Construction
-      began in late 2013 and opened to employees in April of 2017 despite
-      ongoing construction.
+      Using platforms like{" "}
+      <a href="https://descarteslabs.com/" target="_blank">
+        Descartes Labs
+      </a>
+      , everyone from hobbyists to scientists can monitor the planet in near
+      real-time for changes that matter to them. Here I use public domain
+      satellite and aerial imagery to observe the construction of a new
+      California landmark; Apple&apos;s $5 billion headquarters, Apple Park.
+      Located in Cupertino, CA, where HP&apos;s old campus one stood before they
+      moved to Palo Alto in 2010. Construction began in late 2013 and opened to
+      employees in April of 2017 despite ongoing construction.
     </p>
     <p>
       The imagery comes from NASA&apos;s Landsat 8 satellite, the European Space
@@ -175,6 +179,10 @@ const metadata = [
       { name: "Satellites" },
     ],
   },
+  {
+    title: "Links",
+    values: [{ name: "Descartes Labs", url: "https://descarteslabs.com/" }],
+  },
 ];
 
 type TileProps = {
@@ -184,11 +192,12 @@ type TileProps = {
 };
 
 const Tile = ({ src, date, instrument }: TileProps) => (
-  <div className="w-1/4 p-4 inline-flex flex-col gap-0">
+  <div className="w-full flex flex-col shrink grow">
     <Image
       src={src}
       alt={`${instrument} - ${date}`}
-      className="w-full rounded-md mb-4"
+      className="w-full rounded-2xl mb-3"
+      style={{ imageRendering: "pixelated" }}
     />
     <h3>{date}</h3>
     <p>{instrument}</p>
@@ -196,7 +205,7 @@ const Tile = ({ src, date, instrument }: TileProps) => (
 );
 
 const Tiles = ({ children }: any) => (
-  <div className="m-[-16px]">{children}</div>
+  <div className="grid gap-8 grid-cols-3">{children}</div>
 );
 
 const Project = () => (
@@ -206,8 +215,8 @@ const Project = () => (
       description={description}
       metadata={metadata}
     />
-    <main>
-      <video autoPlay loop muted>
+    <main className="flex flex-col gap-8">
+      <video autoPlay loop muted className="w-full rounded-2xl">
         <source src="/videos/apple_park.webm" type="video/webm" />
         <source src="/videos/apple_park.mp4" type="video/mp4" />
         <p>Your browser doesn&apos;t support HTML video.</p>
@@ -215,7 +224,7 @@ const Project = () => (
 
       <h2>2012</h2>
       <h2>Location of former HP Campus</h2>
-      <Image src={Apple_NAIP_2012} alt={title} />
+      <Image src={Apple_NAIP_2012} alt={title} className="rounded-2xl" />
       <h3>May 20, 2012</h3>
       <p>National Agriculture Imagery Program (NAIP)</p>
 
@@ -264,7 +273,7 @@ const Project = () => (
         ))}
       </Tiles>
 
-      <Image src={Apple_NAIP_2014} alt={title} />
+      <Image src={Apple_NAIP_2014} alt={title} className="rounded-2xl" />
       <h3>June 6, 2014</h3>
       <p>National Agriculture Imagery Program (NAIP)</p>
 
@@ -349,7 +358,7 @@ const Project = () => (
         ))}
       </Tiles>
 
-      <Image src={Apple_NAIP_2016} alt={title} />
+      <Image src={Apple_NAIP_2016} alt={title} className="rounded-2xl" />
       <h3>May 29, 2016</h3>
       <p>National Agriculture Imagery Program (NAIP)</p>
 
