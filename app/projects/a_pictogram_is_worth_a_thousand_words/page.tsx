@@ -54,26 +54,46 @@ const metadata = [
 ];
 
 const slides = [
-  [Icons_Core, "Core"],
-  [Icons_Buildings, "Buildings"],
-  [Icons_Transport_Travel, "Transportation & travel"],
-  [Icons_Closed_Loop_Insulin_Delivery2],
-  [Icons_Tech_Science, "Technology & science"],
-  [Icons_Data_Science, "A.I., data & data science"],
-  [Icons_Healthcare, "Healthcare"],
-  [Icons_Article_Publishing2],
-  [Icons_Food_Drink, "Food & drink"],
-  [Icons_Audio_Video, "Audio & video"],
-  [Icons_Household, "Household"],
-  [Icons_Animals_Pets, "Animals & pets"],
-  [Icons_Reseller_Venue_Relationship2],
-  [Icons_People, "People"],
-  [Icons_Office_Supplies, "Office supplies"],
-  [Icons_Time_Date, "Time & date"],
-  [Icons_Feedback_Loop2],
-  [Icons_Finance, "Finance"],
-  [Icons_Communication, "Communication"],
-  [Icons_Electronics, "Electronics"],
+  { image: Icons_Core, label: "Core", shadow: true },
+  { image: Icons_Buildings, label: "Buildings", shadow: true },
+  {
+    image: Icons_Transport_Travel,
+    label: "Transportation & travel",
+    shadow: true,
+  },
+  {
+    image: Icons_Closed_Loop_Insulin_Delivery2,
+    label: "Closed loop insulin delivery",
+    shadow: false,
+  },
+  { image: Icons_Tech_Science, label: "Technology & science", shadow: true },
+  {
+    image: Icons_Data_Science,
+    label: "A.I., data & data science",
+    shadow: true,
+  },
+  { image: Icons_Healthcare, label: "Healthcare", shadow: true },
+  {
+    image: Icons_Article_Publishing2,
+    label: "Scientific article publishing process",
+    shadow: false,
+  },
+  { image: Icons_Food_Drink, label: "Food & drink", shadow: true },
+  { image: Icons_Audio_Video, label: "Audio & video", shadow: true },
+  { image: Icons_Household, label: "Household", shadow: true },
+  { image: Icons_Animals_Pets, label: "Animals & pets", shadow: true },
+  {
+    image: Icons_Reseller_Venue_Relationship2,
+    label: "Reseller & venue relationship",
+    shadow: false,
+  },
+  { image: Icons_People, label: "People", shadow: true },
+  { image: Icons_Office_Supplies, label: "Office supplies", shadow: true },
+  { image: Icons_Time_Date, label: "Time & date", shadow: true },
+  { image: Icons_Feedback_Loop2, label: "Feedback loop", shadow: false },
+  { image: Icons_Finance, label: "Finance", shadow: true },
+  { image: Icons_Communication, label: "Communication", shadow: true },
+  { image: Icons_Electronics, label: "Electronics", shadow: true },
 ];
 
 const Project = () => (
@@ -85,13 +105,13 @@ const Project = () => (
     />
     <main>
       <div className="flex flex-col gap-32">
-        {slides.map(([src, alt], index) => (
-          <div key={`${alt}+${index}`}>
-            {alt && <h2 className="mb-8">{alt}</h2>}
+        {slides.map(({ image, label, shadow }, index) => (
+          <div key={`${label}+${index}`}>
+            {shadow && <h2 className="mb-8">{label}</h2>}
             <Image
-              src={src}
-              alt={alt}
-              className={`rounded-2xl ${alt ? "shadow-lg" : "false"}`}
+              src={image}
+              alt={label}
+              className={`rounded-2xl ${shadow ? "shadow-lg" : ""}`}
             />
           </div>
         ))}

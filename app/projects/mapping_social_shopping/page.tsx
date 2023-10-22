@@ -78,9 +78,9 @@ const Project = () => (
       <h2>Merchant mobile application (iOS)</h2>
       <Slideshow
         slides={[
-          { label: "Merchant mobile application", image: Sello_Merchant_Map_1 },
-          { label: "Merchant mobile application", image: Sello_Merchant_Map_2 },
-          { label: "Merchant mobile application", image: Sello_Merchant_Map_3 },
+          { image: Sello_Merchant_Map_1 },
+          { image: Sello_Merchant_Map_2 },
+          { image: Sello_Merchant_Map_3 },
         ]}
         shadow
       />

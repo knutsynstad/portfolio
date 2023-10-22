@@ -1,5 +1,5 @@
-import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
+import Slideshow from "@/components/Slideshow";
 
 // Assets
 import Sensors1 from "./assets/Sensors_1.svg";
@@ -60,21 +60,6 @@ const metadata = [
   },
 ];
 
-const slides = [
-  [Sensors1, "Sensors make point-in-time observations."],
-  [
-    Sensors2,
-    "Observations may accumulate over time—preserving historical data.",
-  ],
-  [Sensors3, "Enough historical data enables modeling."],
-  [Sensors4, "Modeling predicits future states."],
-  [
-    Sensors5,
-    "More observations lead to more accurate models, and a better understanding of what is to come.",
-  ],
-  [Sensors6, "Knowing what is coming enables us to act today."],
-];
-
 const Project = () => (
   <>
     <ProjectHeader
@@ -83,14 +68,33 @@ const Project = () => (
       metadata={metadata}
     />
     <main>
-      <div className="flex flex-col gap-32">
-        {slides.map(([src, alt]) => (
-          <div key={alt}>
-            <h2 className="mb-8">{alt}</h2>
-            <Image src={src} alt={alt} className="rounded-2xl" />
-          </div>
-        ))}
-      </div>
+      <Slideshow
+        slides={[
+          {
+            label: "Sensors make point-in-time observations.",
+            image: Sensors1,
+          },
+          {
+            label:
+              "Observations may accumulate over time—preserving historical data.",
+            image: Sensors2,
+          },
+          {
+            label: "Enough historical data enables modeling.",
+            image: Sensors3,
+          },
+          { label: "Modeling predicits future states.", image: Sensors4 },
+          {
+            label:
+              "More observations lead to more accurate models, and a better understanding of what is to come.",
+            image: Sensors5,
+          },
+          {
+            label: "Knowing what is coming enables us to act today.",
+            image: Sensors6,
+          },
+        ]}
+      />
     </main>
   </>
 );

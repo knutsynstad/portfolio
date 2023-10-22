@@ -85,9 +85,11 @@ const Project = () => (
       metadata={metadata}
     />
     <main>
-      <Colorfield color="black" wide>
-        <Image src={Corn_Poster} alt={title} className="bg-white rounded-2xl" />
-      </Colorfield>
+      <Image
+        src={Corn_Poster}
+        alt={title}
+        className="bg-white rounded-2xl shadow-lg"
+      />
     </main>
   </>
 );

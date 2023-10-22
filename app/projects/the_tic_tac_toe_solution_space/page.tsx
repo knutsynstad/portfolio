@@ -1,7 +1,5 @@
 import Code from "@/components/Code";
 import Image from "next/image";
-import ButtonGroup from "@/components/ButtonGroup";
-import Button from "@/components/Button";
 import Slideshow from "@/components/Slideshow";
 import ProjectHeader from "@/components/ProjectHeader";
 
@@ -94,6 +92,17 @@ const metadata = [
       },
     ],
   },
+  {
+    title: "Links",
+    values: [
+      { name: "Download poster (PDF)", url: "/files/Tic-Tac-Toe_1901016.pdf" },
+      { name: "Launch interactive", url: "http://tictactoe.dubberly.com" },
+      {
+        name: "Source code",
+        url: "https://github.com/knutsynstad/tic-tac-toe",
+      },
+    ],
+  },
 ];
 
 const Project = () => (
@@ -104,65 +113,48 @@ const Project = () => (
       metadata={metadata}
     />
     <main className="flex flex-col gap-32">
-      <h2>27 &times; 38 inch poster</h2>
-
-      <Image
-        src={Exhibit1}
-        alt={title}
-        className="rounded-2xl shadow-lg"
-        priority
-      />
+      <div className="flex flex-col gap-8">
+        <h2>27 &times; 38 inch poster</h2>
+        <Image
+          src={Exhibit1}
+          alt={title}
+          className="rounded-2xl shadow-lg"
+          priority
+        />
+      </div>
 
       <Image src={Exhibit2} alt={title} className="rounded-2xl shadow-lg" />
 
-      <h2>
-        Each board configuration list of boards that precede and succeed it.
-      </h2>
-      <Image src={Exhibit3} alt={title} className="rounded-2xl shadow-lg" />
+      <div className="flex flex-col gap-8">
+        <h2>
+          Each board configuration list of boards that precede and succeed it.
+        </h2>
+        <Image src={Exhibit3} alt={title} className="rounded-2xl shadow-lg" />
+      </div>
 
-      <h2>
-        Excluding rotational and reflectional symmetries to reduce the solution
-        space
-      </h2>
-      <Image src={Exhibit4} alt={title} className="rounded-2xl shadow-lg" />
+      <div className="flex flex-col gap-8">
+        <h2>
+          Excluding rotational and reflectional symmetries to reduce the
+          solution space
+        </h2>
+        <Image src={Exhibit4} alt={title} className="rounded-2xl shadow-lg" />
+      </div>
 
-      <h2>
-        The interactive website places emphasis on the connections between
-        boards.
-      </h2>
-
-      <Slideshow
-        slides={[
-          { label: "Default", image: Exhibit5 },
-          { label: "About Menu", image: Exhibit6 },
-        ]}
-        shadow
-      />
-
-      <Slideshow
-        slides={[
-          { label: "Default", image: Exhibit7 },
-          { label: "About Menu", image: Exhibit8 },
-          { label: "About Menu", image: Exhibit9 },
-        ]}
-        shadow
-      />
-
-      <h2>Links.</h2>
-      <ButtonGroup>
-        <Button
-          label="Download poster (PDF)"
-          href="/files/Tic-Tac-Toe_1901016.pdf"
+      <div className="flex flex-col gap-8">
+        <h2>
+          The interactive website places emphasis on the connections between
+          boards.
+        </h2>
+        <Slideshow slides={[{ image: Exhibit5 }, { image: Exhibit6 }]} shadow />
+        <Slideshow
+          slides={[
+            { image: Exhibit7 },
+            { image: Exhibit8 },
+            { image: Exhibit9 },
+          ]}
+          shadow
         />
-        <Button
-          label="Launch interactive"
-          href="http://tictactoe.dubberly.com"
-        />
-        <Button
-          label="Source code"
-          href="https://github.com/knutsynstad/tic-tac-toe"
-        />
-      </ButtonGroup>
+      </div>
     </main>
   </>
 );

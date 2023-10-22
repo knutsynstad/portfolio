@@ -1,5 +1,5 @@
-import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
+import Image from "next/image";
 
 // Assets
 import Margin_of_Error_01 from "./assets/Margin_of_Error_01.jpg";
@@ -84,7 +84,7 @@ const Project = () => (
     />
     <main>
       <div className="flex flex-col gap-8">
-        <Image src={Margin_of_Error_01} alt={title} className="rounded-2xl" />
+        <Image src={Margin_of_Error_06} alt={title} className="rounded-2xl" />
         <div className="grid grid-cols-2 gap-8">
           <Image
             src={Margin_of_Error_02}
@@ -97,20 +97,8 @@ const Project = () => (
             className="w-full rounded-2xl"
           />
         </div>
+        <Image src={Margin_of_Error_01} alt={title} className="rounded-2xl" />
         <Image src={Margin_of_Error_04} alt={title} className="rounded-2xl" />
-        <div className="grid grid-cols-2 gap-8">
-          <Image
-            src={Margin_of_Error_05}
-            alt={title}
-            className="w-full rounded-2xl"
-          />
-          <Image
-            src={Margin_of_Error_06}
-            alt={title}
-            className="w-full rounded-2xl"
-          />
-        </div>
-
         <div className="relative mt-16 mb-16 flex flex-col justify-center">
           <Image
             src={Margin_of_Error_07}
@@ -118,9 +106,7 @@ const Project = () => (
             className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-none"
           />
         </div>
-
         <Image src={Margin_of_Error_08} alt={title} className="rounded-2xl" />
-        <Image src={Margin_of_Error_09} alt={title} className="rounded-2xl" />
         <Image src={Margin_of_Error_10} alt={title} className="rounded-2xl" />
       </div>
     </main>

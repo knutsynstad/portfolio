@@ -97,9 +97,9 @@ const Project = () => (
 
         <Image src={Seagrams_04} alt={title} className="rounded-2xl" />
         <Image src={Seagrams_05} alt={title} className="rounded-2xl" />
-        <div className="flex flex-row gap-8">
-          <Image src={Seagrams_06} alt={title} className="rounded-2xl" />
-          <Image src={Seagrams_07} alt={title} className="rounded-2xl" />
+        <div className="grid grid-cols-2 gap-8">
+          <Image src={Seagrams_06} alt={title} className="w-full rounded-2xl" />
+          <Image src={Seagrams_07} alt={title} className="w-full rounded-2xl" />
         </div>
         <Image src={Seagrams_08} alt={title} className="rounded-2xl" />
         <Image src={Seagrams_09} alt={title} className="rounded-2xl" />
