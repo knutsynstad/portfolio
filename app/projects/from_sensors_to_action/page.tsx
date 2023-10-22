@@ -1,5 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Slideshow from "@/components/Slideshow";
+import { Metadata } from "next";
 
 // Assets
 import Sensors1 from "./assets/Sensors_1.svg";
@@ -29,7 +30,7 @@ const description = (
     </p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Agency",
     values: [
@@ -60,13 +61,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <Slideshow
         slides={[

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
+import { Metadata } from "next";
 
 // Assets
 import RedditMapsWhite from "./assets/reddit-maps-white.png";
@@ -13,7 +14,6 @@ import RedditMaps6 from "./assets/reddit-maps-6.png";
 import RedditMaps7 from "./assets/reddit-maps-7.png";
 
 const title = "Reddit Maps.";
-
 const description = (
   <>
     <p>
@@ -48,8 +48,7 @@ const description = (
     </p>
   </>
 );
-
-const metadata = [
+const details = [
   {
     title: "Company",
     values: [
@@ -81,13 +80,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <div className="flex flex-col gap-8">
         <Image src={RedditMaps2} alt={title} className="rounded-2xl" />

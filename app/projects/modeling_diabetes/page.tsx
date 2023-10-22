@@ -1,5 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
+import { Metadata } from "next";
 
 // Assets
 import Diabetes_Open_Loop_Process from "./assets/Diabetes_Open_Loop_Process.svg";
@@ -30,7 +31,7 @@ const description = (
     </p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Agency",
     values: [
@@ -90,13 +91,11 @@ const slides = [
   ],
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <div className="flex flex-col gap-32">
         {slides.map(([src, alt]) => (

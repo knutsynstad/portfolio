@@ -1,5 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
+import { Metadata } from "next";
 
 // Assets
 import Icons_Core from "./assets/Icons_Core.svg";
@@ -42,7 +43,7 @@ const description = (
     </p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Categories",
     values: [
@@ -96,28 +97,30 @@ const slides = [
   { image: Icons_Electronics, label: "Electronics", shadow: true },
 ];
 
-const Project = () => (
-  <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
-    <main>
-      <div className="flex flex-col gap-32">
-        {slides.map(({ image, label, shadow }, index) => (
-          <div key={`${label}+${index}`}>
-            {shadow && <h2 className="mb-8">{label}</h2>}
-            <Image
-              src={image}
-              alt={label}
-              className={`rounded-2xl ${shadow ? "shadow-lg" : ""}`}
-            />
-          </div>
-        ))}
-      </div>
-    </main>
-  </>
-);
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 
-export default Project;
+export default function Project() {
+  return (
+    <>
+      <ProjectHeader
+        title={title}
+        description={description}
+        details={details}
+      />
+      <main>
+        <div className="flex flex-col gap-32">
+          {slides.map(({ image, label, shadow }, index) => (
+            <div key={`${label}+${index}`}>
+              {shadow && <h2 className="mb-8">{label}</h2>}
+              <Image
+                src={image}
+                alt={label}
+                className={`rounded-2xl ${shadow ? "shadow-lg" : ""}`}
+              />
+            </div>
+          ))}
+        </div>
+      </main>
+    </>
+  );
+}

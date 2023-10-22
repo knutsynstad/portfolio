@@ -2,6 +2,7 @@ import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import Slideshow from "@/components/Slideshow";
 import StickyNote from "@/components/StickyNote";
+import { Metadata } from "next";
 
 import Exhibit1 from "./assets/automation_timeline_1.png";
 import Exhibit2 from "./assets/automations_model_step_count.png";
@@ -72,7 +73,7 @@ const description = (
     </p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Company",
     values: [
@@ -118,13 +119,11 @@ const metadata = [
 ];
 const color = "#DAE0E3";
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main className="flex flex-col gap-16 mb-32">
       <div
         className="flex flex-col gap-32 pt-32 pb-32 mb-32 relative"

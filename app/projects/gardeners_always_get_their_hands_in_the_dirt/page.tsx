@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
+import { Metadata } from "next";
 
 // Assets
 import French_Paper_01 from "./assets/French_Paper_01.jpg";
@@ -33,7 +34,7 @@ const description = (
   </>
 );
 
-const metadata = [
+const details = [
   {
     title: "University",
     values: [
@@ -68,13 +69,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <div className="flex flex-col gap-8">
         <Image src={French_Paper_06} alt={title} className="rounded-2xl" />

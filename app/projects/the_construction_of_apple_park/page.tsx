@@ -1,5 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
+import { Metadata } from "next";
 
 // 2012
 import Apple_NAIP_2012 from "./assets/Apple_NAIP_2012.png";
@@ -139,10 +140,8 @@ import sentinel2_20171211 from "./assets/sentinel-2_2017-12-11.png";
 import sentinel2_20171216 from "./assets/sentinel-2_2017-12-16.png";
 import sentinel2_20171221 from "./assets/sentinel-2_2017-12-21.png";
 import sentinel2_20171226 from "./assets/sentinel-2_2017-12-26.png";
-import next from "next";
 
 const title = "The construction of Apple Park.";
-
 const description = (
   <>
     <p>
@@ -169,8 +168,7 @@ const description = (
     <p>Exhibits were created using the Descartes Labs python API.</p>
   </>
 );
-
-const metadata = [
+const details = [
   {
     title: "Categories",
     values: [
@@ -208,13 +206,11 @@ const Tiles = ({ children }: any) => (
   <div className="grid gap-8 grid-cols-3">{children}</div>
 );
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main className="flex flex-col gap-8">
       <video autoPlay loop muted className="w-full rounded-2xl">
         <source src="/videos/apple_park.webm" type="video/webm" />

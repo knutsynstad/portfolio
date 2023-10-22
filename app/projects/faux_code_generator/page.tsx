@@ -1,4 +1,5 @@
 import ProjectHeader from "@/components/ProjectHeader";
+import { Metadata } from "next";
 
 const title = "A faux code generator.";
 const description = (
@@ -11,7 +12,7 @@ const description = (
     <p>Use a random, or provide your own, Github Gist.</p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Category",
     values: [{ name: "Tool" }],
@@ -48,13 +49,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main></main>
   </>
 );

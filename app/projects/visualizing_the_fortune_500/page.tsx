@@ -1,5 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Slideshow from "@/components/Slideshow";
+import { Metadata } from "next";
 
 import HeroViz from "./assets/logos_lap_end.png";
 
@@ -42,7 +43,7 @@ const description = (
     </p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Categories",
     values: [
@@ -76,13 +77,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <figure>
         <video autoPlay loop muted>

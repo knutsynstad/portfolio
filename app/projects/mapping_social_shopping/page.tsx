@@ -1,6 +1,7 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
+import { Metadata } from "next";
 
 // Assets
 import Sello_Social_Selling from "./assets/Sello_Social_Selling.svg";
@@ -42,7 +43,7 @@ const description = (
     </p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Agency",
     values: [
@@ -64,13 +65,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main className="flex flex-col gap-8">
       <h2>Modeling social shopping</h2>
       <Image src={Sello_Social_Selling} alt={title} className="rounded-2xl" />

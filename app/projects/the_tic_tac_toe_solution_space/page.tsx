@@ -2,6 +2,7 @@ import Code from "@/components/Code";
 import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
 import ProjectHeader from "@/components/ProjectHeader";
+import { Metadata } from "next";
 
 // Assets
 import Exhibit1 from "./assets/Tic_Tac_Toe_Poster_Full_2340w.png";
@@ -46,7 +47,7 @@ const description = (
     </p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Agency",
     values: [
@@ -105,13 +106,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main className="flex flex-col gap-32">
       <div className="flex flex-col gap-8">
         <h2>27 &times; 38 inch poster</h2>

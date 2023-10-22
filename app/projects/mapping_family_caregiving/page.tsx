@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
+import { Metadata } from "next";
 
 // Caremaps
 import Caremaps_Ana from "./assets/Caremaps_Ana.svg";
@@ -102,7 +103,7 @@ const description = (
     </p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Agency",
     values: [
@@ -149,13 +150,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <div className="flex flex-col gap-32">
         {maps.map(([image, description]) => (

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
 import ProjectHeader from "@/components/ProjectHeader";
+import { Metadata } from "next";
 
 // Assets
 import AST_Identity_Color from "./assets/AST_Identity_Color.svg";
@@ -31,7 +32,7 @@ const description = (
     </p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Agency",
     values: [
@@ -70,13 +71,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <Slideshow
         slides={[

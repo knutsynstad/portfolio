@@ -1,7 +1,8 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
-import Colorfield from "@/components/Colorfield";
+import { Metadata } from "next";
 
+// Assets
 import Corn_Poster from "./assets/Corn_Poster.svg";
 
 const title = "Measuring corn production, in every county, every day.";
@@ -37,7 +38,7 @@ const description = (
     </p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Agency",
     values: [
@@ -77,13 +78,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <Image
         src={Corn_Poster}

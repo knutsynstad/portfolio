@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
+import { Metadata } from "next";
 
 import Birdhouse1 from "./assets/Birdhouse_01.jpg";
 import Birdhouse2 from "./assets/Birdhouse_02.jpg";
@@ -9,7 +10,6 @@ import Birdhouse4 from "./assets/Birdhouse_04.jpg";
 import Birdhouse5 from "./assets/Birdhouse_05.jpg";
 
 const title = "Mr. Potato Head is for the birds.";
-
 const description = (
   <>
     <p>
@@ -38,8 +38,7 @@ const description = (
     </p>
   </>
 );
-
-const metadata = [
+const details = [
   {
     title: "University",
     values: [
@@ -70,13 +69,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <div className="flex flex-col gap-8">
         <Image

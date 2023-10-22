@@ -1,22 +1,22 @@
-type metadataContent = {
+type DetailContent = {
   name: string;
   url?: string;
 };
 
-type Metadata = {
+type Detail = {
   title: string;
-  values: metadataContent[];
+  values: DetailContent[];
 };
 
 interface ProjectHeaderProps {
   title: string;
   description: React.ReactNode | React.ReactNode[];
-  metadata: Metadata[];
+  details: Detail[];
 }
 
 export default function ProjectHeader(props: ProjectHeaderProps) {
-  const { title, metadata, description } = props;
-  const metadataElements = metadata.map(({ title, values }) => (
+  const { title, details, description } = props;
+  const detailElements = details.map(({ title, values }) => (
     <div key={`${title}-${values}`} className="flex flex-col">
       <h3>{title}</h3>
       <div className="flex flex-col">
@@ -27,7 +27,7 @@ export default function ProjectHeader(props: ProjectHeaderProps) {
                 {value.name}
               </a>
             );
-            else return <p key={value.name}>{value.name}</p>;
+          else return <p key={value.name}>{value.name}</p>;
         })}
       </div>
     </div>
@@ -41,7 +41,7 @@ export default function ProjectHeader(props: ProjectHeaderProps) {
         <div className="flex flex-col gap-[28px]">{description}</div>
       </div>
       <div className="col-start-10 col-span-3 flex flex-col gap-7">
-        {metadataElements}
+        {detailElements}
       </div>
     </div>
   );

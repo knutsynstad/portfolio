@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
+import { Metadata } from "next";
 
 // Assets
 import Earthnuts1 from "./assets/Earthnuts_1_2340w.png";
@@ -12,7 +13,6 @@ import Earthnuts5 from "./assets/Earthnuts_5_2340w.png";
 import Earthnuts6 from "./assets/Earthnuts_6_2340w.png";
 
 const title = "Remedies come in all shapes and flavors.";
-
 const description = (
   <>
     <p>
@@ -39,8 +39,7 @@ const description = (
     </p>
   </>
 );
-
-const metadata = [
+const details = [
   {
     title: "University",
     values: [
@@ -78,13 +77,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <div className="flex flex-col gap-8">
         <Image src={Earthnuts5} alt={title} className="rounded-2xl" />

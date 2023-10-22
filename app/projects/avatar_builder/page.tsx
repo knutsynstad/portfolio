@@ -1,6 +1,7 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import Row from "@/components/Row";
+import { Metadata } from "next";
 
 // Avatar Showcase
 import Box1 from "./assets/Box1.png";
@@ -59,7 +60,7 @@ const description = (
     <p>impact</p>
   </>
 );
-const metadata = [
+const details = [
   {
     title: "Company",
     values: [
@@ -110,13 +111,11 @@ const metadata = [
   },
 ];
 
+export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+
 const Project = () => (
   <>
-    <ProjectHeader
-      title={title}
-      description={description}
-      metadata={metadata}
-    />
+    <ProjectHeader title={title} description={description} details={details} />
     <main>
       <div className="relative bg-black pt-32 pb-32 w-full flex flex-col gap-16">
         <h2 className="text-white">
