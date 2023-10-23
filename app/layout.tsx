@@ -17,13 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} pt-32 pl-32 pr-32 flex justify-center`}
-      >
-        <div className="w-full max-w-[768px]">
-          {children}
-          <Footer />
+      <body className={inter.className + " bg-black"}>
+        <div className="pt-32 pl-32 pr-32 pb-32 flex justify-center bg-white rounded-br-3xl rounded-bl-3xl">
+          <div className="w-full max-w-[840px]">{children}</div>
         </div>
+        <Footer />
       </body>
     </html>
   );
