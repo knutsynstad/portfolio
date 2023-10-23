@@ -126,24 +126,24 @@ const Project = () => (
     <ProjectHeader title={title} description={description} details={details} />
     <main className="flex flex-col gap-16 mb-32">
       <div
-        className="flex flex-col gap-8 pt-32 pb-32 mb-32 relative"
+        className="flex flex-col gap-8 pt-32 pb-32 mb-32 relative overflow-visible"
         style={{ backgroundColor: color }}
       >
         <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
           <Image
             src={Exhibit1}
             alt="Greet new user timeline"
-            className="shrink-0 w-[496px]"
+            className="w-full"
           />
-          <h2>Welcome new users to the community</h2>
+          <h2 className="w-full">Welcome new users to the community</h2>
         </div>
 
         <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
-          <h2>Create and manage event-based content</h2>
+          <h2 className="w-full">Create and manage event-based content</h2>
           <Image
             src={timelineGamedayPost}
             alt="Greet new user timeline"
-            className="shrink-0 w-[496px]"
+            className="w-full"
           />
         </div>
 
@@ -151,18 +151,18 @@ const Project = () => (
           <Image
             src={timelinePostFlair}
             alt="Greet new user timeline"
-            className="shrink-0 w-[496px]"
+            className="w-full"
           />
-          <h2>Process content on creation</h2>
+          <h2 className="w-full">Process content on creation</h2>
         </div>
 
         <div
           style={{ backgroundColor: color }}
-          className={`absolute h-full top-0 left-0 w-[9000px] translate-x-[-9000px] z-[-1]`}
+          className={`absolute h-full top-0 left-0 w-[9000px] translate-x-[-9000px]`}
         />
         <div
           style={{ backgroundColor: color }}
-          className={`absolute h-full top-0 right-0 w-[9000px] translate-x-[9000px] z-[-1]`}
+          className={`absolute h-full top-0 right-0 w-[9000px] translate-x-[9000px]`}
         />
       </div>
 
