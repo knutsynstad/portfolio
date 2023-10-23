@@ -40,7 +40,7 @@ export default function ProjectHeader(props: ProjectHeaderProps) {
         <h3>Description</h3>
         <div className="flex flex-col gap-[28px]">{description}</div>
       </div>
-      <div className="col-start-10 col-span-3 flex flex-col gap-7">
+      <div className="col-start-9 col-span-4 flex flex-col gap-7">
         {detailElements}
       </div>
     </div>

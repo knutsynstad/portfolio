@@ -38,7 +38,7 @@ export const Slideshow = ({ slides, shadow }: SlideshowProps) => {
   });
 
   return (
-    <div className="w-full relative mb-8">
+    <div className="w-full relative">
       <div
         className={[
           "rounded-2xl",

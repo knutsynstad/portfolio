@@ -9,13 +9,19 @@ type Project = {
 
 const projects: Project[] = [
   {
+    name: "Devvit Play",
+    image: "images/play-thumbnail.png",
+    url: "/projects/play/",
+    tags: ["Tooling", "Reddit", "Open Source", "Coding"],
+  },
+  {
     name: "Reddit Automations",
     image: "images/automations_thumbnail.png",
     url: "/projects/automations/",
     tags: ["Product Design", "Reddit"],
   },
   {
-    name: "The Reddit Avatar builder",
+    name: "Reddit Avatars",
     image: "images/AvatarBuilder.png",
     url: "/projects/avatar_builder/",
     tags: ["Product Design", "Reddit"],
@@ -39,7 +45,7 @@ const projects: Project[] = [
     tags: ["UIUX", "Print", "Information", "Coding"],
   },
   {
-    name: "The Fortune 500's Space of Logos",
+    name: "Visualizing the Fortune 500 by similarity",
     image: "images/Fortune_500_Thumbnail.png",
     url: "/projects/visualizing_the_fortune_500/",
     tags: ["UIUX", "Information", "Coding"],

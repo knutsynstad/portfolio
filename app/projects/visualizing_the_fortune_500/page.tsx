@@ -1,8 +1,9 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Slideshow from "@/components/Slideshow";
 import { Metadata } from "next";
+import Image from "next/image";
 
-import HeroViz from "./assets/logos_lap_end.png";
+import LogosLapEnd from "./assets/logos_lap_end.png";
 
 // Introduction
 import Introduction from "./assets/Fortune_500_Introduction_2340w.png";
@@ -29,7 +30,7 @@ import AboutHover from "./assets/Fortune_500_About_Hover_2340w.png";
 import ApplicationMapLeft from "./assets/Fortune_500_Application_Map_Left_2340w.png";
 import ApplicationMapRight from "./assets/Fortune_500_Application_Map_Right_2340w.png";
 
-const title = "Visualizing the Fortune 500.";
+const title = "Visualizing the Fortune 500 by similarity.";
 const description = (
   <>
     <p>
@@ -40,6 +41,14 @@ const description = (
       The outcome is a <i>live</i> visualization, where calculations are done in
       the browser, enabling the viewer to change the parameters of the
       underlying algorithms—altering the outcome.
+    </p>
+    <p>
+      Thank you to everyone who helped me with this project. Special thanks to{" "}
+      <a href="https://fortune.com/">Fortune Magazine</a>,{" "}
+      <a href="http://rkeisler.github.io/">Ryan Keisler</a>,{" "}
+      <a href="https://www.dubberly.com/">Hugh Dubberly</a>, Cody Wackerman,{" "}
+      <a href="https://www.monicadawnmiller.com/">Monica Miller</a>, and{" "}
+      <a href="https://www.dubberly.com/">DDO</a>.
     </p>
   </>
 );
@@ -82,97 +91,116 @@ export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 const Project = () => (
   <>
     <ProjectHeader title={title} description={description} details={details} />
-    <main>
-      <figure>
-        <video autoPlay loop muted>
+    <main className="flex flex-col gap-32">
+      <figure className="flex flex-col">
+        <video
+          autoPlay
+          loop
+          muted
+          className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-[1280px]"
+        >
           <source src="/videos/logos_tsne_600_steps.webm" type="video/webm" />
           <source src="/videos/logos_tsne_600_steps.mp4" type="video/mp4" />
           <p>Your browser doesn&apos;t support HTML video.</p>
         </video>
-        <figcaption>
-          The timelapse shows 600 t-SNE iterations, each improving the solution.
+        <figcaption className="grid grid-cols-12">
+          <h3 className="col-span-7">&uarr; Fig. 1: A solution develops</h3>
+          <p className="col-span-7">
+            A timelapse of 600 t-SNE iterations. The solution generally improves
+            with each iteration. Subject to diminishing returns.
+          </p>
         </figcaption>
       </figure>
-      <figure>
-        <video autoPlay loop muted>
+
+      <figure className="flex flex-col gap-8">
+        <video
+          autoPlay
+          loop
+          muted
+          className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-[1280px]"
+        >
           <source src="/videos/logos_tsne_to_lap.webm" type="video/webm" />
           <source src="/videos/logos_tsne_to_lap.mp4" type="video/mp4" />
           <p>Your browser doesn&apos;t support HTML video.</p>
         </video>
-        <figcaption>
-          600 t-SNE iterations, each improving the solution.
+        <figcaption className="grid grid-cols-12">
+          <h3 className="col-span-7">&uarr; Fig. 2: Align to grid</h3>
+          <p className="col-span-7">
+            The logos are aligned to a grid. The Linear assignment problem (LAP)
+            algorithm is a greedy algorithm, and the solution is not guaranteed
+            to be optimal.
+          </p>
         </figcaption>
       </figure>
 
-      <h2>The introduction outlines the process, step by step.</h2>
-      <Slideshow
-        slides={[{ image: Introduction }, { image: IntroductionAccordion }]}
-        shadow
-      />
+      <figure>
+        <Image
+          src={LogosLapEnd}
+          alt="asdasd"
+          className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-[1280px]"
+        />
+        <figcaption className="grid grid-cols-12">
+          <h3 className="col-span-7">&uarr; Fig. 3: Final composite</h3>
+          <p className="col-span-7">
+            Here is one of many possible outcomes. The solution is not
+            deterministic, and will vary slightly each time the visualization is
+            loaded.
+          </p>
+        </figcaption>
+      </figure>
 
-      <h2>Visualization</h2>
-      <Slideshow
-        slides={[
-          { image: Visualization },
-          { image: Instruction },
-          { image: VisualizationLoading },
-          { image: VisualizationHoverstates },
-        ]}
-        shadow
-      />
-
-      <h2>Controls and more</h2>
-      <Slideshow
-        slides={[
-          { image: FortuneConfiguration },
-          { image: VisualizationMoreMenu },
-          { image: VisualizationShareMenu },
-          { image: About },
-          { image: AboutHover },
-        ]}
-        shadow
-      />
-
-      <h2>Application map</h2>
-      <Slideshow
-        slides={[{ image: ApplicationMapLeft }, { image: ApplicationMapRight }]}
-        shadow
-      />
+      <div className="flex flex-col gap-8">
+        <h2>An interactive experience</h2>
+        <div className="flex flex-col gap-32">
+          <Slideshow
+            slides={[
+              {
+                image: Introduction,
+                label:
+                  "Fig 4: The introduction outlines the process, step by step. Buying some time for the calculations to finish in the background.",
+              },
+              {
+                image: IntroductionAccordion,
+                label:
+                  "Fig 4: The introduction outlines the process, step by step. Buying some time for the calculations to finish in the background.",
+              },
+            ]}
+            shadow
+          />
+          <Slideshow
+            slides={[
+              {
+                image: Instruction,
+                label:
+                  "Fig 5: The visualization is interactive. Users can zoom, pan, and manipulate the solution space.",
+              },
+              {
+                image: Visualization,
+                label:
+                  "Fig 5: The visualization is interactive. Users can zoom, pan, and manipulate the solution space.",
+              },
+            ]}
+            shadow
+          />
+          <Slideshow
+            slides={[
+              {
+                image: FortuneConfiguration,
+                label:
+                  "Fig 6: A live visualizations makes it possible to change the parameters of the underlying algorithms, altering the outcome—highlighting different patterns.",
+              },
+              {
+                image: VisualizationLoading,
+                label:
+                  "Fig 6: A live visualizations makes it possible to change the parameters of the underlying algorithms, altering the outcome—highlighting different patterns.",
+              },
+            ]}
+            shadow
+          />
+        </div>
+      </div>
     </main>
   </>
 );
 
 export default Project;
-
-/*
-
-
-Youtube experiment
-
-        <div className="inset border-2 border-white select-none pointer-events-none">
-        <iframe
-            className="w-full aspect-square h-auto"
-            width="1024"
-            height="1024"
-            src="https://www.youtube.com/embed/VnIrCyAV2FA?autoplay=1&loop=1&modestbranding=1&controls=0&mute=1&playlist=VnIrCyAV2FA&disablekb=1&showinfo=0&rel=0&iv_load_policy=3&enablejsapi=1&widgetid=1&start=1&end=10&vq=hd1080"
-            frameBorder="0"
-            allowFullScreen
-        />
-        </div>
-
-
-
-        <h2>Align to grid</h2>
-        <div className="inset border-2 border-white select-none pointer-events-none">
-        <iframe
-            className="w-full aspect-square h-auto"
-            width="1024"
-            height="1024"
-            src="https://www.youtube.com/embed/xdNMHUdLF7s?autoplay=1&loop=1&modestbranding=1&controls=0&mute=1&playlist=xdNMHUdLF7s&disablekb=1&showinfo=0&rel=0&iv_load_policy=3&enablejsapi=1&widgetid=1&start=1&end=10&vq=hd1080"
-            frameBorder="0"
-            allowFullScreen
-        />
-        </div>
-
-
-*/

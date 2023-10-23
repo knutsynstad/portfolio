@@ -13,6 +13,22 @@ import RedditMaps5 from "./assets/reddit-maps-5.png";
 import RedditMaps6 from "./assets/reddit-maps-6.png";
 import RedditMaps7 from "./assets/reddit-maps-7.png";
 
+import Sketch1 from "./assets/sketch-1.png";
+import Sketch2 from "./assets/sketch-2.png";
+import Sketch3 from "./assets/sketch-3.png";
+import Sketch4 from "./assets/sketch-4.png";
+import Sketch5 from "./assets/sketch-5.png";
+import Sketch6 from "./assets/sketch-6.png";
+import Sketch7 from "./assets/sketch-7.png";
+import Sketch8 from "./assets/sketch-8.png";
+import Sketch9 from "./assets/sketch-9.png";
+import Sketch10 from "./assets/sketch-10.png";
+import Sketch11 from "./assets/sketch-11.png";
+import Sketch12 from "./assets/sketch-12.png";
+import Sketch13 from "./assets/sketch-13.png";
+import Sketch14 from "./assets/sketch-14.png";
+import Sketch15 from "./assets/sketch-15.png";
+
 const title = "Reddit Maps.";
 const description = (
   <>
@@ -82,15 +98,58 @@ const details = [
 
 export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 
+const sketches = [
+  Sketch1,
+  Sketch2,
+  Sketch3,
+  Sketch4,
+  Sketch5,
+  Sketch6,
+  Sketch7,
+  Sketch8,
+  Sketch9,
+  Sketch10,
+  Sketch11,
+  Sketch12,
+  Sketch13,
+  Sketch14,
+  Sketch15,
+];
+
 const Project = () => (
   <>
     <ProjectHeader title={title} description={description} details={details} />
-    <main>
+    <main className="flex flex-col gap-32">
+      {/*
+      <div className="relative flex flex-col justify-center">
+        <Image
+          src={RedditMapsWhite}
+          alt={title}
+          className="relative left-[50%] translate-x-[-50%] w-screen max-w-none"
+        />
+      </div>
+      */}
+
       <div className="flex flex-col gap-8">
         <Image src={RedditMaps2} alt={title} className="rounded-2xl" />
         <Image src={RedditMaps3} alt={title} className="rounded-2xl" />
+
         <Image src={RedditMaps5} alt={title} className="rounded-2xl" />
         <Image src={RedditMaps7} alt={title} className="rounded-2xl" />
+      </div>
+
+      <div className="flex flex-col gap-8">
+        <h2>Some sketches from early ideation</h2>
+        <div className="grid grid-cols-5 gap-4">
+          {sketches.map((sketch, index) => (
+            <Image
+              key={`sketch-${index}`}
+              src={sketch}
+              alt="Rough conceptual sketches from the early ideation of Reddit Maps."
+              className="rounded-2xl"
+            />
+          ))}
+        </div>
       </div>
     </main>
   </>
