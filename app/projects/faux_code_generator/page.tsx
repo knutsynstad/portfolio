@@ -1,7 +1,10 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import { Metadata } from "next";
+import Image from "next/image";
 
-const title = "A faux code generator.";
+import Screenshot from "./assets/screenshot.png";
+
+const title = "Faux code generator.";
 const description = (
   <>
     <p>
@@ -54,7 +57,13 @@ export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 const Project = () => (
   <>
     <ProjectHeader title={title} description={description} details={details} />
-    <main></main>
+    <main>
+      <Image
+        src={Screenshot}
+        alt="Screenshot of the faux code generator"
+        className="rounded-2xl"
+      />
+    </main>
   </>
 );
 

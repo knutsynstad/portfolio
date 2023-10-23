@@ -10,7 +10,7 @@
 [X] Move assets into project folders
 [X] Apple Park video
 [X] Fix the grid on Apple Park
-[ ] Update footer design
+[X] Update footer design
 
 
 # New project ideas
@@ -30,4 +30,4 @@
 
 
 # Faux Code
-[ ] Find and add exhibit
+[X] Find and add exhibit
