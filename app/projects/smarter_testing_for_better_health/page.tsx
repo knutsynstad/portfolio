@@ -76,7 +76,7 @@ export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 const Project = () => (
   <>
     <ProjectHeader title={title} description={description} details={details} />
-    <main>
+    <main className="flex flex-col gap-8">
       <Slideshow
         slides={[
           { image: AST_Identity_Color },
