@@ -17,10 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} p-32 flex justify-center`}>
-        <div className="max-w-4xl">
+      <body
+        className={`${inter.className} pt-32 pl-32 pr-32 flex justify-center`}
+      >
+        <div className="w-full max-w-[768px]">
           {children}
-
           <Footer />
         </div>
       </body>

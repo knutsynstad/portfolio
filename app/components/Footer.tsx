@@ -26,7 +26,7 @@ const socialLinks = socials.map((social) => (
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-6 h-6 fill-current"
+      className="w-8 h-8 fill-current"
     >
       <title>{social.name}</title>
       <path d={social.icon} />
@@ -36,8 +36,8 @@ const socialLinks = socials.map((social) => (
 
 export default function Footer() {
   return (
-    <footer className="flex gap-8 justify-between mt-32">
-      <p>Knut Synstad</p>
+    <footer className="flex gap-8 justify-between pt-32 pb-32">
+      <p className="text-2xl tracking-tight">By Knut Synstad</p>
       <div className="flex gap-8">{socialLinks}</div>
     </footer>
   );

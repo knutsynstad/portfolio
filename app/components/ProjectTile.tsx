@@ -15,11 +15,11 @@ export default function ProjectTile(props: ProjectTileProps) {
     >
       <img src={image} alt={title} className="w-full rounded-2xl" />
       <h2 className="text-2xl">{title}</h2>
-      <div className="flex gap-1">
+      <div className="flex flex-wrap gap-1">
         {tags?.map((tag) => (
           <span
             key={tag}
-            className="bg-gray-100 rounded-lg px-2 text-xs text-grauy-700 font-medium leading-none py-1"
+            className="bg-gray-100 whitespace-nowrap rounded-lg px-2 text-sm text-grauy-700 font-medium leading-none py-1"
           >
             {tag}
           </span>
