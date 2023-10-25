@@ -2,6 +2,7 @@ import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
 import ProjectHeader from "@/components/ProjectHeader";
 import { Metadata } from "next";
+import AnimatedLogo from "./assets/AnimatedLogo";
 
 // Assets
 import AST_Identity_Color from "./assets/AST_Identity_Color.svg";
@@ -76,15 +77,8 @@ export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 const Project = () => (
   <>
     <ProjectHeader title={title} description={description} details={details} />
-    <main className="flex flex-col gap-8">
-      <Slideshow
-        slides={[
-          { image: AST_Identity_Color },
-          { image: AST_Identity_Blue },
-          { image: AST_Identity_Black },
-        ]}
-      />
-
+    <main className="flex flex-col gap-16">
+      <AnimatedLogo />
       <Image src={AST_Stationery} alt={title} className="rounded-2xl" />
     </main>
   </>

@@ -12,13 +12,21 @@ const projects: Project[] = [
     name: "Devvit Play",
     image: "images/play-thumbnail.png",
     url: "/projects/play/",
-    tags: ["Tooling", "Reddit", "Open Source", "Coding"],
+    tags: [
+      "Design",
+      "Tooling",
+      "Reddit",
+      "Open Source",
+      "Development",
+      "Developer Platform",
+      "2023",
+    ],
   },
   {
     name: "Reddit Automations",
     image: "images/automations_thumbnail.png",
     url: "/projects/automations/",
-    tags: ["Product Design", "Reddit"],
+    tags: ["Product Design", "Reddit", "Developer Platform", "2022"],
   },
   {
     name: "Reddit Avatars",
@@ -30,7 +38,7 @@ const projects: Project[] = [
     name: "Reddit Maps",
     image: "images/reddit-maps-thumbnail.png",
     url: "/projects/reddit_maps/",
-    tags: ["Product Design", "Reddit", "Snoosweek"],
+    tags: ["Product Design", "Reddit", "Snoosweek", "2022"],
   },
   {
     name: "Faux code generator",
