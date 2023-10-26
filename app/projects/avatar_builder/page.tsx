@@ -1,7 +1,7 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
-import Row from "@/components/Row";
 import { Metadata } from "next";
+import Marquee from "@/components/Marquee";
 
 // Avatar Showcase
 import Box1 from "./assets/Box1.png";
@@ -113,10 +113,31 @@ const details = [
 
 export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 
+const marqueeImages = [
+  { image: Box1, label: "Halo" },
+  { image: Box2, label: title },
+  { image: Box3, label: "WallStreetBets" },
+  { image: Box4, label: "Football" },
+  { image: Box5, label: title },
+  { image: Box6, label: "Viking" },
+  { image: Box7, label: title },
+  { image: Box8, label: title },
+  { image: Box9, label: title },
+  { image: Box10, label: "Valentines" },
+  { image: Box11, label: title },
+  { image: Box12, label: title },
+  { image: Box13, label: "Wheelchair" },
+  { image: Box14, label: "Orc" },
+  { image: Box15, label: "Minecraft" },
+  { image: Box16, label: "Fox" },
+  { image: Box17, label: "Pride" },
+  { image: Box18, label: title },
+];
+
 const Project = () => (
   <>
     <ProjectHeader title={title} description={description} details={details} />
-    <main>
+    <main className="flex flex-col gap-8">
       <div className="relative bg-black pt-32 pb-32 w-full flex flex-col gap-16">
         <h2 className="text-white">
           A platform for personal expression and delight.
@@ -125,64 +146,44 @@ const Project = () => (
           <Image src={Explore0} alt={title} className="rounded-2xl" />
           <Image src={Explore1} alt={title} className="rounded-2xl" />
         </div>
-        <div
-          className={`bg-black absolute h-full top-0 left-0 w-[9000px] translate-x-[-9000px] z-[-1]`}
-        />
-        <div
-          className={`bg-black absolute h-full top-0 right-0 w-[9000px] translate-x-[9000px] z-[-1]`}
-        />
       </div>
 
       <h2>Get inspired by seasonal drops.</h2>
-      <Row color="black">
+      <div className="bg-black">
         <Image src={Explore1} alt={title} className="rounded-2xl" />
         <Image src={Explore2} alt={title} className="rounded-2xl" />
         <Image src={Explore3} alt={title} className="rounded-2xl" />
-      </Row>
+      </div>
 
       <h2>Enabling anyone to represent themselves</h2>
-      <Row>
-        <Image src={Box1} alt="Halo" />
-        <Image src={Box2} alt={title} />
-        <Image src={Box3} alt="WallStreetBets" />
-        <Image src={Box4} alt="Football" />
-        <Image src={Box5} alt={title} />
-        <Image src={Box6} alt="Viking" />
-      </Row>
-      <Row>
-        <Image src={Box7} alt={title} />
-        <Image src={Box8} alt={title} />
-        <Image src={Box9} alt={title} />
-        <Image src={Box10} alt="Valentines" />
-        <Image src={Box11} alt={title} />
-        <Image src={Box12} alt={title} />
-      </Row>
-      <Row>
-        <Image src={Box13} alt="Wheelchair" />
-        <Image src={Box14} alt="Orc" />
-        <Image src={Box15} alt="Minecraft" />
-        <Image src={Box16} alt="Fox" />
-        <Image src={Box17} alt="Pride" />
-        <Image src={Box18} alt={title} />
-      </Row>
+      <Marquee>
+        {marqueeImages.map((image, index) => (
+          <Image
+            src={image.image}
+            alt={image.label}
+            key={`marquee-${index}-${image.label}`}
+            className="w-[200px]"
+          />
+        ))}
+      </Marquee>
       <p>
         These were all drawn by the talented illustrators on our internal
         branding team, OrangeRed.
       </p>
 
       <h2>Make your own Snoo.</h2>
-      <Row color="black">
+      <div className="bg-black">
         <Image src={Me1} alt={title} className="rounded-2xl" />
         <Image src={Me2} alt={title} className="rounded-2xl" />
         <Image src={Me3} alt={title} className="rounded-2xl" />
-      </Row>
+      </div>
 
       <h2>Find a style to match.</h2>
-      <Row color="#f7d9bc">
+      <div className="bg-[#f7d9bc]">
         <Image src={Style1} alt={title} className="rounded-2xl" />
         <Image src={Style2} alt={title} className="rounded-2xl" />
         <Image src={Style3} alt={title} className="rounded-2xl" />
-      </Row>
+      </div>
       <p>6 slots to configure</p>
       <p>Adjust colors</p>
       <p>Provides random access to all items.</p>
