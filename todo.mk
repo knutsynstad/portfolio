@@ -13,7 +13,7 @@
 [X] Update footer design
 [ ] Create single source of truth for tags
 [ ] Remove un-used assets
-
+[ ] Make back arrow opposite color of whatever it's over.
 
 # New project ideas
 [ ] Predictions

@@ -137,22 +137,65 @@ const marqueeImages = [
 const Project = () => (
   <>
     <ProjectHeader title={title} description={description} details={details} />
-    <main className="flex flex-col gap-8">
-      <div className="relative bg-black pt-32 pb-32 w-full flex flex-col gap-16">
-        <h2 className="text-white">
-          A platform for personal expression and delight.
-        </h2>
-        <div className="flex gap-8 flex-nowrap">
-          <Image src={Explore0} alt={title} className="rounded-2xl" />
-          <Image src={Explore1} alt={title} className="rounded-2xl" />
+    <main className="flex flex-col gap-32">
+      <div className="w-full flex flex-col gap-8">
+        <div className="grid grid-cols-3 gap-y-4 gap-x-8">
+          <h2 className="col-span-2">Get inspired by seasonal drops.</h2>
+        </div>
+        <div className="grid grid-cols-3 gap-8">
+          {[Explore1, Explore2, Explore3].map((image, index) => (
+            <Image
+              src={image}
+              alt={title}
+              key={`${index}-${image}`}
+              className="rounded-2xl shadow-2xl"
+            />
+          ))}
         </div>
       </div>
 
-      <h2>Get inspired by seasonal drops.</h2>
-      <div className="bg-black">
-        <Image src={Explore1} alt={title} className="rounded-2xl" />
-        <Image src={Explore2} alt={title} className="rounded-2xl" />
-        <Image src={Explore3} alt={title} className="rounded-2xl" />
+      <div className="w-full flex flex-col gap-8">
+        <div className="grid grid-cols-3 gap-y-4 gap-x-8">
+          <h2 className="col-span-2">A Snoo beginning</h2>
+          <p className="col-span-2 text-2xl tracking-tight">
+            Stylize your own version of Snoo, the Reddit mascot, to represent
+            yourself across the platform. The Avatar grows with you through new
+            features and assets over time.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-3 gap-8">
+          {[Me1, Me2, Me3].map((image, index) => (
+            <Image
+              src={image}
+              alt={title}
+              key={`${index}-${image}`}
+              className="rounded-2xl shadow-2xl"
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="w-full flex flex-col gap-8">
+        <div className="grid grid-cols-3 gap-y-4 gap-x-8">
+          <h2 className="col-span-2">Find a style to match.</h2>
+          <p className="col-span-2 text-2xl tracking-tight">
+            Stylize your own version of Snoo, the Reddit mascot, to represent
+            yourself across the platform. The Avatar grows with you through new
+            features and assets over time.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-3 gap-8">
+          {[Style1, Style2, Style3].map((image, index) => (
+            <Image
+              src={image}
+              alt={title}
+              key={`${index}-${image}`}
+              className="rounded-2xl shadow-2xl"
+            />
+          ))}
+        </div>
       </div>
 
       <h2>Enabling anyone to represent themselves</h2>
@@ -162,7 +205,7 @@ const Project = () => (
             src={image.image}
             alt={image.label}
             key={`marquee-${index}-${image.label}`}
-            className="w-[200px]"
+            className="w-[150px]"
           />
         ))}
       </Marquee>
@@ -171,19 +214,6 @@ const Project = () => (
         branding team, OrangeRed.
       </p>
 
-      <h2>Make your own Snoo.</h2>
-      <div className="bg-black">
-        <Image src={Me1} alt={title} className="rounded-2xl" />
-        <Image src={Me2} alt={title} className="rounded-2xl" />
-        <Image src={Me3} alt={title} className="rounded-2xl" />
-      </div>
-
-      <h2>Find a style to match.</h2>
-      <div className="bg-[#f7d9bc]">
-        <Image src={Style1} alt={title} className="rounded-2xl" />
-        <Image src={Style2} alt={title} className="rounded-2xl" />
-        <Image src={Style3} alt={title} className="rounded-2xl" />
-      </div>
       <p>6 slots to configure</p>
       <p>Adjust colors</p>
       <p>Provides random access to all items.</p>
@@ -193,3 +223,33 @@ const Project = () => (
 );
 
 export default Project;
+
+/*
+
+
+      <div className="relative grid pt-16 pb-16 grid-cols-2 gap-8 after:absolute after:w-screen after:h-full after:left-[50%] after:translate-x-[-50%] after:bg-slate-800 after:z-1">
+        <Image src={Explore0} alt={title} className="rounded-2xl z-10" />
+        <Image src={Explore1} alt={title} className="rounded-2xl z-10" />
+      </div>
+
+
+
+ The Avatar Builder is a system that allows users to create a unique avatar that represents them across the Reddit platform. The system is extensible and scalable, allowing for the addition of new features and assets over time.
+
+
+
+      <div className="w-full flex flex-col gap-8">
+        <h2>Get inspired by seasonal drops.</h2>
+        <div className="relative grid pt-16 pb-16 grid-cols-3 gap-8">
+          {[Explore0, Explore1].map((image, index) => (
+            <Image
+              src={image}
+              alt={title}
+              key={`${index}-${image}`}
+              className="rounded-2xl shadow-2xl"
+            />
+          ))}
+        </div>
+      </div>
+
+*/
