@@ -1,4 +1,5 @@
 import ProjectTile from "@/components/ProjectTile";
+import Mark from "@/components/Mark";
 
 type Project = {
   name: string;
@@ -181,7 +182,11 @@ export default function Home() {
         <h1>Hello 👋</h1>
         <p className="text-2xl max-w-2xl tracking-tight">
           I&apos;m Knut, a San-Francisco-based designer and developer. Currently
-          the design lead for Reddit&apos;s Developer Platform.
+          the design lead for{" "}
+          <a href="https://developers.reddit.com/" target="_blank">
+            <Mark>Reddit&apos;s Developer Platform</Mark>
+          </a>
+          .
         </p>
       </header>
 

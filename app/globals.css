@@ -16,6 +16,6 @@
         @apply text-lg;
     }
     a {
-      @apply text-lg underline decoration-dotted hover:decoration-solid;
-  }
+      @apply text-inherit underline decoration-dotted hover:decoration-solid;
+    }
   }

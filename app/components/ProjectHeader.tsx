@@ -23,11 +23,21 @@ export default function ProjectHeader(props: ProjectHeaderProps) {
         {values.map((value) => {
           if (value.url)
             return (
-              <a key={value.name} href={value.url} target="_blank">
+              <a
+                className="text-lg"
+                key={value.name}
+                href={value.url}
+                target="_blank"
+              >
                 {value.name}
               </a>
             );
-          else return <p key={value.name}>{value.name}</p>;
+          else
+            return (
+              <p className="text-lg" key={value.name}>
+                {value.name}
+              </p>
+            );
         })}
       </div>
     </div>
