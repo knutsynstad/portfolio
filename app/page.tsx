@@ -171,7 +171,7 @@ export default function Home() {
   return (
     <>
       <header className="mb-32 flex flex-col gap-8">
-        <h1>Hello 👋</h1>
+        <h1>Hei 👋</h1>
         <p className="text-2xl max-w-2xl tracking-tight">
           I&apos;m Knut, a San-Francisco-based designer and developer. Currently
           the design lead for{" "}
@@ -182,7 +182,7 @@ export default function Home() {
         </p>
       </header>
 
-      <main className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 m-[-16px]">
+      <main className="grid grid-cols-2 md:grid-cols-3 gap-0 m-[-16px]">
         {projects.map((project) => (
           <ProjectTile
             key={project.url}
