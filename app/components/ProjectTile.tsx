@@ -19,7 +19,7 @@ export default function ProjectTile(props: ProjectTileProps) {
         {tags?.map((tag) => (
           <span
             key={tag}
-            className="bg-gray-100 whitespace-nowrap rounded-lg px-2 text-sm text-grauy-700 font-medium leading-none py-1"
+            className="bg-gray-100 whitespace-nowrap rounded text-sm text-gray-700 font-medium leading-none p-1"
           >
             {tag}
           </span>

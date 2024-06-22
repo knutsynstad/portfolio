@@ -10,36 +10,28 @@ type Project = {
 
 const projects: Project[] = [
   {
-    name: "Devvit Play",
+    name: "Let's Play",
     image: "images/play-thumbnail.png",
     url: "/projects/play/",
-    tags: [
-      "Design",
-      "Tooling",
-      "Reddit",
-      "Open Source",
-      "Development",
-      "Developer Platform",
-      "2023",
-    ],
+    tags: ["Reddit", "Dev Platform"],
   },
   {
-    name: "Reddit Automations",
+    name: "Automations",
     image: "images/automations_thumbnail.png",
     url: "/projects/automations/",
-    tags: ["Product Design", "Reddit", "Developer Platform", "2022"],
+    tags: ["Reddit", "Dev Platform"],
   },
   {
-    name: "Reddit Avatars",
+    name: "Avatar Builder",
     image: "images/AvatarBuilder.png",
     url: "/projects/avatar_builder/",
-    tags: ["Product Design", "Reddit"],
+    tags: ["Reddit", "Bets"],
   },
   {
     name: "Reddit Maps",
     image: "images/reddit-maps-thumbnail.png",
     url: "/projects/reddit_maps/",
-    tags: ["Product Design", "Reddit", "Snoosweek", "2022"],
+    tags: ["Reddit", "Solution Space"],
   },
   {
     name: "Faux code generator",
@@ -51,7 +43,7 @@ const projects: Project[] = [
     name: "The Tic-Tac-Toe solution space",
     image: "images/Tic_Tac_Toe_Thumbnail.gif",
     url: "/projects/the_tic_tac_toe_solution_space/",
-    tags: ["UIUX", "Print", "Information", "Coding"],
+    tags: ["DDO", "Solution Space"],
   },
   {
     name: "Visualizing the Fortune 500 by similarity",
@@ -63,7 +55,7 @@ const projects: Project[] = [
     name: "Using A.I. to accelerate life science",
     image: "images/Bioz_0.png",
     url: "/projects/using_ai_to_accelerate_life_science/",
-    tags: ["UIUX", "Coding"],
+    tags: ["DDO", "Product Design"],
   },
   {
     name: "The construction of Apple Park",
@@ -190,7 +182,7 @@ export default function Home() {
         </p>
       </header>
 
-      <main className="flex flex-wrap m-[-16px]">
+      <main className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 m-[-16px]">
         {projects.map((project) => (
           <ProjectTile
             key={project.url}
@@ -198,7 +190,6 @@ export default function Home() {
             image={project.image}
             url={project.url}
             tags={project.tags}
-            className="w-1/3"
           />
         ))}
       </main>
