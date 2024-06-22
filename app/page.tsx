@@ -173,8 +173,12 @@ export default function Home() {
       <header className="mb-32 flex flex-col gap-8">
         <h1>Hei 👋</h1>
         <p className="text-2xl max-w-2xl tracking-tight">
-          I&apos;m Knut, a San-Francisco-based designer and developer. Currently
-          the design lead for{" "}
+          I&apos;m{" "}
+          <a href="https://www.linkedin.com/in/knutsynstad" target="_blank">
+            Knut
+          </a>
+          , a San-Francisco-based designer and developer. Currently the design
+          lead for{" "}
           <a href="https://developers.reddit.com/" target="_blank">
             <Mark>Reddit&apos;s Developer Platform</Mark>
           </a>
