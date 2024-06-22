@@ -76,16 +76,19 @@ const details = [
   },
   {
     title: "Role",
-    values: [{ name: "Design Lead" }, { name: "Developer" }],
+    values: [{ name: "Designer" }, { name: "Developer" }],
   },
   {
     title: "Categories",
     values: [
-      { name: "Snoosweek" },
+      { name: "Hackathon" },
       { name: "Solution Space" },
       { name: "Prototype" },
     ],
   },
+];
+
+/*
   {
     title: "Year",
     values: [
@@ -94,7 +97,7 @@ const details = [
       },
     ],
   },
-];
+*/
 
 export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 
