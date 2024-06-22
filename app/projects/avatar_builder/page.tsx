@@ -39,25 +39,24 @@ const title = "The Reddit Avatar Builder.";
 const description = (
   <>
     <p>
-      Reddit avatars is a vehicle for personal expression. It&apos;s your canvas
-      to do with as you please.
-    </p>
-    <p>
-      The Avatar Builder is a system that allows users to create a unique avatar
-      that represents them across the Reddit platform. The system is extensible
-      and scalable, allowing for the addition of new features and assets over
-      time.
+      Avatars on Reddit are more than mere images&mdash;they are the embodiment
+      of personal identity and creativity, offering an expressive extension of
+      oneself.
     </p>
 
     <p>
-      Use the builder to assemble your own avatar using Snoo—Reddit&apos;s
-      mascot—and visual elements we provide. Your avatar is how your appear to
-      others throughout Reddit. We embrace the weird.
+      With the Avatar Builder, users can effortlessly craft their unique
+      identity using Reddit&apos;s iconic mascot, Snoo, alongside a diverse
+      array of visual elements designed to inspire limitless creativity. Whether
+      whimsical, minimalist, or boldly eccentric, your avatar becomes your
+      digital essence on Reddit&mdash;a celebration of all things quirky and
+      unique.
     </p>
 
-    <p>Problem/opportunity</p>
-    <p>solution</p>
-    <p>impact</p>
+    <p>
+      A modular UI system set the stage for continuous exploration and expansion
+      of the Avatars program.
+    </p>
   </>
 );
 const details = [
@@ -74,12 +73,12 @@ const details = [
     title: "Team",
     values: [
       {
-        name: "Economy (Bets/X)",
+        name: "Economy",
       },
     ],
   },
   {
-    title: "Design Colleagues",
+    title: "Collaborators",
     values: [
       {
         name: "Sam Stratton",
@@ -101,6 +100,10 @@ const details = [
       { name: "Solution Space" },
     ],
   },
+];
+
+/*
+
   {
     title: "Year",
     values: [
@@ -109,7 +112,8 @@ const details = [
       },
     ],
   },
-];
+
+*/
 
 export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 
@@ -138,9 +142,34 @@ const Project = () => (
   <>
     <ProjectHeader title={title} description={description} details={details} />
     <main className="flex flex-col gap-32">
+      <Marquee>
+        {marqueeImages.map((image, index) => (
+          <Image
+            src={image.image}
+            alt={image.label}
+            key={`marquee-${index}-${image.label}`}
+            className="w-[200px]"
+          />
+        ))}
+      </Marquee>
+
+      <div className="w-full flex flex-col gap-8">
+        <h2>Make your Snoo</h2>
+        <div className="grid grid-cols-3 gap-8">
+          {[Me1, Me2, Me3].map((image, index) => (
+            <Image
+              src={image}
+              alt={title}
+              key={`${index}-${image}`}
+              className="rounded-2xl shadow-2xl"
+            />
+          ))}
+        </div>
+      </div>
+
       <div className="w-full flex flex-col gap-8">
         <div className="grid grid-cols-3 gap-y-4 gap-x-8">
-          <h2 className="col-span-2">Get inspired by seasonal drops.</h2>
+          <h2 className="col-span-2">Style it with seasonal gear</h2>
         </div>
         <div className="grid grid-cols-3 gap-8">
           {[Explore1, Explore2, Explore3].map((image, index) => (
@@ -153,28 +182,14 @@ const Project = () => (
           ))}
         </div>
       </div>
+    </main>
+  </>
+);
 
-      <div className="w-full flex flex-col gap-8">
-        <div className="grid grid-cols-3 gap-y-4 gap-x-8">
-          <h2 className="col-span-2">A Snoo beginning</h2>
-          <p className="col-span-2 text-2xl tracking-tight">
-            Stylize your own version of Snoo, the Reddit mascot, to represent
-            yourself across the platform. The Avatar grows with you through new
-            features and assets over time.
-          </p>
-        </div>
+export default Project;
 
-        <div className="grid grid-cols-3 gap-8">
-          {[Me1, Me2, Me3].map((image, index) => (
-            <Image
-              src={image}
-              alt={title}
-              key={`${index}-${image}`}
-              className="rounded-2xl shadow-2xl"
-            />
-          ))}
-        </div>
-      </div>
+/*
+
 
       <div className="w-full flex flex-col gap-8">
         <div className="grid grid-cols-3 gap-y-4 gap-x-8">
@@ -198,31 +213,7 @@ const Project = () => (
         </div>
       </div>
 
-      <h2>Enabling anyone to represent themselves</h2>
-      <Marquee>
-        {marqueeImages.map((image, index) => (
-          <Image
-            src={image.image}
-            alt={image.label}
-            key={`marquee-${index}-${image.label}`}
-            className="w-[150px]"
-          />
-        ))}
-      </Marquee>
-      <p>
-        These were all drawn by the talented illustrators on our internal
-        branding team, OrangeRed.
-      </p>
-
-      <p>6 slots to configure</p>
-      <p>Adjust colors</p>
-      <p>Provides random access to all items.</p>
-      <p>Quick access to worn items.</p>
-    </main>
-  </>
-);
-
-export default Project;
+*/
 
 /*
 
