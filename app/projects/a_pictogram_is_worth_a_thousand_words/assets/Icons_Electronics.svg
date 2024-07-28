@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1170px"
+	 height="1170px" viewBox="0 0 1170 1170" enable-background="new 0 0 1170 1170" xml:space="preserve">
+<symbol  id="AC_Power_Supply" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-13" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.999" y1="0" x2="17.333" y2="0"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-13,0c0,1.196,0.97,2.167,2.167,2.167S-8.666,1.196-8.666,0s-0.97-2.167-2.167-2.167S-13-1.196-13,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667,0c0,1.196,0.97,2.167,2.167,2.167S13.001,1.196,13.001,0s-0.97-2.167-2.167-2.167S8.667-1.196,8.667,0z"/>
+	<g>
+		<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M-4.334,1.09c1.443,0,1.443-2.18,2.886-2.18c1.445,0,1.445,2.18,2.891,2.18c1.446,0,1.446-2.18,2.891-2.18"/>
+	</g>
+</symbol>
+<symbol  id="And_Gate" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0,8.666c4.786,0,8.666-3.88,8.666-8.666S4.786-8.666,0-8.666h-8.666V8.666H0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="4.334" x2="-17.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="-4.334" x2="-17.334" y2="-4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="0" x2="8.666" y2="0"/>
+</symbol>
+<symbol  id="Avalance_Diode" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.5" y1="0.002" x2="17.334" y2="0.002"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0.002" x2="-6.501" y2="0.002"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		6.5,0 -6.501,-7.504 -6.501,7.508 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,8.668 6.5,8.668 6.5,-8.668 	"/>
+</symbol>
+<symbol  id="Bell" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0,8.666V-8.666c4.786,0,8.666,3.88,8.666,8.666S4.786,8.666,0,8.666z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="4.334" x2="-17.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="-4.334" x2="-17.334" y2="-4.334"/>
+</symbol>
+<symbol  id="Bilateral_Switch" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-4.334,11.505 4.334,6.5 -4.334,1.495 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.334" y1="11.505" x2="4.334" y2="-1.495"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.333,-11.505 -4.335,-6.5 4.333,-1.495 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.335" y1="-11.505" x2="-4.335" y2="1.495"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.333" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-4.333" y2="0"/>
+</symbol>
+<symbol  id="Bipolar_NPN_Transistor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13,0c0,7.18-5.82,13-13,13S-13,7.18-13,0s5.82-13,13-13S13-7.18,13,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="6.5" x2="-4.334" y2="-6.5"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-4.334,-2.167 4.334,-6.5 4.334,-17.334 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-4.334,2.167 4.334,6.5 4.334,17.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="0" x2="-17.334" y2="0"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		0.344,-1.503 2.002,-5.506 -2.002,-7.165 	"/>
+</symbol>
+<symbol  id="Bipolar_PNP_Transistor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13,0c0,7.18-5.82,13-13,13S-13,7.18-13,0s5.82-13,13-13S13-7.18,13,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="6.5" x2="-4.334" y2="-6.5"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-4.334,-2.167 4.334,-6.5 4.334,-17.334 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-4.334,2.167 4.334,6.5 4.334,17.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="0" x2="-17.334" y2="0"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-0.344,-7.165 -2.002,-3.162 2.002,-1.503 	"/>
+</symbol>
+<symbol  id="Bipolar_Transistor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13,0c0,7.18-5.82,13-13,13S-13,7.18-13,0s5.82-13,13-13S13-7.18,13,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="6.5" x2="-4.334" y2="-6.5"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-4.334,-2.167 4.334,-6.5 4.334,-17.334 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-4.334,2.167 4.334,6.5 4.334,17.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="0" x2="-17.334" y2="0"/>
+</symbol>
+<symbol  id="Bridge_Rectifier" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-8.645,-4.356 -13,0 -8.645,4.355 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.355,-8.646 0,-13 -4.361,-8.638 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.644,4.356 13,0 8.645,-4.356 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-4.355,8.644 0,13 4.355,8.644 	"/>
+	<g>
+		
+			<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			-11.121,6.831 -4.354,8.644 -6.169,1.879 		"/>
+		
+			<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-6.831" y1="11.121" x2="-1.879" y2="6.169"/>
+	</g>
+	<g>
+		
+			<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			1.879,-6.17 8.646,-4.356 6.831,-11.121 		"/>
+		
+			<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.169" y1="-1.879" x2="11.121" y2="-6.831"/>
+	</g>
+	<g>
+		
+			<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			6.833,11.121 8.646,4.356 1.88,6.169 		"/>
+		
+			<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="11.122" y1="6.832" x2="6.169" y2="1.879"/>
+	</g>
+	<g>
+		
+			<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			-6.169,-1.879 -4.356,-8.645 -11.121,-6.831 		"/>
+		
+			<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-1.879" y1="-6.168" x2="-6.831" y2="-11.121"/>
+	</g>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="13" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-13" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="13" x2="0" y2="17.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="-17.334" x2="0" y2="-13"/>
+</symbol>
+<symbol  id="Buzzer" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1.164" y1="4.334" x2="-17.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="1.164" y1="-4.334" x2="-17.334" y2="-4.334"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.666-8.666V8.666C3.88,8.666,0,4.786,0,0S3.88-8.666,8.666-8.666z"/>
+</symbol>
+<symbol  id="Capacitor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.167" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-2.167" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.167" y1="8.666" x2="2.167" y2="-8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-2.167" y1="8.666" x2="-2.167" y2="-8.666"/>
+</symbol>
+<symbol  id="Cell" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.167" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-2.167" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.167" y1="8.666" x2="2.167" y2="-8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-2.167" y1="4.334" x2="-2.167" y2="-4.334"/>
+</symbol>
+<symbol  id="Constant_Current_Diode" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.5" y1="0.002" x2="17.334" y2="0.002"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0.002" x2="-6.501" y2="0.002"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		6.5,0 -6.501,-7.504 -6.501,7.508 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.5" y1="8.668" x2="6.5" y2="-8.668"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.334" y1="8.666" x2="8.666" y2="8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.334" y1="-8.666" x2="8.666" y2="-8.666"/>
+</symbol>
+<symbol  id="DC_Power_Supply" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-13" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-10.833" y1="6.499" x2="-10.833" y2="10.833"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-13" y1="8.666" x2="-8.666" y2="8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.667" y1="8.666" x2="13.001" y2="8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.999" y1="0" x2="17.333" y2="0"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-13,0c0,1.196,0.97,2.167,2.167,2.167S-8.666,1.196-8.666,0s-0.97-2.167-2.167-2.167S-13-1.196-13,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667,0c0,1.196,0.97,2.167,2.167,2.167S13.001,1.196,13.001,0s-0.97-2.167-2.167-2.167S8.667-1.196,8.667,0z"/>
+</symbol>
+<symbol  id="Diode" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.5" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-6.501" y2="0"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		6.5,-0.002 -6.501,-7.506 -6.501,7.506 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.5" y1="-8.67" x2="6.5" y2="8.666"/>
+</symbol>
+<symbol  id="Dpst_Switch" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.823" y1="6.622" x2="8.823" y2="13.681"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="5.818" x2="-13" y2="5.818"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.999" y1="5.818" x2="17.333" y2="5.818"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-13,5.818c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167s-0.97-2.167-2.167-2.167S-13,4.622-13,5.818z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667,5.818c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167s-0.97-2.167-2.167-2.167S8.667,4.622,8.667,5.818z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.823" y1="-10.712" x2="8.823" y2="-3.653"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="-11.516" x2="-13" y2="-11.516"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.999" y1="-11.516" x2="17.333" y2="-11.516"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-13-11.516c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167s-0.97-2.167-2.167-2.167S-13-12.712-13-11.516z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667-11.516c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167s-0.97-2.167-2.167-2.167S8.667-12.712,8.667-11.516z"/>
+	<g>
+		<g>
+			
+				<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="0.003" y1="-7.182" x2="0.003" y2="-5.182"/>
+			
+				<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3.333,4.9995" x1="0.003" y1="-0.182" x2="0.003" y2="5.65"/>
+			
+				<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="0.003" y1="8.15" x2="0.003" y2="10.15"/>
+		</g>
+	</g>
+</symbol>
+<symbol  id="Fuse" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.666,-4.334 -8.666,-4.334 -8.666,4.334 8.666,4.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="17.334" y2="0"/>
+</symbol>
+<symbol  id="Fuse_2" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.666,-4.334 -8.666,-4.334 -8.666,4.334 8.666,4.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-8.666" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.666" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.334" y1="-4.334" x2="4.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="-4.334" x2="-4.334" y2="4.334"/>
+</symbol>
+<symbol  id="Ground" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-6.5" y1="-8.666" x2="6.5" y2="-8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.333" y1="-13" x2="4.333" y2="-13"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-2.166" y1="-17.334" x2="2.166" y2="-17.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="17.334" x2="0" y2="-8.666"/>
+</symbol>
+<symbol  id="Gunn_Diode" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-8.666,5.005 0,0.001 -8.666,-5.003 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.666,-5.005 0,-0.001 8.666,5.003 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="5.005" x2="0" y2="-5.003"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="-0.001" x2="-17.334" y2="-0.001"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.666" y1="-0.001" x2="17.334" y2="-0.001"/>
+</symbol>
+<symbol  id="Integrated_Circuit" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		13,-17.334 -13,-17.334 -13,17.334 13,17.334 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-4.334,17.334C-4.334,14.94-2.394,13,0,13s4.334,1.94,4.334,4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-13" y1="13" x2="-17.334" y2="13"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-13" y1="4.334" x2="-17.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-13" y1="-4.333" x2="-17.334" y2="-4.333"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-13" y1="-12.999" x2="-17.334" y2="-12.999"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="13" x2="13" y2="13"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="4.334" x2="13" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="-4.333" x2="13" y2="-4.333"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="-12.999" x2="13" y2="-12.999"/>
+</symbol>
+<symbol  id="Joined_Wire_2" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-2.167,0c0,0-3.396,0-7.583,0s-7.583,0-7.583,0s3.396,0,7.583,0S-2.167,0-2.167,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,0c0,0-3.396,0-7.583,0S2.167,0,2.167,0S5.562,0,9.75,0S17.334,0,17.334,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0,9.75c0,4.188,0,7.584,0,7.584S0,13.938,0,9.75c0-4.188,0-7.583,0-7.583S0,5.562,0,9.75z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0-9.751c0,4.188,0,7.584,0,7.584S0-5.562,0-9.751c0-4.188,0-7.583,0-7.583S0-13.938,0-9.751z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M2.167,0c0-1.196-0.97-2.167-2.167-2.167S-2.167-1.196-2.167,0S-1.197,2.167,0,2.167S2.167,1.196,2.167,0z"/>
+</symbol>
+<symbol  id="Joined_Wire_3" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-2.167,0c0,0-3.396,0-7.583,0s-7.583,0-7.583,0s3.396,0,7.583,0S-2.167,0-2.167,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,0c0,0-3.396,0-7.583,0S2.167,0,2.167,0S5.562,0,9.75,0S17.334,0,17.334,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0,9.75c0,4.188,0,7.584,0,7.584S0,13.938,0,9.75c0-4.188,0-7.583,0-7.583S0,5.562,0,9.75z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M2.167,0c0-1.196-0.97-2.167-2.167-2.167S-2.167-1.196-2.167,0S-1.197,2.167,0,2.167S2.167,1.196,2.167,0z"/>
+</symbol>
+<symbol  id="Joined_Wire_4" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-2.167,0c0,0-3.396,0-7.583,0s-7.583,0-7.583,0s3.396,0,7.583,0S-2.167,0-2.167,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,0c0,0-3.396,0-7.583,0S2.167,0,2.167,0S5.562,0,9.75,0S17.334,0,17.334,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0-9.751c0,4.188,0,7.584,0,7.584S0-5.562,0-9.751c0-4.188,0-7.583,0-7.583S0-13.938,0-9.751z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M2.167,0c0-1.196-0.97-2.167-2.167-2.167S-2.167-1.196-2.167,0S-1.197,2.167,0,2.167S2.167,1.196,2.167,0z"/>
+</symbol>
+<symbol  id="Joined_Wire_5" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-2.167,0c0,0-3.396,0-7.583,0s-7.583,0-7.583,0s3.396,0,7.583,0S-2.167,0-2.167,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0-9.751c0,4.188,0,7.584,0,7.584S0-5.562,0-9.751c0-4.188,0-7.583,0-7.583S0-13.938,0-9.751z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0,9.75c0,4.188,0,7.584,0,7.584S0,13.938,0,9.75c0-4.188,0-7.583,0-7.583S0,5.562,0,9.75z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M2.167,0c0-1.196-0.97-2.167-2.167-2.167S-2.167-1.196-2.167,0S-1.197,2.167,0,2.167S2.167,1.196,2.167,0z"/>
+</symbol>
+<symbol  id="Joined_Wire_6" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,0c0,0-3.396,0-7.584,0C5.562,0,2.167,0,2.167,0S5.562,0,9.75,0C13.938,0,17.334,0,17.334,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0-9.751c0,4.188,0,7.584,0,7.584S0-5.562,0-9.751c0-4.188,0-7.583,0-7.583S0-13.938,0-9.751z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0,9.75c0,4.188,0,7.584,0,7.584S0,13.938,0,9.75c0-4.188,0-7.583,0-7.583S0,5.562,0,9.75z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M2.167,0c0-1.196-0.97-2.167-2.167-2.167S-2.167-1.196-2.167,0S-1.197,2.167,0,2.167S2.167,1.196,2.167,0z"/>
+</symbol>
+<symbol  id="Junction_FET_Transistor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13,0c0,7.18-5.82,13-13,13S-13,7.18-13,0s5.82-13,13-13S13-7.18,13,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="6.5" x2="-4.334" y2="-6.5"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,17.334 4.334,4.334 -4.334,4.334 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,-17.334 4.334,-4.334 -4.334,-4.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="0" x2="-17.334" y2="0"/>
+</symbol>
+<symbol  id="Junction_N-Channel_FET_Transistor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13,0c0,7.18-5.82,13-13,13S-13,7.18-13,0s5.82-13,13-13S13-7.18,13,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="6.5" x2="-4.334" y2="-6.5"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,17.334 4.334,4.334 -4.334,4.334 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,-17.334 4.334,-4.334 -4.334,-4.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="0" x2="-17.334" y2="0"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-10.198,3.064 -7.134,0 -10.198,-3.064 	"/>
+</symbol>
+<symbol  id="Junction_P-Channel_FET_Transistor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13,0c0,7.18-5.82,13-13,13S-13,7.18-13,0s5.82-13,13-13S13-7.18,13,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="6.5" x2="-4.334" y2="-6.5"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,17.334 4.334,4.334 -4.334,4.334 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,-17.334 4.334,-4.334 -4.334,-4.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="0" x2="-17.334" y2="0"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-7.134,-3.063 -10.198,0.001 -7.134,3.065 	"/>
+</symbol>
+<symbol  id="LED" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.5" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-6.501" y2="0"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		6.5,-0.002 -6.501,-7.506 -6.501,7.506 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.5" y1="-8.67" x2="6.5" y2="8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-2.146" y1="17.334" x2="-8.627" y2="10.833"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-2.146,13.042 -2.146,17.334 -6.438,17.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.5" y1="17.334" x2="0.02" y2="10.833"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		6.5,13.042 6.5,17.334 2.208,17.334 	"/>
+</symbol>
+<symbol  id="Lamp" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.666" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-8.666" y2="0"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.666,0c0,4.786-3.88,8.666-8.666,8.666S-8.666,4.786-8.666,0S-4.786-8.666,0-8.666S8.666-4.786,8.666,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-6.124" y1="-6.124" x2="6.124" y2="6.124"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.124" y1="-6.124" x2="-6.124" y2="6.124"/>
+</symbol>
+<symbol  id="Lamp_2" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-17.334,0h14.445c0,1.596,1.293,2.889,2.889,2.889S2.889,1.596,2.889,0h14.445"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.666,0c0,4.786-3.88,8.666-8.666,8.666S-8.666,4.786-8.666,0S-4.786-8.666,0-8.666S8.666-4.786,8.666,0z"/>
+</symbol>
+<symbol  id="Microphone_2" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.666,0c0,4.786-3.88,8.666-8.666,8.666S-8.666,4.786-8.666,0S-4.786-8.666,0-8.666S8.666-4.786,8.666,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.666" y1="-8.666" x2="8.666" y2="8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="0" x2="-17.334" y2="0"/>
+</symbol>
+<symbol  id="Nand_Gate" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0,8.666c4.786,0,8.666-3.88,8.666-8.666S4.786-8.666,0-8.666h-8.666V8.666H0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="4.334" x2="-17.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="-4.334" x2="-17.334" y2="-4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="0" x2="13" y2="0"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13,0c0-1.196-0.97-2.167-2.167-2.167S8.666-1.196,8.666,0s0.97,2.167,2.167,2.167S13,1.196,13,0z"/>
+</symbol>
+<symbol  id="Nor_gate" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="0" x2="13" y2="0"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13,0c0-1.196-0.971-2.167-2.167-2.167S8.666-1.196,8.666,0s0.971,2.167,2.167,2.167S13,1.196,13,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-7.054" y1="4.334" x2="-17.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-7.054" y1="-4.334" x2="-17.334" y2="-4.334"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-8.668-8.666c0,0,2.166,3.88,2.166,8.666s-2.166,8.666-2.166,8.666"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-8.668-8.666C8.666-8.666,8.668,0,8.668,0s0,8.666-17.336,8.666"/>
+</symbol>
+<symbol  id="Not_gate" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="0" x2="13" y2="0"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M13,0c0-1.196-0.97-2.167-2.167-2.167S8.666-1.196,8.666,0s0.97,2.167,2.167,2.167S13,1.196,13,0z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="4.334" x2="-17.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="-4.334" x2="-17.334" y2="-4.334"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-8.666,10.006 8.666,0 -8.666,-10.006 	"/>
+</symbol>
+<symbol  id="Operational_Amplifier" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.666,0 -8.666,8.666 -8.666,-8.666 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="-4.334" x2="-17.334" y2="-4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.666" y1="4.334" x2="-17.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="0" x2="8.666" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-0.016" y1="4.342" x2="-0.016" y2="17.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="-4.333" x2="0" y2="-17.334"/>
+</symbol>
+<symbol  id="Or_gate" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-7.054" y1="4.334" x2="-17.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-7.054" y1="-4.334" x2="-17.334" y2="-4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="0" x2="8.666" y2="0"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-8.667-8.666c0,0,2.166,3.88,2.166,8.666s-2.166,8.666-2.166,8.666"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-8.667-8.666C8.666-8.666,8.668,0,8.668,0s0,8.666-17.335,8.666"/>
+</symbol>
+<symbol  id="Potentiometer" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0.001" y1="17.334" x2="0.042" y2="8.334"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-3.035,11.368 0,8.334 3.035,11.368 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.666,-4.334 -8.666,-4.334 -8.666,4.334 8.666,4.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.666" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-8.666" y2="0"/>
+</symbol>
+<symbol  id="Push_to_Break" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-13-2.166c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167s-0.97-2.167-2.167-2.167S-13-3.362-13-2.166z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.666-2.166c0,1.196,0.97,2.167,2.167,2.167S13-0.97,13-2.166s-0.97-2.167-2.167-2.167S8.666-3.362,8.666-2.166z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-10.833" y1="-4.332" x2="10.833" y2="-4.332"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="-4.332" x2="0" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="4.334" x2="4.334" y2="4.334"/>
+</symbol>
+<symbol  id="Push_to_Make" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-13-6.499c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167s-0.97-2.167-2.167-2.167S-13-7.695-13-6.499z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.666-6.499c0,1.196,0.97,2.167,2.167,2.167S13-5.303,13-6.499s-0.97-2.167-2.167-2.167S8.666-7.695,8.666-6.499z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-10.833" y1="0" x2="10.833" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="0" x2="0" y2="8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-4.334" y1="8.666" x2="4.334" y2="8.666"/>
+</symbol>
+<symbol  id="Resistor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.666,-4.334 -8.666,-4.334 -8.666,4.334 8.666,4.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.666" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-8.666" y2="0"/>
+</symbol>
+<symbol  id="Rheostat" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0.001" y1="12.999" x2="0.042" y2="-12.971"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		3.035,9.966 0,13 -3.035,9.966 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.666,-4.334 -8.666,-4.334 -8.666,4.334 8.666,4.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.666" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-8.666" y2="0"/>
+</symbol>
+<symbol  id="Rotary_Switch" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M17.334,0c0-1.196-0.97-2.167-2.167-2.167S13-1.196,13,0s0.97,2.167,2.167,2.167S17.334,1.196,17.334,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M2.167,0c0-1.196-0.97-2.167-2.167-2.167S-2.167-1.196-2.167,0S-1.197,2.167,0,2.167S2.167,1.196,2.167,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-13,0c0-1.196-0.97-2.167-2.167-2.167S-17.334-1.196-17.334,0s0.97,2.167,2.167,2.167S-13,1.196-13,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M12.257,12.257c0.846-0.846,0.847-2.218,0-3.064s-2.22-0.847-3.065-0.001c-0.846,0.847-0.846,2.219,0.001,3.065
+		S11.41,13.104,12.257,12.257z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-9.193-9.193c0.846-0.846,0.847-2.218,0-3.064c-0.846-0.846-2.219-0.846-3.064,0c-0.846,0.847-0.846,2.219,0,3.064
+		C-11.411-8.347-10.039-8.347-9.193-9.193z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0,17.334c1.195,0,2.166-0.971,2.166-2.168S1.195,12.998,0,12.998c-1.197,0.001-2.168,0.971-2.168,2.168
+		C-2.167,16.364-1.197,17.334,0,17.334z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0-13.002c1.195,0,2.166-0.969,2.166-2.166S1.195-17.336,0-17.336c-1.197,0.001-2.168,0.971-2.168,2.168S-1.197-13.001,0-13.002z"
+		/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-12.258,12.256c0.846,0.846,2.219,0.846,3.064,0c0.848-0.848,0.848-2.221,0.002-3.065c-0.848-0.845-2.219-0.847-3.066,0.001
+		C-13.104,10.039-13.104,11.41-12.258,12.256z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M9.193-9.194c0.846,0.845,2.217,0.847,3.062,0.001c0.848-0.848,0.848-2.221,0.002-3.065c-0.847-0.846-2.219-0.847-3.066,0.001
+		C8.346-11.412,8.346-10.039,9.193-9.194z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.167" y1="0" x2="9" y2="0"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		5.936,3.064 9,0 5.936,-3.064 	"/>
+</symbol>
+<symbol  id="Spdt_Switch" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-13" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.999" y1="4.334" x2="17.333" y2="4.334"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-13,0c0,1.196,0.97,2.167,2.167,2.167S-8.666,1.196-8.666,0s-0.97-2.167-2.167-2.167S-13-1.196-13,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667,4.334c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167s-0.97-2.167-2.167-2.167S8.667,3.138,8.667,4.334z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.999" y1="-4.334" x2="17.333" y2="-4.334"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667-4.334c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167s-0.97-2.167-2.167-2.167S8.667-5.53,8.667-4.334z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.708" y1="0.425" x2="8.709" y2="3.908"/>
+</symbol>
+<symbol  id="Spst_switch" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.823" y1="0.804" x2="8.823" y2="7.862"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-13" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.999" y1="0" x2="17.333" y2="0"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-13,0c0,1.196,0.97,2.167,2.167,2.167S-8.666,1.196-8.666,0s-0.97-2.167-2.167-2.167S-13-1.196-13,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667,0c0,1.196,0.97,2.167,2.167,2.167S13.001,1.196,13.001,0s-0.97-2.167-2.167-2.167S8.667-1.196,8.667,0z"/>
+</symbol>
+<symbol  id="Sptt_Switch" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-13" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.999" y1="8.667" x2="17.333" y2="8.667"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-13,0c0,1.196,0.97,2.167,2.167,2.167S-8.666,1.196-8.666,0s-0.97-2.167-2.167-2.167S-13-1.196-13,0z"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667,8.667c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167S12.031,6.5,10.834,6.5S8.667,7.471,8.667,8.667z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.999" y1="-0.001" x2="17.333" y2="-0.001"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667-0.001c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167s-0.97-2.167-2.167-2.167S8.667-1.197,8.667-0.001z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="12.999" y1="-8.667" x2="17.333" y2="-8.667"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M8.667-8.667c0,1.196,0.97,2.167,2.167,2.167s2.167-0.971,2.167-2.167s-0.97-2.167-2.167-2.167S8.667-9.863,8.667-8.667z"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-8.823" y1="0.804" x2="8.823" y2="7.862"/>
+</symbol>
+<symbol  id="Thermistor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		8.666,-4.334 -8.666,-4.334 -8.666,4.334 8.666,4.334 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.666" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-8.666" y2="0"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		-12.998,-8.666 -8.666,-8.666 4.334,8.666 	"/>
+</symbol>
+<symbol  id="Trimmer_Capacitor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.167" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-2.167" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.167" y1="8.666" x2="2.167" y2="-8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-2.167" y1="8.666" x2="-2.167" y2="-8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-13" y1="-13" x2="13" y2="13"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="14.532" y1="11.468" x2="11.468" y2="14.532"/>
+</symbol>
+<symbol  id="Unbalanced_Antenna" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="-17.334" x2="0" y2="17.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="4.333" x2="8.666" y2="17.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-0.001" y1="4.333" x2="-8.667" y2="17.334"/>
+</symbol>
+<symbol  id="Varactor_Diode" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.666" y1="0.002" x2="17.334" y2="0.002"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0.002" x2="-8.668" y2="0.002"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.333,0 -8.668,-7.504 -8.668,7.508 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="4.333" y1="8.668" x2="4.333" y2="-8.668"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="8.667" y1="8.668" x2="8.667" y2="-8.668"/>
+</symbol>
+<symbol  id="Variable_Capacitor" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.167" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-2.167" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.167" y1="8.666" x2="2.167" y2="-8.666"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-2.167" y1="8.666" x2="-2.167" y2="-8.666"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		13.002,8.666 13.002,13 8.668,13 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-13" y1="-13" x2="13" y2="13"/>
+</symbol>
+<symbol  id="Wire" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="17.334" y2="0"/>
+</symbol>
+<symbol  id="Wire_Not_Joined" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-17.334,0.001h13.001c0,2.394,1.939,4.333,4.333,4.333s4.333-1.939,4.333-4.333h13.001"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="0.334" x2="0" y2="-17.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0" y1="17.334" x2="0" y2="8.335"/>
+</symbol>
+<symbol  id="Wire_not_Joined_2" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M0.001,17.334V4.333c2.394,0,4.333-1.939,4.333-4.333S2.395-4.333,0.001-4.333v-13.001"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0.334" y1="0" x2="-17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="0" x2="8.335" y2="0"/>
+</symbol>
+<symbol  id="Xor_gate" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="-24,24 24,24 24,-24 -24,-24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-9.006" y1="4.334" x2="-17.334" y2="4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-9.006" y1="-4.334" x2="-17.334" y2="-4.334"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.334" y1="0" x2="10.667" y2="0"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-6.669-8.666c0,0,2.166,3.88,2.166,8.666s-2.166,8.666-2.166,8.666"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-10.669-8.666c0,0,2.166,3.88,2.166,8.666s-2.166,8.666-2.166,8.666"/>
+	<path fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M-6.669-8.666C10.664-8.666,10.666,0,10.666,0s0,8.666-17.335,8.666"/>
+</symbol>
+<symbol  id="Zener_Diode" viewBox="-24 -24 48 48">
+	<polygon fill="none" points="24,-24 -24,-24 -24,24 24,24 	"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="6.5" y1="0" x2="17.334" y2="0"/>
+	
+		<line fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="-17.334" y1="0" x2="-6.501" y2="0"/>
+	
+		<polygon fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		6.5,-0.002 -6.501,-7.506 -6.501,7.506 	"/>
+	
+		<polyline fill="none" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		4.334,8.666 6.5,8.666 6.5,-8.67 8.666,-8.666 	"/>
+</symbol>
+<g id="Background">
+</g>
+<g id="Layer_1">
+</g>
+<g id="Model">
+	<g id="Woman">
+	</g>
+	<g id="Threshold">
+	</g>
+	<g id="Man_with_Tie">
+	</g>
+	<g id="Building_5">
+	</g>
+</g>
+<g id="Icons">
+	<g id="Random_Forest">
+	</g>
+	<g>
+		
+			<use xlink:href="#Cell"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 95 1075)" overflow="visible"/>
+		<g>
+			
+				<use xlink:href="#Junction_P-Channel_FET_Transistor"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 795 655)" overflow="visible"/>
+			
+				<use xlink:href="#Junction_FET_Transistor"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 515 655)" overflow="visible"/>
+			
+				<use xlink:href="#Junction_N-Channel_FET_Transistor"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 655 655)" overflow="visible"/>
+			
+				<use xlink:href="#Bipolar_PNP_Transistor"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 375 655)" overflow="visible"/>
+			
+				<use xlink:href="#Bipolar_NPN_Transistor"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 235 655)" overflow="visible"/>
+			
+				<use xlink:href="#Bipolar_Transistor"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 95 655)" overflow="visible"/>
+			
+				<use xlink:href="#Ground"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 1075 655)" overflow="visible"/>
+			
+				<use xlink:href="#Bridge_Rectifier"  width="48" height="48" id="XMLID_111_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 935 655)" overflow="visible"/>
+		</g>
+		<g>
+			
+				<use xlink:href="#Spst_switch"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 95 795)" overflow="visible"/>
+			
+				<use xlink:href="#Push_to_Break"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 795 795)" overflow="visible"/>
+			
+				<use xlink:href="#Push_to_Make"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 655 795)" overflow="visible"/>
+			
+				<use xlink:href="#Unbalanced_Antenna"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 1075 795)" overflow="visible"/>
+			
+				<use xlink:href="#Spdt_Switch"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 235 795)" overflow="visible"/>
+			
+				<use xlink:href="#Sptt_Switch"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 375 795)" overflow="visible"/>
+			
+				<use xlink:href="#Dpst_Switch"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 515 795)" overflow="visible"/>
+			
+				<use xlink:href="#Microphone_2"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 935 795)" overflow="visible"/>
+		</g>
+		<g>
+			
+				<use xlink:href="#Resistor"  width="48" height="48" id="XMLID_92_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 95 235)" overflow="visible"/>
+			
+				<use xlink:href="#Fuse_2"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 655 235)" overflow="visible"/>
+			
+				<use xlink:href="#Potentiometer"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 235 235)" overflow="visible"/>
+			
+				<use xlink:href="#Rheostat"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 375 235)" overflow="visible"/>
+			
+				<use xlink:href="#Thermistor"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 795 235)" overflow="visible"/>
+			
+				<use xlink:href="#Fuse"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 515 235)" overflow="visible"/>
+			
+				<use xlink:href="#Buzzer"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 1075 235)" overflow="visible"/>
+			
+				<use xlink:href="#Bell"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 935 235)" overflow="visible"/>
+		</g>
+		<g>
+			
+				<use xlink:href="#Joined_Wire_6"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 1075 935)" overflow="visible"/>
+			
+				<use xlink:href="#Joined_Wire_5"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 935 935)" overflow="visible"/>
+			
+				<use xlink:href="#Joined_Wire_4"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 795 935)" overflow="visible"/>
+			
+				<use xlink:href="#Joined_Wire_2"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 515 935)" overflow="visible"/>
+			
+				<use xlink:href="#Wire"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 95 935)" overflow="visible"/>
+			
+				<use xlink:href="#Wire_not_Joined_2"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 375 935)" overflow="visible"/>
+			
+				<use xlink:href="#Wire_Not_Joined"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 235 935)" overflow="visible"/>
+			
+				<use xlink:href="#Joined_Wire_3"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 655 935)" overflow="visible"/>
+		</g>
+		<g>
+			
+				<use xlink:href="#Capacitor"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 235 515)" overflow="visible"/>
+			
+				<use xlink:href="#Lamp"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 515 515)" overflow="visible"/>
+			
+				<use xlink:href="#AC_Power_Supply"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 1075 515)" overflow="visible"/>
+			
+				<use xlink:href="#Variable_Capacitor"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 375 515)" overflow="visible"/>
+			
+				<use xlink:href="#Lamp_2"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 655 515)" overflow="visible"/>
+			
+				<use xlink:href="#Trimmer_Capacitor"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 95 515)" overflow="visible"/>
+			
+				<use xlink:href="#Operational_Amplifier"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 795 515)" overflow="visible"/>
+			
+				<use xlink:href="#Bilateral_Switch"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 935 515)" overflow="visible"/>
+		</g>
+		<g>
+			
+				<use xlink:href="#Zener_Diode"  width="48" height="48" id="XMLID_91_" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 235 375)" overflow="visible"/>
+			
+				<use xlink:href="#Diode"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 95 375)" overflow="visible"/>
+			
+				<use xlink:href="#LED"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 375 375)" overflow="visible"/>
+			
+				<use xlink:href="#DC_Power_Supply"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 1075 375)" overflow="visible"/>
+			
+				<use xlink:href="#Gunn_Diode"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 935 375)" overflow="visible"/>
+			
+				<use xlink:href="#Varactor_Diode"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 795 375)" overflow="visible"/>
+			
+				<use xlink:href="#Avalance_Diode"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 515 375)" overflow="visible"/>
+			
+				<use xlink:href="#Constant_Current_Diode"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 655 375)" overflow="visible"/>
+		</g>
+		<g>
+			
+				<use xlink:href="#Integrated_Circuit"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 935 95)" overflow="visible"/>
+			
+				<use xlink:href="#Xor_gate"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 795 95)" overflow="visible"/>
+			
+				<use xlink:href="#Nor_gate"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 655 95)" overflow="visible"/>
+			
+				<use xlink:href="#And_Gate"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 95 95)" overflow="visible"/>
+			
+				<use xlink:href="#Nand_Gate"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 235 95)" overflow="visible"/>
+			
+				<use xlink:href="#Not_gate"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 375 95)" overflow="visible"/>
+			
+				<use xlink:href="#Or_gate"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 515 95)" overflow="visible"/>
+			
+				<use xlink:href="#Rotary_Switch"  width="48" height="48" x="-24" y="-24" transform="matrix(1.875 0 0 -1.875 1075 95)" overflow="visible"/>
+		</g>
+	</g>
+	<g id="Database">
+	</g>
+	<g id="Random_Forest_1_">
+	</g>
+	<g id="University">
+	</g>
+	<g id="Group">
+	</g>
+	<g id="Group_1_">
+	</g>
+	<g id="Scatterplott">
+	</g>
+	<g id="Long_Paper_2_">
+	</g>
+	<g id="Spread">
+	</g>
+	<g id="Isometric_Box">
+	</g>
+	<g id="Magnifying_Glass">
+	</g>
+	<g id="Code_2">
+	</g>
+</g>
+<g id="Figures">
+	<g id="Models">
+	</g>
+	<g id="Justice">
+	</g>
+	<g id="Sensor">
+	</g>
+	<g id="Widget">
+	</g>
+	<g id="Drop_1_">
+	</g>
+	<g id="Algorithm_1_">
+	</g>
+	<g id="On-body_sensor_1_">
+	</g>
+	<g id="Insulin_Pump_1_">
+	</g>
+	<g id="Drop">
+	</g>
+	<g id="Algorithm">
+	</g>
+	<g id="On-body_sensor">
+	</g>
+	<g id="Insulin_Pump">
+	</g>
+</g>
+<g id="Meta__x2B__Title">
+</g>
+<g id="Isolation_Mode">
+</g>
+<g id="Long_Paper">
+	<g id="Long_Paper_1_">
+	</g>
+	<g id="IV">
+	</g>
+	<g id="Air_Purifier">
+	</g>
+	<g id="Alarm">
+	</g>
+	<g id="Chat">
+	</g>
+	<g id="Presentation">
+	</g>
+	<g id="Dog_2">
+	</g>
+	<g id="Delivery">
+	</g>
+	<g id="Meat_2">
+	</g>
+</g>
+</svg>

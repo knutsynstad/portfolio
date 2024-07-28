@@ -1,9 +1,0 @@
-mixin image-grid()
-	ul.image-grid&attributes(attributes)
-		block
-
-mixin image-tile(href, title, description)
-	li
-		img.image-tile(src=href, alt=title)&attributes(attributes)
-		h3=title
-		p=description
