@@ -25,10 +25,10 @@ const description = (
       outcome?
     </p>
     <p>
-      Devvit is a write it once, run it everywhere platform. It's UI framework
-      also needs to be platform agnostic. What does it look like? How does it
-      work? How do we make it easy for developers to create these types of
-      events?
+      Devvit is a write it once, run it everywhere platform. It&apos;s UI
+      framework also needs to be platform agnostic. What does it look like? How
+      does it work? How do we make it easy for developers to create these types
+      of events?
     </p>
     <p>
       Finding common ground between mobile and web development. Balancing

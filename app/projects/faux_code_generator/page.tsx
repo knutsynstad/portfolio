@@ -2,7 +2,7 @@ import ProjectHeader from "@/components/ProjectHeader";
 import { Metadata } from "next";
 import Image from "next/image";
 
-import Screenshot from "./assets/screenshot.png";
+import Screenshot from "./assets/Screenshot.png";
 
 const title = "Faux code generator.";
 const description = (
