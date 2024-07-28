@@ -9,18 +9,30 @@ type Project = {
 };
 
 const projects: Project[] = [
-  {
-    name: "Let's Play",
-    image: "images/play-thumbnail.png",
-    url: "/projects/play/",
-    tags: ["Reddit", "Dev Platform"],
-  },
-  {
-    name: "Automations",
-    image: "images/automations_thumbnail.png",
-    url: "/projects/automations/",
-    tags: ["Reddit", "Dev Platform"],
-  },
+  // {
+  //   name: "Pixelary",
+  //   image: "images/pixelary-icon.png",
+  //   url: "/projects/play/",
+  //   tags: ["Reddit", "Dev Platform"],
+  // },
+  // {
+  //   name: "Blocks Playground",
+  //   image: "images/play-thumbnail.png",
+  //   url: "/projects/play/",
+  //   tags: ["Reddit", "Dev Platform"],
+  // },
+  // {
+  //   name: "Blocks UI Framework",
+  //   image: "images/devvit-logo.png",
+  //   url: "/projects/blocks/",
+  //   tags: ["Reddit", "Dev Platform"],
+  // },
+  // {
+  //   name: "Automating Reddit",
+  //   image: "images/automations_thumbnail.png",
+  //   url: "/projects/automations/",
+  //   tags: ["Reddit", "Dev Platform"],
+  // },
   {
     name: "Avatar Builder",
     image: "images/AvatarBuilder.png",
@@ -171,7 +183,7 @@ export default function Home() {
   return (
     <>
       <header className="mb-32 flex flex-col gap-8">
-        <h1>Hei 👋</h1>
+        <h1>Hello 👋</h1>
         <p className="text-2xl max-w-2xl tracking-tight">
           I&apos;m{" "}
           <a href="https://www.linkedin.com/in/knutsynstad" target="_blank">
