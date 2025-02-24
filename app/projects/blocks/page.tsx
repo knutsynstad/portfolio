@@ -308,13 +308,13 @@ const Project = () => (
       <Image
         src={NavigateToFlow}
         alt={title}
-        key="NavigateToFlow"
+        key={NavigateToFlow.src}
         className="w-full rounded-2xl shadow-2xl"
       />
       <Image
         src={NavigateToDialog}
         alt={title}
-        key="NavigateToFlow"
+        key={NavigateToDialog.src}
         className="w-full rounded-2xl shadow-2xl"
       />
 
@@ -322,7 +322,7 @@ const Project = () => (
       <Image
         src={Toasts}
         alt={title}
-        key="NavigateToFlow"
+        key={Toasts.src}
         className="w-full rounded-2xl shadow-2xl"
       />
 
@@ -330,7 +330,7 @@ const Project = () => (
       <Image
         src={Forms}
         alt={title}
-        key="NavigateToFlow"
+        key={Forms.src}
         className="w-full rounded-2xl shadow-2xl"
       />
     </main>

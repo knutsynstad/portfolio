@@ -143,7 +143,7 @@ const Project = () => (
       <Image
         src={ScreenList}
         alt={title}
-        key={`${ScreenList}`}
+        key={ScreenList.src}
         className="w-full rounded-2xl shadow-2xl"
       />
 
@@ -151,7 +151,7 @@ const Project = () => (
       <Image
         src={ScreenLeaderboardWide}
         alt={title}
-        key={`${ScreenLeaderboardWide}`}
+        key={ScreenLeaderboardWide.src}
         className="w-full rounded-2xl shadow-2xl"
       />
     </main>

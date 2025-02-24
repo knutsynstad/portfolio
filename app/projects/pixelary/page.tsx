@@ -188,7 +188,7 @@ export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 const Project = () => (
   <>
     <ProjectHeader title={title} description={description} details={details} />
-    <main className="flex flex-col gap-16 mb-32">
+    <main className="flex flex-col gap-16">
       <Marquee>
         {[
           DrawingBalloon,
