@@ -13,21 +13,22 @@ import PreviewWideLight from "./assets/preview-wide-light.png";
 import PreviewWideDark from "./assets/preview-wide-dark.png";
 import PreviewNarrowLight from "./assets/preview-narrow-light.png";
 import PreviewNarrowDark from "./assets/preview-narrow-dark.png";
+import Link from "next/link";
 
 const title = "Let's Play.";
 const description = (
   <>
     <p>
-      <a href="https://developers.reddit.com/play">Devvit Play</a> is a
-      lightweight authoring environment for rapid experimentation with
-      Reddit&apos;s custom post feature. It addresses two critical challenges
-      faced by developers: simplifying onboarding and creating an effective
-      interchange format for sharing ideas.
+      <a href="https://developers.reddit.com/play">Play</a> is a lightweight
+      authoring environment for rapid experimentation with Reddit&apos;s{" "}
+      <Link href="/projects/blocks">Blocks</Link> and custom post feature. It
+      addresses two critical challenges faced by developers: simplifying
+      onboarding and creating an effective interchange format for sharing ideas.
     </p>
     <p>
       Whether you&apos;re a novice exploring new possibilities or an experienced
       developer fine-tuning intricate designs,{" "}
-      <a href="https://developers.reddit.com/play">Devvit Play</a> offers an
+      <a href="https://developers.reddit.com/play">Play</a> offers an
       interactive code editor alongside a real-time preview, all without
       requiring accounts, setups, or additional software installations.
     </p>
@@ -60,7 +61,7 @@ const details = [
     title: "Links",
     values: [
       {
-        name: "Devvit Play",
+        name: "Play",
         url: "https://developers.reddit.com/play",
       },
       {
@@ -158,27 +159,3 @@ const Project = () => (
 );
 
 export default Project;
-
-/*
-
-        <div
-          className="flex flex-col gap-8 pt-32 pb-32 mb-32 relative overflow-visible"
-          style={{ backgroundColor: "#FFD635" }}
-        >
-          <Image
-            src={ScreenA}
-            alt="Greet new user timeline"
-            className="w-full shadow-xl shadow-[rgba(0,0,0,0.2)] rounded-2xl z-10"
-          />
-
-          <div
-            style={{ backgroundColor: "#FFD635" }}
-            className={`absolute h-full top-0 left-0 w-[9000px] translate-x-[-9000px]`}
-          />
-          <div
-            style={{ backgroundColor: "#FFD635" }}
-            className={`absolute h-full top-0 right-0 w-[9000px] translate-x-[9000px]`}
-          />
-        </div>
-
-*/

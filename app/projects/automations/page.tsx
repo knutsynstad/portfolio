@@ -166,7 +166,7 @@ const Project = () => (
         />
       </div>
 
-      <h1>User journey</h1>
+      {/* <h1>User journey</h1>
       <h2>Creating an automation</h2>
       <Slideshow
         slides={[
@@ -189,7 +189,7 @@ const Project = () => (
           { label: "Empty state", image: AutomationsListEmpty },
           { label: "Populated list", image: AutomationsListPopulated },
         ]}
-      />
+      /> */}
 
       <h1 className="mt-32 mb-32">Design rationale.</h1>
 

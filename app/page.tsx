@@ -9,30 +9,36 @@ type Project = {
 };
 
 const projects: Project[] = [
-  // {
-  //   name: "Pixelary",
-  //   image: "images/pixelary-icon.png",
-  //   url: "/projects/play/",
-  //   tags: ["Reddit", "Dev Platform"],
-  // },
-  // {
-  //   name: "Blocks Playground",
-  //   image: "images/play-thumbnail.png",
-  //   url: "/projects/play/",
-  //   tags: ["Reddit", "Dev Platform"],
-  // },
-  // {
-  //   name: "Blocks UI Framework",
-  //   image: "images/devvit-logo.png",
-  //   url: "/projects/blocks/",
-  //   tags: ["Reddit", "Dev Platform"],
-  // },
-  // {
-  //   name: "Automating Reddit",
-  //   image: "images/automations_thumbnail.png",
-  //   url: "/projects/automations/",
-  //   tags: ["Reddit", "Dev Platform"],
-  // },
+  {
+    name: "Predictions",
+    image: "images/predictions-thumbnail.png",
+    url: "/projects/predictions/",
+    tags: ["Reddit", "Dev Platform", "Game"],
+  },
+  {
+    name: "Pixelary",
+    image: "images/pixelary-icon.png",
+    url: "/projects/pixelary/",
+    tags: ["Reddit", "Dev Platform", "Game"],
+  },
+  {
+    name: "Play",
+    image: "images/play-thumbnail.png",
+    url: "/projects/play/",
+    tags: ["Reddit", "Dev Platform", "Tooling"],
+  },
+  {
+    name: "Blocks",
+    image: "images/blocks-thumbnail.png",
+    url: "/projects/blocks/",
+    tags: ["Reddit", "Dev Platform", "UI Framework"],
+  },
+  {
+    name: "Automating Reddit",
+    image: "images/automations_thumbnail.png",
+    url: "/projects/automations/",
+    tags: ["Reddit", "Dev Platform"],
+  },
   {
     name: "Avatar Builder",
     image: "images/AvatarBuilder.png",
@@ -79,19 +85,19 @@ const projects: Project[] = [
     name: "Mapping family caregiving",
     image: "images/Caremaps_0.png",
     url: "/projects/mapping_family_caregiving/",
-    tags: ["Information"],
+    tags: ["DDO", "Information"],
   },
   {
     name: "From sensors to action",
     image: "images/Sensors_Thumbnail.svg",
     url: "/projects/from_sensors_to_action/",
-    tags: ["Information"],
+    tags: ["DDO", "Information"],
   },
   {
     name: "Modeling diabetes as a feedback loop",
     image: "images/Diabetes_Thumbnail.png",
     url: "/projects/modeling_diabetes/",
-    tags: ["Model"],
+    tags: ["DDO", "Model"],
   },
   {
     name: "A pictogram is worth a thousand words",
@@ -103,19 +109,19 @@ const projects: Project[] = [
     name: "Mapping social shopping",
     image: "images/Sello_Thumbnail.png",
     url: "/projects/mapping_social_shopping/",
-    tags: ["uiux"],
+    tags: ["DDO", "uiux"],
   },
   {
     name: "Smarter testing for better health",
     image: "images/AST_Thumbnail.svg",
     url: "/projects/smarter_testing_for_better_health/",
-    tags: ["Print", "Coding"],
+    tags: ["DDO", "Print", "Coding"],
   },
   {
     name: "Measuring corn production, in every county, every day",
     image: "images/Corn_Thumbnail.gif",
     url: "/projects/measuring_corn_production_in_every_county_every_day/",
-    tags: ["Print", "Information"],
+    tags: ["DDO", "Print", "Information"],
   },
   {
     name: "Moving mountains to shape the future",
