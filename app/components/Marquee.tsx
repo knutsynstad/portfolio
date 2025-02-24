@@ -38,7 +38,7 @@ const Marquee = ({
 
       animation.play();
     }
-  }, [children, speed]);
+  }, [children, speed, gap]);
 
   return (
     <div className={["relative select-none", className].join(" ")}>

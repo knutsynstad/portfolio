@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RootLayout({
   children,
 }: {
@@ -8,7 +10,7 @@ export default function RootLayout({
       {children}
 
       <nav className="fixed top-[32px] left-[32px]">
-        <a
+        <Link
           aria-label="Back to projects"
           href="/"
           className="fill-black hover:fill-[rgba(0,0,0,0.3)] transition-all"
@@ -20,7 +22,7 @@ export default function RootLayout({
           >
             <path d="M480-160 160-480l320-320 57 56-224 224h487v80H313l224 224-57 56Z" />
           </svg>
-        </a>
+        </Link>
       </nav>
     </section>
   );
