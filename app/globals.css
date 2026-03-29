@@ -21,6 +21,7 @@
 @layer utilities {
   /* Nearest-neighbor scaling for pixel art (Next/Image + CSS width). */
   .render-pixel-art {
+    image-rendering: crisp-edges;
     image-rendering: pixelated;
   }
 }
