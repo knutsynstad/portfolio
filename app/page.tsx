@@ -9,30 +9,42 @@ type Project = {
 };
 
 const projects: Project[] = [
-  // {
-  //   name: "Pixelary",
-  //   image: "images/pixelary-icon.png",
-  //   url: "/projects/play/",
-  //   tags: ["Reddit", "Dev Platform"],
-  // },
-  // {
-  //   name: "Blocks Playground",
-  //   image: "images/play-thumbnail.png",
-  //   url: "/projects/play/",
-  //   tags: ["Reddit", "Dev Platform"],
-  // },
+  {
+    name: "Mosaic",
+    image: "images/mosaic-thumbnail.png",
+    url: "/projects/mosaic/",
+    tags: ["Game", "Reddit", "Dev Platform"],
+  },
+  {
+    name: "Syllo",
+    image: "images/syllo-thumbnail.png",
+    url: "/projects/syllo/",
+    tags: ["Game", "Reddit", "Dev Platform"],
+  },
+  {
+    name: "Pixelary",
+    image: "images/pixelary-thumbnail.png",
+    url: "/projects/pixelary/",
+    tags: ["Game", "Reddit", "Dev Platform"],
+  },
+  {
+    name: "Devvit Play",
+    image: "images/play-thumbnail.png",
+    url: "/projects/play/",
+    tags: ["Reddit", "Dev Platform", "Tooling"],
+  },
   // {
   //   name: "Blocks UI Framework",
   //   image: "images/devvit-logo.png",
   //   url: "/projects/blocks/",
   //   tags: ["Reddit", "Dev Platform"],
   // },
-  // {
-  //   name: "Automating Reddit",
-  //   image: "images/automations_thumbnail.png",
-  //   url: "/projects/automations/",
-  //   tags: ["Reddit", "Dev Platform"],
-  // },
+  {
+    name: "Automating Reddit",
+    image: "images/automations_thumbnail.png",
+    url: "/projects/automations/",
+    tags: ["Automation", "Reddit", "Dev Platform"],
+  },
   {
     name: "Avatar Builder",
     image: "images/AvatarBuilder.png",
@@ -201,7 +213,7 @@ export default function Home() {
       <main className="grid grid-cols-2 md:grid-cols-3 gap-0 m-[-16px]">
         {projects.map((project) => (
           <ProjectTile
-            key={project.url}
+            key={project.name}
             title={project.name}
             image={project.image}
             url={project.url}

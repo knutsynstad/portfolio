@@ -17,3 +17,10 @@
     @apply text-inherit underline decoration-dotted hover:decoration-solid;
   }
 }
+
+@layer utilities {
+  /* Nearest-neighbor scaling for pixel art (Next/Image + CSS width). */
+  .render-pixel-art {
+    image-rendering: pixelated;
+  }
+}
