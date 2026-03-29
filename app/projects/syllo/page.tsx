@@ -27,8 +27,9 @@ const description = (
       <a href="https://www.reddit.com/r/Devvit/comments/1n0vn97/reddit_has_acquired_syllacrostic/">
         acquired Syllacrostic
       </a>{" "}
-      to rebuild it with community and a native in-feed experience built for
-      mind. The new game is live on Reddit today. You can play it for free.
+      to rebuild it from the ground up with community and a native in-feed
+      experience built for mind. The new game is live on Reddit today. You can
+      play it for free.
     </p>
     <p>I contributed the game design and built the interface.</p>
   </>
