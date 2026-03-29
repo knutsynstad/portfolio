@@ -1,16 +1,20 @@
+interface ImageProps {
+  src: { width: number };
+}
+
 interface FluidImageRowProps {
-  children: JSX.Element[];
+  children: React.ReactElement<ImageProps>[];
 }
 
 const FluidImageRow = (props: FluidImageRowProps) => {
   const { children } = props;
 
   const totalWidth = children.reduce((acc, child) => {
-    return acc + child.props.src.width;
+    return acc + (child.props as ImageProps).src.width;
   }, 0);
 
   const imageWrappers = children.map((child, index) => {
-    const width = child.props.src.width;
+    const width = (child.props as ImageProps).src.width;
     const flexBasis = `${(width / totalWidth) * 100}%`;
 
     return (

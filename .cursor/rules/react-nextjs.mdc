@@ -1,0 +1,13 @@
+---
+description: React and Next.js patterns for this project
+globs: "**/*.tsx"
+alwaysApply: false
+---
+
+# React / Next.js Patterns
+
+- Functional components only. No class components.
+- Use `React.ReactNode` for children props, `React.ReactElement` when element-specific typing is needed.
+- Use `next/image` for optimized images. Use `next/link` for internal navigation.
+- All pages are static (no `params`, no `getServerSideProps`). Export metadata from page files for SEO.
+- Layouts in `layout.tsx` handle shared chrome; pages in `page.tsx` handle content.

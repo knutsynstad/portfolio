@@ -1,0 +1,28 @@
+---
+description: Project overview and coding conventions
+alwaysApply: true
+---
+
+# Portfolio — Knut Synstad
+
+Next.js 16 App Router portfolio site. Static pages, no dynamic routes.
+
+## Stack
+
+- Next.js 16 (Turbopack), React 19, TypeScript (strict)
+- Tailwind CSS 4 (CSS-first config in `globals.css`)
+- ESLint 9 (flat config), Prettier 3
+
+## Structure
+
+- `app/` — pages, layouts, components, styles
+- `app/components/` — shared UI components
+- `app/projects/<slug>/page.tsx` — one file per project
+- `public/` — static assets (images, videos, files)
+- Path alias: `@/*` maps to `./app/*`
+
+## Conventions
+
+- Be concise. Prefer clarity over cleverness.
+- Server Components by default; add `"use client"` only when needed.
+- Run `npm run check` before considering work done.

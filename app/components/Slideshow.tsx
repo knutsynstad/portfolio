@@ -29,7 +29,7 @@ export const Slideshow = ({ slides, shadow }: SlideshowProps) => {
   const slideContent = slides.map((slide, index) => {
     return (
       <div
-        className="relative w-full flex-shrink-0 transition-all ease-out duration-300"
+        className="relative w-full shrink-0 transition-all ease-out duration-300"
         key={index}
       >
         <Image src={slide.image} alt={slide.label || ""} />

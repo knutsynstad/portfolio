@@ -1,0 +1,14 @@
+---
+description: Tailwind CSS 4 styling conventions
+globs: "**/*.{tsx,css}"
+alwaysApply: false
+---
+
+# Styling
+
+- Tailwind CSS 4 with CSS-first configuration. No `tailwind.config.js`.
+- Utility-first: compose styles with Tailwind classes in JSX.
+- Custom theme values go in `@theme` blocks in `globals.css`.
+- Base typography styles are defined in `globals.css` via `@layer base`.
+- Avoid inline `style` props unless truly dynamic (e.g., computed values).
+- Use arbitrary values `[...]` sparingly; prefer design tokens.
