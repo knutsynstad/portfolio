@@ -16,8 +16,14 @@ import Editor4 from "./assets/pixelary-editor-4.png";
 import Editor5 from "./assets/pixelary-editor-5.png";
 import Editor6 from "./assets/pixelary-editor-6.png";
 import { communityDrawings } from "./communityDrawings";
+import PlayPixelaryButton from "./PlayPixelaryButton";
 
 const pixelaryCarouselBg = "#56ccf2";
+const pixelaryDrawingShadow = "rgba(0, 0, 0, 0.3)";
+
+/** Non-empty placeholder so dev LCP warning skips lazy below-the-fold marquees (see Next get-img-props). */
+const pixelaryMarqueePlaceholder =
+  "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" as const;
 
 const title = "Pixelary.";
 const description = (
@@ -106,6 +112,7 @@ const Project = () => (
         className="render-pixel-art w-full rounded-3xl"
         sizes="(max-width: 840px) 100vw, 840px"
         priority
+        fetchPriority="high"
       />
 
       <div
@@ -131,6 +138,7 @@ const Project = () => (
                     sizes="375px"
                     loading="lazy"
                     fetchPriority="low"
+                    placeholder={pixelaryMarqueePlaceholder}
                   />
                 </div>
               ))}
@@ -166,7 +174,7 @@ const Project = () => (
                   loading="lazy"
                   fetchPriority="low"
                   style={{
-                    boxShadow: `8px 8px 0 0 rgba(0, 0, 0, 0.3)`,
+                    boxShadow: `8px 8px 0 0 ${pixelaryDrawingShadow}`,
                   }}
                 />
               ))}
@@ -188,6 +196,7 @@ const Project = () => (
                     sizes="375px"
                     loading="lazy"
                     fetchPriority="low"
+                    placeholder={pixelaryMarqueePlaceholder}
                   />
                 </div>
               ))}
@@ -207,6 +216,11 @@ const Project = () => (
               }}
             />
           </div>
+
+          <PlayPixelaryButton
+            carouselBg={pixelaryCarouselBg}
+            shadowColor={pixelaryDrawingShadow}
+          />
         </section>
       </div>
     </main>
