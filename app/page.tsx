@@ -204,7 +204,7 @@ export default function Home() {
           , a San-Francisco-based designer and developer. Currently the design
           lead for{" "}
           <a href="https://developers.reddit.com/" target="_blank">
-            <Mark>Reddit&apos;s Developer Platform</Mark>
+            Reddit&apos;s Developer Platform
           </a>
           .
         </p>
