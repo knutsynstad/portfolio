@@ -211,13 +211,14 @@ export default function Home() {
       </header>
 
       <main className="grid grid-cols-2 md:grid-cols-3 gap-0 m-[-16px]">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <ProjectTile
             key={project.name}
             title={project.name}
             image={project.image}
             url={project.url}
             tags={project.tags}
+            priority={index < 6}
           />
         ))}
       </main>
