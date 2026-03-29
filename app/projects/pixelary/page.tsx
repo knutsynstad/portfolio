@@ -129,6 +129,8 @@ const Project = () => (
                     draggable={false}
                     className="render-pixel-art h-auto w-[375px] rounded-[24px] shadow-lg"
                     sizes="375px"
+                    loading="lazy"
+                    fetchPriority="low"
                   />
                 </div>
               ))}
@@ -161,6 +163,8 @@ const Project = () => (
                   className="render-pixel-art h-auto w-full"
                   sizes="(max-width: 768px) 25vw, 16vw"
                   unoptimized
+                  loading="lazy"
+                  fetchPriority="low"
                   style={{
                     boxShadow: `8px 8px 0 0 rgba(0, 0, 0, 0.3)`,
                   }}
@@ -182,6 +186,8 @@ const Project = () => (
                     draggable={false}
                     className="render-pixel-art h-auto w-[375px] rounded-[24px] shadow-lg"
                     sizes="375px"
+                    loading="lazy"
+                    fetchPriority="low"
                   />
                 </div>
               ))}
