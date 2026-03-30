@@ -28,8 +28,7 @@ const description = (
         acquired Syllacrostic
       </a>{" "}
       to rebuild it from the ground up with community and a native in-feed
-      experience built for mind. The new game is live on Reddit today. You can
-      play it for free.
+      experience in mind. The new game is live on Reddit.
     </p>
     <p>I contributed the game design and built the interface.</p>
   </>
