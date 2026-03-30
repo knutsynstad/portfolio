@@ -83,7 +83,7 @@ const Project = () => (
         />
         <Image src={Birdhouse4} alt={title} className="w-full rounded-2xl" />
         <Image src={Birdhouse5} alt={title} className="w-full rounded-2xl" />
-        <div className="relative mt-32 mb-32 flex flex-col justify-center overflow-visible z-[-1]">
+        <div className="relative mt-32 mb-32 flex flex-col justify-center overflow-visible">
           <Image
             src={Birdhouse2}
             alt={title}

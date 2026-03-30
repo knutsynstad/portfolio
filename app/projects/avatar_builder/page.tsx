@@ -144,12 +144,17 @@ const Project = () => (
     <main className="flex flex-col gap-32">
       <Marquee>
         {marqueeImages.map((image, index) => (
-          <Image
-            src={image.image}
-            alt={image.label}
+          <div
             key={`marquee-${index}-${image.label}`}
-            className="w-[200px]"
-          />
+            className="mr-6 shrink-0 sm:mr-8"
+          >
+            <Image
+              src={image.image}
+              alt={image.label}
+              draggable={false}
+              className="h-auto w-[200px]"
+            />
+          </div>
         ))}
       </Marquee>
 
@@ -169,7 +174,7 @@ const Project = () => (
 
       <div className="w-full flex flex-col gap-8">
         <div className="grid grid-cols-3 gap-y-4 gap-x-8">
-          <h2 className="col-span-2">Style it with seasonal gear</h2>
+          <h2 className="col-span-2">Wear seasonal gear</h2>
         </div>
         <div className="grid grid-cols-3 gap-8">
           {[Explore1, Explore2, Explore3].map((image, index) => (

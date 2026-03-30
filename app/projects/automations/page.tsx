@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
-import Slideshow from "@/components/Slideshow";
+import Marquee from "@/components/Marquee";
 import StickyNote from "@/components/StickyNote";
 import { Metadata } from "next";
 
@@ -119,6 +119,16 @@ const details = [
 ];
 const color = "#DAE0E3";
 
+const creatingAutomationMarqueeSlides = [
+  { label: "Empty state", image: AutomationsEmptyState },
+  { label: "Changing the name", image: AutomationsChangingTheName },
+  { label: "Selecting a trigger", image: AutomationsSelectTrigger },
+  { label: "Timeline with trigger", image: AutomationsTimelineWithTrigger },
+  { label: "Adding a step", image: AutomationsAddAStep },
+  { label: "Empty message", image: AutomationsEmptyMessage },
+  { label: "Populated message", image: AutomationsPopulatedMessage },
+] as const;
+
 export const metadata: Metadata = { title: `${title} - Knut Synstad` };
 
 const Project = () => (
@@ -167,29 +177,31 @@ const Project = () => (
       </div>
 
       <h1>User journey</h1>
-      <h2>Creating an automation</h2>
-      <Slideshow
-        slides={[
-          { label: "Empty state", image: AutomationsEmptyState },
-          { label: "Changing the name", image: AutomationsChangingTheName },
-          { label: "Selecting a trigger", image: AutomationsSelectTrigger },
-          {
-            label: "Timeline with trigger",
-            image: AutomationsTimelineWithTrigger,
-          },
-          { label: "Adding a step", image: AutomationsAddAStep },
-          { label: "Empty message", image: AutomationsEmptyMessage },
-          { label: "Populated message", image: AutomationsPopulatedMessage },
-        ]}
+      <Image
+        src={AutomationsListEmpty}
+        alt="Automations list empty state"
+        className="w-full rounded-2xl"
       />
+      <Marquee reverse speed={28} className="relative z-0 py-4 sm:py-5">
+        {creatingAutomationMarqueeSlides.map((slide) => (
+          <div key={slide.label} className="mr-6 shrink-0 sm:mr-8">
+            <Image
+              src={slide.image}
+              alt={slide.label}
+              draggable={false}
+              className="h-auto w-[min(85vw,480px)] rounded-2xl sm:w-[480px]"
+            />
+          </div>
+        ))}
+      </Marquee>
 
-      <h2 className="mt-16">Make as many Automations as you want</h2>
-      <Slideshow
-        slides={[
-          { label: "Empty state", image: AutomationsListEmpty },
-          { label: "Populated list", image: AutomationsListPopulated },
-        ]}
-      />
+      <div>
+        <Image
+          src={AutomationsListPopulated}
+          alt="Automations list populated with multiple automations"
+          className="w-full rounded-2xl"
+        />
+      </div>
 
       <h1 className="mt-32 mb-32">Design rationale.</h1>
 

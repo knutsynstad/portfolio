@@ -4,7 +4,7 @@ interface CodeProps {
 
 const Code = ({ children }: CodeProps) => {
   return (
-    <code className="px-1 mx-0.5 rounded-sm bg-black bg-opacity-10 font-mono">
+    <code className="mx-0.5 rounded-sm bg-black/10 px-1 font-mono">
       {children}
     </code>
   );
