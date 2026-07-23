@@ -4,7 +4,7 @@
   "description": "Knut Synstad's online portfolio",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build && node scripts/generate-redirects.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
