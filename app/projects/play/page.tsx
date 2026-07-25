@@ -1,7 +1,8 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import FluidImageRow from "@/components/FluidImageRow";
-import { Metadata } from "next";
+import { projectMetadata } from "@/lib/metadata";
+import { getProject } from "@/projects/registry";
 
 import ScreenA from "./assets/play-screen.png";
 import PlayConsole from "./assets/play-console.png";
@@ -86,78 +87,83 @@ const details = [
   },
 */
 
-export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+const project = getProject("play");
+export const metadata = projectMetadata(title, project?.metaDescription ?? "");
 
-const Project = () => (
-  <>
-    <ProjectHeader title={title} description={description} details={details} />
-    <main>
-      <div className="flex flex-col gap-8">
-        <video autoPlay loop muted className="w-full rounded-2xl">
-          <source src="/videos/play-logo.webm" type="video/webm" />
-          <source src="/videos/play-logo.mp4" type="video/mp4" />
-          <p>Your browser doesn&apos;t support HTML video.</p>
-        </video>
-        <Image
-          src={ScreenA}
-          alt={title}
-          className="rounded-2xl border border-gray-300"
-        />
+export default function Project() {
+  return (
+    <>
+      <ProjectHeader
+        title={title}
+        description={description}
+        details={details}
+      />
+      <main>
+        <div className="flex flex-col gap-8">
+          <video autoPlay loop muted className="w-full rounded-2xl">
+            <source src="/videos/play-logo.webm" type="video/webm" />
+            <source src="/videos/play-logo.mp4" type="video/mp4" />
+            <p>Your browser doesn&apos;t support HTML video.</p>
+          </video>
+          <Image
+            src={ScreenA}
+            alt={title}
+            className="rounded-2xl border border-gray-300"
+          />
 
-        <div
-          className="flex flex-col gap-8 pt-32 pb-32 mb-16 mt-16 relative overflow-visible"
-          style={{ backgroundColor: "#FFD635" }}
-        >
-          <h2>Preview any device and theme</h2>
-          <div className="flex flex-col gap-4 w-full">
-            <FluidImageRow>
-              <Image
-                src={PreviewNarrowLight}
-                alt={title}
-                className="rounded-2xl w-full shadow"
-              />
-              <Image
-                src={PreviewWideLight}
-                alt={title}
-                className="rounded-2xl w-full shadow"
-              />
-            </FluidImageRow>
-            <FluidImageRow>
-              <Image
-                src={PreviewNarrowDark}
-                alt={title}
-                className="rounded-2xl w-full shadow"
-              />
-              <Image
-                src={PreviewWideDark}
-                alt={title}
-                className="rounded-2xl w-full shadow"
-              />
-            </FluidImageRow>
+          <div
+            className="flex flex-col gap-8 pt-32 pb-32 mb-16 mt-16 relative overflow-visible"
+            style={{ backgroundColor: "#FFD635" }}
+          >
+            <h2>Preview any device and theme</h2>
+            <div className="flex flex-col gap-4 w-full">
+              <FluidImageRow>
+                <Image
+                  src={PreviewNarrowLight}
+                  alt={title}
+                  className="rounded-2xl w-full shadow"
+                />
+                <Image
+                  src={PreviewWideLight}
+                  alt={title}
+                  className="rounded-2xl w-full shadow"
+                />
+              </FluidImageRow>
+              <FluidImageRow>
+                <Image
+                  src={PreviewNarrowDark}
+                  alt={title}
+                  className="rounded-2xl w-full shadow"
+                />
+                <Image
+                  src={PreviewWideDark}
+                  alt={title}
+                  className="rounded-2xl w-full shadow"
+                />
+              </FluidImageRow>
+            </div>
+
+            <div
+              style={{ backgroundColor: "#FFD635" }}
+              className={`absolute h-full top-0 left-0 w-[9000px] translate-x-[-9000px]`}
+            />
+            <div
+              style={{ backgroundColor: "#FFD635" }}
+              className={`absolute h-full top-0 right-0 w-[9000px] translate-x-[9000px]`}
+            />
           </div>
 
-          <div
-            style={{ backgroundColor: "#FFD635" }}
-            className={`absolute h-full top-0 left-0 w-[9000px] translate-x-[-9000px]`}
-          />
-          <div
-            style={{ backgroundColor: "#FFD635" }}
-            className={`absolute h-full top-0 right-0 w-[9000px] translate-x-[9000px]`}
+          <h2>Troubleshooting made easy</h2>
+          <Image
+            src={PlayConsole}
+            alt={title}
+            className="rounded-2xl border border-gray-300"
           />
         </div>
-
-        <h2>Troubleshooting made easy</h2>
-        <Image
-          src={PlayConsole}
-          alt={title}
-          className="rounded-2xl border border-gray-300"
-        />
-      </div>
-    </main>
-  </>
-);
-
-export default Project;
+      </main>
+    </>
+  );
+}
 
 /*
 

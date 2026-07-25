@@ -21,6 +21,7 @@ const socialLinks = socials.map((social) => (
     key={social.name}
     href={social.url}
     target="_blank"
+    rel="noopener noreferrer"
     className="transition-all hover:text-pink-500"
   >
     <svg

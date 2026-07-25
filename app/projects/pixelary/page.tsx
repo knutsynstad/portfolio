@@ -2,7 +2,8 @@ import Image from "next/image";
 import FullBleed from "@/components/FullBleed";
 import Marquee from "@/components/Marquee";
 import ProjectHeader from "@/components/ProjectHeader";
-import { Metadata } from "next";
+import { projectMetadata } from "@/lib/metadata";
+import { getProject } from "@/projects/registry";
 
 import Banner from "./assets/pixelary-banner.png";
 import Guess1 from "./assets/pixelary-guess-1.png";
@@ -101,131 +102,142 @@ const marqueeEditorPosts = [
   { src: Editor6, alt: "Pixelary — post preview, that’s a wrap" },
 ] as const;
 
-export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+const project = getProject("pixelary");
+export const metadata = projectMetadata(title, project?.metaDescription ?? "");
 
-const Project = () => (
-  <>
-    <ProjectHeader title={title} description={description} details={details} />
-    <main className="flex flex-col gap-16 md:gap-24">
-      <Image
-        src={Banner}
-        alt="Pixelary banner"
-        className="render-pixel-art w-full rounded-3xl"
-        sizes="(max-width: 840px) 100vw, 840px"
-        priority
-        fetchPriority="high"
+export default function Project() {
+  return (
+    <>
+      <ProjectHeader
+        title={title}
+        description={description}
+        details={details}
       />
+      <main className="flex flex-col gap-16 md:gap-24">
+        <Image
+          src={Banner}
+          alt="Pixelary banner"
+          className="render-pixel-art w-full rounded-3xl"
+          sizes="(max-width: 840px) 100vw, 840px"
+          priority
+          fetchPriority="high"
+        />
 
-      <FullBleed
-        className="rounded-t-3xl rounded-b-3xl pb-8 sm:pb-16 md:pb-32 -mb-8 sm:-mb-16 md:-mb-32"
-        style={{ backgroundColor: pixelaryCarouselBg }}
-      >
-        <section
-          className="relative py-16 md:py-24"
+        <FullBleed
+          className="rounded-t-3xl rounded-b-3xl pb-8 sm:pb-16 md:pb-32 -mb-8 sm:-mb-16 md:-mb-32"
           style={{ backgroundColor: pixelaryCarouselBg }}
         >
-          <div className="relative">
-            <Marquee reverse speed={28} className="relative z-0 py-4 sm:py-5">
-              {marqueePosts.map(({ src, alt }, index) => (
-                <div key={`${alt}-${index}`} className="mr-6 shrink-0 sm:mr-8">
-                  <Image
-                    src={src}
-                    alt={alt}
-                    width={src.width}
-                    height={src.height}
-                    quality={100}
-                    draggable={false}
-                    className="render-pixel-art h-auto w-[375px] rounded-[24px] shadow-lg"
-                    sizes="375px"
-                    loading="lazy"
-                    fetchPriority="low"
-                    placeholder={pixelaryMarqueePlaceholder}
-                  />
-                </div>
-              ))}
-            </Marquee>
-            <div
-              aria-hidden
-              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-14 sm:w-20 md:w-28"
-              style={{
-                background: `linear-gradient(to right, ${pixelaryCarouselBg}, transparent)`,
-              }}
-            />
-            <div
-              aria-hidden
-              className="pointer-events-none absolute inset-y-0 right-0 z-10 w-14 sm:w-20 md:w-28"
-              style={{
-                background: `linear-gradient(to left, ${pixelaryCarouselBg}, transparent)`,
-              }}
-            />
-          </div>
-
-          <div className="px-8 py-16 sm:px-16 md:px-32 md:py-24">
-            <div className="mx-auto grid w-full max-w-[840px] grid-cols-4 gap-8 sm:grid-cols-5 md:grid-cols-6 md:gap-10">
-              {communityDrawings.map(({ src, alt }, index) => (
-                <Image
-                  key={`${alt}-${index}`}
-                  src={src}
-                  alt={alt}
-                  width={src.width}
-                  height={src.height}
-                  className="render-pixel-art h-auto w-full"
-                  sizes="(max-width: 768px) 25vw, 16vw"
-                  unoptimized
-                  loading="lazy"
-                  fetchPriority="low"
-                  style={{
-                    boxShadow: `8px 8px 0 0 ${pixelaryDrawingShadow}`,
-                  }}
-                />
-              ))}
+          <section
+            className="relative py-16 md:py-24"
+            style={{ backgroundColor: pixelaryCarouselBg }}
+          >
+            <div className="relative">
+              <Marquee reverse speed={28} className="relative z-0 py-4 sm:py-5">
+                {marqueePosts.map(({ src, alt }, index) => (
+                  <div
+                    key={`${alt}-${index}`}
+                    className="mr-6 shrink-0 sm:mr-8"
+                  >
+                    <Image
+                      src={src}
+                      alt={alt}
+                      width={src.width}
+                      height={src.height}
+                      quality={100}
+                      draggable={false}
+                      className="render-pixel-art h-auto w-[375px] rounded-[24px] shadow-lg"
+                      sizes="375px"
+                      loading="lazy"
+                      fetchPriority="low"
+                      placeholder={pixelaryMarqueePlaceholder}
+                    />
+                  </div>
+                ))}
+              </Marquee>
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-y-0 left-0 z-10 w-14 sm:w-20 md:w-28"
+                style={{
+                  background: `linear-gradient(to right, ${pixelaryCarouselBg}, transparent)`,
+                }}
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-y-0 right-0 z-10 w-14 sm:w-20 md:w-28"
+                style={{
+                  background: `linear-gradient(to left, ${pixelaryCarouselBg}, transparent)`,
+                }}
+              />
             </div>
-          </div>
 
-          <div className="relative">
-            <Marquee reverse speed={28} className="relative z-0 py-4 sm:py-5">
-              {marqueeEditorPosts.map(({ src, alt }, index) => (
-                <div key={`${alt}-${index}`} className="mr-6 shrink-0 sm:mr-8">
+            <div className="px-8 py-16 sm:px-16 md:px-32 md:py-24">
+              <div className="mx-auto grid w-full max-w-[840px] grid-cols-4 gap-8 sm:grid-cols-5 md:grid-cols-6 md:gap-10">
+                {communityDrawings.map(({ src, alt }, index) => (
                   <Image
+                    key={`${alt}-${index}`}
                     src={src}
                     alt={alt}
                     width={src.width}
                     height={src.height}
-                    quality={100}
-                    draggable={false}
-                    className="render-pixel-art h-auto w-[375px] rounded-[24px] shadow-lg"
-                    sizes="375px"
+                    className="render-pixel-art h-auto w-full"
+                    sizes="(max-width: 768px) 25vw, 16vw"
+                    unoptimized
                     loading="lazy"
                     fetchPriority="low"
-                    placeholder={pixelaryMarqueePlaceholder}
+                    style={{
+                      boxShadow: `8px 8px 0 0 ${pixelaryDrawingShadow}`,
+                    }}
                   />
-                </div>
-              ))}
-            </Marquee>
-            <div
-              aria-hidden
-              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-14 sm:w-20 md:w-28"
-              style={{
-                background: `linear-gradient(to right, ${pixelaryCarouselBg}, transparent)`,
-              }}
-            />
-            <div
-              aria-hidden
-              className="pointer-events-none absolute inset-y-0 right-0 z-10 w-14 sm:w-20 md:w-28"
-              style={{
-                background: `linear-gradient(to left, ${pixelaryCarouselBg}, transparent)`,
-              }}
-            />
-          </div>
+                ))}
+              </div>
+            </div>
 
-          <PlayPixelaryButton
-            carouselBg={pixelaryCarouselBg}
-            shadowColor={pixelaryDrawingShadow}
-          />
-        </section>
-      </FullBleed>
-    </main>
-  </>
-);
+            <div className="relative">
+              <Marquee reverse speed={28} className="relative z-0 py-4 sm:py-5">
+                {marqueeEditorPosts.map(({ src, alt }, index) => (
+                  <div
+                    key={`${alt}-${index}`}
+                    className="mr-6 shrink-0 sm:mr-8"
+                  >
+                    <Image
+                      src={src}
+                      alt={alt}
+                      width={src.width}
+                      height={src.height}
+                      quality={100}
+                      draggable={false}
+                      className="render-pixel-art h-auto w-[375px] rounded-[24px] shadow-lg"
+                      sizes="375px"
+                      loading="lazy"
+                      fetchPriority="low"
+                      placeholder={pixelaryMarqueePlaceholder}
+                    />
+                  </div>
+                ))}
+              </Marquee>
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-y-0 left-0 z-10 w-14 sm:w-20 md:w-28"
+                style={{
+                  background: `linear-gradient(to right, ${pixelaryCarouselBg}, transparent)`,
+                }}
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-y-0 right-0 z-10 w-14 sm:w-20 md:w-28"
+                style={{
+                  background: `linear-gradient(to left, ${pixelaryCarouselBg}, transparent)`,
+                }}
+              />
+            </div>
 
-export default Project;
+            <PlayPixelaryButton
+              carouselBg={pixelaryCarouselBg}
+              shadowColor={pixelaryDrawingShadow}
+            />
+          </section>
+        </FullBleed>
+      </main>
+    </>
+  );
+}

@@ -17,7 +17,7 @@ interface ProjectHeaderProps {
 export default function ProjectHeader(props: ProjectHeaderProps) {
   const { title, details, description } = props;
   const detailElements = details.map(({ title, values }) => (
-    <div key={`${title}-${values}`} className="flex flex-col">
+    <div key={title} className="flex flex-col">
       <h3>{title}</h3>
       <div className="flex flex-col">
         {values.map((value) => {
@@ -28,6 +28,7 @@ export default function ProjectHeader(props: ProjectHeaderProps) {
                 key={value.name}
                 href={value.url}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {value.name}
               </a>

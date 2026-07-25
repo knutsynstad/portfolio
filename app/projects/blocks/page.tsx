@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
-import { Metadata } from "next";
+import { projectMetadata } from "@/lib/metadata";
+import { getProject } from "@/projects/registry";
 
 const title = "Extending Reddit with Blocks.";
 
@@ -70,21 +71,26 @@ const details = [
   },
 ];
 
-export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+const project = getProject("blocks");
+export const metadata = projectMetadata(title, project?.metaDescription ?? "");
 
-const Project = () => (
-  <>
-    <ProjectHeader title={title} description={description} details={details} />
-    <main>
-      <div className="flex flex-col gap-8">
-        <video autoPlay loop muted className="w-full rounded-2xl">
-          <source src="/videos/play-logo.webm" type="video/webm" />
-          <source src="/videos/play-logo.mp4" type="video/mp4" />
-          <p>Your browser doesn&apos;t support HTML video.</p>
-        </video>
-      </div>
-    </main>
-  </>
-);
-
-export default Project;
+export default function Project() {
+  return (
+    <>
+      <ProjectHeader
+        title={title}
+        description={description}
+        details={details}
+      />
+      <main>
+        <div className="flex flex-col gap-8">
+          <video autoPlay loop muted className="w-full rounded-2xl">
+            <source src="/videos/play-logo.webm" type="video/webm" />
+            <source src="/videos/play-logo.mp4" type="video/mp4" />
+            <p>Your browser doesn&apos;t support HTML video.</p>
+          </video>
+        </div>
+      </main>
+    </>
+  );
+}

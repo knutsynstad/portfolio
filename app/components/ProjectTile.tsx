@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectTileProps {
   title: string;
@@ -19,9 +20,9 @@ export default function ProjectTile(props: ProjectTileProps) {
   const unoptimized = src.endsWith(".svg") || src.endsWith(".gif");
 
   return (
-    <a
+    <Link
       href={url}
-      className={`p-4 text-decoration-none mb-8 flex flex-col gap-4 shadow-none transform transition-transform duration-150 hover:-translate-y-2 hover:scale-105 hover:z-10 hover:shadow-lg  rounded-4xl no-underline ${className}`}
+      className={`p-4 mb-8 flex flex-col gap-4 shadow-none transform transition-transform duration-150 hover:-translate-y-2 hover:scale-105 hover:z-10 hover:shadow-lg rounded-4xl no-underline ${className}`}
     >
       <div className="relative aspect-square w-full overflow-hidden rounded-2xl">
         <Image
@@ -45,6 +46,6 @@ export default function ProjectTile(props: ProjectTileProps) {
           </span>
         ))}
       </div>
-    </a>
+    </Link>
   );
 }

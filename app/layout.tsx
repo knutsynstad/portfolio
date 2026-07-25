@@ -1,13 +1,28 @@
 import "@/globals.css";
 import { Inter } from "next/font/google";
+import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Knut Synstad",
-  description:
-    "I'm Knut, a San-Francisco-based designer and developer. Currently the design lead for Reddit's Developer Platform.",
+const title = "Knut Synstad";
+const description =
+  "I'm Knut, a San-Francisco-based designer and developer. Currently the design lead for Reddit's Developer Platform.";
+
+export const metadata: Metadata = {
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    type: "website",
+    siteName: title,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({

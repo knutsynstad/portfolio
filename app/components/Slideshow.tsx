@@ -13,7 +13,7 @@ export interface SlideshowProps {
   shadow?: boolean;
 }
 
-export const Slideshow = ({ slides, shadow }: SlideshowProps) => {
+export default function Slideshow({ slides, shadow }: SlideshowProps) {
   const [currentSlide, setSlide] = useState(0);
   const caption = slides[currentSlide].label || "";
   const slideCount = slides.length;
@@ -78,6 +78,4 @@ export const Slideshow = ({ slides, shadow }: SlideshowProps) => {
       </div>
     </div>
   );
-};
-
-export default Slideshow;
+}

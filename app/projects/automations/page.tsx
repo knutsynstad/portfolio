@@ -2,7 +2,8 @@ import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import Marquee from "@/components/Marquee";
 import StickyNote from "@/components/StickyNote";
-import { Metadata } from "next";
+import { projectMetadata } from "@/lib/metadata";
+import { getProject } from "@/projects/registry";
 
 import Exhibit1 from "./assets/automation_timeline_1.png";
 import Exhibit2 from "./assets/automations_model_step_count.png";
@@ -129,210 +130,219 @@ const creatingAutomationMarqueeSlides = [
   { label: "Populated message", image: AutomationsPopulatedMessage },
 ] as const;
 
-export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+const project = getProject("automations");
+export const metadata = projectMetadata(title, project?.metaDescription ?? "");
 
-const Project = () => (
-  <>
-    <ProjectHeader title={title} description={description} details={details} />
-    <main className="flex flex-col gap-16 mb-32">
-      <div
-        className="flex flex-col gap-8 pt-32 pb-32 mb-32 relative overflow-visible"
-        style={{ backgroundColor: color }}
-      >
-        <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
-          <Image
-            src={Exhibit1}
-            alt="Greet new user timeline"
-            className="w-full"
-          />
-          <h2 className="w-full">Welcome new users to the community</h2>
-        </div>
-
-        <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
-          <h2 className="w-full">Create and manage event-based content</h2>
-          <Image
-            src={timelineGamedayPost}
-            alt="Greet new user timeline"
-            className="w-full"
-          />
-        </div>
-
-        <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
-          <Image
-            src={timelinePostFlair}
-            alt="Greet new user timeline"
-            className="w-full"
-          />
-          <h2 className="w-full">Process content on creation</h2>
-        </div>
-
-        <div
-          style={{ backgroundColor: color }}
-          className={`absolute h-full top-0 left-0 w-[9000px] translate-x-[-9000px]`}
-        />
-        <div
-          style={{ backgroundColor: color }}
-          className={`absolute h-full top-0 right-0 w-[9000px] translate-x-[9000px]`}
-        />
-      </div>
-
-      <h1>User journey</h1>
-      <Image
-        src={AutomationsListEmpty}
-        alt="Automations list empty state"
-        className="w-full rounded-2xl"
+export default function Project() {
+  return (
+    <>
+      <ProjectHeader
+        title={title}
+        description={description}
+        details={details}
       />
-      <Marquee reverse speed={28} className="relative z-0 py-4 sm:py-5">
-        {creatingAutomationMarqueeSlides.map((slide) => (
-          <div key={slide.label} className="mr-6 shrink-0 sm:mr-8">
+      <main className="flex flex-col gap-16 mb-32">
+        <div
+          className="flex flex-col gap-8 pt-32 pb-32 mb-32 relative overflow-visible"
+          style={{ backgroundColor: color }}
+        >
+          <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
             <Image
-              src={slide.image}
-              alt={slide.label}
-              draggable={false}
-              className="h-auto w-[min(85vw,480px)] rounded-2xl sm:w-[480px]"
+              src={Exhibit1}
+              alt="Greet new user timeline"
+              className="w-full"
+            />
+            <h2 className="w-full">Welcome new users to the community</h2>
+          </div>
+
+          <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
+            <h2 className="w-full">Create and manage event-based content</h2>
+            <Image
+              src={timelineGamedayPost}
+              alt="Greet new user timeline"
+              className="w-full"
             />
           </div>
-        ))}
-      </Marquee>
 
-      <div>
+          <div className="grid grid-cols-2 gap-16 align-middle items-center justify-between">
+            <Image
+              src={timelinePostFlair}
+              alt="Greet new user timeline"
+              className="w-full"
+            />
+            <h2 className="w-full">Process content on creation</h2>
+          </div>
+
+          <div
+            style={{ backgroundColor: color }}
+            className={`absolute h-full top-0 left-0 w-[9000px] translate-x-[-9000px]`}
+          />
+          <div
+            style={{ backgroundColor: color }}
+            className={`absolute h-full top-0 right-0 w-[9000px] translate-x-[9000px]`}
+          />
+        </div>
+
+        <h1>User journey</h1>
         <Image
-          src={AutomationsListPopulated}
-          alt="Automations list populated with multiple automations"
+          src={AutomationsListEmpty}
+          alt="Automations list empty state"
           className="w-full rounded-2xl"
         />
-      </div>
+        <Marquee reverse speed={28} className="relative z-0 py-4 sm:py-5">
+          {creatingAutomationMarqueeSlides.map((slide) => (
+            <div key={slide.label} className="mr-6 shrink-0 sm:mr-8">
+              <Image
+                src={slide.image}
+                alt={slide.label}
+                draggable={false}
+                className="h-auto w-[min(85vw,480px)] rounded-2xl sm:w-[480px]"
+              />
+            </div>
+          ))}
+        </Marquee>
 
-      <h1 className="mt-32 mb-32">Design rationale.</h1>
+        <div>
+          <Image
+            src={AutomationsListPopulated}
+            alt="Automations list populated with multiple automations"
+            className="w-full rounded-2xl"
+          />
+        </div>
 
-      <h2>Guiding principles</h2>
-      <div className="grid grid-cols-3 gap-8">
-        <StickyNote
-          title="Approachable"
-          list={[
-            "Direct manipulation",
-            "Clear mental models",
-            "Linear execution",
-            "No branching",
-          ]}
+        <h1 className="mt-32 mb-32">Design rationale.</h1>
+
+        <h2>Guiding principles</h2>
+        <div className="grid grid-cols-3 gap-8">
+          <StickyNote
+            title="Approachable"
+            list={[
+              "Direct manipulation",
+              "Clear mental models",
+              "Linear execution",
+              "No branching",
+            ]}
+          />
+          <StickyNote
+            title="Powerful"
+            list={[
+              "Low barrier, high ceiling",
+              "Context agnostic",
+              "Composable",
+            ]}
+          />
+          <StickyNote
+            title="Responsive"
+            list={["Desktop and Mobile", "Lightweight", "Fast"]}
+          />
+        </div>
+
+        <div className="grid grid-cols-12 gap-8 mt-32">
+          <h2 className="col-start-1 col-span-7">The core model</h2>
+          <p className="col-start-1 col-span-7">
+            Automations are constructed along a timeline, a metaphor that
+            readily resonates and facilitates comprehension. Once the triggering
+            event takes place, the steps are performed sequentially, without
+            branching. Add as many steps as needed.
+          </p>
+        </div>
+        <Image
+          src={AutomationsStepsLinear}
+          alt="Model: Step Count"
+          className="rounded-2xl"
         />
-        <StickyNote
-          title="Powerful"
-          list={["Low barrier, high ceiling", "Context agnostic", "Composable"]}
+
+        <div className="grid grid-cols-12 gap-8 mt-32">
+          <h2 className="col-start-1 col-span-7">Steps are extensible</h2>
+          <p className="col-start-1 col-span-7">
+            Steps possess the capability to invoke actions as well as halt the
+            progression of the automation. These steps can be arranged in a
+            flexible manner, allowing for uninhibited composition. The inherent
+            potency of Automations lies in their elemental simplicity and the
+            versatile manner in which they can be combined.
+          </p>
+        </div>
+
+        <Image
+          src={AutomationsStepsComposition}
+          alt="Model: Step Composition"
+          className="rounded-2xl"
         />
-        <StickyNote
-          title="Responsive"
-          list={["Desktop and Mobile", "Lightweight", "Fast"]}
+
+        <div className="grid grid-cols-12 gap-8 mt-32">
+          <h2 className="col-start-1 col-span-7">Steps may be configured</h2>
+          <p className="col-start-1 col-span-7">
+            Some steps might necessitate configuration. Hence a UI accommodating
+            both instances where no configuration is needed, as well as
+            scenarios involving configurations with unspecified data structures.
+            This wrapper must possess remarkable versatility, while minimizing
+            the effort involved in constructing and maintaining an expanding
+            collection of steps.
+          </p>
+          <p className="col-start-1 col-span-7">
+            Designed to enable future expansions such as enabling others to
+            build custom steps later.
+          </p>
+        </div>
+
+        <Image
+          src={AutomationsStepControlsSlot}
+          alt="Model: Step Composition"
+          className="rounded-2xl"
         />
-      </div>
 
-      <div className="grid grid-cols-12 gap-8 mt-32">
-        <h2 className="col-start-1 col-span-7">The core model</h2>
-        <p className="col-start-1 col-span-7">
-          Automations are constructed along a timeline, a metaphor that readily
-          resonates and facilitates comprehension. Once the triggering event
-          takes place, the steps are performed sequentially, without branching.
-          Add as many steps as needed.
-        </p>
-      </div>
-      <Image
-        src={AutomationsStepsLinear}
-        alt="Model: Step Count"
-        className="rounded-2xl"
-      />
+        <div className="grid grid-cols-12 gap-8 mt-32">
+          <h2 className="col-start-1 col-span-7">
+            Flexible configuration for unknown data structures
+          </h2>
+          <p className="col-start-1 col-span-7">
+            Build configuration interfaces as a list of pre-canned controls.
+            Developers pick the type and order of controls. Avoids absolute
+            positioning to reduce complexity associated with supporting
+            different viewport sizes. The controls are full width and spaced
+            evenly apart. Minimizes work for developers while ensuring
+            consistency from step to step.
+          </p>
+        </div>
 
-      <div className="grid grid-cols-12 gap-8 mt-32">
-        <h2 className="col-start-1 col-span-7">Steps are extensible</h2>
-        <p className="col-start-1 col-span-7">
-          Steps possess the capability to invoke actions as well as halt the
-          progression of the automation. These steps can be arranged in a
-          flexible manner, allowing for uninhibited composition. The inherent
-          potency of Automations lies in their elemental simplicity and the
-          versatile manner in which they can be combined.
-        </p>
-      </div>
+        <Image
+          src={AutomationsStepControlsResponsive}
+          alt="Model: Responsive Controls"
+          className="rounded-2xl"
+        />
 
-      <Image
-        src={AutomationsStepsComposition}
-        alt="Model: Step Composition"
-        className="rounded-2xl"
-      />
+        <div className="grid grid-cols-12 gap-8 mt-32">
+          <h2 className="col-start-1 col-span-7">Progressive control reveal</h2>
+          <p className="col-start-1 col-span-7">
+            The number of controls can be dynamic based on user inputs. The
+            controls are revealed progressively as the user makes selections.
+            This allows for a more focused experience and reduces the cognitive
+            load associated with a large number of controls.
+          </p>
+        </div>
 
-      <div className="grid grid-cols-12 gap-8 mt-32">
-        <h2 className="col-start-1 col-span-7">Steps may be configured</h2>
-        <p className="col-start-1 col-span-7">
-          Some steps might necessitate configuration. Hence a UI accommodating
-          both instances where no configuration is needed, as well as scenarios
-          involving configurations with unspecified data structures. This
-          wrapper must possess remarkable versatility, while minimizing the
-          effort involved in constructing and maintaining an expanding
-          collection of steps.
-        </p>
-        <p className="col-start-1 col-span-7">
-          Designed to enable future expansions such as enabling others to build
-          custom steps later.
-        </p>
-      </div>
+        <Image
+          src={AutomationsStepControlsDynamic}
+          alt="Model: Dynamic Inputs"
+          className="rounded-2xl"
+        />
 
-      <Image
-        src={AutomationsStepControlsSlot}
-        alt="Model: Step Composition"
-        className="rounded-2xl"
-      />
+        <div className="grid grid-cols-12 gap-8 mt-32">
+          <h2 className="col-start-1 col-span-7">Property controls</h2>
+          <p className="col-start-1 col-span-7">
+            A growing list of affordances to solicit user input. Supports a
+            variety of data types and use cases. Rooted in Reddit&apos;s design
+            system, Reddit Product Language, to ensure consistency,
+            accessibility, and reduce development time.
+          </p>
+        </div>
 
-      <div className="grid grid-cols-12 gap-8 mt-32">
-        <h2 className="col-start-1 col-span-7">
-          Flexible configuration for unknown data structures
-        </h2>
-        <p className="col-start-1 col-span-7">
-          Build configuration interfaces as a list of pre-canned controls.
-          Developers pick the type and order of controls. Avoids absolute
-          positioning to reduce complexity associated with supporting different
-          viewport sizes. The controls are full width and spaced evenly apart.
-          Minimizes work for developers while ensuring consistency from step to
-          step.
-        </p>
-      </div>
-
-      <Image
-        src={AutomationsStepControlsResponsive}
-        alt="Model: Responsive Controls"
-        className="rounded-2xl"
-      />
-
-      <div className="grid grid-cols-12 gap-8 mt-32">
-        <h2 className="col-start-1 col-span-7">Progressive control reveal</h2>
-        <p className="col-start-1 col-span-7">
-          The number of controls can be dynamic based on user inputs. The
-          controls are revealed progressively as the user makes selections. This
-          allows for a more focused experience and reduces the cognitive load
-          associated with a large number of controls.
-        </p>
-      </div>
-
-      <Image
-        src={AutomationsStepControlsDynamic}
-        alt="Model: Dynamic Inputs"
-        className="rounded-2xl"
-      />
-
-      <div className="grid grid-cols-12 gap-8 mt-32">
-        <h2 className="col-start-1 col-span-7">Property controls</h2>
-        <p className="col-start-1 col-span-7">
-          A growing list of affordances to solicit user input. Supports a
-          variety of data types and use cases. Rooted in Reddit&apos;s design
-          system, Reddit Product Language, to ensure consistency, accessibility,
-          and reduce development time.
-        </p>
-      </div>
-
-      <Image
-        src={AutomationsPropertyControls}
-        alt="An overview of supported property controls"
-        className="border border-[#DAE0E3] rounded-2xl"
-      />
-    </main>
-  </>
-);
-
-export default Project;
+        <Image
+          src={AutomationsPropertyControls}
+          alt="An overview of supported property controls"
+          className="border border-[#DAE0E3] rounded-2xl"
+        />
+      </main>
+    </>
+  );
+}

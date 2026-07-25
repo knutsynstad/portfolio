@@ -1,195 +1,5 @@
 import ProjectTile from "@/components/ProjectTile";
-
-type Project = {
-  name: string;
-  image: string;
-  url: string;
-  tags: string[];
-};
-
-const projects: Project[] = [
-  {
-    name: "Mosaic",
-    image: "images/mosaic-thumbnail.png",
-    url: "/projects/mosaic/",
-    tags: ["Reddit", "Community", "Game", "Developer Platform"],
-  },
-  {
-    name: "Syllo",
-    image: "images/syllo-thumbnail.png",
-    url: "/projects/syllo/",
-    tags: ["Reddit", "Community", "Game", "Developer Platform"],
-  },
-  {
-    name: "Pixelary",
-    image: "images/pixelary-thumbnail.png",
-    url: "/projects/pixelary/",
-    tags: ["Reddit", "Community", "Game", "Developer Platform"],
-  },
-  {
-    name: "Devvit Play",
-    image: "images/play-thumbnail.png",
-    url: "/projects/play/",
-    tags: ["Reddit", "UI", "Tool", "Developer Platform"],
-  },
-  // {
-  //   name: "Devvit Blocks",
-  //   image: "images/devvit-logo.png",
-  //   url: "/projects/blocks/",
-  //   tags: ["Reddit","UI Framework", "Developer Platform"],
-  // },
-  // Menu Actions
-  {
-    name: "Reddit Automations",
-    image: "images/automations_thumbnail.png",
-    url: "/projects/automations/",
-    tags: ["Reddit", "Automation", "Tool", "Developer Platform"],
-  },
-  {
-    name: "Avatar Builder",
-    image: "images/AvatarBuilder.png",
-    url: "/projects/avatar_builder/",
-    tags: ["Reddit", "Identity", "Tool", "User Economy"],
-  },
-  {
-    name: "Reddit Maps",
-    image: "images/reddit-maps-thumbnail.png",
-    url: "/projects/reddit_maps/",
-    tags: ["Reddit", "Computational Design", "Tool", "Solution Space"],
-  },
-  {
-    name: "Faux code generator",
-    image: "images/fauxcode-thumbnail.png",
-    url: "/projects/faux_code_generator/",
-    tags: ["Procedural Design" ,"Tool"],
-  },
-  {
-    name: "The Tic-Tac-Toe solution space",
-    image: "images/Tic_Tac_Toe_Thumbnail.gif",
-    url: "/projects/the_tic_tac_toe_solution_space/",
-    tags: ["DDO", "Computational Design", "Solution Space"],
-  },
-  {
-    name: "Visualizing the Fortune 500 by similarity",
-    image: "images/Fortune_500_Thumbnail.png",
-    url: "/projects/visualizing_the_fortune_500/",
-    tags: ["DDO", "Computational Design", "Solution Space", "Tool", "Data Visualization", "Machine Learning"],
-  },
-  {
-    name: "Using A.I. to accelerate life science",
-    image: "images/Bioz_0.png",
-    url: "/projects/using_ai_to_accelerate_life_science/",
-    tags: ["DDO", "Product Design"],
-  },
-  {
-    name: "The construction of Apple Park",
-    image: "images/Apple_Thumbnail.png",
-    url: "/projects/the_construction_of_apple_park/",
-    tags: ["DDO", "Data Visualization", "Remote Sensing", "Satellites", "Time-lapse"],
-  },
-  {
-    name: "Mapping family caregiving",
-    image: "images/Caremaps_0.png",
-    url: "/projects/mapping_family_caregiving/",
-    tags: ["DDO", "Data Visualization", "Procedural Design"],
-  },
-  {
-    name: "From sensors to action",
-    image: "images/Sensors_Thumbnail.svg",
-    url: "/projects/from_sensors_to_action/",
-    tags: ["DDO", "Model", "Remote Sensing", "Machine Learning"],
-  },
-  {
-    name: "Modeling diabetes as a feedback loop",
-    image: "images/Diabetes_Thumbnail.png",
-    url: "/projects/modeling_diabetes/",
-    tags: ["DDO", "Model", "Feedback Loop"],
-  },
-  {
-    name: "A pictogram is worth a thousand words",
-    image: "images/Iconography_00.gif",
-    url: "/projects/a_pictogram_is_worth_a_thousand_words/",
-    tags: ["DDO", "Iconography"],
-  },
-  {
-    name: "Mapping social shopping",
-    image: "images/Sello_Thumbnail.png",
-    url: "/projects/mapping_social_shopping/",
-    tags: ["DDO", "Information Design"],
-  },
-  {
-    name: "Smarter testing for better health",
-    image: "images/AST_Thumbnail.svg",
-    url: "/projects/smarter_testing_for_better_health/",
-    tags: ["DDO", "Branding"],
-  },
-  {
-    name: "Measuring corn production, in every county, every day",
-    image: "images/Corn_Thumbnail.gif",
-    url: "/projects/measuring_corn_production_in_every_county_every_day/",
-    tags: ["DDO", "Data Visualization", "Remote Sensing", "Satellites"],
-  },
-  {
-    name: "Moving mountains to shape the future",
-    image: "images/100_People_00.jpg",
-    url: "/projects/moving_mountains_to_shape_the_future/",
-    tags: ["AAU", "Student", "Typography"],
-  },
-  {
-    name: "Mr. Potato Head is for the birds",
-    image: "images/Birdhouse_00.jpg",
-    url: "/projects/mr_potato_head_is_for_the_birds/",
-    tags: ["AAU", "Student", "Packaging Design"],
-  },
-  {
-    name: "The truth is not always black & white",
-    image: "images/Margin_of_Error_00.jpg",
-    url: "/projects/the_truth_is_not_always_black_and_white/",
-    tags: ["AAU", "Student", "Packaging Design", "Branding"],
-  },
-  {
-    name: "Remedies come in all shapes and flavors",
-    image: "images/Earthnuts_00.jpg",
-    url: "/projects/remedies_come_in_all_shapes_and_flavors/",
-    tags: ["AAU", "Student", "Packaging Design", "Branding"],
-  },
-  {
-    name: "Winding down gets a little help",
-    image: "images/Seagrams_00.jpg",
-    url: "/projects/winding_down_gets_a_little_help/",
-    tags: ["AAU", "Student", "Branding"],
-  },
-  {
-    name: "Gardeners always get their hands in the dirt",
-    image: "images/French_Paper_00.jpg",
-    url: "/projects/gardeners_always_get_their_hands_in_the_dirt/",
-    tags: ["AAU", "Student", "Packaging Design"],
-  },
-  {
-    name: "Without the past, there is no future",
-    image: "images/Befor_00.jpg",
-    url: "/projects/without_the_past_there_is_no_future/",
-    tags: ["AAU", "Student", "Ancestry"],
-  },
-  {
-    name: "Raise your glass to Dorian Gray",
-    image: "images/Magnolia_00.jpg",
-    url: "/projects/raise_your_glass_to_dorian_gray/",
-    tags: ["AAU", "Student", "Packaging Design"],
-  },
-  {
-    name: "Looking beyond the walls",
-    image: "images/sweet_tooth_thumbnail.jpg",
-    url: "/projects/looking_beyond_the_walls/",
-    tags: ["AAU", "Student", "Typography"],
-  },
-  {
-    name: "Winning is the only way to play the game",
-    image: "images/Elite_Raiders_00.jpg",
-    url: "/projects/winning_is_the_only_way_to_play_the_game/",
-    tags: ["AAU", "Student", "Book Design"],
-  },
-];
+import { featuredProjects, projectUrl } from "@/projects/registry";
 
 export default function Home() {
   return (
@@ -198,12 +8,20 @@ export default function Home() {
         <h1>Hello.</h1>
         <p className="text-2xl max-w-2xl tracking-tight">
           I&apos;m{" "}
-          <a href="https://www.linkedin.com/in/knutsynstad" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/knutsynstad"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Knut
           </a>
           , a San-Francisco-based designer and developer. Currently the design
           lead for{" "}
-          <a href="https://developers.reddit.com/" target="_blank">
+          <a
+            href="https://developers.reddit.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Reddit&apos;s Developer Platform
           </a>
           .
@@ -211,12 +29,12 @@ export default function Home() {
       </header>
 
       <main className="grid grid-cols-2 md:grid-cols-3 gap-0 m-[-16px]">
-        {projects.map((project, index) => (
+        {featuredProjects.map((project, index) => (
           <ProjectTile
-            key={project.name}
+            key={project.slug}
             title={project.name}
             image={project.image}
-            url={project.url}
+            url={projectUrl(project.slug)}
             tags={project.tags}
             priority={index < 6}
           />

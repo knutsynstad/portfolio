@@ -2,7 +2,8 @@ import Image from "next/image";
 import FullBleed from "@/components/FullBleed";
 import Marquee from "@/components/Marquee";
 import ProjectHeader from "@/components/ProjectHeader";
-import { Metadata } from "next";
+import { projectMetadata } from "@/lib/metadata";
+import { getProject } from "@/projects/registry";
 
 import MosaicTimelapseSlideshow from "./MosaicTimelapseSlideshow";
 
@@ -88,21 +89,27 @@ const marqueeExpandedPosts = [
   { src: Expanded5, alt: "Mosaic shared canvas" },
 ] as const;
 
-export const metadata: Metadata = { title: `${title} - Knut Synstad` };
+const project = getProject("mosaic");
+export const metadata = projectMetadata(title, project?.metaDescription ?? "");
 
-const Project = () => (
-  <>
-    <ProjectHeader title={title} description={description} details={details} />
-    <main className="flex flex-col gap-16 md:gap-24">
-      <Image
-        src={Banner}
-        alt="Mosaic banner"
-        className="w-full rounded-3xl"
-        sizes="(max-width: 840px) 100vw, 840px"
-        priority
+export default function Project() {
+  return (
+    <>
+      <ProjectHeader
+        title={title}
+        description={description}
+        details={details}
       />
+      <main className="flex flex-col gap-16 md:gap-24">
+        <Image
+          src={Banner}
+          alt="Mosaic banner"
+          className="w-full rounded-3xl"
+          sizes="(max-width: 840px) 100vw, 840px"
+          priority
+        />
 
-      {/* <section
+        {/* <section
         className="relative left-1/2 w-screen -translate-x-1/2 py-16 md:py-24"
         style={{ backgroundColor: mosaicCarouselBg }}
       >
@@ -138,47 +145,46 @@ const Project = () => (
         />
       </section> */}
 
-      <FullBleed
-        className="py-16 md:py-24"
-        style={{ backgroundColor: mosaicCarouselBg }}
-      >
-        <div className="relative">
-          <Marquee speed={28} className="relative z-0 py-4 sm:py-5">
-            {marqueeExpandedPosts.map(({ src, alt }, index) => (
-              <div key={`${alt}-${index}`} className="mr-6 shrink-0 sm:mr-8">
-                <Image
-                  src={src}
-                  alt={alt}
-                  width={src.width}
-                  height={src.height}
-                  quality={100}
-                  draggable={false}
-                  className="h-auto w-[375px] rounded-[48px] shadow-md"
-                  sizes="375px"
-                />
-              </div>
-            ))}
-          </Marquee>
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-y-0 left-0 z-10 w-14 sm:w-20 md:w-28"
-            style={{
-              background: `linear-gradient(to right, ${mosaicCarouselBg}, transparent)`,
-            }}
-          />
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-y-0 right-0 z-10 w-14 sm:w-20 md:w-28"
-            style={{
-              background: `linear-gradient(to left, ${mosaicCarouselBg}, transparent)`,
-            }}
-          />
-        </div>
-      </FullBleed>
+        <FullBleed
+          className="py-16 md:py-24"
+          style={{ backgroundColor: mosaicCarouselBg }}
+        >
+          <div className="relative">
+            <Marquee speed={28} className="relative z-0 py-4 sm:py-5">
+              {marqueeExpandedPosts.map(({ src, alt }, index) => (
+                <div key={`${alt}-${index}`} className="mr-6 shrink-0 sm:mr-8">
+                  <Image
+                    src={src}
+                    alt={alt}
+                    width={src.width}
+                    height={src.height}
+                    quality={100}
+                    draggable={false}
+                    className="h-auto w-[375px] rounded-[48px] shadow-md"
+                    sizes="375px"
+                  />
+                </div>
+              ))}
+            </Marquee>
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-14 sm:w-20 md:w-28"
+              style={{
+                background: `linear-gradient(to right, ${mosaicCarouselBg}, transparent)`,
+              }}
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-y-0 right-0 z-10 w-14 sm:w-20 md:w-28"
+              style={{
+                background: `linear-gradient(to left, ${mosaicCarouselBg}, transparent)`,
+              }}
+            />
+          </div>
+        </FullBleed>
 
-      <MosaicTimelapseSlideshow />
-    </main>
-  </>
-);
-
-export default Project;
+        <MosaicTimelapseSlideshow />
+      </main>
+    </>
+  );
+}
