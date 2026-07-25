@@ -1,10 +1,6 @@
-# AGENTS.md
+# knutsynstad.com
 
-Instructions for AI agents working in this repository.
-
-## Project
-
-Design portfolio for Knut Synstad. Built with Next.js 16 (App Router), React 19, TypeScript (strict), and Tailwind CSS 4.
+The repository for knutsynstad.com. The design portfolio for Knut Synstad. It is built with Next.js 16 (App Router), React 19, TypeScript (strict), and Tailwind CSS 4.
 
 ## Structure
 
@@ -29,13 +25,6 @@ Path alias: `@/*` → `./app/*`
 | `npm run format`     | Prettier check                 |
 | `npm run format:fix` | Prettier auto-fix              |
 
-## Conventions
+## Deployment
 
-- Server Components by default. Add `"use client"` only when state or browser APIs are needed.
-- Use `next/image` for images, `next/link` for internal navigation.
-- Tailwind utility classes for styling. No CSS modules, no styled-components.
-- Run `npm run check` before considering any change complete.
-
-## Detailed Rules
-
-See `.cursor/rules/` for file-specific guidance on React/Next.js patterns and Tailwind styling.
+All successful updates to main are picked up by Github Actions for publishing to Github Pages.
