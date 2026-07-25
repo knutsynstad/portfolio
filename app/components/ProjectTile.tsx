@@ -1,23 +1,18 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
 interface ProjectTileProps {
   title: string;
   url: string;
-  image: string;
+  image: StaticImageData;
   className?: string;
   tags?: string[];
   priority?: boolean;
 }
 
-function imageSrc(image: string) {
-  return image.startsWith("/") ? image : `/${image}`;
-}
-
 export default function ProjectTile(props: ProjectTileProps) {
   const { title, url, image, className, tags, priority } = props;
-  const src = imageSrc(image);
-  const unoptimized = src.endsWith(".svg") || src.endsWith(".gif");
+  const unoptimized = image.src.endsWith(".svg") || image.src.endsWith(".gif");
 
   return (
     <Link
@@ -26,7 +21,7 @@ export default function ProjectTile(props: ProjectTileProps) {
     >
       <div className="relative aspect-square w-full overflow-hidden rounded-2xl">
         <Image
-          src={src}
+          src={image}
           alt={title}
           fill
           sizes="(max-width: 768px) 50vw, 33vw"

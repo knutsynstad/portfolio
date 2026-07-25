@@ -1,7 +1,40 @@
+import type { StaticImageData } from "next/image";
+
+import aPictogramThumbnail from "./a-pictogram-is-worth-a-thousand-words/assets/thumbnail.gif";
+import automationsThumbnail from "./automations/assets/thumbnail.png";
+import avatarBuilderThumbnail from "./avatar-builder/assets/thumbnail.png";
+import blocksThumbnail from "./blocks/assets/thumbnail.png";
+import fauxCodeGeneratorThumbnail from "./faux-code-generator/assets/thumbnail.png";
+import fromSensorsToActionThumbnail from "./from-sensors-to-action/assets/thumbnail.svg";
+import gardenersThumbnail from "./gardeners-always-get-their-hands-in-the-dirt/assets/thumbnail.jpg";
+import lookingBeyondTheWallsThumbnail from "./looking-beyond-the-walls/assets/thumbnail.jpg";
+import mappingFamilyCaregivingThumbnail from "./mapping-family-caregiving/assets/thumbnail.png";
+import mappingSocialShoppingThumbnail from "./mapping-social-shopping/assets/thumbnail.png";
+import measuringCornThumbnail from "./measuring-corn-production-in-every-county-every-day/assets/thumbnail.gif";
+import modelingDiabetesThumbnail from "./modeling-diabetes/assets/thumbnail.png";
+import mosaicThumbnail from "./mosaic/assets/thumbnail.png";
+import movingMountainsThumbnail from "./moving-mountains-to-shape-the-future/assets/thumbnail.jpg";
+import mrPotatoHeadThumbnail from "./mr-potato-head-is-for-the-birds/assets/thumbnail.jpg";
+import pixelaryThumbnail from "./pixelary/assets/thumbnail.png";
+import playThumbnail from "./play/assets/thumbnail.png";
+import raiseYourGlassThumbnail from "./raise-your-glass-to-dorian-gray/assets/thumbnail.jpg";
+import redditMapsThumbnail from "./reddit-maps/assets/thumbnail.png";
+import remediesThumbnail from "./remedies-come-in-all-shapes-and-flavors/assets/thumbnail.jpg";
+import smarterTestingThumbnail from "./smarter-testing-for-better-health/assets/thumbnail.svg";
+import sylloThumbnail from "./syllo/assets/thumbnail.png";
+import appleParkThumbnail from "./the-construction-of-apple-park/assets/thumbnail.png";
+import ticTacToeThumbnail from "./the-tic-tac-toe-solution-space/assets/thumbnail.gif";
+import truthBlackAndWhiteThumbnail from "./the-truth-is-not-always-black-and-white/assets/thumbnail.jpg";
+import biozThumbnail from "./using-ai-to-accelerate-life-science/assets/thumbnail.png";
+import fortune500Thumbnail from "./visualizing-the-fortune-500/assets/thumbnail.png";
+import windingDownThumbnail from "./winding-down-gets-a-little-help/assets/thumbnail.jpg";
+import winningThumbnail from "./winning-is-the-only-way-to-play-the-game/assets/thumbnail.jpg";
+import withoutThePastThumbnail from "./without-the-past-there-is-no-future/assets/thumbnail.jpg";
+
 export type Project = {
   slug: string;
   name: string;
-  image: string;
+  image: StaticImageData;
   tags: string[];
   featured: boolean;
   metaDescription: string;
@@ -15,7 +48,7 @@ export const projects: Project[] = [
   {
     slug: "a-pictogram-is-worth-a-thousand-words",
     name: "A pictogram is worth a thousand words",
-    image: "images/Iconography_00.gif",
+    image: aPictogramThumbnail,
     tags: ["DDO", "Iconography"],
     featured: true,
     metaDescription:
@@ -24,7 +57,7 @@ export const projects: Project[] = [
   {
     slug: "automations",
     name: "Reddit Automations",
-    image: "images/automations_thumbnail.png",
+    image: automationsThumbnail,
     tags: ["Reddit", "Automation", "Tool", "Developer Platform"],
     featured: true,
     metaDescription:
@@ -33,7 +66,7 @@ export const projects: Project[] = [
   {
     slug: "avatar-builder",
     name: "Avatar Builder",
-    image: "images/AvatarBuilder.png",
+    image: avatarBuilderThumbnail,
     tags: ["Reddit", "Identity", "Tool", "User Economy"],
     featured: true,
     metaDescription:
@@ -42,7 +75,7 @@ export const projects: Project[] = [
   {
     slug: "blocks",
     name: "Devvit Blocks",
-    image: "images/devvit-logo.png",
+    image: blocksThumbnail,
     tags: ["Reddit", "UI Framework", "Developer Platform"],
     featured: false,
     metaDescription:
@@ -51,7 +84,7 @@ export const projects: Project[] = [
   {
     slug: "faux-code-generator",
     name: "Faux code generator",
-    image: "images/fauxcode-thumbnail.png",
+    image: fauxCodeGeneratorThumbnail,
     tags: ["Procedural Design", "Tool"],
     featured: true,
     metaDescription:
@@ -60,7 +93,7 @@ export const projects: Project[] = [
   {
     slug: "from-sensors-to-action",
     name: "From sensors to action",
-    image: "images/Sensors_Thumbnail.svg",
+    image: fromSensorsToActionThumbnail,
     tags: ["DDO", "Model", "Remote Sensing", "Machine Learning"],
     featured: true,
     metaDescription:
@@ -69,7 +102,7 @@ export const projects: Project[] = [
   {
     slug: "gardeners-always-get-their-hands-in-the-dirt",
     name: "Gardeners always get their hands in the dirt",
-    image: "images/French_Paper_00.jpg",
+    image: gardenersThumbnail,
     tags: ["AAU", "Student", "Packaging Design"],
     featured: true,
     metaDescription:
@@ -78,7 +111,7 @@ export const projects: Project[] = [
   {
     slug: "looking-beyond-the-walls",
     name: "Looking beyond the walls",
-    image: "images/sweet_tooth_thumbnail.jpg",
+    image: lookingBeyondTheWallsThumbnail,
     tags: ["AAU", "Student", "Typography"],
     featured: true,
     metaDescription:
@@ -87,7 +120,7 @@ export const projects: Project[] = [
   {
     slug: "mapping-family-caregiving",
     name: "Mapping family caregiving",
-    image: "images/Caremaps_0.png",
+    image: mappingFamilyCaregivingThumbnail,
     tags: ["DDO", "Data Visualization", "Procedural Design"],
     featured: true,
     metaDescription:
@@ -96,7 +129,7 @@ export const projects: Project[] = [
   {
     slug: "mapping-social-shopping",
     name: "Mapping social shopping",
-    image: "images/Sello_Thumbnail.png",
+    image: mappingSocialShoppingThumbnail,
     tags: ["DDO", "Information Design"],
     featured: true,
     metaDescription:
@@ -105,7 +138,7 @@ export const projects: Project[] = [
   {
     slug: "measuring-corn-production-in-every-county-every-day",
     name: "Measuring corn production, in every county, every day",
-    image: "images/Corn_Thumbnail.gif",
+    image: measuringCornThumbnail,
     tags: ["DDO", "Data Visualization", "Remote Sensing", "Satellites"],
     featured: true,
     metaDescription:
@@ -114,7 +147,7 @@ export const projects: Project[] = [
   {
     slug: "modeling-diabetes",
     name: "Modeling diabetes as a feedback loop",
-    image: "images/Diabetes_Thumbnail.png",
+    image: modelingDiabetesThumbnail,
     tags: ["DDO", "Model", "Feedback Loop"],
     featured: true,
     metaDescription:
@@ -123,7 +156,7 @@ export const projects: Project[] = [
   {
     slug: "mosaic",
     name: "Mosaic",
-    image: "images/mosaic-thumbnail.png",
+    image: mosaicThumbnail,
     tags: ["Reddit", "Community", "Game", "Developer Platform"],
     featured: true,
     metaDescription:
@@ -132,7 +165,7 @@ export const projects: Project[] = [
   {
     slug: "moving-mountains-to-shape-the-future",
     name: "Moving mountains to shape the future",
-    image: "images/100_People_00.jpg",
+    image: movingMountainsThumbnail,
     tags: ["AAU", "Student", "Typography"],
     featured: true,
     metaDescription:
@@ -141,7 +174,7 @@ export const projects: Project[] = [
   {
     slug: "mr-potato-head-is-for-the-birds",
     name: "Mr. Potato Head is for the birds",
-    image: "images/Birdhouse_00.jpg",
+    image: mrPotatoHeadThumbnail,
     tags: ["AAU", "Student", "Packaging Design"],
     featured: true,
     metaDescription:
@@ -150,7 +183,7 @@ export const projects: Project[] = [
   {
     slug: "pixelary",
     name: "Pixelary",
-    image: "images/pixelary-thumbnail.png",
+    image: pixelaryThumbnail,
     tags: ["Reddit", "Community", "Game", "Developer Platform"],
     featured: true,
     metaDescription:
@@ -159,7 +192,7 @@ export const projects: Project[] = [
   {
     slug: "play",
     name: "Devvit Play",
-    image: "images/play-thumbnail.png",
+    image: playThumbnail,
     tags: ["Reddit", "UI", "Tool", "Developer Platform"],
     featured: true,
     metaDescription:
@@ -168,7 +201,7 @@ export const projects: Project[] = [
   {
     slug: "raise-your-glass-to-dorian-gray",
     name: "Raise your glass to Dorian Gray",
-    image: "images/Magnolia_00.jpg",
+    image: raiseYourGlassThumbnail,
     tags: ["AAU", "Student", "Packaging Design"],
     featured: true,
     metaDescription:
@@ -177,7 +210,7 @@ export const projects: Project[] = [
   {
     slug: "reddit-maps",
     name: "Reddit Maps",
-    image: "images/reddit-maps-thumbnail.png",
+    image: redditMapsThumbnail,
     tags: ["Reddit", "Computational Design", "Tool", "Solution Space"],
     featured: true,
     metaDescription:
@@ -186,7 +219,7 @@ export const projects: Project[] = [
   {
     slug: "remedies-come-in-all-shapes-and-flavors",
     name: "Remedies come in all shapes and flavors",
-    image: "images/Earthnuts_00.jpg",
+    image: remediesThumbnail,
     tags: ["AAU", "Student", "Packaging Design", "Branding"],
     featured: true,
     metaDescription:
@@ -195,7 +228,7 @@ export const projects: Project[] = [
   {
     slug: "smarter-testing-for-better-health",
     name: "Smarter testing for better health",
-    image: "images/AST_Thumbnail.svg",
+    image: smarterTestingThumbnail,
     tags: ["DDO", "Branding"],
     featured: true,
     metaDescription:
@@ -204,7 +237,7 @@ export const projects: Project[] = [
   {
     slug: "syllo",
     name: "Syllo",
-    image: "images/syllo-thumbnail.png",
+    image: sylloThumbnail,
     tags: ["Reddit", "Community", "Game", "Developer Platform"],
     featured: true,
     metaDescription:
@@ -213,7 +246,7 @@ export const projects: Project[] = [
   {
     slug: "the-construction-of-apple-park",
     name: "The construction of Apple Park",
-    image: "images/Apple_Thumbnail.png",
+    image: appleParkThumbnail,
     tags: [
       "DDO",
       "Data Visualization",
@@ -228,7 +261,7 @@ export const projects: Project[] = [
   {
     slug: "the-tic-tac-toe-solution-space",
     name: "The Tic-Tac-Toe solution space",
-    image: "images/Tic_Tac_Toe_Thumbnail.gif",
+    image: ticTacToeThumbnail,
     tags: ["DDO", "Computational Design", "Solution Space"],
     featured: true,
     metaDescription:
@@ -237,7 +270,7 @@ export const projects: Project[] = [
   {
     slug: "the-truth-is-not-always-black-and-white",
     name: "The truth is not always black & white",
-    image: "images/Margin_of_Error_00.jpg",
+    image: truthBlackAndWhiteThumbnail,
     tags: ["AAU", "Student", "Packaging Design", "Branding"],
     featured: true,
     metaDescription:
@@ -246,7 +279,7 @@ export const projects: Project[] = [
   {
     slug: "using-ai-to-accelerate-life-science",
     name: "Using A.I. to accelerate life science",
-    image: "images/Bioz_0.png",
+    image: biozThumbnail,
     tags: ["DDO", "Product Design"],
     featured: true,
     metaDescription:
@@ -255,7 +288,7 @@ export const projects: Project[] = [
   {
     slug: "visualizing-the-fortune-500",
     name: "Visualizing the Fortune 500 by similarity",
-    image: "images/Fortune_500_Thumbnail.png",
+    image: fortune500Thumbnail,
     tags: [
       "DDO",
       "Computational Design",
@@ -271,7 +304,7 @@ export const projects: Project[] = [
   {
     slug: "winding-down-gets-a-little-help",
     name: "Winding down gets a little help",
-    image: "images/Seagrams_00.jpg",
+    image: windingDownThumbnail,
     tags: ["AAU", "Student", "Branding"],
     featured: true,
     metaDescription:
@@ -280,7 +313,7 @@ export const projects: Project[] = [
   {
     slug: "winning-is-the-only-way-to-play-the-game",
     name: "Winning is the only way to play the game",
-    image: "images/Elite_Raiders_00.jpg",
+    image: winningThumbnail,
     tags: ["AAU", "Student", "Book Design"],
     featured: true,
     metaDescription:
@@ -289,7 +322,7 @@ export const projects: Project[] = [
   {
     slug: "without-the-past-there-is-no-future",
     name: "Without the past, there is no future",
-    image: "images/Befor_00.jpg",
+    image: withoutThePastThumbnail,
     tags: ["AAU", "Student", "Ancestry"],
     featured: true,
     metaDescription:
@@ -297,7 +330,42 @@ export const projects: Project[] = [
   },
 ];
 
-export const featuredProjects = projects.filter((project) => project.featured);
+const featuredSlugs = [
+  "mosaic",
+  "syllo",
+  "pixelary",
+  "play",
+  "automations",
+  "avatar-builder",
+  "reddit-maps",
+  "faux-code-generator",
+  "the-tic-tac-toe-solution-space",
+  "visualizing-the-fortune-500",
+  "using-ai-to-accelerate-life-science",
+  "the-construction-of-apple-park",
+  "mapping-family-caregiving",
+  "from-sensors-to-action",
+  "modeling-diabetes",
+  "a-pictogram-is-worth-a-thousand-words",
+  "mapping-social-shopping",
+  "smarter-testing-for-better-health",
+  "measuring-corn-production-in-every-county-every-day",
+  "moving-mountains-to-shape-the-future",
+  "mr-potato-head-is-for-the-birds",
+  "the-truth-is-not-always-black-and-white",
+  "remedies-come-in-all-shapes-and-flavors",
+  "winding-down-gets-a-little-help",
+  "gardeners-always-get-their-hands-in-the-dirt",
+  "without-the-past-there-is-no-future",
+  "raise-your-glass-to-dorian-gray",
+  "looking-beyond-the-walls",
+  "winning-is-the-only-way-to-play-the-game",
+] as const;
+
+export const featuredProjects = featuredSlugs.flatMap((slug) => {
+  const project = projects.find((entry) => entry.slug === slug);
+  return project ? [project] : [];
+});
 
 export function getProject(slug: string): Project | undefined {
   return projects.find((project) => project.slug === slug);
