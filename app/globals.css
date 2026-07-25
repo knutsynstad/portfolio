@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @layer base {
+  html {
+    overflow-x: clip;
+  }
   h1 {
     @apply text-9xl leading-none font-bold tracking-tighter;
   }
@@ -19,6 +22,15 @@
 }
 
 @layer utilities {
+  /* Break out of max-w content column to viewport edges. */
+  .full-bleed {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+
   /* Nearest-neighbor scaling for pixel art (Next/Image + CSS width). */
   .render-pixel-art {
     image-rendering: crisp-edges;

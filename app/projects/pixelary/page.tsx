@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FullBleed from "@/components/FullBleed";
 import Marquee from "@/components/Marquee";
 import ProjectHeader from "@/components/ProjectHeader";
 import { Metadata } from "next";
@@ -115,8 +116,8 @@ const Project = () => (
         fetchPriority="high"
       />
 
-      <div
-        className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden rounded-t-3xl rounded-b-3xl pb-8 sm:pb-16 md:pb-32 -mb-8 sm:-mb-16 md:-mb-32"
+      <FullBleed
+        className="rounded-t-3xl rounded-b-3xl pb-8 sm:pb-16 md:pb-32 -mb-8 sm:-mb-16 md:-mb-32"
         style={{ backgroundColor: pixelaryCarouselBg }}
       >
         <section
@@ -222,7 +223,7 @@ const Project = () => (
             shadowColor={pixelaryDrawingShadow}
           />
         </section>
-      </div>
+      </FullBleed>
     </main>
   </>
 );

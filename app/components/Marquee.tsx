@@ -163,7 +163,7 @@ const Marquee = ({
     <div
       className={["relative select-none", className].filter(Boolean).join(" ")}
     >
-      <div className="relative left-[50%] w-screen translate-x-[-50%] overflow-clip py-8">
+      <div className="w-full overflow-clip py-8">
         <div
           ref={containerRef}
           role="presentation"
