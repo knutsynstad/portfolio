@@ -5,6 +5,10 @@ import { getProject } from "@/projects/registry";
 import Image from "next/image";
 
 import LogosLapEnd from "./assets/logos_lap_end.png";
+import logosTsne600StepsWebm from "./assets/logos-tsne-600-steps.webm";
+import logosTsne600StepsMp4 from "./assets/logos-tsne-600-steps.mp4";
+import logosTsneToLapWebm from "./assets/logos-tsne-to-lap.webm";
+import logosTsneToLapMp4 from "./assets/logos-tsne-to-lap.mp4";
 
 // Introduction
 import Introduction from "./assets/Fortune_500_Introduction_2340w.png";
@@ -106,8 +110,8 @@ export default function Project() {
             muted
             className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-7xl"
           >
-            <source src="/videos/logos_tsne_600_steps.webm" type="video/webm" />
-            <source src="/videos/logos_tsne_600_steps.mp4" type="video/mp4" />
+            <source src={logosTsne600StepsWebm} type="video/webm" />
+            <source src={logosTsne600StepsMp4} type="video/mp4" />
             <p>Your browser doesn&apos;t support HTML video.</p>
           </video>
           <figcaption className="grid grid-cols-12">
@@ -126,8 +130,8 @@ export default function Project() {
             muted
             className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-7xl"
           >
-            <source src="/videos/logos_tsne_to_lap.webm" type="video/webm" />
-            <source src="/videos/logos_tsne_to_lap.mp4" type="video/mp4" />
+            <source src={logosTsneToLapWebm} type="video/webm" />
+            <source src={logosTsneToLapMp4} type="video/mp4" />
             <p>Your browser doesn&apos;t support HTML video.</p>
           </video>
           <figcaption className="grid grid-cols-12">

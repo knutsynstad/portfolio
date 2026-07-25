@@ -4,6 +4,8 @@ import FluidImageRow from "@/components/FluidImageRow";
 import { projectMetadata } from "@/lib/metadata";
 import { getProject } from "@/projects/registry";
 
+import playLogoWebm from "./assets/play-logo.webm";
+import playLogoMp4 from "./assets/play-logo.mp4";
 import ScreenA from "./assets/play-screen.png";
 import PlayConsole from "./assets/play-console.png";
 import SocialPreview from "./assets/play-social-preview.svg";
@@ -101,8 +103,8 @@ export default function Project() {
       <main>
         <div className="flex flex-col gap-8">
           <video autoPlay loop muted className="w-full rounded-2xl">
-            <source src="/videos/play-logo.webm" type="video/webm" />
-            <source src="/videos/play-logo.mp4" type="video/mp4" />
+            <source src={playLogoWebm} type="video/webm" />
+            <source src={playLogoMp4} type="video/mp4" />
             <p>Your browser doesn&apos;t support HTML video.</p>
           </video>
           <Image

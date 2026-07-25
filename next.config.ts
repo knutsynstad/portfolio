@@ -8,6 +8,19 @@ const nextConfig: NextConfig = {
     unoptimized: true,
     qualities: [75, 90, 100],
   },
+  turbopack: {
+    rules: {
+      "*.mp4": {
+        type: "asset",
+      },
+      "*.webm": {
+        type: "asset",
+      },
+      "*.pdf": {
+        type: "asset",
+      },
+    },
+  },
 };
 
 export default nextConfig;

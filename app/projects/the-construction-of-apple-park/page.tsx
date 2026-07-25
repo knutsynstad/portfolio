@@ -3,6 +3,9 @@ import Image, { StaticImageData } from "next/image";
 import { projectMetadata } from "@/lib/metadata";
 import { getProject } from "@/projects/registry";
 
+import appleParkWebm from "./assets/apple-park.webm";
+import appleParkMp4 from "./assets/apple-park.mp4";
+
 // 2012
 import Apple_NAIP_2012 from "./assets/Apple_NAIP_2012.png";
 
@@ -226,8 +229,8 @@ export default function Project() {
       />
       <main className="flex flex-col gap-8">
         <video autoPlay loop muted className="w-full rounded-2xl">
-          <source src="/videos/apple_park.webm" type="video/webm" />
-          <source src="/videos/apple_park.mp4" type="video/mp4" />
+          <source src={appleParkWebm} type="video/webm" />
+          <source src={appleParkMp4} type="video/mp4" />
           <p>Your browser doesn&apos;t support HTML video.</p>
         </video>
 

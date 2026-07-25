@@ -3,6 +3,9 @@ import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
 import { getProject } from "@/projects/registry";
 
+import playLogoWebm from "../play/assets/play-logo.webm";
+import playLogoMp4 from "../play/assets/play-logo.mp4";
+
 const title = "Extending Reddit with Blocks.";
 
 const description = (
@@ -85,8 +88,8 @@ export default function Project() {
       <main>
         <div className="flex flex-col gap-8">
           <video autoPlay loop muted className="w-full rounded-2xl">
-            <source src="/videos/play-logo.webm" type="video/webm" />
-            <source src="/videos/play-logo.mp4" type="video/mp4" />
+            <source src={playLogoWebm} type="video/webm" />
+            <source src={playLogoMp4} type="video/mp4" />
             <p>Your browser doesn&apos;t support HTML video.</p>
           </video>
         </div>

@@ -15,6 +15,7 @@ import Exhibit6 from "./assets/Tic_Tac_Toe_Website_About.svg";
 import Exhibit7 from "./assets/Tic_Tac_Toe_Graph_1.svg";
 import Exhibit8 from "./assets/Tic_Tac_Toe_Graph_2.svg";
 import Exhibit9 from "./assets/Tic_Tac_Toe_Graph_3.svg";
+import posterPdf from "./assets/poster.pdf";
 
 const title = "The tic-tac-toe solution space.";
 const description = (
@@ -97,7 +98,7 @@ const details = [
   {
     title: "Links",
     values: [
-      { name: "Download poster (PDF)", url: "/files/Tic-Tac-Toe_1901016.pdf" },
+      { name: "Download poster (PDF)", url: posterPdf },
       { name: "Launch interactive", url: "http://tictactoe.dubberly.com" },
       {
         name: "Source code",
