@@ -1,5 +1,4 @@
 import ProjectTile from "@/components/ProjectTile";
-import Mark from "@/components/Mark";
 
 type Project = {
   name: string;
@@ -39,6 +38,7 @@ const projects: Project[] = [
   //   url: "/projects/blocks/",
   //   tags: ["Reddit", "Dev Platform"],
   // },
+  // Menu Actions
   {
     name: "Automating Reddit",
     image: "images/automations_thumbnail.png",
