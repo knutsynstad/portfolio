@@ -145,7 +145,7 @@ export default function Project() {
                       height={src.height}
                       quality={100}
                       draggable={false}
-                      className="render-pixel-art h-auto w-[375px] rounded-[24px] shadow-lg"
+                      className="render-pixel-art h-auto w-93.75 rounded-3xl shadow-lg"
                       sizes="375px"
                       loading="lazy"
                       fetchPriority="low"
@@ -171,7 +171,7 @@ export default function Project() {
             </div>
 
             <div className="px-8 py-16 sm:px-16 md:px-32 md:py-24">
-              <div className="mx-auto grid w-full max-w-[840px] grid-cols-4 gap-8 sm:grid-cols-5 md:grid-cols-6 md:gap-10">
+              <div className="mx-auto grid w-full max-w-210 grid-cols-4 gap-8 sm:grid-cols-5 md:grid-cols-6 md:gap-10">
                 {communityDrawings.map(({ src, alt }, index) => (
                   <Image
                     key={`${alt}-${index}`}
@@ -206,7 +206,7 @@ export default function Project() {
                       height={src.height}
                       quality={100}
                       draggable={false}
-                      className="render-pixel-art h-auto w-[375px] rounded-[24px] shadow-lg"
+                      className="render-pixel-art h-auto w-93.75 rounded-3xl shadow-lg"
                       sizes="375px"
                       loading="lazy"
                       fetchPriority="low"

@@ -9,7 +9,7 @@ export default function ProjectsLayout({
     <section>
       {children}
 
-      <nav className="fixed top-[32px] left-[32px]">
+      <nav className="fixed top-8 left-8">
         <Link
           aria-label="Back to projects"
           href="/"

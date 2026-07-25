@@ -58,7 +58,7 @@ export default function Slideshow({ slides, shadow }: SlideshowProps) {
 
       <div className="grid grid-cols-12 gap-8">
         <p className="col-start-1 col-end-7">{caption}</p>
-        <div className="mt-[-8px] select-none h-min items-center flex gap-2 justify-end col-start-7 col-end-13">
+        <div className="-mt-2 select-none h-min items-center flex gap-2 justify-end col-start-7 col-end-13">
           <button
             className="p-2 border-none rounded-full cursor-pointer bg-transparent hover:bg-gray-200"
             onClick={previous}

@@ -61,6 +61,7 @@
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.2.11",
+    "eslint-plugin-tailwind-canonical-classes": "^1.4.1",
     "prettier": "^3.9.6",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3"

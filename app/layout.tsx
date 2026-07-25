@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className + " bg-black"}>
         <div className="p-8 sm:p-16 md:p-32 flex justify-center bg-white rounded-br-3xl rounded-bl-3xl">
-          <div className="w-full max-w-[840px]">{children}</div>
+          <div className="w-full max-w-210">{children}</div>
         </div>
         <Footer />
       </body>

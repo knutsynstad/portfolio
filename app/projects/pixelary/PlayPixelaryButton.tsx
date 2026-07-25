@@ -44,7 +44,7 @@ export default function PlayPixelaryButton({
                 fill="none"
                 shapeRendering="crispEdges"
                 aria-hidden
-                className="render-pixel-art h-[28px] w-auto select-none"
+                className="render-pixel-art h-7 w-auto select-none"
               >
                 <path
                   fill="#fff"

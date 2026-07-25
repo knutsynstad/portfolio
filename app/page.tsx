@@ -28,7 +28,7 @@ export default function Home() {
         </p>
       </header>
 
-      <main className="grid grid-cols-2 md:grid-cols-3 gap-0 m-[-16px]">
+      <main className="grid grid-cols-2 md:grid-cols-3 gap-0 -m-4">
         {featuredProjects.map((project, index) => (
           <ProjectTile
             key={project.slug}

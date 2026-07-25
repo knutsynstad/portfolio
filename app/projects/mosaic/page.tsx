@@ -160,7 +160,7 @@ export default function Project() {
                     height={src.height}
                     quality={100}
                     draggable={false}
-                    className="h-auto w-[375px] rounded-[48px] shadow-md"
+                    className="h-auto w-93.75 rounded-[48px] shadow-md"
                     sizes="375px"
                   />
                 </div>

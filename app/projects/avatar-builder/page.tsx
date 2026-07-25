@@ -159,7 +159,7 @@ export default function Project() {
                 src={image.image}
                 alt={image.label}
                 draggable={false}
-                className="h-auto w-[200px]"
+                className="h-auto w-50"
               />
             </div>
           ))}

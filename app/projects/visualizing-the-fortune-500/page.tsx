@@ -104,7 +104,7 @@ export default function Project() {
             autoPlay
             loop
             muted
-            className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-[1280px]"
+            className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-7xl"
           >
             <source src="/videos/logos_tsne_600_steps.webm" type="video/webm" />
             <source src="/videos/logos_tsne_600_steps.mp4" type="video/mp4" />
@@ -124,7 +124,7 @@ export default function Project() {
             autoPlay
             loop
             muted
-            className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-[1280px]"
+            className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-7xl"
           >
             <source src="/videos/logos_tsne_to_lap.webm" type="video/webm" />
             <source src="/videos/logos_tsne_to_lap.mp4" type="video/mp4" />
@@ -144,7 +144,7 @@ export default function Project() {
           <Image
             src={LogosLapEnd}
             alt="asdasd"
-            className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-[1280px]"
+            className="relative left-[50%] translate-x-[-50%] w-screen rounded-2xl max-w-7xl"
           />
           <figcaption className="grid grid-cols-12">
             <h3 className="col-span-7">&uarr; Fig. 3: Final composite</h3>

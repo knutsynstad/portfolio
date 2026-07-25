@@ -196,7 +196,7 @@ export default function Project() {
                 src={slide.image}
                 alt={slide.label}
                 draggable={false}
-                className="h-auto w-[min(85vw,480px)] rounded-2xl sm:w-[480px]"
+                className="h-auto w-[min(85vw,480px)] rounded-2xl sm:w-120"
               />
             </div>
           ))}
