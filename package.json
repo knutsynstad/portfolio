@@ -23,6 +23,28 @@
   },
   "license": "CC-BY-NC",
   "homepage": "https://knutsynstad.com",
+  "overrides": {
+    "postcss": "^8.5.22",
+    "sharp": "^0.35.3",
+    "eslint-plugin-import": {
+      "minimatch": "^10.2.5"
+    },
+    "eslint-plugin-jsx-a11y": {
+      "minimatch": "^10.2.5"
+    },
+    "eslint-plugin-react": {
+      "minimatch": "^10.2.5"
+    },
+    "eslint": {
+      "minimatch": "^10.2.5"
+    },
+    "@eslint/config-array": {
+      "minimatch": "^10.2.5"
+    },
+    "@eslint/eslintrc": {
+      "minimatch": "^10.2.5"
+    }
+  },
   "dependencies": {
     "next": "^16.2.11",
     "react": "^19.2.8",
