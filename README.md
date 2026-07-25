@@ -27,4 +27,4 @@ Path alias: `@/*` → `./app/*`
 
 ## Deployment
 
-All successful updates to main are picked up by Github Actions for publishing to Github Pages.
+All successful updates to `main` are picked up by Github Actions for publishing to Github Pages.
