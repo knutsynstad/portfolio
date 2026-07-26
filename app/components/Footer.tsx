@@ -37,7 +37,7 @@ const socialLinks = socials.map((social) => (
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center pt-16 pb-16 text-white">
+    <footer className="flex flex-col items-center pt-16 pb-16 md:pt-32 md:pb-32 text-white">
       <div className="w-full max-w-3xl flex gap-8 justify-between items-center">
         <p className="">Knut Synstad</p>
         <div className="flex gap-4">{socialLinks}</div>
