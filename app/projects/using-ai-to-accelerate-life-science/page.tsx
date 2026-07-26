@@ -1,3 +1,4 @@
+import FullBleed from "@/components/FullBleed";
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
@@ -97,7 +98,9 @@ export default function Project() {
         details={details}
       />
       <main className="flex flex-col gap-8">
-        <Image src={BiozModel} alt={title} />
+        <FullBleed className="py-16 md:py-24">
+          <Image src={BiozModel} alt={title} className="h-auto w-full" />
+        </FullBleed>
 
         <Slideshow
           slides={[
@@ -116,7 +119,13 @@ export default function Project() {
           shadow
         />
 
-        <Image src={JournalCreation} alt={title} className="rounded-2xl" />
+        <FullBleed className="py-16 md:py-24">
+          <Image
+            src={JournalCreation}
+            alt={title}
+            className="h-auto w-full rounded-2xl"
+          />
+        </FullBleed>
         <Image src={FilterDropDowns} alt={title} className="rounded-2xl" />
         <Image src={SaveProductToFolder} alt={title} className="rounded-2xl" />
         <Image src={ProductDetails} alt={title} className="rounded-2xl" />
@@ -126,7 +135,13 @@ export default function Project() {
           shadow
         />
 
-        <Image src={InformationOverlap} alt={title} className="rounded-2xl" />
+        <FullBleed className="py-16 md:py-24">
+          <Image
+            src={InformationOverlap}
+            alt={title}
+            className="h-auto w-full rounded-2xl"
+          />
+        </FullBleed>
         <Image src={ArticleFullText} alt={title} className="rounded-2xl" />
       </main>
     </>
