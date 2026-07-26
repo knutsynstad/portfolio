@@ -1,5 +1,5 @@
 import ProjectTile from "@/components/ProjectTile";
-import { featuredProjects, projectUrl } from "@/projects/registry";
+import { projectUrl, visibleProjects } from "@/projects/registry";
 
 export default function Home() {
   return (
@@ -29,7 +29,7 @@ export default function Home() {
       </header>
 
       <main className="grid grid-cols-2 md:grid-cols-3 gap-0 -m-4">
-        {featuredProjects.map((project, index) => (
+        {visibleProjects.map((project, index) => (
           <ProjectTile
             key={project.slug}
             title={project.name}
