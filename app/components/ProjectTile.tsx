@@ -37,9 +37,13 @@ export default function ProjectTile({
         draggable={false}
       />
       <h2 className="text-2xl text-balance">{title}</h2>
-      {tags && <div className="flex flex-wrap gap-1">
-        {tags?.map((tag) => <Tag key={tag}>{tag}</Tag>)}
-      </div>}
+      {tags && (
+        <div className="flex flex-wrap gap-1">
+          {tags?.map((tag) => (
+            <Tag key={tag}>{tag}</Tag>
+          ))}
+        </div>
+      )}
     </Link>
   );
 }
