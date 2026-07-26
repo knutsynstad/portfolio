@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 import Birdhouse1 from "./assets/Birdhouse_01.jpg";
 import Birdhouse2 from "./assets/Birdhouse_02.jpg";
@@ -11,6 +10,8 @@ import Birdhouse4 from "./assets/Birdhouse_04.jpg";
 import Birdhouse5 from "./assets/Birdhouse_05.jpg";
 
 const title = "Mr. Potato Head is for the birds.";
+const metaDescription =
+  "Packaging concept for IKEA: modular birdhouse toys with interchangeable parts, extending their children's line of play and discovery.";
 const description = (
   <>
     <p>
@@ -70,8 +71,7 @@ const details = [
   },
 ];
 
-const project = getProject("mr-potato-head-is-for-the-birds");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

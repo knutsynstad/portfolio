@@ -3,7 +3,6 @@ import ProjectHeader from "@/components/ProjectHeader";
 import Marquee from "@/components/Marquee";
 import StickyNote from "@/components/StickyNote";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 import Exhibit1 from "./assets/automation_timeline_1.png";
 import Exhibit2 from "./assets/automations_model_step_count.png";
@@ -44,6 +43,8 @@ import AutomationsStepControlsDynamic from "./assets/automations-step-controls-d
 import AutomationsPropertyControls from "./assets/automations-property-controls.png";
 
 const title = "Automating your Reddit workflows.";
+const metaDescription =
+  "Automations replaces AutoModerator's YAML and regex with a visual workflow builder—a simpler, more powerful moderation system for Reddit.";
 const description = (
   <>
     <p>
@@ -130,8 +131,7 @@ const creatingAutomationMarqueeSlides = [
   { label: "Populated message", image: AutomationsPopulatedMessage },
 ] as const;
 
-const project = getProject("automations");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

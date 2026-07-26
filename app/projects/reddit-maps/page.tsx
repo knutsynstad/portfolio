@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import RedditMapsWhite from "./assets/reddit-maps-white.png";
@@ -31,6 +30,8 @@ import Sketch14 from "./assets/sketch-14.png";
 import Sketch15 from "./assets/sketch-15.png";
 
 const title = "Reddit Maps.";
+const metaDescription =
+  "Reddit Maps navigates the space of communities by content similarity, organizing subreddits into thematic clusters with multiple embedding lenses.";
 const description = (
   <>
     <p>
@@ -108,8 +109,7 @@ const details = [
   },
 */
 
-const project = getProject("reddit-maps");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 const sketches = [
   Sketch1,

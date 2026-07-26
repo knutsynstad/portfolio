@@ -1,11 +1,12 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 import Image from "next/image";
 
 import Screenshot from "./assets/Screenshot.png";
 
 const title = "Faux code generator.";
+const metaDescription =
+  "Generates editable SVG faux code from real source and syntax highlighting—use a random snippet or any GitHub Gist.";
 const description = (
   <>
     <p>
@@ -53,8 +54,7 @@ const details = [
   },
 ];
 
-const project = getProject("faux-code-generator");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

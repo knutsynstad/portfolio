@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Caremaps
 import Caremaps_Ana from "./assets/Caremaps_Ana.svg";
@@ -79,6 +78,8 @@ const maps = [
 ];
 
 const title = "Mapping family caregiving.";
+const metaDescription =
+  "Diagrams for the Atlas of Caregiving pilot, mapping who cares for whom in chronic illness—relation, frequency, and proximity.";
 const description = (
   <>
     <p>
@@ -151,8 +152,7 @@ const details = [
   },
 ];
 
-const project = getProject("mapping-family-caregiving");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

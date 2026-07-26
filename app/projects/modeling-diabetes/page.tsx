@@ -1,7 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Diabetes_Open_Loop_Process from "./assets/Diabetes_Open_Loop_Process.svg";
@@ -15,6 +14,8 @@ import Diabetes_Augmented_Data from "./assets/Diabetes_Augmented_Data.svg";
 import Diabetes_Interacting_Feedback_Loops from "./assets/Diabetes_Interacting_Feedback_Loops.svg";
 
 const title = "Modeling diabetes.";
+const metaDescription =
+  "Models of diabetes as feedback loops—from open and closed control systems to manual injections and artificial pancreas systems.";
 const description = (
   <>
     <p>
@@ -92,8 +93,7 @@ const slides = [
   ],
 ];
 
-const project = getProject("modeling-diabetes");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

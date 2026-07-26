@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Seagrams_01 from "./assets/Seagrams_01.jpg";
@@ -15,6 +14,8 @@ import Seagrams_08 from "./assets/Seagrams_08.jpg";
 import Seagrams_09 from "./assets/Seagrams_09.jpg";
 
 const title = "Winding down gets a little help.";
+const metaDescription =
+  "A holistic rebrand of defunct Seagram's whiskey—not selling whiskey but relaxation, expanded into overlooked lifestyle segments.";
 const description = (
   <>
     <p>
@@ -77,8 +78,7 @@ const details = [
   },
 ];
 
-const project = getProject("winding-down-gets-a-little-help");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

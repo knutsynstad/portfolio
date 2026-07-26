@@ -1,12 +1,13 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Corn_Poster from "./assets/Corn_Poster.svg";
 
 const title = "Measuring corn production, in every county, every day.";
+const metaDescription =
+  "A poster visualizing Descartes Labs' automated county-level corn forecasts from satellite data—within 1.9% of USDA results.";
 const description = (
   <>
     <p>
@@ -79,10 +80,7 @@ const details = [
   },
 ];
 
-const project = getProject(
-  "measuring_corn_production_in_every_county_every_day"
-);
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

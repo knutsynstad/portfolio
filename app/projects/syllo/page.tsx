@@ -3,7 +3,6 @@ import FullBleed from "@/components/FullBleed";
 import Marquee from "@/components/Marquee";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 import Banner from "./assets/syllo-banner.png";
 import PostSplash from "./assets/syllo-post-splash.png";
@@ -16,6 +15,8 @@ import PostAfterWin from "./assets/syllo-post-after-win.png";
 const sylloCarouselBg = "#FFF5D5";
 
 const title = "Make every syllable count.";
+const metaDescription =
+  "Syllo is a daily word puzzle on Reddit: five crossword-style clues and a syllable jumble, rebuilt from Syllacrostic after Reddit's acquisition.";
 const description = (
   <>
     <p>
@@ -72,8 +73,7 @@ const marqueePosts = [
   { src: PostAfterWin, alt: "Syllo post after win" },
 ] as const;
 
-const project = getProject("syllo");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

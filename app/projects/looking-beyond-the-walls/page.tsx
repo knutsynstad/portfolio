@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import SweetTooth from "./assets/sweet_tooth_2340w.png";
@@ -9,6 +8,8 @@ import PipeSchematic from "./assets/pipe_schematic.svg";
 import Pipe from "./assets/pipe_2340w.png";
 
 const title = "Looking beyond the walls.";
+const metaDescription =
+  "Typographic posters using unexpected objects as letterforms—from Facebook's transparent architecture to legibility experiments.";
 const description = (
   <>
     <p>
@@ -63,8 +64,7 @@ const details = [
   },
 ];
 
-const project = getProject("looking-beyond-the-walls");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

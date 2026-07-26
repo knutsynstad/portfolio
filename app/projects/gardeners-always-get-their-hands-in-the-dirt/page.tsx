@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import French_Paper_01 from "./assets/French_Paper_01.jpg";
@@ -12,6 +11,8 @@ import French_Paper_05 from "./assets/French_Paper_05.jpg";
 import French_Paper_06 from "./assets/French_Paper_06.jpg";
 
 const title = "Gardeners always get their hands in the dirt.";
+const metaDescription =
+  "Packaging concept for a French Paper Company line of environmentally conscious gardening tools and accessories.";
 const description = (
   <>
     <p>
@@ -70,8 +71,7 @@ const details = [
   },
 ];
 
-const project = getProject("gardeners-always-get-their-hands-in-the-dirt");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

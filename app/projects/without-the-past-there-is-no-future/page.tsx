@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Befor_01 from "./assets/Befor_01.jpg";
@@ -17,6 +16,8 @@ import Befor_13 from "./assets/Befor_13.jpg";
 import Befor_08 from "./assets/Befor_08.jpg";
 
 const title = "Without the past, there is no future.";
+const metaDescription =
+  "Befør helps Norwegian Americans document and share family heritage in a medium preserved for future generations.";
 const description = (
   <>
     <p>
@@ -84,8 +85,7 @@ const details = [
   },
 ];
 
-const project = getProject("without-the-past-there-is-no-future");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

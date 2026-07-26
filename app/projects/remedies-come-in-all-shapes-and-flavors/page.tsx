@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Earthnuts1 from "./assets/Earthnuts_1_2340w.png";
@@ -14,6 +13,8 @@ import Earthnuts5 from "./assets/Earthnuts_5_2340w.png";
 import Earthnuts6 from "./assets/Earthnuts_6_2340w.png";
 
 const title = "Remedies come in all shapes and flavors.";
+const metaDescription =
+  "Branding and packaging for Earthnuts, a Lower Haight deli built around a peanut-milk remedy with a wall of customer testimonials.";
 const description = (
   <>
     <p>
@@ -78,8 +79,7 @@ const details = [
   },
 ];
 
-const project = getProject("remedies-come-in-all-shapes-and-flavors");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

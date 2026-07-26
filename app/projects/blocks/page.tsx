@@ -1,12 +1,13 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 import playLogoWebm from "../play/assets/play-logo.webm";
 import playLogoMp4 from "../play/assets/play-logo.mp4";
 
 const title = "Extending Reddit with Blocks.";
+const metaDescription =
+  "Devvit Blocks is a platform-agnostic UI framework for Reddit community games—sensible defaults balancing creative freedom with consistency.";
 
 const description = (
   <>
@@ -74,8 +75,7 @@ const details = [
   },
 ];
 
-const project = getProject("blocks");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

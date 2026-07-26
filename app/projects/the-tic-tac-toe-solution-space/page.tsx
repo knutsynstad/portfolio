@@ -3,7 +3,6 @@ import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Exhibit1 from "./assets/Tic_Tac_Toe_Poster_Full_2340w.png";
@@ -18,6 +17,8 @@ import Exhibit9 from "./assets/Tic_Tac_Toe_Graph_3.svg";
 import posterPdf from "./assets/poster.pdf";
 
 const title = "The tic-tac-toe solution space.";
+const metaDescription =
+  "Visualizes tic-tac-toe's solution space: all 765 unique legal boards in one matrix, reduced from nearly a million possibilities.";
 const description = (
   <>
     <p>
@@ -108,8 +109,7 @@ const details = [
   },
 ];
 
-const project = getProject("the-tic-tac-toe-solution-space");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

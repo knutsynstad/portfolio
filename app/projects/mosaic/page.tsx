@@ -3,7 +3,6 @@ import FullBleed from "@/components/FullBleed";
 import Marquee from "@/components/Marquee";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 import MosaicTimelapseSlideshow from "./MosaicTimelapseSlideshow";
 
@@ -22,6 +21,8 @@ import Expanded5 from "./assets/mosaic-expanded-5.png";
 const mosaicCarouselBg = "#808080";
 
 const title = "Mosaic.";
+const metaDescription =
+  "Mosaic is a shared canvas where redditors remix an image one tile at a time—an async community game prototype with WebGL pan, zoom, and tile updates.";
 const description = (
   <>
     <p>
@@ -89,8 +90,7 @@ const marqueeExpandedPosts = [
   { src: Expanded5, alt: "Mosaic shared canvas" },
 ] as const;
 
-const project = getProject("mosaic");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

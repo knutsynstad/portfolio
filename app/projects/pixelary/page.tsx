@@ -3,7 +3,6 @@ import FullBleed from "@/components/FullBleed";
 import Marquee from "@/components/Marquee";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 import Banner from "./assets/pixelary-banner.png";
 import Guess1 from "./assets/pixelary-guess-1.png";
@@ -28,6 +27,8 @@ const pixelaryMarqueePlaceholder =
   "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" as const;
 
 const title = "Pixelary.";
+const metaDescription =
+  "Pixelary is an async drawing-and-guessing game on Reddit. Paint a word on a 16×16 canvas; the community guesses in comments.";
 const description = (
   <>
     <p>
@@ -102,8 +103,7 @@ const marqueeEditorPosts = [
   { src: Editor6, alt: "Pixelary — post preview, that’s a wrap" },
 ] as const;
 
-const project = getProject("pixelary");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

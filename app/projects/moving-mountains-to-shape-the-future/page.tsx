@@ -1,7 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Life1 from "./assets/100_People_01.jpg";
@@ -12,6 +11,8 @@ import Life5 from "./assets/100_People_05.jpg";
 import Life6 from "./assets/100_People_06.jpg";
 
 const title = "Moving mountains to shape the future.";
+const metaDescription =
+  "A typographic redesign of Life's 100 People Who Changed the World—honoring journalistic history with experimental type.";
 const description = (
   <>
     <p>
@@ -67,8 +68,7 @@ const details = [
   },
 ];
 
-const project = getProject("moving-mountains-to-shape-the-future");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

@@ -1,7 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Magnolia_01 from "./assets/Magnolia_01.jpg";
@@ -11,6 +10,8 @@ import Magnolia_04 from "./assets/Magnolia_04.jpg";
 import Magnolia_05 from "./assets/Magnolia_05.jpg";
 
 const title = "Raise your glass to Dorian Gray.";
+const metaDescription =
+  "Retail bottle and label system for Magnolia Brewery, inspired by Dorian Gray and the Haight's gilded gastropub interior.";
 const description = (
   <>
     <p>
@@ -70,8 +71,7 @@ const details = [
   },
 ];
 
-const project = getProject("raise-your-glass-to-dorian-gray");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

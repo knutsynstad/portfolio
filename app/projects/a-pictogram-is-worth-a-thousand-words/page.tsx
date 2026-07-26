@@ -1,7 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Icons_Core from "./assets/Icons_Core.svg";
@@ -26,6 +25,8 @@ import Icons_Electronics from "./assets/Icons_Electronics.svg";
 import Icons_People from "./assets/Icons_People.svg";
 
 const title = "A pictogram is worth a thousand words.";
+const metaDescription =
+  "A unified icon set: single-stroke line icons on an 8×8 grid, space-efficient and multilingual across domains from transit to healthcare.";
 const description = (
   <>
     <p>
@@ -98,8 +99,7 @@ const slides = [
   { image: Icons_Electronics, label: "Electronics", shadow: true },
 ];
 
-const project = getProject("a-pictogram-is-worth-a-thousand-words");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

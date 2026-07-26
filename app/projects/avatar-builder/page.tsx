@@ -1,7 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 import Marquee from "@/components/Marquee";
 
 // Avatar Showcase
@@ -37,6 +36,8 @@ import Explore2 from "./assets/Explore2.png";
 import Explore3 from "./assets/Explore3.png";
 
 const title = "The Reddit Avatar Builder.";
+const metaDescription =
+  "The Avatar Builder lets Reddit users craft identity from Snoo and visual elements—a modular UI built for continuous expansion of the Avatars program.";
 const description = (
   <>
     <p>
@@ -116,8 +117,7 @@ const details = [
 
 */
 
-const project = getProject("avatar-builder");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 const marqueeImages = [
   { image: Box1, label: "Halo" },

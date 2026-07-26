@@ -2,7 +2,6 @@ import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import FluidImageRow from "@/components/FluidImageRow";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 import playLogoWebm from "./assets/play-logo.webm";
 import playLogoMp4 from "./assets/play-logo.mp4";
@@ -18,6 +17,8 @@ import PreviewNarrowLight from "./assets/preview-narrow-light.png";
 import PreviewNarrowDark from "./assets/preview-narrow-dark.png";
 
 const title = "Let's Play.";
+const metaDescription =
+  "Devvit Play is a browser editor with live preview for Reddit custom posts—no setup required, with shareable URLs for rapid experimentation.";
 const description = (
   <>
     <p>
@@ -89,8 +90,7 @@ const details = [
   },
 */
 
-const project = getProject("play");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

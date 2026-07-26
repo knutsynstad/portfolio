@@ -1,19 +1,26 @@
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 
-interface ProjectTileProps {
+/**
+ * A tile linking to a project.
+ * @param props - The props for the project tile.
+ * @returns The project tile.
+ */
+export default function ProjectTile({
+  title,
+  url,
+  image,
+  className,
+  tags,
+  priority = false,
+}: {
   title: string;
   url: string;
   image: StaticImageData;
   className?: string;
   tags?: string[];
   priority?: boolean;
-}
-
-export default function ProjectTile(props: ProjectTileProps) {
-  const { title, url, image, className, tags, priority } = props;
-  const unoptimized = image.src.endsWith(".svg") || image.src.endsWith(".gif");
-
+}) {
   return (
     <Link
       href={url}
@@ -27,7 +34,7 @@ export default function ProjectTile(props: ProjectTileProps) {
           sizes="(max-width: 768px) 50vw, 33vw"
           className="object-cover"
           priority={priority}
-          unoptimized={unoptimized}
+          unoptimized={image.src.endsWith(".svg") || image.src.endsWith(".gif")}
         />
       </div>
       <h2 className="text-2xl text-balance">{title}</h2>

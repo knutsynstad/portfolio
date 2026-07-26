@@ -2,7 +2,6 @@ import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Sello_Social_Selling from "./assets/Sello_Social_Selling.svg";
@@ -12,6 +11,8 @@ import Sello_Merchant_Map_3 from "./assets/Sello_Merchant_Map_3_2340w.png";
 import Sello_Customer_Map from "./assets/Sello_Customer_Map_2340w.png";
 
 const title = "Mapping social shopping.";
+const metaDescription =
+  "An application map of Shopify's Sello app, modeling social shopping flows to overcome the keyhole effect of mobile interfaces.";
 const description = (
   <>
     <p>
@@ -70,8 +71,7 @@ const details = [
   },
 ];
 
-const project = getProject("mapping-social-shopping");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

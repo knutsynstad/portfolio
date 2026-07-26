@@ -1,7 +1,6 @@
 import Image from "next/image";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Elite_Raiders_01 from "./assets/Elite_Raiders_01.jpg";
@@ -11,6 +10,8 @@ import Elite_Raiders_04 from "./assets/Elite_Raiders_04.jpg";
 import Elite_Raiders_05 from "./assets/Elite_Raiders_05.jpg";
 
 const title = "Winning is the only way to play the game.";
+const metaDescription =
+  "A book on MMO gaming subculture—players who abandon conventional life in pursuit of competitive supremacy.";
 const description = (
   <>
     <p>
@@ -55,8 +56,7 @@ const details = [
   },
 ];
 
-const project = getProject("winning-is-the-only-way-to-play-the-game");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

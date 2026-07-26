@@ -1,7 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image, { StaticImageData } from "next/image";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 import appleParkWebm from "./assets/apple-park.webm";
 import appleParkMp4 from "./assets/apple-park.mp4";
@@ -146,6 +145,8 @@ import sentinel2_20171221 from "./assets/sentinel-2_2017-12-21.png";
 import sentinel2_20171226 from "./assets/sentinel-2_2017-12-26.png";
 
 const title = "The construction of Apple Park.";
+const metaDescription =
+  "Satellite and aerial imagery time-lapse of Apple Park's construction in Cupertino—from Landsat, Sentinel-2, and USDA NAIP sources.";
 const description = (
   <>
     <p>
@@ -216,8 +217,7 @@ const Tiles = ({ children }: { children: React.ReactNode }) => (
   <div className="grid gap-8 grid-cols-3">{children}</div>
 );
 
-const project = getProject("the-construction-of-apple-park");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

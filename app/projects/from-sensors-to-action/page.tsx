@@ -1,7 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Slideshow from "@/components/Slideshow";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Sensors1 from "./assets/Sensors_1.svg";
@@ -12,6 +11,8 @@ import Sensors5 from "./assets/Sensors_5.svg";
 import Sensors6 from "./assets/Sensors_6.svg";
 
 const title = "From sensors to action.";
+const metaDescription =
+  "An information model of predictive machine learning: how Descartes Labs turns satellite sensors and AI into real-time supply chain intelligence.";
 const description = (
   <>
     <p>
@@ -62,8 +63,7 @@ const details = [
   },
 ];
 
-const project = getProject("from-sensors-to-action");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

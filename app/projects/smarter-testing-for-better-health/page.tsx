@@ -2,7 +2,6 @@ import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
 import ProjectHeader from "@/components/ProjectHeader";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 import AnimatedLogo from "./assets/AnimatedLogo";
 
 // Assets
@@ -12,6 +11,8 @@ import AST_Identity_Black from "./assets/AST_Identity_Black.svg";
 import AST_Stationery from "./assets/AST_Stationery.svg";
 
 const title = "Smarter testing for better health.";
+const metaDescription =
+  "Branding for Adaptive Sensory Technology—a dynamic identity rooted in precision vision testing and the geometry of the eye.";
 const description = (
   <>
     <p>
@@ -73,8 +74,7 @@ const details = [
   },
 ];
 
-const project = getProject("smarter-testing-for-better-health");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

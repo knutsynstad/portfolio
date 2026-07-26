@@ -2,7 +2,6 @@ import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import Slideshow from "@/components/Slideshow";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import BiozModel from "./assets/Bioz_Model.svg";
@@ -24,6 +23,8 @@ import InformationOverlap from "./assets/Bioz_Information_Overlap.svg";
 import ArticleFullText from "./assets/Bioz_Article_Full_Text_2340w.png";
 
 const title = "Using A.I. to accelerate life science.";
+const metaDescription =
+  "Product design for Bioz, an NLP platform that digests scientific literature to score labware and reagents, accelerating life science research.";
 const description = (
   <>
     <p>
@@ -85,8 +86,7 @@ const details = [
   },
 ];
 
-const project = getProject("using-ai-to-accelerate-life-science");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-export default function ProjectsLayout({
+/**
+ * The layout for a project.
+ * @param children - The children of the project.
+ * @returns The project.
+ */
+export default function ProjectLayout({
   children,
 }: {
   children: React.ReactNode;

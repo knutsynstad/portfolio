@@ -1,7 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Slideshow from "@/components/Slideshow";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 import Image from "next/image";
 
 import LogosLapEnd from "./assets/logos_lap_end.png";
@@ -36,6 +35,8 @@ import ApplicationMapLeft from "./assets/Fortune_500_Application_Map_Left_2340w.
 import ApplicationMapRight from "./assets/Fortune_500_Application_Map_Right_2340w.png";
 
 const title = "Visualizing the Fortune 500 by similarity.";
+const metaDescription =
+  "Uses machine learning to organize Fortune 500 logos by visual similarity—a live browser visualization with adjustable algorithm parameters.";
 const description = (
   <>
     <p>
@@ -91,8 +92,7 @@ const details = [
   },
 ];
 
-const project = getProject("visualizing-the-fortune-500");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (

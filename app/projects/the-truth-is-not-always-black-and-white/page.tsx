@@ -1,7 +1,6 @@
 import ProjectHeader from "@/components/ProjectHeader";
 import Image from "next/image";
 import { projectMetadata } from "@/lib/metadata";
-import { getProject } from "@/projects/registry";
 
 // Assets
 import Margin_of_Error_01 from "./assets/Margin_of_Error_01.jpg";
@@ -16,6 +15,8 @@ import Margin_of_Error_09 from "./assets/Margin_of_Error_09.jpg";
 import Margin_of_Error_10 from "./assets/Margin_of_Error_10.jpg";
 
 const title = "The truth is rarely black and white.";
+const metaDescription =
+  "Identity and promotion for The Margin of Error, an Errol Morris film festival exploring truth's subjective nature.";
 const description = (
   <>
     <p>
@@ -77,8 +78,7 @@ const details = [
   },
 ];
 
-const project = getProject("the-truth-is-not-always-black-and-white");
-export const metadata = projectMetadata(title, project?.metaDescription ?? "");
+export const metadata = projectMetadata(title, metaDescription);
 
 export default function Project() {
   return (
