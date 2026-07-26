@@ -1,9 +1,11 @@
 import "@/globals.css";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 const title = "Knut Synstad";
 const description =
@@ -38,6 +40,7 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
+      {gaId ? <GoogleAnalytics gaId={gaId} /> : null}
     </html>
   );
 }
