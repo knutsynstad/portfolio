@@ -1,5 +1,5 @@
 import ProjectTile from "@/components/ProjectTile";
-import { projectUrl, visibleProjects } from "@/projects/registry";
+import { getProjectUrl, visibleProjects } from "@/projects/registry";
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
             key={project.slug}
             title={project.name}
             image={project.image}
-            url={projectUrl(project.slug)}
+            url={getProjectUrl(project.slug)}
             tags={project.tags}
             priority={index < 6}
           />

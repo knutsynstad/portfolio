@@ -35,6 +35,7 @@ export default function ProjectTile({
           className="object-cover"
           priority={priority}
           unoptimized={image.src.endsWith(".svg") || image.src.endsWith(".gif")}
+          draggable={false}
         />
       </div>
       <h2 className="text-2xl text-balance">{title}</h2>

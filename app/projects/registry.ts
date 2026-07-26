@@ -46,7 +46,7 @@ export type Project = {
 /**
  * A sorted registry of projects.
  */
-export const projects: Project[] = [
+export const projects = [
   {
     slug: "mosaic",
     name: "Mosaic",
@@ -270,7 +270,7 @@ export const projects: Project[] = [
     tags: ["Reddit", "UI Framework", "Developer Platform"],
     visible: false,
   },
-];
+] as const satisfies readonly Project[];
 
 /**
  * The visible projects.
@@ -278,10 +278,15 @@ export const projects: Project[] = [
 export const visibleProjects = projects.filter((project) => project.visible);
 
 /**
+ * The type of the slug of a project.
+ */
+export type ProjectSlug = (typeof projects)[number]["slug"];
+
+/**
  * Returns the URL for a project.
  * @param slug - The slug of the project.
  * @returns The URL for the project.
  */
-export function projectUrl(slug: string): string {
+export function getProjectUrl(slug: ProjectSlug): string {
   return `/projects/${slug}/`;
 }
